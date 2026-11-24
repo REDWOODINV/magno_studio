@@ -26,7 +26,7 @@
         flex-direction: column;
         align-items: center;
         justify-content: center;
-        gap: 18px;
+        gap: 26px;
         background:
           radial-gradient(circle at 8% 10%, rgb(255 255 255 / 0.04), transparent 22%),
           radial-gradient(circle at 92% 0%, rgb(255 226 171 / 0.06), transparent 24%),
@@ -35,6 +35,23 @@
         font: 600 22px/1 system-ui, -apple-system, "Segoe UI", sans-serif;
         letter-spacing: 0.02em;
         transition: opacity 180ms ease-out;
+      }
+      #lt-boot-splash .lt-boot-lockup {
+        display: flex;
+        align-items: center;
+        gap: 16px;
+      }
+      #lt-boot-splash .lt-boot-mark {
+        width: 76px;
+        height: 76px;
+        flex: none;
+      }
+      #lt-boot-splash .lt-boot-word {
+        display: flex;
+        flex-direction: column;
+        color: #ffffff;
+        font: 800 44px/0.92 Inter, system-ui, -apple-system, "Segoe UI", sans-serif;
+        letter-spacing: -0.02em;
       }
       #lt-boot-splash.is-leaving {
         opacity: 0;
@@ -65,7 +82,13 @@
   </head>
   <body style="margin: 0; background: #0f0f0f">
     <div id="lt-boot-splash" role="status" aria-label="Magno Studio">
-      <span>Magno Studio</span>
+      <span class="lt-boot-lockup">
+        <svg class="lt-boot-mark" viewBox="0 0 100 100" aria-hidden="true" focusable="false">
+          <path fill="#fff" fill-rule="evenodd" d="M50 3 L63 9 L76 6 L84 19 L95 26 L91 41 L97 55 L88 66 L88 82 L72 83 L62 94 L50 97 L38 94 L28 83 L12 82 L12 66 L3 55 L9 41 L5 26 L16 19 L24 6 L37 9Z M50 15 L64 19 L74 17 L79 28 L86 34 L83 45 L87 55 L80 63 L79 74 L68 74 L60 84 L50 86 L40 84 L32 74 L21 74 L20 63 L13 55 L17 45 L14 34 L21 28 L26 17 L36 19Z" />
+          <path fill="#fff" fill-rule="evenodd" d="M50 24 L62 27 L69 36 L70 50 L66 62 L58 74 L50 78 L42 74 L34 62 L30 50 L31 36 L38 27Z M55 41 L65 40 L60 47Z M45 41 L35 40 L40 47Z M44 54 L56 54 L50 62Z M50 62 L54 68 L50 72 L46 68Z" />
+        </svg>
+        <span class="lt-boot-word"><span>Magno</span><span>Studio</span></span>
+      </span>
       <span class="lt-boot-track"></span>
     </div>
     <div id="root"></div>
