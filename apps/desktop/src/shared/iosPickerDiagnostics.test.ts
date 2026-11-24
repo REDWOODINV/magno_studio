@@ -40,8 +40,8 @@ describe("diagnóstico del selector de carpetas iOS", () => {
   });
 
   it("Rust y Swift escriben el mismo archivo sin registrar rutas elegidas", () => {
-    expect(systemCommands).toContain('"LibreTracks-picker.log"');
-    expect(swift).toContain('appendingPathComponent("LibreTracks-picker.log")');
+    expect(systemCommands).toContain('"Magno Studio-picker.log"');
+    expect(swift).toContain('appendingPathComponent("Magno Studio-picker.log")');
     expect(swift).not.toContain('diagnostic("selected: \\(url.path)');
   });
 

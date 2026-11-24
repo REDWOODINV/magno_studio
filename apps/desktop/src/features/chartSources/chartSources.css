@@ -154,9 +154,9 @@
 .lt-chart-import-search input,
 .lt-plan-import-field select {
   border-radius: 2px;
-  border: 1px solid rgb(87 241 219 / 0.18);
+  border: 1px solid rgb(0 209 255 / 0.18);
   background: rgb(28 31 32 / 0.98);
-  color: #f3f0ef;
+  color: #eef2fa;
   padding: 0.45rem 0.6rem;
   font: 500 0.85rem/1.2 "Space Grotesk", sans-serif;
 }
@@ -164,15 +164,15 @@
 .lt-chart-import-search input:focus,
 .lt-plan-import-field select:focus {
   outline: none;
-  border-color: rgb(87 241 219 / 0.5);
+  border-color: rgb(0 209 255 / 0.5);
 }
 
 .lt-chart-import-search button,
 .lt-chart-import-connect button {
   border-radius: 2px;
-  border: 1px solid rgb(87 241 219 / 0.24);
-  background: rgb(87 241 219 / 0.1);
-  color: #57f1db;
+  border: 1px solid rgb(0 209 255 / 0.24);
+  background: rgb(0 209 255 / 0.1);
+  color: #00d1ff;
   padding: 0.5rem 0.9rem;
   font: 700 0.78rem/1 "Space Grotesk", sans-serif;
   cursor: pointer;
@@ -192,18 +192,18 @@
   border-bottom: 1px solid rgb(255 255 255 / 0.06);
   border-radius: 0;
   background: none;
-  color: #f3f0ef;
+  color: #eef2fa;
   font: 500 0.88rem/1.25 "Space Grotesk", sans-serif;
   cursor: pointer;
 }
 
 .lt-chart-import-list > li > button:hover,
 .lt-chart-import-arrangements button:not(:disabled):hover {
-  background: rgb(87 241 219 / 0.08);
+  background: rgb(0 209 255 / 0.08);
 }
 
 .lt-chart-import-list > li > button.is-active {
-  color: #57f1db;
+  color: #00d1ff;
 }
 
 .lt-chart-import-list > li > button span {
@@ -231,9 +231,9 @@
   margin-right: 0.5rem;
   min-height: 30px;
   border-radius: 2px;
-  border: 1px solid rgb(87 241 219 / 0.18);
+  border: 1px solid rgb(0 209 255 / 0.18);
   background: rgb(28 31 32 / 0.98);
-  color: #57f1db;
+  color: #00d1ff;
   font: 700 0.75rem/1 "Space Grotesk", sans-serif;
 }
 
@@ -244,9 +244,9 @@
 
 .lt-pco-save-input {
   border-radius: 2px;
-  border: 1px solid rgb(87 241 219 / 0.18);
+  border: 1px solid rgb(0 209 255 / 0.18);
   background: rgb(28 31 32 / 0.98);
-  color: #f3f0ef;
+  color: #eef2fa;
   padding: 0.45rem 0.6rem;
   font: 500 0.85rem/1.2 "Space Grotesk", sans-serif;
   min-height: 40px;

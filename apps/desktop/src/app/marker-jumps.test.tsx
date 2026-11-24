@@ -115,7 +115,7 @@ describe("App / marker-jumps", () => {
     });
 
     await waitFor(() => {
-      expect(useTransportStore.getState().playback?.pendingMarkerJump?.targetMarkerName).toBe("LibreTracks Session");
+      expect(useTransportStore.getState().playback?.pendingMarkerJump?.targetMarkerName).toBe("Magno Studio Session");
       expect(useTransportStore.getState().playback?.pendingMarkerJump?.trigger).toBe("region_end");
     });
   });
@@ -135,7 +135,7 @@ describe("App / marker-jumps", () => {
     });
 
     await waitFor(() => {
-      expect(useTransportStore.getState().playback?.pendingMarkerJump?.targetMarkerName).toBe("LibreTracks Session");
+      expect(useTransportStore.getState().playback?.pendingMarkerJump?.targetMarkerName).toBe("Magno Studio Session");
       expect(useTransportStore.getState().playback?.pendingMarkerJump?.trigger).toBe("region_end");
     });
   });

@@ -103,7 +103,7 @@ describe("finding hosts", () => {
   it("an incompatible host is shown but cannot be joined", async () => {
     api.startDiscovery.mockResolvedValue([found({ compatible: false })]);
     await openJoinTab();
-    expect(await screen.findByText("Versión incompatible: actualiza LibreTracks")).toBeTruthy();
+    expect(await screen.findByText("Versión incompatible: actualiza Magno Studio")).toBeTruthy();
     expect(
       (screen.getByRole("button", { name: "Unirse: PC del director" }) as HTMLButtonElement)
         .disabled,

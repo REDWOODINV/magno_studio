@@ -141,7 +141,7 @@ export function UpdateModal({
               {t("update.eyebrow", "Update available")}
             </p>
             <h2 id="lt-update-modal-title">
-              {t("update.title", "LibreTracks {{version}} is available", {
+              {t("update.title", "Magno Studio {{version}} is available", {
                 version: release.version,
               })}
             </h2>

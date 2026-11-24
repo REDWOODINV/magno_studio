@@ -7,7 +7,7 @@ const es = {
     eyebrow: "Sesión de red",
     title: "Sesión de red",
     description:
-      "Conecta varios LibreTracks en la misma Wi-Fi: uno hospeda y el resto lo sigue con su propia app.",
+      "Conecta varios Magno Studio en la misma Wi-Fi: uno hospeda y el resto lo sigue con su propia app.",
     sideNav: "Red",
     sideNavGuest: "Invitado",
     tabs: { host: "Hospedar", join: "Unirse" },
@@ -61,7 +61,7 @@ const es = {
       badPin: "PIN incorrecto.",
       rateLimited: "Demasiados intentos con PIN incorrecto. Espera 30 segundos.",
       incompatibleVersion:
-        "Versiones de LibreTracks incompatibles (el anfitrión usa el protocolo {{version}}). Actualiza la app en el dispositivo más antiguo.",
+        "Versiones de Magno Studio incompatibles (el anfitrión usa el protocolo {{version}}). Actualiza la app en el dispositivo más antiguo.",
       kicked: "El anfitrión te ha sacado de la sesión.",
       hostFull: "La sesión está llena.",
       badHello: "El anfitrión no ha entendido la conexión.",
@@ -113,20 +113,20 @@ const es = {
       searching: "Buscando anfitriones en la Wi-Fi…",
       join: "Unirse",
       pinBadge: "PIN para Control/Edición",
-      needsUpdate: "Versión incompatible: actualiza LibreTracks",
+      needsUpdate: "Versión incompatible: actualiza Magno Studio",
       manual: "O escribe la dirección",
       notFoundTitle: "¿No aparece el anfitrión?",
       notFoundSameWifi: "Los dos dispositivos tienen que estar en la misma Wi-Fi (no vale la de invitados de algunos locales, que aísla a los dispositivos).",
-      notFoundIos: "En iPhone/iPad: Ajustes → LibreTracks → activa «Red local».",
-      notFoundFirewall: "Si el anfitrión es un Windows, permite LibreTracks en el cortafuegos desde su pestaña «Hospedar».",
+      notFoundIos: "En iPhone/iPad: Ajustes → Magno Studio → activa «Red local».",
+      notFoundFirewall: "Si el anfitrión es un Windows, permite Magno Studio en el cortafuegos desde su pestaña «Hospedar».",
       notFoundManual: "Siempre puedes escribir la dirección que muestra el anfitrión.",
     },
     firewall: {
       title: "Windows está bloqueando la sesión de red",
       blocked:
-        "El cortafuegos permite LibreTracks en la red {{allowed}}, pero ahora mismo estás en una red {{active}}. Los demás dispositivos no podrán unirse ni encontrar este equipo hasta que lo permitas.",
+        "El cortafuegos permite Magno Studio en la red {{allowed}}, pero ahora mismo estás en una red {{active}}. Los demás dispositivos no podrán unirse ni encontrar este equipo hasta que lo permitas.",
       noRule:
-        "El cortafuegos de Windows no tiene ninguna regla que deje a LibreTracks recibir conexiones en esta red ({{active}}). Los demás dispositivos no podrán unirse.",
+        "El cortafuegos de Windows no tiene ninguna regla que deje a Magno Studio recibir conexiones en esta red ({{active}}). Los demás dispositivos no podrán unirse.",
       unknown:
         "No se ha podido comprobar el cortafuegos de Windows. Si los demás no pueden unirse, permite el acceso desde aquí.",
       allow: "Permitir en el cortafuegos",
@@ -388,9 +388,9 @@ const es = {
       templates: "Plantillas",
       cancelling: "Cancelando…",
       transferring: "{{name}} — {{percent}}%",
-      quotaHint: "Google comparte este espacio con Gmail y Fotos, así que no todo está disponible para LibreTracks.",
+      quotaHint: "Google comparte este espacio con Gmail y Fotos, así que no todo está disponible para Magno Studio.",
       quotaUnlimited: "{{used}} usados; cuenta sin límite",
-      quotaHintOneDrive: "Microsoft comparte este espacio con Outlook, así que no todo está disponible para LibreTracks.",
+      quotaHintOneDrive: "Microsoft comparte este espacio con Outlook, así que no todo está disponible para Magno Studio.",
       quota: "{{used}} de {{limit}} usados en tu cuenta de {{provider}} ({{free}} libres)",
       disconnect: "Desconectar",
       accounts: "Cuentas",
@@ -398,7 +398,7 @@ const es = {
       notConnectedShort: "Sin conectar",
       showFiles: "Ver archivos",
       connectProvider: "Conectar con {{provider}}",
-      explainer: "Conecta tu cuenta de Google Drive, OneDrive o Dropbox para llevar canciones y sesiones de un dispositivo a otro. Puedes conectar varias a la vez y elegir cuál usar cada vez que exportas o importas. Los archivos se guardan en TU cuenta: LibreTracks no aloja nada y solo ve lo que guarda la propia aplicación.",
+      explainer: "Conecta tu cuenta de Google Drive, OneDrive o Dropbox para llevar canciones y sesiones de un dispositivo a otro. Puedes conectar varias a la vez y elegir cuál usar cada vez que exportas o importas. Los archivos se guardan en TU cuenta: Magno Studio no aloja nada y solo ve lo que guarda la propia aplicación.",
       notConfigured: "Esta compilación no incluye las credenciales de ningún proveedor, así que la nube no está disponible.",
       title: "Tus canciones y sesiones en la nube",
       eyebrow: "Nube",
@@ -482,7 +482,7 @@ const es = {
       midiLearn: "Aprendizaje MIDI",
       busyTitle: "Aplicando cambios",
       busyDescription: "Sincronizando el estado del proyecto y del timeline.",
-      emptyEyebrow: "LibreTracks DAW",
+      emptyEyebrow: "Magno Studio DAW",
       emptyTitle: "Crea o abre una sesion",
       emptyDescription:
         "Inicia una sesion nueva o abre una existente. Importa assets WAV despues desde el panel Libreria y arrastralos al timeline solo cuando quieras organizarlos.",
@@ -571,7 +571,7 @@ const es = {
       eyebrow: "Audio",
       title: "Configuracion",
       description:
-        "Audio, interfaz, vídeo, atajos, MIDI y diagnóstico de LibreTracks.",
+        "Audio, interfaz, vídeo, atajos, MIDI y diagnóstico de Magno Studio.",
       close: "Cerrar",
       audioDevice: "Dispositivo de audio",
       audioDeviceSystemDefault: "Predeterminado del sistema",
@@ -657,7 +657,7 @@ const es = {
       timelineNavigationSchemeAbleton:
         "Ableton / Audacity (pellizcar para hacer zoom, scroll para desplazar)",
       timelineNavigationSchemeLibreTracks:
-        "LibreTracks clásico (la rueda hace zoom)",
+        "Magno Studio clásico (la rueda hace zoom)",
       timelineNavigationSchemeHelp:
         "Elige cómo el trackpad o la rueda del ratón se mueven por la línea de tiempo. En modo Ableton, pellizcar (o Ctrl + scroll) hace zoom hacia el cursor. Alt + scroll cambia la altura de la pista que está bajo el ratón, y Alt + Mayús + scroll la de todas.",
       timelinePlayheadFollowMode: "Seguimiento del cursor",
@@ -1471,7 +1471,7 @@ const es = {
       mixSceneUnavailable:
         "La escena de mezcla no está disponible. Selecciona una escena existente y vuelve a intentarlo.",
       destinationFolderUnavailable:
-        "LibreTracks no pudo determinar dónde crear el proyecto. Elige una carpeta de destino y vuelve a intentarlo.",
+        "Magno Studio no pudo determinar dónde crear el proyecto. Elige una carpeta de destino y vuelve a intentarlo.",
       invalidProjectName:
         "El nombre del proyecto no es válido. Usa un nombre que sea válido para una carpeta.",
       projectFolderExists:
@@ -1506,7 +1506,7 @@ const es = {
       invalidMidiData:
         "El clip MIDI contiene un canal, una nota o una posición no válidos. Revisa sus eventos y vuelve a intentarlo.",
       unsupportedProjectVersion:
-        "El proyecto se creó con una versión de LibreTracks no compatible. Actualiza la aplicación y vuelve a intentarlo.",
+        "El proyecto se creó con una versión de Magno Studio no compatible. Actualiza la aplicación y vuelve a intentarlo.",
       unsupportedAudioFormat:
         "Este formato de audio no es compatible. Convierte el archivo a WAV, FLAC, MP3, OGG, M4A o AAC.",
       insufficientSpace:
@@ -1518,7 +1518,7 @@ const es = {
       invalidPackage:
         "El archivo está dañado o incompleto. Si viene de la nube o de una transferencia, descárgalo de nuevo y vuelve a intentarlo.",
       audioDecodeFailed:
-        "LibreTracks no pudo decodificar este audio. Puede estar dañado o usar un códec no compatible.",
+        "Magno Studio no pudo decodificar este audio. Puede estar dañado o usar un códec no compatible.",
       importSkippedFiles_one:
         "Se importó todo menos {{files}}, que no se pudo leer.",
       importSkippedFiles_other:
@@ -1530,11 +1530,11 @@ const es = {
       audioDeviceFailed:
         "No se pudo abrir el dispositivo de audio. Comprueba que esté conectado y que otra aplicación no lo esté usando.",
       networkUnavailable:
-        "LibreTracks no pudo conectar con el servidor. Comprueba la conexión a Internet y vuelve a intentarlo.",
+        "Magno Studio no pudo conectar con el servidor. Comprueba la conexión a Internet y vuelve a intentarlo.",
       markerNotFound:
         "Esa marca ya no existe. Actualiza la sesión y vuelve a intentarlo.",
       fileOperationFailed:
-        "LibreTracks no pudo leer o escribir el archivo necesario. Comprueba la ubicación y los permisos. Detalles: {{message}}",
+        "Magno Studio no pudo leer o escribir el archivo necesario. Comprueba la ubicación y los permisos. Detalles: {{message}}",
       audioEngineFailed:
         "El motor de audio no pudo completar la operación. Detalles: {{message}}",
       operationFailed:
@@ -1853,7 +1853,7 @@ const es = {
       eyebrow: "MIDI no disponible",
       title: "No se encontro el dispositivo MIDI guardado",
       description:
-        "LibreTracks ha arrancado sin ese dispositivo para no bloquear la sesion.",
+        "Magno Studio ha arrancado sin ese dispositivo para no bloquear la sesion.",
       detail: "Dispositivo configurado: {{name}}",
       dismiss: "Cerrar",
       dontShowAgain: "No mostrar mas",
@@ -1924,7 +1924,7 @@ const es = {
         display: "Pantalla",
         noDisplay: "Sin elegir",
         primary: "principal",
-        hasApp: "donde está LibreTracks",
+        hasApp: "donde está Magno Studio",
         refresh: "Actualizar",
         identify: "Identificar pantallas",
         mode: "Modo",
@@ -2079,7 +2079,7 @@ const es = {
         ready: "Vídeo: {{monitor}} · OK",
         black: "VÍDEO EN NEGRO",
         sharesApp:
-          "La pantalla elegida es la de LibreTracks: el vídeo sale en una ventana para no taparla.",
+          "La pantalla elegida es la de Magno Studio: el vídeo sale en una ventana para no taparla.",
         displayLost: "Vídeo: pantalla desconectada",
         noDisplay: "Vídeo: elige una pantalla",
         unavailable: "Vídeo no disponible",
@@ -2233,9 +2233,9 @@ const es = {
       outputDeviceHint:
         "Puerto al que envian las pistas MIDI (mesas de luces, software de letras).",
       testNote: "Enviar nota de prueba",
-      virtualPort: "Publicar puerto MIDI virtual LibreTracks",
+      virtualPort: "Publicar puerto MIDI virtual Magno Studio",
       virtualPortHint:
-        "Las demás apps de este dispositivo ven LibreTracks como un dispositivo MIDI: reciben lo que tus pistas MIDI mandan a \"LibreTracks Out\" y pueden disparar los bindings de MIDI Learn por \"LibreTracks In\".",
+        "Las demás apps de este dispositivo ven Magno Studio como un dispositivo MIDI: reciben lo que tus pistas MIDI mandan a \"Magno Studio Out\" y pueden disparar los bindings de MIDI Learn por \"Magno Studio In\".",
       bluetoothSearch: "Buscar dispositivos Bluetooth",
       bluetoothHint:
         "Pedaleras y controladores MIDI inalámbricos (Bluetooth LE). Enciende el dispositivo y tenlo cerca.",
@@ -2246,15 +2246,15 @@ const es = {
       bluetoothConnect: "Conectar",
       bluetoothConnecting: "Conectando…",
       bluetoothConnected:
-        "{{name}} está conectado. Elígelo arriba como entrada o salida MIDI; se reconecta cada vez que abres LibreTracks.",
+        "{{name}} está conectado. Elígelo arriba como entrada o salida MIDI; se reconecta cada vez que abres Magno Studio.",
       bluetoothScanAgain: "Buscar de nuevo",
       bluetoothPermissionDenied:
-        "LibreTracks necesita el permiso de Bluetooth para encontrar dispositivos MIDI inalámbricos. El MIDI por USB sigue funcionando sin él; puedes concederlo en los ajustes del sistema.",
+        "Magno Studio necesita el permiso de Bluetooth para encontrar dispositivos MIDI inalámbricos. El MIDI por USB sigue funcionando sin él; puedes concederlo en los ajustes del sistema.",
       bluetoothOff: "El Bluetooth está apagado. Enciéndelo y vuelve a buscar.",
       bluetoothFailed: "Error de MIDI Bluetooth: {{error}}",
       keepInBackground: "Mantener MIDI activo en segundo plano",
       keepInBackgroundHint:
-        "Un pedal puede arrancar el show con la pantalla apagada o con otra app abierta. Desactívalo para ahorrar batería: la entrada MIDI se cierra mientras LibreTracks está en segundo plano y parado.",
+        "Un pedal puede arrancar el show con la pantalla apagada o con otra app abierta. Desactívalo para ahorrar batería: la entrada MIDI se cierra mientras Magno Studio está en segundo plano y parado.",
       networkSession: "Sesión MIDI de red",
       networkSessionHint:
         "Envía y recibe MIDI por Wi-Fi con un Mac (Configuración de Audio MIDI > Red). iOS pedirá acceso a la red local la primera vez.",
@@ -2550,10 +2550,10 @@ const es = {
   },
   appClose: {
     savingTitle: "Guardando el proyecto…",
-    savingMessage: "LibreTracks se cerrará en cuanto termine de guardar.",
+    savingMessage: "Magno Studio se cerrará en cuanto termine de guardar.",
     savedTitle: "Proyecto guardado",
-    savedMessage: "Tus cambios están guardados. Cerrando LibreTracks…",
-    savedMessageAt: "Tus cambios están guardados en {{path}}.\nCerrando LibreTracks…",
+    savedMessage: "Tus cambios están guardados. Cerrando Magno Studio…",
+    savedMessageAt: "Tus cambios están guardados en {{path}}.\nCerrando Magno Studio…",
     closeNow: "Cerrar ahora",
     failedTitle: "No se pudo guardar el proyecto",
     failedMessage: "{{error}}\n\nSi cierras ahora perderás los cambios hechos desde el último guardado.",
@@ -2861,7 +2861,7 @@ const es = {
     perSecond: "{{value}}/s",
     mobileHint: "Se actualiza cada segundo. «CPU» es la carga del motor de audio: el porcentaje del tiempo de cada búfer que se gasta en procesarlo. Por encima del 100 % se producen cortes.",
     ofTotal: "{{used}} de {{total}}",
-    hint: "Se actualiza cada segundo. Sirve para saber si una ralentización es de LibreTracks o de toda la máquina. La «carga de audio» es el porcentaje del presupuesto del búfer en uso: por encima del 100 % se producen cortes.",
+    hint: "Se actualiza cada segundo. Sirve para saber si una ralentización es de Magno Studio o de toda la máquina. La «carga de audio» es el porcentaje del presupuesto del búfer en uso: por encima del 100 % se producen cortes.",
   },
   pendingPitch: {
     label: "Tono y tempo sin aplicar",
@@ -3095,13 +3095,13 @@ const es = {
       "Asegurate de que el desktop y el movil o tablet esten conectados a la misma red.",
     ipUrl: "URL por IP",
     hostnameUrl: "URL por hostname (.local)",
-    qrAlt: "Codigo QR para LibreTracks Remote",
+    qrAlt: "Codigo QR para Magno Studio Remote",
     firewall: {
       title: "Windows esta bloqueando el remote",
       blocked:
-        "El cortafuegos permite LibreTracks en la red {{allowed}}, pero ahora mismo estas en una red {{active}}. El movil no podra conectar hasta que lo permitas.",
+        "El cortafuegos permite Magno Studio en la red {{allowed}}, pero ahora mismo estas en una red {{active}}. El movil no podra conectar hasta que lo permitas.",
       noRule:
-        "El cortafuegos de Windows no tiene ninguna regla que deje a LibreTracks recibir conexiones en esta red ({{active}}).",
+        "El cortafuegos de Windows no tiene ninguna regla que deje a Magno Studio recibir conexiones en esta red ({{active}}).",
       unknown:
         "No se ha podido comprobar el cortafuegos de Windows. Si el movil no conecta, permite el acceso desde aqui.",
       allow: "Permitir en el cortafuegos",
@@ -3480,9 +3480,9 @@ const es = {
   },
   telemetry: {
     eyebrow: "Privacidad",
-    title: "Ayuda a mejorar LibreTracks",
+    title: "Ayuda a mejorar Magno Studio",
       description:
-        "Permite estadisticas opcionales de producto: inicios, hora UTC y dia de la semana local, plataforma general y pais, adopcion de funciones, acciones completadas o fallidas, madurez aproximada de la instalacion e hitos de sesion activa. LibreTracks nunca envia ubicacion precisa, contenido de proyectos, audio, nombres, rutas ni hardware conectado.",
+        "Permite estadisticas opcionales de producto: inicios, hora UTC y dia de la semana local, plataforma general y pais, adopcion de funciones, acciones completadas o fallidas, madurez aproximada de la instalacion e hitos de sesion activa. Magno Studio nunca envia ubicacion precisa, contenido de proyectos, audio, nombres, rutas ni hardware conectado.",
     detail:
       "Un secreto aleatorio permanece en este dispositivo. Solo se envia un token que cambia cada dia, por lo que no permite crear un historial del equipo a largo plazo.",
     allow: "Permitir estadisticas de uso",
@@ -3494,7 +3494,7 @@ const es = {
   },
   update: {
     eyebrow: "Nueva version disponible",
-    title: "LibreTracks {{version}} ya esta disponible",
+    title: "Magno Studio {{version}} ya esta disponible",
     subtitle: "Tu version actual es la {{current}}.",
     published: "Nueva version publicada el {{date}}",
     notesTitle: "Novedades",
@@ -3531,8 +3531,8 @@ const es = {
       summary: "Qué es una sesión y cómo crearla, abrirla o importarla.",
       steps: {
         welcome: {
-          title: "Bienvenido a LibreTracks",
-          body: "LibreTracks reproduce tus pistas de acompañamiento en directo: un repertorio entero, cada canción con sus pistas, sus marcas y sus secciones, listo para lanzarlo sin pelearte con el ordenador. Este tutorial te enseña esta pantalla; cuando abras una sesión, seguirá solo con el área de trabajo.",
+          title: "Bienvenido a Magno Studio",
+          body: "Magno Studio reproduce tus pistas de acompañamiento en directo: un repertorio entero, cada canción con sus pistas, sus marcas y sus secciones, listo para lanzarlo sin pelearte con el ordenador. Este tutorial te enseña esta pantalla; cuando abras una sesión, seguirá solo con el área de trabajo.",
         },
         demo: {
           title: "Prueba con la cancion de ejemplo",
@@ -3704,7 +3704,7 @@ const es = {
         },
         resizeSong: {
           title: "Alargar o acortar una canción",
-          body: "Arrastra el borde izquierdo o derecho de la región. Si al estirarla fuese a solaparse con la canción de al lado, LibreTracks lo rechaza y te dice con cuál choca: dos canciones no pueden pisarse.",
+          body: "Arrastra el borde izquierdo o derecho de la región. Si al estirarla fuese a solaparse con la canción de al lado, Magno Studio lo rechaza y te dice con cuál choca: dos canciones no pueden pisarse.",
         },
         moveSong: {
           title: "Mover una canción",
@@ -3753,8 +3753,8 @@ const es = {
         },
         automationTracks: {
           title: "Pista de automatismos",
-          body: "Añádela con el clic derecho en este panel y coloca acciones en el timeline. LibreTracks puede ejecutar automáticamente saltos, cambios de mezcla, escenas y pads justo en el momento que decidas, sin tener que tocar la pantalla durante el directo.",
-          bodyMobile: "Mantén pulsado este panel para añadir la pista de automatismos y coloca acciones en el timeline. LibreTracks puede ejecutar automáticamente saltos, cambios de mezcla, escenas y pads justo en el momento que decidas, sin tocar la pantalla durante el directo.",
+          body: "Añádela con el clic derecho en este panel y coloca acciones en el timeline. Magno Studio puede ejecutar automáticamente saltos, cambios de mezcla, escenas y pads justo en el momento que decidas, sin tener que tocar la pantalla durante el directo.",
+          bodyMobile: "Mantén pulsado este panel para añadir la pista de automatismos y coloca acciones en el timeline. Magno Studio puede ejecutar automáticamente saltos, cambios de mezcla, escenas y pads justo en el momento que decidas, sin tocar la pantalla durante el directo.",
         },
         touchControls: {
           title: "Altura de pistas y bloqueo",
@@ -3787,7 +3787,7 @@ const es = {
         },
         yourAccount: {
           title: "Es TU cuenta, no la nuestra",
-          body: "Los archivos se guardan en tu Google Drive, no en ningún servidor de LibreTracks: nosotros no alojamos nada. Conectas tu cuenta una vez y el permiso queda guardado de forma segura en este dispositivo.",
+          body: "Los archivos se guardan en tu Google Drive, no en ningún servidor de Magno Studio: nosotros no alojamos nada. Conectas tu cuenta una vez y el permiso queda guardado de forma segura en este dispositivo.",
         },
         panel: {
           title: "El panel de la nube",
@@ -3796,8 +3796,8 @@ const es = {
         },
         importLanding: {
           title: "Importar desde donde quieras",
-          body: "Al importar, LibreTracks te pregunta de dónde: de este equipo o de Drive. Si eliges Drive, ves lo que tienes subido y lo eliges; se descarga y se importa en un solo paso. Vale igual para sesiones enteras y para canciones sueltas.",
-          bodyMobile: "Al importar, LibreTracks te pregunta de dónde: de este dispositivo o de Drive. Si eliges Drive, ves lo que tienes subido y lo eliges; se descarga y se importa en un solo paso. Vale igual para sesiones enteras y para canciones sueltas.",
+          body: "Al importar, Magno Studio te pregunta de dónde: de este equipo o de Drive. Si eliges Drive, ves lo que tienes subido y lo eliges; se descarga y se importa en un solo paso. Vale igual para sesiones enteras y para canciones sueltas.",
+          bodyMobile: "Al importar, Magno Studio te pregunta de dónde: de este dispositivo o de Drive. Si eliges Drive, ves lo que tienes subido y lo eliges; se descarga y se importa en un solo paso. Vale igual para sesiones enteras y para canciones sueltas.",
         },
         fileMenu: {
           title: "Exportar e importar, ahora también a Drive",
@@ -3813,7 +3813,7 @@ const es = {
         },
         privacy: {
           title: "Solo ve lo que ella misma sube",
-          body: "LibreTracks solo puede ver los archivos que crea la propia aplicación: el resto de tu Drive le es invisible, no por educación sino porque Google no se lo deja ver. Puedes desconectar la cuenta cuando quieras desde el panel de la nube.",
+          body: "Magno Studio solo puede ver los archivos que crea la propia aplicación: el resto de tu Drive le es invisible, no por educación sino porque Google no se lo deja ver. Puedes desconectar la cuenta cuando quieras desde el panel de la nube.",
         },
       },
     },
@@ -3953,8 +3953,8 @@ const es = {
       badPin: "El principal no acepta ese PIN. Mira el «PIN del respaldo» en Ajustes → Redundancia del principal y vuelve a conectar.",
       backupNotAccepted: "Ese equipo no está como principal. Ponlo en «Principal» en Ajustes → Redundancia.",
       backupAlreadyConnected: "El principal ya tiene otro respaldo conectado.",
-      incompatibleVersion: "Los dos equipos tienen versiones de LibreTracks que no se entienden. Actualiza los dos a la misma.",
-      unreachable: "No hay respuesta del principal. Comprueba la dirección, que los dos estén en la misma red y que el cortafuegos de Windows deje pasar a LibreTracks en el principal.",
+      incompatibleVersion: "Los dos equipos tienen versiones de Magno Studio que no se entienden. Actualiza los dos a la misma.",
+      unreachable: "No hay respuesta del principal. Comprueba la dirección, que los dos estén en la misma red y que el cortafuegos de Windows deje pasar a Magno Studio en el principal.",
     },
     discovery: {
       title: "Principales en la red",
@@ -4006,7 +4006,7 @@ const es = {
       voiceGuideCountInEnabled: "cuenta de la voz guía",
     },
     diff: {
-      algorithmVersion: "Los dos equipos tienen versiones distintas de LibreTracks.",
+      algorithmVersion: "Los dos equipos tienen versiones distintas de Magno Studio.",
       setlistOrder: "El orden de las canciones es distinto.",
       songMissing: "«{{title}}» no está en este equipo.",
       songExtra: "«{{title}}» sobra en este equipo.",
@@ -4023,7 +4023,7 @@ const es = {
     },
     settings: {
       tab: "Redundancia",
-      intro: "Dos LibreTracks con la misma sesión: el respaldo sigue al principal y suena a la vez, para pasar a él si el principal falla. Gratis, como todo LibreTracks.",
+      intro: "Dos Magno Studio con la misma sesión: el respaldo sigue al principal y suena a la vez, para pasar a él si el principal falla. Gratis, como todo Magno Studio.",
       role: "Papel de este equipo",
       mainSection: "Como principal",
       backupPin: "PIN del respaldo",
@@ -4072,7 +4072,7 @@ const es = {
     settings: {
       tab: "Proyección",
       enable: "Cambiar las diapositivas del programa de proyección",
-      enableHelp: "LibreTracks cambia la diapositiva por la red en cada sección, con adelanto. Sin MIDI ni programar canción a canción.",
+      enableHelp: "Magno Studio cambia la diapositiva por la red en cada sección, con adelanto. Sin MIDI ni programar canción a canción.",
       program: "Programa",
       host: "Equipo (IP)",
       hostHelp: "127.0.0.1 si el programa está en este mismo ordenador.",
@@ -4094,7 +4094,7 @@ const es = {
       button: "Buscar en la red",
       scanning: "Buscando en la red…",
       none: "No se encontró {{program}}. Comprueba que está abierto con su API de red activada y que los dos equipos están en la misma red, o escribe la IP a mano.",
-      noneIos: "En iPhone o iPad, comprueba en Ajustes › LibreTracks que «Red local» está activado y vuelve a buscar.",
+      noneIos: "En iPhone o iPad, comprueba en Ajustes › Magno Studio que «Red local» está activado y vuelve a buscar.",
       results: "Encontrados en la red",
       thisDevice: "Este equipo",
       port: "puerto {{port}}",

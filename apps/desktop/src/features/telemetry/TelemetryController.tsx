@@ -56,12 +56,12 @@ export function TelemetryController({ version }: Props) {
           {t("telemetry.eyebrow", { defaultValue: "Privacy" })}
         </span>
         <h2 id="lt-telemetry-title">
-          {t("telemetry.title", { defaultValue: "Help improve LibreTracks" })}
+          {t("telemetry.title", { defaultValue: "Help improve Magno Studio" })}
         </h2>
         <p>
           {t("telemetry.description", {
             defaultValue:
-              "Allow optional product statistics: app starts and UTC time, broad platform and country, feature adoption, completed or failed actions, coarse installation maturity and active-session milestones. LibreTracks never sends precise location, project content, audio, names, paths or connected hardware.",
+              "Allow optional product statistics: app starts and UTC time, broad platform and country, feature adoption, completed or failed actions, coarse installation maturity and active-session milestones. Magno Studio never sends precise location, project content, audio, names, paths or connected hardware.",
           })}
         </p>
         <p className="lt-telemetry-detail">

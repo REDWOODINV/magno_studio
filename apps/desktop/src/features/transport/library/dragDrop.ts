@@ -33,7 +33,7 @@ export function isVideoFilePath(path: string): boolean {
 const EXTERNAL_PROJECT_EXTENSIONS = new Set(["rpp", "als"]);
 
 /** True for file names the compact + DAW drop pipelines actually
- * accept (any supported audio extension, a LibreTracks package, or a
+ * accept (any supported audio extension, a Magno Studio package, or a
  * Reaper/Ableton project). Used to reject unsupported drops at the entry
  * point so the user doesn't see misleading "imported" feedback for files
  * we'd silently drop on the floor. */

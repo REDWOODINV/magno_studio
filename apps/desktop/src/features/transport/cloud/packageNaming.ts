@@ -5,7 +5,7 @@
  *
  * Because the name is the one thing that survives everywhere. It is what the
  * user sees in Drive itself, in a share, in a download folder, and on another
- * device — none of which run LibreTracks. A song called `Cuan grande es El` is
+ * device — none of which run Magno Studio. A song called `Cuan grande es El` is
  * three different arrangements once a band has been going a while; the same
  * name with `[120bpm Am 4-4]` after it is the one they meant.
  *

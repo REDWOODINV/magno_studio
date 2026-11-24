@@ -60,7 +60,7 @@ describe("estilos del editor de arreglos", () => {
   });
 
   it("los botones primarios usan el degradado de la app", () => {
-    expect(css).toContain("background: linear-gradient(to bottom, #57f1db, #2dd4bf)");
+    expect(css).toContain("background: linear-gradient(to bottom, #00d1ff, #00a8d6)");
   });
 
   it("en la tablet la lista ocupa todo el ancho (no queda una rejilla de paleta)", () => {

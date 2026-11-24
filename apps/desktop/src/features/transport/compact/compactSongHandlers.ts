@@ -324,7 +324,7 @@ export function createCompactSongHandlers(deps: CompactSongHandlerDeps) {
     });
   };
 
-  // Export the song as a LibreTracks package (.ltpkg). Reuses the exact
+  // Export the song as a Magno Studio package (.ltpkg). Reuses the exact
   // same backend command the DAW's "Exportar Canción" right-click action
   // calls, so the output format and file-dialog flow are identical
   // regardless of which view triggered the export.

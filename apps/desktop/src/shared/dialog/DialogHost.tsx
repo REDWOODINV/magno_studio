@@ -86,7 +86,7 @@ export function DialogHost() {
         className="lt-dialog-card"
       >
         <div className="lt-dialog-accent" aria-hidden="true" />
-        <p className="lt-dialog-eyebrow">LibreTracks</p>
+        <p className="lt-dialog-eyebrow">Magno Studio</p>
         {request.type === "prompt" ? (
           <>
             <label

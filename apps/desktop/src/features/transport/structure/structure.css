@@ -15,7 +15,7 @@
   flex-direction: column;
   gap: 0.75rem;
   padding: 0.9rem 1rem 1rem;
-  border: 1px solid rgb(87 241 219 / 0.22);
+  border: 1px solid rgb(0 209 255 / 0.22);
   border-radius: 4px;
   background: linear-gradient(180deg, rgb(22 25 26 / 0.98), rgb(13 15 16 / 0.98));
   box-shadow: 0 24px 64px rgb(0 0 0 / 0.5);
@@ -263,7 +263,7 @@
 }
 
 .lt-structure-strip:focus-visible {
-  border-color: rgb(87 241 219 / 0.6);
+  border-color: rgb(0 209 255 / 0.6);
 }
 
 .lt-structure-item {
@@ -289,8 +289,8 @@
 }
 
 .lt-structure-block.is-selected {
-  border-color: rgb(87 241 219 / 0.9);
-  background: rgb(87 241 219 / 0.12);
+  border-color: rgb(0 209 255 / 0.9);
+  background: rgb(0 209 255 / 0.12);
 }
 
 .lt-structure-empty {
@@ -305,7 +305,7 @@
   height: 100%;
   min-height: 2.25rem;
   opacity: 0.55;
-  outline: 1px dashed rgb(87 241 219 / 0.85);
+  outline: 1px dashed rgb(0 209 255 / 0.85);
   outline-offset: -1px;
   pointer-events: none;
 }
@@ -350,14 +350,14 @@
   padding: 0;
   border: 0;
   background: transparent;
-  color: #57f1db;
+  color: #00d1ff;
 }
 
 .lt-structure-gap::before {
   content: "";
   flex: 1 1 auto;
   height: 1px;
-  background: linear-gradient(to right, transparent, rgb(87 241 219 / 0.35) 12%);
+  background: linear-gradient(to right, transparent, rgb(0 209 255 / 0.35) 12%);
 }
 
 .lt-structure-gap .material-symbols-outlined {
@@ -368,14 +368,14 @@
   width: 28px;
   height: 28px;
   margin-right: 8px;
-  border: 1px solid rgb(87 241 219 / 0.45);
+  border: 1px solid rgb(0 209 255 / 0.45);
   border-radius: 50%;
-  background: rgb(87 241 219 / 0.08);
+  background: rgb(0 209 255 / 0.08);
   font-size: 18px;
 }
 
 .lt-structure-gap:active .material-symbols-outlined {
-  background: rgb(87 241 219 / 0.2);
+  background: rgb(0 209 255 / 0.2);
 }
 
 .lt-structure-editor.is-vertical .lt-structure-strip {
@@ -400,9 +400,9 @@
 /* ── Indicador en la cabecera de la canción (vista compacta) ───────────── */
 
 .lt-structure-badge {
-  border: 1px solid rgb(87 241 219 / 0.35);
+  border: 1px solid rgb(0 209 255 / 0.35);
   border-radius: 999px;
-  background: rgb(87 241 219 / 0.08);
+  background: rgb(0 209 255 / 0.08);
   color: #bff7ee;
   font-size: 0.7rem;
   padding: 0.05rem 0.5rem;
@@ -449,7 +449,7 @@
   border: 0;
   border-radius: 2px;
   background: transparent;
-  color: #bacac5;
+  color: #9fb0c8;
 }
 
 .lt-structure-icon-button:active {
@@ -464,7 +464,7 @@
 }
 
 .lt-structure-mobile-eyebrow {
-  color: #57f1db;
+  color: #00d1ff;
   font: 700 9px/1 "Space Grotesk", sans-serif;
   letter-spacing: 0.16em;
   text-transform: uppercase;
@@ -519,10 +519,10 @@
 
 .lt-structure-mobile-applied {
   justify-self: start;
-  border: 1px solid rgb(87 241 219 / 0.3);
+  border: 1px solid rgb(0 209 255 / 0.3);
   border-radius: 999px;
   padding: 0.15rem 0.6rem;
-  background: rgb(87 241 219 / 0.08);
+  background: rgb(0 209 255 / 0.08);
   color: #bff7ee;
   font-size: 0.75rem;
 }
@@ -547,17 +547,17 @@
   gap: 0.4rem;
   width: 100%;
   min-height: 48px;
-  border: 1px dashed rgb(87 241 219 / 0.4);
+  border: 1px dashed rgb(0 209 255 / 0.4);
   border-radius: 2px;
-  background: rgb(87 241 219 / 0.05);
-  color: #57f1db;
+  background: rgb(0 209 255 / 0.05);
+  color: #00d1ff;
   font: 700 11px/1 "Space Grotesk", sans-serif;
   letter-spacing: 0.12em;
   text-transform: uppercase;
 }
 
 .lt-structure-add-row:active {
-  background: rgb(87 241 219 / 0.12);
+  background: rgb(0 209 255 / 0.12);
 }
 
 /* Paleta de toques: una fila por sección, como los menús móviles. */
@@ -577,13 +577,13 @@
   border-bottom: 1px solid rgb(186 202 197 / 0.1);
   border-radius: 0;
   background: transparent;
-  color: #e5e2e1;
+  color: #e6ebf5;
   font-size: 14px;
   text-align: left;
 }
 
 .lt-structure-tap-row:active {
-  background: #2a2a2a;
+  background: #1b2438;
 }
 
 .lt-structure-tap-name {
@@ -601,7 +601,7 @@
 }
 
 .lt-structure-tap-add {
-  color: #57f1db;
+  color: #00d1ff;
   font-size: 20px;
 }
 
@@ -613,8 +613,8 @@
   min-width: 1.9rem;
   padding: 0.1rem 0.4rem;
   border-radius: 999px;
-  background: #57f1db;
-  color: #003731;
+  background: #00d1ff;
+  color: #00263a;
   font: 700 12px/1.2 "Space Grotesk", sans-serif;
   text-align: center;
   animation: lt-structure-pop 260ms ease-out;
@@ -767,7 +767,7 @@
   border: 0;
   border-radius: 2px;
   background: rgb(255 255 255 / 0.06);
-  color: #bacac5;
+  color: #9fb0c8;
 }
 
 .lt-structure-app-sheet > button {
@@ -779,7 +779,7 @@
 
 .lt-structure-app-sheet > button .material-symbols-outlined {
   font-size: 20px;
-  color: #bacac5;
+  color: #9fb0c8;
 }
 
 .lt-structure-app-sheet > button.is-destructive,
@@ -825,7 +825,7 @@
   border: 1px solid rgb(255 255 255 / 0.08);
   border-radius: 2px;
   background: rgb(255 255 255 / 0.04);
-  color: #e5e2e1;
+  color: #e6ebf5;
   cursor: pointer;
   font: 700 10px/1 "Space Grotesk", sans-serif;
   letter-spacing: 0.12em;
@@ -849,17 +849,17 @@
 .lt-structure-toast button:hover:not(:disabled),
 .lt-structure-panel button:focus-visible,
 .lt-structure-mobile button:focus-visible {
-  border-color: rgb(87 241 219 / 0.34);
-  color: #57f1db;
+  border-color: rgb(0 209 255 / 0.34);
+  color: #00d1ff;
   outline: none;
 }
 
 .lt-structure-panel button.is-primary,
 .lt-structure-mobile button.is-primary {
-  border-color: rgb(87 241 219 / 0.64);
-  background: linear-gradient(to bottom, #57f1db, #2dd4bf);
-  color: #003731;
-  box-shadow: 0 0 12px rgb(87 241 219 / 0.2);
+  border-color: rgb(0 209 255 / 0.64);
+  background: linear-gradient(to bottom, #00d1ff, #00a8d6);
+  color: #00263a;
+  box-shadow: 0 0 12px rgb(0 209 255 / 0.2);
 }
 
 .lt-structure-panel button.is-primary:hover:not(:disabled),
@@ -870,7 +870,7 @@
 
 .lt-structure-panel button.is-primary.is-attention,
 .lt-structure-mobile button.is-primary.is-attention {
-  box-shadow: 0 0 0 2px rgb(87 241 219 / 0.35), 0 0 16px rgb(87 241 219 / 0.35);
+  box-shadow: 0 0 0 2px rgb(0 209 255 / 0.35), 0 0 16px rgb(0 209 255 / 0.35);
 }
 
 .lt-structure-panel button:disabled,
@@ -884,9 +884,9 @@
   min-width: 10rem;
   height: 2rem;
   border-radius: 2px;
-  border: 1px solid rgb(87 241 219 / 0.18);
+  border: 1px solid rgb(0 209 255 / 0.18);
   background: rgb(28 31 32 / 0.98);
-  color: #f3f0ef;
+  color: #eef2fa;
   padding: 0 0.6rem;
   font: 600 0.85rem/1.2 "Space Grotesk", sans-serif;
 }
@@ -905,7 +905,7 @@
 }
 
 .lt-structure-close:hover {
-  color: #57f1db;
+  color: #00d1ff;
 }
 
 /* La regla global de hoja móvil (`.lt-mobile .lt-context-menu.is-mobile-sheet
@@ -926,9 +926,9 @@
 
 .lt-mobile .lt-context-menu.lt-structure-app-sheet .lt-structure-sheet-actions button.is-primary,
 .lt-structure-app-sheet .lt-structure-sheet-actions button.is-primary {
-  border-color: rgb(87 241 219 / 0.64);
-  background: linear-gradient(to bottom, #57f1db, #2dd4bf);
-  color: #003731;
+  border-color: rgb(0 209 255 / 0.64);
+  background: linear-gradient(to bottom, #00d1ff, #00a8d6);
+  color: #00263a;
 }
 
 /* ── Row of cards (phone in landscape) ───────────────────────────────────
@@ -1021,7 +1021,7 @@
   width: 1px;
   height: auto;
   flex: none;
-  background: linear-gradient(to bottom, transparent, rgb(87 241 219 / 0.35) 12%, rgb(87 241 219 / 0.35) 88%, transparent);
+  background: linear-gradient(to bottom, transparent, rgb(0 209 255 / 0.35) 12%, rgb(0 209 255 / 0.35) 88%, transparent);
 }
 
 .lt-structure-editor.is-row .lt-structure-gap {

@@ -10,7 +10,7 @@ const setTitle = vi.fn(async () => {});
 
 // The native window title comes from the Tauri window API, not from
 // `document.title` — the regression this hook exists to prevent is setting only
-// the document and leaving the title bar on the configured "LibreTracks".
+// the document and leaving the title bar on the configured "Magno Studio".
 vi.mock("@tauri-apps/api/window", () => ({
   getCurrentWindow: () => ({ setTitle }),
 }));
@@ -26,33 +26,33 @@ describe("useWindowTitle", () => {
 
   it("shows the app name alone when no session is loaded", async () => {
     renderHook(() => useWindowTitle());
-    await waitFor(() => expect(setTitle).toHaveBeenCalledWith("LibreTracks"));
-    expect(document.title).toBe("LibreTracks");
+    await waitFor(() => expect(setTitle).toHaveBeenCalledWith("Magno Studio"));
+    expect(document.title).toBe("Magno Studio");
   });
 
   it("puts the loaded project name in the native window title", async () => {
     useSongStore.setState({ song: songWithSession("Fallos en Cantos") });
     renderHook(() => useWindowTitle());
     await waitFor(() =>
-      expect(setTitle).toHaveBeenCalledWith("LibreTracks — Fallos en Cantos"),
+      expect(setTitle).toHaveBeenCalledWith("Magno Studio — Fallos en Cantos"),
     );
-    expect(document.title).toBe("LibreTracks — Fallos en Cantos");
+    expect(document.title).toBe("Magno Studio — Fallos en Cantos");
   });
 
   it("follows a project rename", async () => {
     useSongStore.setState({ song: songWithSession("Antes") });
     renderHook(() => useWindowTitle());
-    await waitFor(() => expect(setTitle).toHaveBeenCalledWith("LibreTracks — Antes"));
+    await waitFor(() => expect(setTitle).toHaveBeenCalledWith("Magno Studio — Antes"));
 
     useSongStore.setState({ song: songWithSession("Despues") });
     await waitFor(() =>
-      expect(setTitle).toHaveBeenCalledWith("LibreTracks — Despues"),
+      expect(setTitle).toHaveBeenCalledWith("Magno Studio — Despues"),
     );
   });
 
   it("falls back to the app name when the session name is blank", async () => {
     useSongStore.setState({ song: songWithSession("   ") });
     renderHook(() => useWindowTitle());
-    await waitFor(() => expect(setTitle).toHaveBeenCalledWith("LibreTracks"));
+    await waitFor(() => expect(setTitle).toHaveBeenCalledWith("Magno Studio"));
   });
 });

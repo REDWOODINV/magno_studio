@@ -1,6 +1,6 @@
 .lt-live-chart {
   --lt-chart-font-scale: 1;
-  --lt-chart-accent: #57f1db;
+  --lt-chart-accent: #00d1ff;
   grid-area: chart;
   min-width: 0;
   min-height: 0;
@@ -116,9 +116,9 @@
 }
 
 .lt-live-chart-action.is-primary {
-  border-color: rgb(87 241 219 / 0.38);
+  border-color: rgb(0 209 255 / 0.38);
   color: #65f2dc;
-  background: rgb(87 241 219 / 0.09);
+  background: rgb(0 209 255 / 0.09);
 }
 
 .lt-live-chart-action:disabled {
@@ -277,8 +277,8 @@
   display: inline-flex;
   align-items: center;
   gap: 0.25em;
-  border-color: rgb(87 241 219 / 0.55);
-  color: #57f1db;
+  border-color: rgb(0 209 255 / 0.55);
+  color: #00d1ff;
 }
 
 .lt-chart-jump-badge.is-vamp .material-symbols-outlined {
@@ -337,7 +337,7 @@
 
 .lt-chart-line.is-current {
   color: #ffffff;
-  background: rgb(87 241 219 / 0.1);
+  background: rgb(0 209 255 / 0.1);
   box-shadow: inset 3px 0 var(--lt-chart-accent);
 }
 
@@ -410,7 +410,7 @@
 
 .lt-chart-tab.is-current {
   color: #ffffff;
-  background: rgb(87 241 219 / 0.1);
+  background: rgb(0 209 255 / 0.1);
 }
 
 /* Editor: same frame as the other modals (fixed header and buttons, a body
@@ -464,9 +464,9 @@
   align-items: center;
   gap: 0.35rem;
   border-radius: 2px;
-  border: 1px solid rgb(87 241 219 / 0.24);
-  background: rgb(87 241 219 / 0.1);
-  color: #57f1db;
+  border: 1px solid rgb(0 209 255 / 0.24);
+  background: rgb(0 209 255 / 0.1);
+  color: #00d1ff;
   padding: 0.5rem 0.75rem;
   font: 700 0.75rem/1 "Space Grotesk", sans-serif;
   white-space: nowrap;
@@ -477,7 +477,7 @@
 }
 
 .lt-chart-editor-button:hover:not(:disabled) {
-  border-color: rgb(87 241 219 / 0.45);
+  border-color: rgb(0 209 255 / 0.45);
 }
 
 .lt-chart-editor-button:disabled {
@@ -490,9 +490,9 @@
   resize: none;
   overflow-y: hidden;
   padding: 0.75rem 0.85rem;
-  border: 1px solid rgb(87 241 219 / 0.18);
+  border: 1px solid rgb(0 209 255 / 0.18);
   border-radius: 2px;
-  color: #f3f0ef;
+  color: #eef2fa;
   background: rgb(28 31 32 / 0.98);
   font: 0.82rem/1.45 "JetBrains Mono", ui-monospace, monospace;
   white-space: pre;
@@ -501,7 +501,7 @@
 .lt-chart-editor-text textarea:focus,
 .lt-chart-editor-links select:focus {
   outline: none;
-  border-color: rgb(87 241 219 / 0.5);
+  border-color: rgb(0 209 255 / 0.5);
 }
 
 .lt-chart-editor-text small,
@@ -534,7 +534,7 @@
 
 .lt-chart-editor-marker {
   overflow: hidden;
-  color: #f3f0ef;
+  color: #eef2fa;
   font: 700 0.8rem/1.2 "Space Grotesk", sans-serif;
   text-overflow: ellipsis;
   white-space: nowrap;
@@ -545,9 +545,9 @@
   min-width: 0;
   width: 100%;
   border-radius: 2px;
-  border: 1px solid rgb(87 241 219 / 0.18);
+  border: 1px solid rgb(0 209 255 / 0.18);
   background: rgb(28 31 32 / 0.98);
-  color: #f3f0ef;
+  color: #eef2fa;
   padding: 0.45rem 0.6rem;
   font: 600 0.8rem/1.2 "Space Grotesk", sans-serif;
 }
@@ -705,7 +705,7 @@
 }
 
 .lt-chart-dock-songs li.is-shown {
-  background: rgb(87 241 219 / 0.08);
+  background: rgb(0 209 255 / 0.08);
 }
 
 .lt-chart-dock-song {
@@ -717,7 +717,7 @@
   gap: 0.6rem;
   padding: 0 0.35rem;
   border: 0;
-  color: #e5e2e1;
+  color: #e6ebf5;
   background: transparent;
   font: 600 0.9rem/1.2 Inter, sans-serif;
   text-align: left;
@@ -757,7 +757,7 @@
 }
 
 .lt-chart-dock-song-play:active {
-  background: rgb(87 241 219 / 0.12);
+  background: rgb(0 209 255 / 0.12);
 }
 
 .lt-chart-dock-song-play .material-symbols-outlined {
@@ -846,9 +846,9 @@
   width: auto;
   min-width: 4.4rem;
   border-radius: 2px;
-  border: 1px solid rgb(87 241 219 / 0.18);
+  border: 1px solid rgb(0 209 255 / 0.18);
   background: rgb(28 31 32 / 0.98);
-  color: #57f1db;
+  color: #00d1ff;
   padding: 0.3rem 0.35rem;
   font: 700 0.72rem/1 "Space Grotesk", sans-serif;
 }

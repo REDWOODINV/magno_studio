@@ -44,7 +44,7 @@ export function TimelineSettingsTab({
           </option>
           <option value="libretracks">
             {t("transport.settingsModal.timelineNavigationSchemeLibreTracks", {
-              defaultValue: "LibreTracks classic (scroll wheel zooms)",
+              defaultValue: "Magno Studio classic (scroll wheel zooms)",
             })}
           </option>
         </select>

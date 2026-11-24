@@ -89,7 +89,7 @@ export function pickFilesViaWebView(
     // `audio/*` more strictly than Android and can disable otherwise supported
     // WAV/MP3/M4A documents whose provider reports a generic content type.
     // Mobile audio callers therefore leave this unset and validate/import the
-    // selected document inside LibreTracks.
+    // selected document inside Magno Studio.
     if (accept) {
       input.accept = accept;
     }

@@ -28,8 +28,8 @@
   /* Cap: ancho a lo largo del recorrido y alto a lo ancho. */
   --lt-fader-cap-w: 11px;
   --lt-fader-cap-h: 18px;
-  --lt-fader-index: #57f1db;
-  --lt-fader-index-glow: rgb(87 241 219 / 0.35);
+  --lt-fader-index: #00d1ff;
+  --lt-fader-index-glow: rgb(0 209 255 / 0.35);
   --lt-fader-tick-len: 3px;
   --lt-fader-tick: #3c4443;
   --lt-fader-tick-unity: #8f9e9b;
@@ -135,7 +135,7 @@ input[type="range"].lt-fader:focus {
 }
 
 input[type="range"].lt-fader:focus-visible {
-  outline: 1px solid rgb(87 241 219 / 0.7);
+  outline: 1px solid rgb(0 209 255 / 0.7);
   outline-offset: 1px;
 }
 
@@ -407,7 +407,7 @@ input[type="range"].lt-fader:active:not(:disabled)::-webkit-slider-thumb {
 }
 
 .lt-compact-mixer-fader:focus-visible {
-  outline: 1px solid rgb(87 241 219 / 0.7);
+  outline: 1px solid rgb(0 209 255 / 0.7);
   outline-offset: 2px;
 }
 
@@ -427,7 +427,7 @@ input[type="range"].lt-fader:active:not(:disabled)::-webkit-slider-thumb {
     linear-gradient(
         to bottom,
         transparent calc(50% - 1px),
-        #57f1db calc(50% - 1px) calc(50% + 1px),
+        #00d1ff calc(50% - 1px) calc(50% + 1px),
         transparent calc(50% + 1px)
       )
       center / calc(100% - 4px) 100% no-repeat,

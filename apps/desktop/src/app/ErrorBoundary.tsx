@@ -46,7 +46,7 @@ export class ErrorBoundary extends Component<Props, State> {
         }}
       >
         <h1 style={{ fontSize: "18px", marginBottom: "8px" }}>
-          LibreTracks hit an unexpected error
+          Magno Studio hit an unexpected error
         </h1>
         <p style={{ fontSize: "14px", opacity: 0.8, marginBottom: "16px" }}>
           The error was saved to the log. Restart the app; if it keeps happening,

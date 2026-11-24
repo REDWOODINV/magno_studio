@@ -53,7 +53,7 @@ function open() {
 beforeEach(() => {
   for (const mock of Object.values(api)) mock.mockReset();
   api.getPcoArrangement.mockResolvedValue(original());
-  api.createPcoArrangement.mockResolvedValue({ ...original("2026-11-23T12:00:00Z"), id: "a9", name: "LibreTracks" });
+  api.createPcoArrangement.mockResolvedValue({ ...original("2026-11-23T12:00:00Z"), id: "a9", name: "Magno Studio" });
   api.updatePcoArrangement.mockResolvedValue({ ...original("2026-11-23T12:00:00Z") });
 });
 afterEach(cleanup);

@@ -11,7 +11,7 @@ import { dispatchOpenWithFile, type OpenWithDeps } from "../openWithFile";
  * Abrir la app haciendo doble click en uno de sus ficheros.
  *
  * Las cuatro extensiones (`.ltsession`, `.ltset`, `.ltpkg`, `.lttemplate`) están
- * asociadas a LibreTracks en el sistema; el backend recoge el fichero y lo
+ * asociadas a Magno Studio en el sistema; el backend recoge el fichero y lo
  * entrega por uno de dos caminos según cuándo llegue (ver
  * `commands/open_with.rs`). Este hook cubre los dos y los manda al mismo
  * despacho.

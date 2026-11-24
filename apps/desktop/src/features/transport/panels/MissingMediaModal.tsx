@@ -28,7 +28,7 @@ type Props = {
 /**
  * Los ficheros que faltan, en una pantalla, al estilo del gestor de Ableton.
  *
- * Existe porque LibreTracks **referencia** el audio original en vez de
+ * Existe porque Magno Studio **referencia** el audio original en vez de
  * copiarlo, y referenciar tiene un coste conocido: el usuario mueve, renombra
  * o borra el original y se entera en mitad de un directo. Aquí ve de un
  * vistazo qué falta, **qué pistas se van a quedar mudas** y dónde se esperaba

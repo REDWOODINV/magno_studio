@@ -294,7 +294,7 @@ export function createSongViewHandlers(getDeps: () => SongViewHandlerDeps) {
       const picked = await open({
         multiple: false,
         directory: false,
-        filters: [{ name: "LibreTracks Package", extensions: ["ltpkg"] }],
+        filters: [{ name: "Magno Studio Package", extensions: ["ltpkg"] }],
       });
       if (typeof picked !== "string") return;
       await runSongPackageImport(picked);

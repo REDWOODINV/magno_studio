@@ -9,7 +9,7 @@
   --lt-setlist-border: rgb(186 202 197 / 0.13);
   --lt-setlist-text: #e9f1ee;
   --lt-setlist-text-muted: rgb(233 241 238 / 0.62);
-  --lt-setlist-accent: #57f1db;
+  --lt-setlist-accent: #00d1ff;
   --lt-setlist-gap: 0.5rem;
   --lt-setlist-pad: clamp(0.5rem, 1vw, 0.85rem);
   flex: 1 1 auto;
@@ -234,7 +234,7 @@
 }
 
 .lt-setlist-song-tile.is-playing {
-  background: rgb(87 241 219 / 0.1);
+  background: rgb(0 209 255 / 0.1);
 }
 
 .lt-setlist-song-tile.is-queued {
@@ -820,7 +820,7 @@ html.lt-mobile .lt-setlist-add-song-button {
 }
 
 .lt-setlist-mixer-resize:hover {
-  background: rgb(87 241 219 / 0.25);
+  background: rgb(0 209 255 / 0.25);
 }
 
 /* Con el dedo, 6 px no se aciertan: un asa más alta con una marca visible,
@@ -1668,7 +1668,7 @@ html.lt-mobile .lt-setlist-track-row {
 }
 
 .lt-setlist-lane.is-drop-target {
-  background: rgb(87 241 219 / 0.08);
+  background: rgb(0 209 255 / 0.08);
 }
 
 .lt-setlist-lane-clip {
@@ -1894,7 +1894,7 @@ html.lt-mobile .lt-setlist-lane-clip.is-selected .lt-setlist-lane-trim.is-end {
 
 .lt-setlist-drawer-tab.is-active {
   border-color: var(--lt-setlist-accent);
-  background: rgb(87 241 219 / 0.12);
+  background: rgb(0 209 255 / 0.12);
   color: var(--lt-setlist-text);
 }
 
@@ -2254,7 +2254,7 @@ html.lt-mobile .lt-setlist-lane-clip.is-selected .lt-setlist-lane-trim.is-end {
 .lt-audio-route-combobox.is-large .lt-audio-route-trigger {
   height: 2.5rem;
   padding: 0 0.75rem;
-  border-color: rgb(87 241 219 / 0.32);
+  border-color: rgb(0 209 255 / 0.32);
   border-radius: 3px;
   background: #0a0a0a;
   font-size: 0.92rem;
@@ -2445,8 +2445,8 @@ html.lt-mobile .lt-setlist-lane-clip.is-selected .lt-setlist-lane-trim.is-end {
   flex: 0 0 auto;
   padding: 0.15rem 0.5rem;
   border-radius: 999px;
-  background: rgb(87 241 219 / 0.16);
-  color: #57f1db;
+  background: rgb(0 209 255 / 0.16);
+  color: #00d1ff;
   font-size: 0.72rem;
   font-weight: 700;
   text-transform: uppercase;
@@ -3733,8 +3733,8 @@ html.lt-mobile .lt-setlist-add-song.is-short .lt-setlist-add-song-button {
 }
 
 .lt-compact-midi-power.is-active {
-  border-color: #57f1db;
-  color: #57f1db;
+  border-color: #00d1ff;
+  color: #00d1ff;
 }
 
 .lt-compact-midi-route {
@@ -3745,8 +3745,8 @@ html.lt-mobile .lt-setlist-add-song.is-short .lt-setlist-add-song-button {
   padding: 0.25rem 0.4rem;
   border: 1px solid rgba(186, 202, 197, 0.2);
   border-radius: 0.3rem;
-  background: #0e0e0e;
-  color: #d8fff7;
+  background: #080c16;
+  color: #d6f6ff;
   font: 600 10px/1.3 "Space Grotesk", sans-serif;
   cursor: pointer;
 }
@@ -3759,7 +3759,7 @@ html.lt-mobile .lt-setlist-add-song.is-short .lt-setlist-add-song-button {
 }
 
 .lt-compact-midi-channel {
-  color: #57f1db;
+  color: #00d1ff;
 }
 
 /* Todos los modos de Editar en una fila, sean seis o siete (Letra con su
@@ -3853,7 +3853,7 @@ html.lt-mobile .lt-setlist-video-clip.is-selected .lt-setlist-lane-trim {
 /* ---- Tempo y compás (paso 15) ---- */
 
 .lt-setlist-lane-row.is-tempo {
-  background: rgb(87 241 219 / 0.03);
+  background: rgb(0 209 255 / 0.03);
 }
 
 .lt-setlist-tempo-cell {
@@ -3946,7 +3946,7 @@ html.lt-mobile .lt-setlist-meter-marker {
 }
 
 .lt-setlist-lyrics-resize:hover {
-  background: rgb(87 241 219 / 0.25);
+  background: rgb(0 209 255 / 0.25);
 }
 
 .lt-setlist-zone.is-lyrics {
@@ -3982,10 +3982,10 @@ html.lt-mobile .lt-setlist-meter-marker {
   height: 1.9rem;
   margin-left: 0.4rem;
   padding: 0 0.6rem 0 0.3rem;
-  border: 1px solid #57f1db;
+  border: 1px solid #00d1ff;
   border-radius: 999px;
-  background: rgb(87 241 219 / 0.12);
-  color: #57f1db;
+  background: rgb(0 209 255 / 0.12);
+  color: #00d1ff;
   font: inherit;
   font-size: 0.8rem;
   font-weight: 700;
@@ -4388,8 +4388,8 @@ button.lt-setlist-track-chip-name {
   border-radius: 0.2rem;
   background: repeating-linear-gradient(
     -45deg,
-    rgb(87 241 219 / 0.14) 0 8px,
-    rgb(87 241 219 / 0.04) 8px 16px
+    rgb(0 209 255 / 0.14) 0 8px,
+    rgb(0 209 255 / 0.04) 8px 16px
   );
   pointer-events: none;
   animation: lt-setlist-vamp-pulse 1.6s ease-in-out infinite;
@@ -4418,7 +4418,7 @@ button.lt-setlist-track-chip-name {
 
 @keyframes lt-setlist-vamp-pulse {
   50% {
-    box-shadow: 0 0 0 2px rgb(87 241 219 / 0.35), inset 0 0 1.25rem rgb(87 241 219 / 0.25);
+    box-shadow: 0 0 0 2px rgb(0 209 255 / 0.35), inset 0 0 1.25rem rgb(0 209 255 / 0.25);
   }
 }
 
@@ -4449,7 +4449,7 @@ button.lt-setlist-track-chip-name {
 
 .lt-setlist-mixer.is-short > .lt-setlist-mixer-header .lt-setlist-tab.is-active {
   border-color: var(--lt-setlist-accent);
-  background: rgb(87 241 219 / 0.16);
+  background: rgb(0 209 255 / 0.16);
   color: var(--lt-setlist-accent);
 }
 
@@ -4730,7 +4730,7 @@ button.lt-setlist-track-chip-name {
   height: 12px;
   min-height: 0;
   border-radius: 50%;
-  background: #57f1db;
+  background: #00d1ff;
 }
 
 .lt-setlist-scrub-video-handle.is-fade-in {
@@ -4817,7 +4817,7 @@ html.lt-mobile .lt-setlist-video-item .lt-setlist-song-button {
 }
 
 .lt-setlist-songs-resize:hover {
-  background: rgb(87 241 219 / 0.25);
+  background: rgb(0 209 255 / 0.25);
 }
 
 /* The resized song row stays on one horizontally scrolling line. */
@@ -5143,7 +5143,7 @@ html.lt-mobile .lt-setlist-video-item .lt-setlist-song-button {
   position: relative;
   border-style: solid;
   border-color: var(--lt-setlist-accent);
-  background: rgb(87 241 219 / 0.14);
+  background: rgb(0 209 255 / 0.14);
 }
 
 .lt-setlist-add-song[data-drop-label]::after {

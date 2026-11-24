@@ -1,6 +1,6 @@
 /* Network sessions (docs/plans/completed/network-sessions). Same visual language as the
    rest of LibreTracks: Space Grotesk uppercase labels, 2px corners, teal
-   accent #57f1db on near-black. No color-mix (macOS 12 Safari 15 lacks it). */
+   accent #00d1ff on near-black. No color-mix (macOS 12 Safari 15 lacks it). */
 
 /* ── Buttons ─────────────────────────────────────────────────────────── */
 
@@ -14,7 +14,7 @@
   border: 1px solid rgb(255 255 255 / 0.12);
   border-radius: 2px;
   background: rgb(255 255 255 / 0.04);
-  color: #e5e2e1;
+  color: #e6ebf5;
   font: 700 10px/1 "Space Grotesk", sans-serif;
   letter-spacing: 0.12em;
   text-transform: uppercase;
@@ -23,13 +23,13 @@
 }
 
 .lt-network-button:hover:not(:disabled) {
-  border-color: rgb(87 241 219 / 0.4);
-  color: #57f1db;
+  border-color: rgb(0 209 255 / 0.4);
+  color: #00d1ff;
 }
 
 .lt-network-button.is-primary {
-  border-color: #57f1db;
-  background: #57f1db;
+  border-color: #00d1ff;
+  background: #00d1ff;
   color: #0b1413;
 }
 
@@ -63,7 +63,7 @@
   border: 1px solid rgb(255 255 255 / 0.12);
   border-radius: 2px;
   background: #151818;
-  color: #e5e2e1;
+  color: #e6ebf5;
   font: 600 11px/1 "Space Grotesk", sans-serif;
   letter-spacing: 0.08em;
   text-transform: uppercase;
@@ -117,14 +117,14 @@
 }
 
 .lt-network-tab:hover {
-  color: #57f1db;
+  color: #00d1ff;
 }
 
 .lt-network-tab.is-active {
-  border-color: rgb(87 241 219 / 0.45);
-  background: rgb(87 241 219 / 0.08);
-  color: #57f1db;
-  box-shadow: inset 0 -2px 0 #57f1db;
+  border-color: rgb(0 209 255 / 0.45);
+  background: rgb(0 209 255 / 0.08);
+  color: #00d1ff;
+  box-shadow: inset 0 -2px 0 #00d1ff;
 }
 
 .lt-network-modal-body {
@@ -231,7 +231,7 @@
 }
 
 .lt-network-address-value {
-  color: #57f1db;
+  color: #00d1ff;
   font: 700 1.35rem/1.1 "Space Grotesk", sans-serif;
   font-variant-numeric: tabular-nums;
   user-select: all;
@@ -288,7 +288,7 @@
   height: 8px;
   margin-right: 8px;
   border-radius: 50%;
-  background: #57f1db;
+  background: #00d1ff;
   animation: lt-network-pulse 1.2s ease-in-out infinite;
 }
 
@@ -369,7 +369,7 @@
   flex-wrap: wrap;
   padding: 0.4rem 0.75rem;
   border-bottom: 1px solid rgb(255 255 255 / 0.06);
-  background: rgb(87 241 219 / 0.04);
+  background: rgb(0 209 255 / 0.04);
 }
 
 .lt-personal-chords-stepper {
@@ -391,7 +391,7 @@
   border: 1px solid rgb(255 255 255 / 0.12);
   border-radius: 2px;
   background: rgb(255 255 255 / 0.04);
-  color: #e5e2e1;
+  color: #e6ebf5;
   font: 700 14px/1 "Space Grotesk", sans-serif;
   cursor: pointer;
 }
@@ -403,7 +403,7 @@
 
 .lt-personal-chords-stepper output {
   min-width: 2.2ch;
-  color: #57f1db;
+  color: #00d1ff;
   font: 700 0.95rem/1 "Space Grotesk", sans-serif;
   font-variant-numeric: tabular-nums;
   text-align: center;
@@ -427,8 +427,8 @@
   width: 0.5rem;
   height: 0.5rem;
   border-radius: 50%;
-  background: #57f1db;
-  box-shadow: 0 0 0 2px #0e0e0e;
+  background: #00d1ff;
+  box-shadow: 0 0 0 2px #080c16;
 }
 
 .lt-network-nav-dot.is-pending {

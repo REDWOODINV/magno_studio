@@ -44,7 +44,7 @@ function severity(percent: number): "ok" | "warn" | "high" {
  * Always-visible top-bar resource meter (Ableton-style). Shows app CPU, app
  * RAM, and disk throughput at a glance; click to expand a popover with the full
  * process-vs-system breakdown. Purely diagnostic — helps the user (and us
- * during support) tell whether a slowdown is LibreTracks or the whole machine.
+ * during support) tell whether a slowdown is Magno Studio or the whole machine.
  */
 export function ResourceMeter() {
   const { t } = useTranslation();

@@ -4,17 +4,17 @@ import { getCurrentWindow } from "@tauri-apps/api/window";
 import { useSongStore } from "../songStore";
 
 /** Shown alone when no session is loaded, and as the suffix otherwise. */
-const APP_NAME = "LibreTracks";
+const APP_NAME = "Magno Studio";
 
 /**
  * Keeps the OS window title in sync with the loaded project:
- * `"LibreTracks — <session name>"`, falling back to just `"LibreTracks"` when
+ * `"Magno Studio — <session name>"`, falling back to just `"Magno Studio"` when
  * no session is open (landing screen, fresh start).
  *
  * The native window title must be set through the Tauri window API: the webview
  * owns `document.title`, but the surrounding native window takes its title from
  * `tauri.conf.json` and never reads the document, so setting `document.title`
- * alone leaves the title bar showing the configured "LibreTracks".
+ * alone leaves the title bar showing the configured "Magno Studio".
  *
  * Self-contained by design: it subscribes to the one `songStore` slice it
  * needs, so a project rename re-runs this effect and nothing else. Failures are

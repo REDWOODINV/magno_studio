@@ -33,7 +33,7 @@
   border: 1px solid transparent;
   border-radius: 4px;
   background: transparent;
-  color: #bacac5;
+  color: #9fb0c8;
   font: 600 0.85rem/1 "Space Grotesk", sans-serif;
   text-align: left;
   cursor: pointer;
@@ -54,7 +54,7 @@
 }
 
 .lt-view-mode-menu-item.is-active {
-  border-color: rgb(87 241 219 / 0.4);
-  background: rgb(87 241 219 / 0.1);
-  color: #57f1db;
+  border-color: rgb(0 209 255 / 0.4);
+  background: rgb(0 209 255 / 0.1);
+  color: #00d1ff;
 }

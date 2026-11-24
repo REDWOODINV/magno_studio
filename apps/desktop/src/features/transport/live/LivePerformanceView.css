@@ -13,7 +13,7 @@
   overflow: hidden;
   color: #e9f1ee;
   background:
-    radial-gradient(circle at 20% 0%, rgb(87 241 219 / 0.055), transparent 27%),
+    radial-gradient(circle at 20% 0%, rgb(0 209 255 / 0.055), transparent 27%),
     #090b0a;
 }
 
@@ -70,7 +70,7 @@
 }
 
 .lt-live-heading > .material-symbols-outlined {
-  color: #57f1db;
+  color: #00d1ff;
   font-size: 22px;
 }
 
@@ -108,7 +108,7 @@
 
 .lt-live-song-metrics span {
   padding: 0.32rem 0.45rem;
-  border: 1px solid rgb(87 241 219 / 0.12);
+  border: 1px solid rgb(0 209 255 / 0.12);
   border-radius: 0.35rem;
   color: #72f7e3;
   background: #0d1110;
@@ -178,8 +178,8 @@
 
 .lt-live-setting-options button.is-active {
   color: #66f1dc;
-  background: rgb(87 241 219 / 0.14);
-  box-shadow: inset 0 0 0 1px rgb(87 241 219 / 0.22);
+  background: rgb(0 209 255 / 0.14);
+  box-shadow: inset 0 0 0 1px rgb(0 209 255 / 0.22);
 }
 
 .lt-live-setting-bars {
@@ -189,7 +189,7 @@
   max-width: 2.4rem;
   height: 1.8rem;
   padding: 0 0.25rem;
-  border: 1px solid rgb(87 241 219 / 0.2);
+  border: 1px solid rgb(0 209 255 / 0.2);
   border-radius: 0.25rem;
   color: #73f1de;
   background: #090b0a;
@@ -214,9 +214,9 @@
 }
 
 .lt-live-vamp.is-active {
-  border-color: rgb(87 241 219 / 0.4);
+  border-color: rgb(0 209 255 / 0.4);
   color: #62f2dc;
-  background: rgb(87 241 219 / 0.12);
+  background: rgb(0 209 255 / 0.12);
 }
 
 .lt-live-song-transition {
@@ -241,8 +241,8 @@
 
 .lt-live-song-transition button.is-active {
   color: #66f1dc;
-  background: rgb(87 241 219 / 0.14);
-  box-shadow: inset 0 0 0 1px rgb(87 241 219 / 0.22);
+  background: rgb(0 209 255 / 0.14);
+  box-shadow: inset 0 0 0 1px rgb(0 209 255 / 0.22);
 }
 
 .lt-live-cue-panel {
@@ -263,7 +263,7 @@
 
 .lt-live-section-title h2 {
   margin: 0;
-  color: #57f1db;
+  color: #00d1ff;
 }
 
 .lt-live-section-count {
@@ -286,7 +286,7 @@
   padding: 0.3rem 0.55rem 0.55rem;
   overflow-y: auto;
   overscroll-behavior: contain;
-  scrollbar-color: rgb(87 241 219 / 0.25) transparent;
+  scrollbar-color: rgb(0 209 255 / 0.25) transparent;
 }
 
 /* Without lyrics, keep the cards wider instead of filling the extra space
@@ -296,7 +296,7 @@
 }
 
 .lt-live-cue-row {
-  --lt-live-marker-color: #bacac5;
+  --lt-live-marker-color: #9fb0c8;
   position: relative;
   min-width: 0;
   min-height: 3.8rem;
@@ -330,7 +330,7 @@
 
 .lt-live-cue-row:hover,
 .lt-live-cue-row:focus-visible {
-  border-color: rgb(87 241 219 / 0.3);
+  border-color: rgb(0 209 255 / 0.3);
   background:
     linear-gradient(90deg, rgb(13 16 15 / 0.6), rgb(13 16 15 / 0.8) 60%),
     var(--lt-live-marker-color);
@@ -339,13 +339,13 @@
 /* Los estados se leen por el BORDE y el brillo, no por el fondo: el fondo ya
    es el color de la marca y pintarlo de turquesa o ambar lo taparia. */
 .lt-live-cue-row.is-active {
-  border-color: #57f1db;
+  border-color: #00d1ff;
   background:
     linear-gradient(90deg, rgb(13 16 15 / 0.42), rgb(13 16 15 / 0.66) 60%),
     var(--lt-live-marker-color);
   box-shadow:
-    inset 0 0 0 1px rgb(87 241 219 / 0.5),
-    0 0 12px rgb(87 241 219 / 0.22);
+    inset 0 0 0 1px rgb(0 209 255 / 0.5),
+    0 0 12px rgb(0 209 255 / 0.22);
 }
 
 .lt-live-cue-row.is-next {
@@ -424,7 +424,7 @@
 
 .lt-live-cue-name-line em.is-now {
   border-style: solid;
-  border-color: rgb(87 241 219 / 0.45);
+  border-color: rgb(0 209 255 / 0.45);
   color: #68f4de;
 }
 
@@ -509,7 +509,7 @@
   width: 100%;
   height: 100%;
   border-radius: inherit;
-  background: #57f1db;
+  background: #00d1ff;
   transform: scaleX(0);
   transform-origin: left center;
   will-change: transform;
@@ -661,7 +661,7 @@
   display: grid;
   place-items: center;
   border-left: 1px solid rgb(255 255 255 / 0.08) !important;
-  color: #57f1db !important;
+  color: #00d1ff !important;
 }
 
 .lt-live-region-play .material-symbols-outlined {
@@ -669,8 +669,8 @@
 }
 
 .lt-live-region-row.is-selected {
-  border-color: rgb(87 241 219 / 0.38);
-  background: rgb(87 241 219 / 0.09);
+  border-color: rgb(0 209 255 / 0.38);
+  background: rgb(0 209 255 / 0.09);
 }
 
 .lt-live-region-row.is-selected .lt-live-region-select {
@@ -678,7 +678,7 @@
 }
 
 .lt-live-region-row.is-playing {
-  box-shadow: inset 3px 0 #57f1db;
+  box-shadow: inset 3px 0 #00d1ff;
 }
 
 .lt-live-region-row.is-queued {
@@ -941,7 +941,7 @@
   margin-left: 0.5rem;
   font-size: 0.75em;
   font-style: normal;
-  color: rgb(87 241 219 / 0.85);
+  color: rgb(0 209 255 / 0.85);
 }
 
 

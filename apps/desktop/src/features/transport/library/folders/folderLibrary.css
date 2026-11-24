@@ -10,7 +10,7 @@
   display: flex;
   flex-direction: column;
   min-height: 0;
-  border-right: 1px solid rgb(87 241 219 / 0.08);
+  border-right: 1px solid rgb(0 209 255 / 0.08);
   background: linear-gradient(180deg, #121212 0%, #0d0d0d 100%);
   user-select: none;
   -webkit-user-select: none;
@@ -24,10 +24,10 @@
   width: 100%;
   box-sizing: border-box;
   padding: 0.52rem 0.42rem;
-  border: 1px solid rgb(87 241 219 / 0.16);
+  border: 1px solid rgb(0 209 255 / 0.16);
   border-radius: 2px;
   background: rgb(32 31 31 / 0.95);
-  color: #e5e2e1;
+  color: #e6ebf5;
   font: 600 11px/1 "Space Grotesk", sans-serif;
   letter-spacing: 0.06em;
   text-transform: uppercase;
@@ -35,8 +35,8 @@
 }
 
 .lt-folder-library-add:hover {
-  border-color: rgb(87 241 219 / 0.4);
-  color: #57f1db;
+  border-color: rgb(0 209 255 / 0.4);
+  color: #00d1ff;
 }
 
 .lt-folder-library-add .material-symbols-outlined {
@@ -51,13 +51,13 @@
   border: 1px solid rgb(255 255 255 / 0.08);
   border-radius: 2px;
   background: #0b0b0b;
-  color: #e5e2e1;
+  color: #e6ebf5;
   font: 500 12px/1.2 Inter, sans-serif;
 }
 
 .lt-folder-library-search:focus {
   outline: none;
-  border-color: rgb(87 241 219 / 0.4);
+  border-color: rgb(0 209 255 / 0.4);
 }
 
 .lt-folder-library-places {
@@ -81,7 +81,7 @@
 
 .lt-folder-library-intro .material-symbols-outlined {
   font-size: 28px;
-  color: rgb(87 241 219 / 0.55);
+  color: rgb(0 209 255 / 0.55);
 }
 
 .lt-folder-library-row {
@@ -112,17 +112,17 @@
 }
 
 .lt-folder-library-row.is-selected {
-  background: rgb(87 241 219 / 0.12);
+  background: rgb(0 209 255 / 0.12);
   color: #f3f7f5;
 }
 
 .lt-folder-library-row.is-place {
   margin-top: 0.15rem;
-  color: #f3f0ef;
+  color: #eef2fa;
 }
 
 .lt-folder-library-row.is-place .material-symbols-outlined {
-  color: #57f1db;
+  color: #00d1ff;
 }
 
 .lt-folder-library-chevron {
@@ -182,13 +182,13 @@
   display: flex;
   gap: 0.4rem;
   padding: 0.5rem 0.6rem;
-  border-top: 1px solid rgb(87 241 219 / 0.16);
+  border-top: 1px solid rgb(0 209 255 / 0.16);
   background: #101312;
 }
 
 .lt-folder-library-icon:hover {
   background: rgb(255 255 255 / 0.06);
-  color: #57f1db;
+  color: #00d1ff;
 }
 
 .lt-folder-library-note {
@@ -209,7 +209,7 @@
   display: flex;
   flex-direction: column;
   min-height: 0;
-  border-top: 1px solid rgb(87 241 219 / 0.08);
+  border-top: 1px solid rgb(0 209 255 / 0.08);
 }
 
 .lt-folder-library-session.is-open {
@@ -225,7 +225,7 @@
   padding: 0.6rem 0.85rem;
   border: 0;
   background: rgb(255 255 255 / 0.03);
-  color: #e5e2e1;
+  color: #e6ebf5;
   font: 700 12px/1.1 "Space Grotesk", sans-serif;
   letter-spacing: 0.08em;
   text-align: left;
@@ -234,13 +234,13 @@
 }
 
 .lt-folder-library-session-toggle:hover {
-  background: rgb(87 241 219 / 0.07);
-  color: #57f1db;
+  background: rgb(0 209 255 / 0.07);
+  color: #00d1ff;
 }
 
 .lt-folder-library-session-toggle .material-symbols-outlined {
   font-size: 20px;
-  color: #57f1db;
+  color: #00d1ff;
 }
 
 .lt-folder-library-session-body {

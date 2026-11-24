@@ -9,7 +9,7 @@ import { describe, expect, it } from "vitest";
  *
  * ## What broke
  *
- * A tester plugged a USB audio interface into their phone and LibreTracks
+ * A tester plugged a USB audio interface into their phone and Magno Studio
  * never offered it, while other Android DAWs did. The JNI enumeration was not
  * missing — `platform/android_audio_devices.rs` reads
  * `AudioManager.getDevices()` correctly, and has since the Android port. What

@@ -14,7 +14,7 @@ import { statusOf, useCloudStore } from "./cloudStore";
  * Connect the app to the user's own cloud accounts, and manage what is stored
  * in each.
  *
- * LibreTracks hosts nothing: this signs in to accounts the user owns (Google
+ * Magno Studio hosts nothing: this signs in to accounts the user owns (Google
  * Drive, OneDrive, Dropbox; several at once if they like) and shows the
  * `Songs` and `Sessions` folders the app keeps in each. The credentials live in
  * the OS credential store on this device, one entry per account.
@@ -22,7 +22,7 @@ import { statusOf, useCloudStore } from "./cloudStore";
  * # The quota is the whole account, deliberately
  *
  * Drive counts Gmail and Photos against the same 15 GB, OneDrive counts
- * Outlook. Showing only what LibreTracks occupies would leave someone staring
+ * Outlook. Showing only what Magno Studio occupies would leave someone staring
  * at "1.2 GB used" unable to work out why a session will not fit, so the
  * account figure leads and the provider's own caveat sits under it.
  */
@@ -139,12 +139,12 @@ function quotaHint(provider: CloudProviderId, t: ReturnType<typeof useTranslatio
     case "google-drive":
       return t("transport.cloud.quotaHint", {
         defaultValue:
-          "Google comparte este espacio con Gmail y Fotos, así que no todo está disponible para LibreTracks.",
+          "Google comparte este espacio con Gmail y Fotos, así que no todo está disponible para Magno Studio.",
       });
     case "onedrive":
       return t("transport.cloud.quotaHintOneDrive", {
         defaultValue:
-          "Microsoft comparte este espacio con Outlook, así que no todo está disponible para LibreTracks.",
+          "Microsoft comparte este espacio con Outlook, así que no todo está disponible para Magno Studio.",
       });
     default:
       return null;
@@ -200,7 +200,7 @@ export function CloudPanel() {
       return;
     }
     // In series, not in parallel. Two concurrent Drive listings each resolve
-    // the LibreTracks folder, and Drive listings are eventually consistent, so
+    // the Magno Studio folder, and Drive listings are eventually consistent, so
     // both could miss a folder the other had just created and make a second
     // one. The backend caches ids now, but there is no reason to race it.
     void (async () => {
@@ -278,7 +278,7 @@ export function CloudPanel() {
                 <p className="lt-cloud-note">
                   {t("transport.cloud.explainer", {
                     defaultValue:
-                      "Conecta tu cuenta de Google Drive, OneDrive o Dropbox para llevar canciones y sesiones de un dispositivo a otro. Puedes conectar varias a la vez y elegir cuál usar cada vez que exportas o importas. Los archivos se guardan en TU cuenta: LibreTracks no aloja nada y solo ve lo que guarda la propia aplicación.",
+                      "Conecta tu cuenta de Google Drive, OneDrive o Dropbox para llevar canciones y sesiones de un dispositivo a otro. Puedes conectar varias a la vez y elegir cuál usar cada vez que exportas o importas. Los archivos se guardan en TU cuenta: Magno Studio no aloja nada y solo ve lo que guarda la propia aplicación.",
                   })}
                 </p>
               ) : null}

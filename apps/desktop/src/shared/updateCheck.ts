@@ -1,7 +1,7 @@
 import type { AppLanguage } from "./i18n";
 
 export const RELEASES_API_URL =
-  "https://api.github.com/repos/otonielpv/LibreTracks/releases/latest";
+  "https://api.github.com/repos/REDWOODINV/magno_studio/releases/latest";
 
 /** Localized download page: `/download/` for English, `/es/download/` for Spanish. */
 export function downloadsPageUrl(language: AppLanguage): string {
@@ -149,7 +149,7 @@ export async function fetchLatestRelease(
   return {
     tag: data.tag_name,
     version: normalizeVersion(data.tag_name),
-    url: data.html_url ?? `https://github.com/otonielpv/LibreTracks/releases/tag/${data.tag_name}`,
+    url: data.html_url ?? `https://github.com/REDWOODINV/magno_studio/releases/tag/${data.tag_name}`,
     publishedAt: data.published_at ?? null,
     body: data.body ?? "",
   };

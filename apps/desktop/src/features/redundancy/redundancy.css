@@ -137,7 +137,7 @@
   border-radius: 2px;
   border: 1px solid rgb(255 255 255 / 0.1);
   background: rgb(255 255 255 / 0.05);
-  color: #f3f0ef;
+  color: #eef2fa;
   padding: 0.45rem 0.75rem;
   font: 700 0.75rem/1 "Space Grotesk", sans-serif;
   cursor: pointer;
@@ -145,8 +145,8 @@
 .lt-redundancy-settings button:hover:not(:disabled),
 .lt-redundancy-dialog button:hover:not(:disabled),
 .lt-redundancy-confirm button:hover:not(:disabled) {
-  border-color: rgb(87 241 219 / 0.28);
-  color: #57f1db;
+  border-color: rgb(0 209 255 / 0.28);
+  color: #00d1ff;
 }
 .lt-redundancy-settings button:disabled,
 .lt-redundancy-dialog button:disabled {
@@ -157,13 +157,13 @@
 .lt-redundancy-dialog button.is-primary,
 .lt-redundancy-confirm button.is-primary {
   border-color: transparent;
-  background: linear-gradient(180deg, #57f1db, #2dd4bf);
-  color: #003731;
+  background: linear-gradient(180deg, #00d1ff, #00a8d6);
+  color: #00263a;
 }
 .lt-redundancy-settings button.is-primary:hover:not(:disabled),
 .lt-redundancy-dialog button.is-primary:hover:not(:disabled),
 .lt-redundancy-confirm button.is-primary:hover:not(:disabled) {
-  color: #003731;
+  color: #00263a;
   filter: brightness(1.08);
 }
 .lt-redundancy-settings input[type="number"],

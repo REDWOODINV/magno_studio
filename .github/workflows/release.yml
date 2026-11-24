@@ -11,6 +11,10 @@ on:
   # fails on) the Android toolchain or a Play credential.
   workflow_dispatch:
     inputs:
+      windows_test:
+        description: "Build only the Windows installer (no tests, not published); download it from the run's Artifacts"
+        type: boolean
+        default: false
       macos_intel:
         description: "Build on the Intel macOS runner (x86_64 only, never published) instead of the universal macOS job"
         type: boolean
@@ -45,6 +49,7 @@ env:
 
 jobs:
   test:
+    if: ${{ !inputs.windows_test }}
     strategy:
       fail-fast: false
       matrix: ${{ fromJSON(startsWith(github.ref, 'refs/tags/v') && '{"os":["windows-latest","macos-latest","ubuntu-latest"]}' || '{"os":["macos-latest"]}') }}
@@ -299,6 +304,7 @@ jobs:
 
   build-release-assets:
     needs: test
+    if: ${{ !cancelled() && (needs.test.result == 'success' || needs.test.result == 'skipped') }}
     strategy:
       fail-fast: false
       # Tags build exactly what gets published. Every non-tag invocation is
@@ -310,7 +316,7 @@ jobs:
       # slices step 4c already checks) and never launched it, yet the draft
       # waited ~27 extra minutes for it on every tag. Run it by hand when a
       # change could break building on an Intel host.
-      matrix: ${{ fromJSON(startsWith(github.ref, 'refs/tags/v') && '{"include":[{"os":"windows-latest","platform":"windows","publish":true},{"os":"macos-latest","platform":"macos","publish":true},{"os":"ubuntu-22.04","platform":"linux","publish":true}]}' || inputs.macos_intel && '{"include":[{"os":"macos-15-intel","platform":"macos","publish":false}]}' || '{"include":[{"os":"macos-latest","platform":"macos","publish":true}]}') }}
+      matrix: ${{ fromJSON(inputs.windows_test && '{"include":[{"os":"windows-latest","platform":"windows","publish":true}]}' || startsWith(github.ref, 'refs/tags/v') && '{"include":[{"os":"windows-latest","platform":"windows","publish":true},{"os":"macos-latest","platform":"macos","publish":true},{"os":"ubuntu-22.04","platform":"linux","publish":true}]}' || inputs.macos_intel && '{"include":[{"os":"macos-15-intel","platform":"macos","publish":false}]}' || '{"include":[{"os":"macos-latest","platform":"macos","publish":true}]}') }}
     runs-on: ${{ matrix.os }}
     continue-on-error: ${{ matrix.publish == false }}
 
@@ -1242,7 +1248,7 @@ jobs:
         if: matrix.publish
         uses: actions/upload-artifact@v4
         with:
-          name: ${{ startsWith(github.ref, 'refs/tags/v') && format('libretracks-{0}-assets', matrix.platform) || format('libretracks-macos-test-{0}', github.sha) }}
+          name: ${{ startsWith(github.ref, 'refs/tags/v') && format('libretracks-{0}-assets', matrix.platform) || format('libretracks-{0}-test-{1}', matrix.platform, github.sha) }}
           path: target-desktop-native/**/bundle/**/*
           if-no-files-found: error
 

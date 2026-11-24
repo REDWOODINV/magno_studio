@@ -23,9 +23,9 @@
 }
 
 .lt-song-gap-vamp.is-active {
-  border-color: rgb(87 241 219 / 0.4);
+  border-color: rgb(0 209 255 / 0.4);
   color: #62f2dc;
-  background: rgb(87 241 219 / 0.12);
+  background: rgb(0 209 255 / 0.12);
 }
 
 /* Holding between songs: the transport looks paused, so say why. */
