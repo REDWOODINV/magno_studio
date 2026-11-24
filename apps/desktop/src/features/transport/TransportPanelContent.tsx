@@ -7132,7 +7132,7 @@ export function TransportPanelContent() {
                               ? "#ff5d5d"
                               : candidate.isOverTimeline
                                 ? "#19c37d"
-                                : "#8a8f98";
+                                : "#8f8f8f";
 
                           return (
                             <div
@@ -7153,7 +7153,7 @@ export function TransportPanelContent() {
                                   left: 4,
                                   padding: "2px 6px",
                                   borderRadius: 999,
-                                  background: "rgba(12, 18, 28, 0.85)",
+                                  background: "rgba(14, 14, 14, 0.85)",
                                   color,
                                   fontSize: 11,
                                   lineHeight: 1.2,

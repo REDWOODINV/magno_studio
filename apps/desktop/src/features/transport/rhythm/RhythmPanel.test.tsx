@@ -60,7 +60,7 @@ function library(rows: number): RhythmLibrary {
   const sounds = Array.from({ length: rows }, (_, i) => ({
     id: `s${i}`,
     name: `Sound ${i}`,
-    color: "#57f1db",
+    color: "#ffffff",
     sample: { source: { kind: "builtin" as const }, file: `s${i}.wav` },
     gainDb: 0,
   }));

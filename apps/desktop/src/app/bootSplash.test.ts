@@ -27,8 +27,8 @@ describe("pantalla de carga", () => {
   });
 
   it("la ventana, el splash y la app comparten color de fondo", () => {
-    expect(tauriConf.app.windows[0].backgroundColor).toBe("#131313");
-    expect(indexHtml).toContain('<body style="margin: 0; background: #131313">');
+    expect(tauriConf.app.windows[0].backgroundColor).toBe("#0f0f0f");
+    expect(indexHtml).toContain('<body style="margin: 0; background: #0f0f0f">');
   });
 
   it("se desvanece y sale del DOM", () => {

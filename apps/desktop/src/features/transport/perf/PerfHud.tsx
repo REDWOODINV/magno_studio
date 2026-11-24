@@ -328,7 +328,7 @@ export function PerfHud() {
             flex: 1,
             padding: "3px 6px",
             background: "rgba(126, 192, 224, 0.18)",
-            color: "#cfe7f5",
+            color: "#e1e1e1",
             border: "1px solid rgba(126, 192, 224, 0.4)",
             borderRadius: 3,
             cursor: "pointer",
@@ -356,7 +356,7 @@ export function PerfHud() {
       </div>
 
       {downloadStatus ? (
-        <div style={{ marginTop: 4, color: "#cfe7f5", opacity: 0.95 }}>
+        <div style={{ marginTop: 4, color: "#e1e1e1", opacity: 0.95 }}>
           ✓ {downloadStatus}
         </div>
       ) : null}

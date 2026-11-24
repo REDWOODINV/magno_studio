@@ -38,7 +38,7 @@ function kit(rows: number): DrumKit {
     sounds: Array.from({ length: rows }, (_, i) => ({
       id: `s${i}`,
       name: `Shaker ${i}`,
-      color: "#57f1db",
+      color: "#ffffff",
       sample: { source: { kind: "builtin" as const }, file: `s${i}.wav` },
       gainDb: 0,
     })),

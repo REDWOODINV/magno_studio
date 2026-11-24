@@ -23,7 +23,7 @@
      diferencia, así la zona de agarre crece sin mover la fila. */
   --lt-fader-footprint: var(--lt-fader-box);
   --lt-fader-groove: 4px;
-  --lt-fader-groove-bg: #07090f;
+  --lt-fader-groove-bg: #08080a;
   --lt-fader-groove-shadow: inset 0 1px 2px #000, 0 1px 0 rgb(255 255 255 / 0.05);
   /* Cap: ancho a lo largo del recorrido y alto a lo ancho. */
   --lt-fader-cap-w: 11px;
@@ -74,7 +74,7 @@
 }
 
 .lt-fader.is-pan {
-  --lt-fader-index: #74b8ff;
+  --lt-fader-index: #ffffff;
   --lt-fader-index-glow: rgb(116 184 255 / 0.35);
 }
 
@@ -292,7 +292,7 @@ input[type="range"].lt-fader:active:not(:disabled)::-webkit-slider-thumb {
   padding: 1px;
   box-sizing: border-box;
   border-radius: 4px;
-  background: #07090f;
+  background: #08080a;
   box-shadow:
     inset 0 1px 2px #000,
     0 1px 0 rgb(255 255 255 / 0.05);
@@ -399,7 +399,7 @@ input[type="range"].lt-fader:active:not(:disabled)::-webkit-slider-thumb {
   width: calc(4px * var(--lt-mixer-fader-scale, 1));
   transform: translateX(-50%);
   border-radius: 4px;
-  background: #07090f;
+  background: #08080a;
   box-shadow:
     inset 0 1px 2px #000,
     1px 0 0 rgb(255 255 255 / 0.05);

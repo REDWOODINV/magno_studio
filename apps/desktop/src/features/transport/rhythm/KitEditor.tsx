@@ -88,7 +88,7 @@ export function KitEditor({
               {
                 id: `sound-${Date.now().toString(36)}-${k.sounds.length}`,
                 name: t("rhythm.kit.newSound", { number: k.sounds.length + 1 }),
-                color: "#57f1db",
+                color: "#ffffff",
                 sample: { source: { kind: "builtin" }, file: "" },
                 gainDb: 0,
               },
@@ -167,7 +167,7 @@ export function KitEditor({
                 type="color"
                 className="lt-kit-editor__color"
                 aria-label={t("rhythm.pads.color")}
-                value={sound.color || "#57f1db"}
+                value={sound.color || "#ffffff"}
                 onChange={(event) => updateSound(index, { color: event.target.value })}
               />
               <input

@@ -117,8 +117,8 @@ export function drawPendingTargetLine(
     cameraX,
     pixelsPerSecond,
     targetSeconds,
-    "rgba(87, 241, 219, 0.88)",
-    "rgba(87, 241, 219, 0.92)",
+    "rgba(255, 255, 255, 0.88)",
+    "rgba(255, 255, 255, 0.92)",
   );
 }
 

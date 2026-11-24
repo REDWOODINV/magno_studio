@@ -1,6 +1,7 @@
 import type { SongView, VideoAssetSummary, WaveformSummaryDto } from "../desktopApi";
 import { getPendingClipLabel, type TimelineClipSummary, type TimelineTrackSummary } from "../library/pendingAudioImports";
 import { clipDisplayName } from "../helpers";
+import { TIMELINE_COLOR_PRESETS } from "../colors/timelineColors";
 import { drawClipFades } from "../clipFades/drawClipFades";
 // The canvas renderer is not a React component, so it reads from the i18n
 // singleton directly (whose .t always reflects the current language) rather
@@ -130,6 +131,19 @@ function getSongDrawIndex(song: SongView): SongDrawIndex {
 /** The flat colour the track area is painted with, and the backdrop that
  * anything wanting to mask the grid must blend against. */
 const TRACK_BACKDROP_RGB = [14, 14, 14] as const;
+/**
+ * Las pistas sin color elegido reciben uno vivo de la paleta, estable por pista
+ * (se deriva del id), en vez de un gris plano: así una sesión recién importada
+ * se lee de un vistazo, como las barras de color de un panel moderno.
+ */
+function fallbackTrackColor(trackId: string): string {
+  let hash = 0;
+  for (let index = 0; index < trackId.length; index += 1) {
+    hash = (hash * 31 + trackId.charCodeAt(index)) >>> 0;
+  }
+  return TIMELINE_COLOR_PRESETS[hash % TIMELINE_COLOR_PRESETS.length].value;
+}
+
 const TRACK_BACKDROP = `rgb(${TRACK_BACKDROP_RGB[0]}, ${TRACK_BACKDROP_RGB[1]}, ${TRACK_BACKDROP_RGB[2]})`;
 
 /** How much of its own colour the folder band keeps. The band is the track
@@ -953,9 +967,9 @@ export function drawTrackClipsLayer(
       const isSelected =
         snapshot.selectedClipId === clip.id || selectedClipIdSet.has(clip.id);
 
-      context.fillStyle = clip.color ?? track.color ?? "rgba(210, 212, 209, 0.92)";
+      context.fillStyle = clip.color ?? track.color ?? fallbackTrackColor(track.id);
       context.strokeStyle =
-        isSelected ? "rgba(87, 241, 219, 0.9)" : "rgba(12, 12, 12, 0.28)";
+        isSelected ? "rgba(255, 255, 255, 0.9)" : "rgba(12, 12, 12, 0.28)";
       context.lineWidth = isSelected ? 1.5 : 1;
       context.beginPath();
       context.roundRect(clippedLeft, clipTop, visibleWidth, clipHeight, 2);
@@ -1132,12 +1146,12 @@ export function drawTrackClipsLayer(
         }
         context.restore();
 
-        if (clip.color || track.color) {
+        {
           context.save();
           context.beginPath();
           context.roundRect(clippedLeft, clipTop, visibleWidth, clipHeight, 2);
           context.clip();
-          context.fillStyle = `${clip.color ?? track.color}30`;
+          context.fillStyle = `${clip.color ?? track.color ?? fallbackTrackColor(track.id)}30`;
           context.fillRect(clippedLeft, clipTop, visibleWidth, clipHeight);
           context.restore();
         }

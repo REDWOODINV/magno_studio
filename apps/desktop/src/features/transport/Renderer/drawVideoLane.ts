@@ -136,7 +136,7 @@ export function drawVideoLane(
     context.beginPath();
     context.roundRect(left, top, width, height, 3);
     context.clip();
-    context.fillStyle = "#101418";
+    context.fillStyle = "#101010";
     context.fillRect(left, top, width, height);
 
     // Thumbnails, or a neutral stripe pattern until they arrive.

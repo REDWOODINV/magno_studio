@@ -75,7 +75,7 @@ export function OneShotPadEditor({
               : {
                   id: `pad-${bankIndex}-${padIndex}-${Date.now().toString(36)}`,
                   name,
-                  color: "#57f1db",
+                  color: "#ffffff",
                   sample,
                   gainDb: 0,
                   mode: "oneShot",
@@ -92,7 +92,7 @@ export function OneShotPadEditor({
           </label>
           <label className="lt-rhythm-field">
             <span className="lt-rhythm-field__label">{t("rhythm.pads.color")}</span>
-            <input type="color" value={pad.color || "#57f1db"} onChange={(event) => update({ color: event.target.value })} />
+            <input type="color" value={pad.color || "#ffffff"} onChange={(event) => update({ color: event.target.value })} />
           </label>
           <label className="lt-rhythm-field">
             <span className="lt-rhythm-field__label">{t("rhythm.volume")}</span>

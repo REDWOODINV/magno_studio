@@ -186,7 +186,7 @@ describe("App / library", () => {
 
   it("merges the old song library folder into the existing new one when renaming a compact song", async () => {
     const desktopApi = await import("../features/transport/desktopApi");
-    await desktopApi.moveLibraryAsset("audio/drums.wav", "Magno Studio Session");
+    await desktopApi.moveLibraryAsset("audio/drums.wav", "LibreTracks Session");
     await desktopApi.createLibraryFolder("Renamed Song");
 
     const renameLibraryFolderMock = vi.mocked(desktopApi.renameLibraryFolder);
@@ -217,7 +217,7 @@ describe("App / library", () => {
     await submitPromptDialog("Renamed Song");
     await waitFor(() => {
       expect(moveLibraryAssetMock).toHaveBeenCalledWith("audio/drums.wav", "Renamed Song");
-      expect(deleteLibraryFolderMock).toHaveBeenCalledWith("Magno Studio Session");
+      expect(deleteLibraryFolderMock).toHaveBeenCalledWith("LibreTracks Session");
       expect(renameLibraryFolderMock).not.toHaveBeenCalled();
     });
   });

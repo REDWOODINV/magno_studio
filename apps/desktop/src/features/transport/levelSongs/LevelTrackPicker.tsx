@@ -87,7 +87,7 @@ export function LevelTrackPicker({ groups, selected, onToggle, onSetMany }: Prop
                       />
                       <span
                         className="lt-render-track-swatch"
-                        style={{ background: track.color ?? "#57f1db" }}
+                        style={{ background: track.color ?? "#ffffff" }}
                         aria-hidden="true"
                       />
                       <span className="lt-render-track-name">{track.name}</span>

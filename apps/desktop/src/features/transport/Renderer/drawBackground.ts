@@ -456,7 +456,7 @@ export function drawRulerGridLabels(
     );
 
     if (marker.isBarStart) {
-      context.fillStyle = "#57f1db";
+      context.fillStyle = "#ffffff";
       context.font = '400 9px "Space Grotesk", sans-serif';
       context.fillText(
         formatRulerTimecode(marker.seconds),
@@ -633,7 +633,7 @@ export function drawRulerMarker(
   // resting state takes on the marker kind's colour so sections read distinctly.
   const kindColor = markerColor(marker);
   const strokeStyle = options.isArmed
-    ? `rgba(87, 241, 219, ${options.pulseAlpha})`
+    ? `rgba(255, 255, 255, ${options.pulseAlpha})`
     : options.isSelected
       ? "rgba(255, 226, 171, 0.9)"
       : options.isCurrent
@@ -643,14 +643,14 @@ export function drawRulerMarker(
   // like over the ruler, but pre-blended, so the grid lines stop reading
   // through the label. Armed keeps a live alpha because it pulses.
   const fillStyle = options.isArmed
-    ? `rgba(87, 241, 219, ${0.22 + options.pulseAlpha * 0.22})`
+    ? `rgba(255, 255, 255, ${0.22 + options.pulseAlpha * 0.22})`
     : options.isSelected
       ? blendOnRulerBackdrop("#ffe2ab", 0.26)
       : options.isCurrent
         ? blendOnRulerBackdrop("#e5e2e1", 0.24)
         : blendOnRulerBackdrop(kindColor, 0.24);
   const textStyle = options.isArmed
-    ? "#57f1db"
+    ? "#ffffff"
     : options.isSelected
       ? "#ffe2ab"
       : options.isCurrent
@@ -662,7 +662,7 @@ export function drawRulerMarker(
   context.fillStyle = fillStyle;
   context.lineWidth = options.isArmed ? 1.8 : 1.2;
   if (options.isArmed) {
-    context.shadowColor = "rgba(87, 241, 219, 0.55)";
+    context.shadowColor = "rgba(255, 255, 255, 0.55)";
     context.shadowBlur = 10;
   }
 
@@ -755,7 +755,7 @@ export function drawRulerTempoRamp(
   const y0 = rising ? low : high;
   const y1 = rising ? high : low;
   context.save();
-  context.fillStyle = "rgba(87, 241, 219, 0.14)";
+  context.fillStyle = "rgba(255, 255, 255, 0.14)";
   context.beginPath();
   context.moveTo(x0, low);
   context.lineTo(x0, y0);
@@ -763,7 +763,7 @@ export function drawRulerTempoRamp(
   context.lineTo(x1, low);
   context.closePath();
   context.fill();
-  context.strokeStyle = "rgba(87, 241, 219, 0.85)";
+  context.strokeStyle = "rgba(255, 255, 255, 0.85)";
   context.lineWidth = 1.5;
   context.beginPath();
   context.moveTo(x0, y0);
@@ -818,12 +818,12 @@ export function drawRulerTempoMarker(
     ? "rgba(255, 255, 255, 0.95)"
     : overrideLabel
       ? "rgba(255, 184, 107, 0.85)"
-      : "rgba(87, 241, 219, 0.85)";
+      : "rgba(255, 255, 255, 0.85)";
   // Opaque, for the same reason as the section flags: a translucent body let
   // the grid lines show through the number.
   context.fillStyle = overrideLabel
     ? blendOnRulerBackdrop("#ffb86b", isSelected ? 0.42 : 0.24)
-    : blendOnRulerBackdrop("#57f1db", isSelected ? 0.42 : 0.24);
+    : blendOnRulerBackdrop("#ffffff", isSelected ? 0.42 : 0.24);
   context.lineWidth = isSelected ? 1.8 : 1.2;
   context.beginPath();
   context.moveTo(snappedX, flagTop + 2);
@@ -855,7 +855,7 @@ export function drawRulerTempoMarker(
   context.fill();
   context.stroke();
 
-  context.fillStyle = overrideLabel ? "#ffb86b" : "#57f1db";
+  context.fillStyle = overrideLabel ? "#ffb86b" : "#ffffff";
   context.textBaseline = "middle";
   context.fillText(
     label,
