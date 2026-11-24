@@ -155,7 +155,7 @@
 .lt-plan-import-field select {
   border-radius: 2px;
   border: 1px solid rgb(0 209 255 / 0.18);
-  background: rgb(28 31 32 / 0.98);
+  background: rgb(27 36 61 / 0.98);
   color: #eef2fa;
   padding: 0.45rem 0.6rem;
   font: 500 0.85rem/1.2 "Space Grotesk", sans-serif;
@@ -232,7 +232,7 @@
   min-height: 30px;
   border-radius: 2px;
   border: 1px solid rgb(0 209 255 / 0.18);
-  background: rgb(28 31 32 / 0.98);
+  background: rgb(27 36 61 / 0.98);
   color: #00d1ff;
   font: 700 0.75rem/1 "Space Grotesk", sans-serif;
 }
@@ -245,7 +245,7 @@
 .lt-pco-save-input {
   border-radius: 2px;
   border: 1px solid rgb(0 209 255 / 0.18);
-  background: rgb(28 31 32 / 0.98);
+  background: rgb(27 36 61 / 0.98);
   color: #eef2fa;
   padding: 0.45rem 0.6rem;
   font: 500 0.85rem/1.2 "Space Grotesk", sans-serif;

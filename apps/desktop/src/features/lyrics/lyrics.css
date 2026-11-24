@@ -87,7 +87,7 @@ select.lt-lyrics-select {
   box-sizing: border-box;
   border-radius: 2px;
   border: 1px solid rgb(0 209 255 / 0.18);
-  background: rgb(28 31 32 / 0.98);
+  background: rgb(27 36 61 / 0.98);
   color: #eef2fa;
   padding: 0.6rem 0.75rem;
   font: 600 0.88rem/1.2 "Space Grotesk", sans-serif;
@@ -172,7 +172,7 @@ select.lt-lyrics-select.lt-lyrics-unmatched {
   align-items: baseline;
   gap: 0.5rem 1rem;
   padding: 0.6rem 0.95rem;
-  background: rgb(15 18 19 / 0.92);
+  background: rgb(16 21 35 / 0.92);
   border: 1px solid rgb(255 255 255 / 0.06);
   font-size: 0.84rem;
 }
@@ -353,7 +353,7 @@ button.lt-lyrics-pill.is-connecting { background: #3a3f46; }
   padding: 0.75rem 0.85rem;
   border-radius: 2px;
   border: 1px solid rgb(0 209 255 / 0.18);
-  background: linear-gradient(180deg, rgb(22 25 26 / 0.99), rgb(13 15 16 / 0.99));
+  background: linear-gradient(180deg, rgb(22 29 49 / 0.99), rgb(13 18 29 / 0.99));
   box-shadow: 0 12px 32px rgb(0 0 0 / 0.45);
   display: flex;
   flex-direction: column;
@@ -421,7 +421,7 @@ button.lt-lyrics-pill.is-connecting { background: #3a3f46; }
   width: 100%;
   border-collapse: collapse;
   font-size: 0.84rem;
-  background: rgb(15 18 19 / 0.92);
+  background: rgb(16 21 35 / 0.92);
   border: 1px solid rgb(255 255 255 / 0.06);
 }
 .lt-lyrics-table th {
@@ -470,7 +470,7 @@ td.lt-lyrics-unmatched { color: #f6ad55; }
   width: 100%;
   justify-content: flex-start;
   border: 0;
-  background: rgb(15 18 19 / 0.92);
+  background: rgb(16 21 35 / 0.92);
   font-weight: 600;
   letter-spacing: 0;
   text-align: left;
@@ -542,7 +542,7 @@ button.lt-lyrics-slide {
   padding: 0.4rem;
   border: 2px solid transparent;
   border-radius: 0;
-  background: rgb(15 18 19 / 0.96);
+  background: rgb(16 21 35 / 0.96);
   color: #e6ebf5;
   text-align: left;
   cursor: pointer;
@@ -676,7 +676,7 @@ button.lt-lyrics-btn.lt-lyrics-record .material-symbols-outlined {
   border-top: 1px solid rgb(255 255 255 / 0.08);
   /* Opaco: con un 2 % de transparencia el texto que pasaba por debajo al
      desplazarse se leía a través del pie (visto en el emulador). */
-  background: rgb(13 15 16);
+  background: rgb(13 18 29);
 }
 .lt-lyrics-save-state {
   font-size: 0.8rem;

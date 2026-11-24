@@ -211,7 +211,14 @@ export function TimelineTopbar({
       <div className="lt-topbar-menu-row">
         {!isMobileApp ? <NavigationToggle /> : null}
         <div className="lt-brand">
-          <span className="lt-brand-title">LIBRETRACKS</span>
+          <svg className="lt-brand-mark" viewBox="0 0 32 32" aria-hidden="true" focusable="false">
+            <path d="M3 28V5h7l6 10 6-10h7v23h-7V16l-6 9-6-9v12z" fill="currentColor" />
+            <path d="M10 5l6 10-6 1z" fill="#fff" fillOpacity="0.28" />
+          </svg>
+          <span className="lt-brand-title" aria-label="Magno Studio">
+            <span>magno</span>
+            <span>studio</span>
+          </span>
         </div>
 
         {/* Android: no FILE menu here — its two mobile entries (Sessions…,

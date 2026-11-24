@@ -3,9 +3,9 @@
    sombras ni blur caros: corre también en teléfonos de gama baja. */
 
 .lt-setlist-view {
-  --lt-setlist-bg: #090b0a;
-  --lt-setlist-surface: #151817;
-  --lt-setlist-surface-raised: #1c201f;
+  --lt-setlist-bg: #090c14;
+  --lt-setlist-surface: #141b2d;
+  --lt-setlist-surface-raised: #1b243d;
   --lt-setlist-border: rgb(186 202 197 / 0.13);
   --lt-setlist-text: #e9f1ee;
   --lt-setlist-text-muted: rgb(233 241 238 / 0.62);
@@ -272,7 +272,7 @@
   right: 0;
   bottom: 0;
   padding: 0.05rem 0.2rem;
-  background: #171d1b;
+  background: #182035;
   color: #ffffff;
   font-size: 0.65rem;
   line-height: 1.1;
@@ -510,7 +510,7 @@ html.lt-mobile .lt-setlist-add-song-button {
   align-items: center;
   gap: 0.35rem;
   padding: 0 0.4rem;
-  background: color-mix(in srgb, var(--lt-setlist-block-color) 45%, #111514);
+  background: color-mix(in srgb, var(--lt-setlist-block-color) 45%, #111727);
   white-space: nowrap;
   cursor: pointer;
   pointer-events: auto;
@@ -553,7 +553,7 @@ html.lt-mobile .lt-setlist-add-song-button {
   left: 0.2rem;
   padding: 0 0.15rem;
   border-radius: 2px;
-  background: rgb(19 19 19 / 0.78);
+  background: rgb(17 23 38 / 0.78);
   color: var(--lt-setlist-text);
   font-size: 0.68rem;
   line-height: 1rem;
@@ -585,7 +585,7 @@ html.lt-mobile .lt-setlist-add-song-button {
 }
 
 .lt-setlist-map-block.is-active .lt-setlist-map-label {
-  background: color-mix(in srgb, var(--lt-setlist-block-color) 70%, #111514);
+  background: color-mix(in srgb, var(--lt-setlist-block-color) 70%, #111727);
 }
 
 .lt-setlist-map-block.is-next .lt-setlist-map-label {
@@ -1205,7 +1205,7 @@ html.lt-mobile .lt-setlist-edit-button {
   padding: 0.1rem 0.35rem;
   border-radius: 0 0.3rem 0.3rem 0;
   background: var(--lt-setlist-block-color);
-  color: #0b0d0c;
+  color: #0b0e18;
   font-size: 0.7rem;
   font-weight: 700;
   white-space: nowrap;
@@ -1678,7 +1678,7 @@ html.lt-mobile .lt-setlist-track-row {
   min-width: 2px;
   border: 1px solid color-mix(in srgb, var(--lt-track-color, #7c8a86) 70%, transparent);
   border-radius: 0.3rem;
-  background: color-mix(in srgb, var(--lt-track-color, #7c8a86) 30%, #111514);
+  background: color-mix(in srgb, var(--lt-track-color, #7c8a86) 30%, #111727);
   overflow: hidden;
   cursor: grab;
   touch-action: none;
@@ -2256,7 +2256,7 @@ html.lt-mobile .lt-setlist-lane-clip.is-selected .lt-setlist-lane-trim.is-end {
   padding: 0 0.75rem;
   border-color: rgb(0 209 255 / 0.32);
   border-radius: 3px;
-  background: #0a0a0a;
+  background: #090c14;
   font-size: 0.92rem;
 }
 
@@ -3064,7 +3064,7 @@ html.lt-mobile .lt-setlist-lane-clip.is-selected .lt-setlist-lane-trim.is-end {
 .lt-setlist-view.is-short .lt-setlist-map-action {
   flex: 0 0 auto;
   pointer-events: auto;
-  background: rgb(19 19 19 / 0.92);
+  background: rgb(17 23 38 / 0.92);
 }
 
 .lt-setlist-transition {
@@ -3135,7 +3135,7 @@ html.lt-mobile .lt-setlist-lane-clip.is-selected .lt-setlist-lane-trim.is-end {
 
 .lt-setlist-map-action {
   pointer-events: auto;
-  background: rgb(19 19 19 / 0.92);
+  background: rgb(17 23 38 / 0.92);
 }
 
 /* ---- Automatismos (paso 12) ---- */
@@ -3395,7 +3395,7 @@ html.lt-mobile .lt-setlist-add-song.is-short .lt-setlist-add-song-button {
   padding: 0 0.35rem;
   overflow: hidden;
   border-left: 2px solid var(--lt-setlist-block-color);
-  background: rgb(9 11 10 / 0.88);
+  background: rgb(9 12 20 / 0.88);
   color: var(--lt-setlist-block-color);
   font-size: 0.7rem;
   font-weight: 700;
@@ -3434,7 +3434,7 @@ html.lt-mobile .lt-setlist-add-song.is-short .lt-setlist-add-song-button {
   border-left: 2px solid var(--lt-setlist-block-color);
   border-radius: 0 0.35rem 0.35rem 0;
   background: var(--lt-setlist-block-color);
-  color: #0b0d0c;
+  color: #0b0e18;
   font: inherit;
   font-size: 0.78rem;
   font-weight: 700;
@@ -3478,7 +3478,7 @@ html.lt-mobile .lt-setlist-add-song.is-short .lt-setlist-add-song-button {
   transform: translateX(-50%);
   padding: 0.1rem 0.5rem;
   border-radius: 999px;
-  background: rgb(19 19 19 / 0.92);
+  background: rgb(17 23 38 / 0.92);
   color: var(--lt-setlist-accent);
   font-size: 0.8rem;
   font-weight: 700;
@@ -3810,7 +3810,7 @@ html.lt-mobile .lt-setlist-add-song.is-short .lt-setlist-add-song-button {
   border: 1px solid rgb(0 0 0 / 0.4);
   border-top: 3px solid var(--lt-video-clip-color);
   border-radius: 0.3rem;
-  background: #101418;
+  background: #121828;
   cursor: grab;
   touch-action: none;
 }
@@ -3882,7 +3882,7 @@ html.lt-mobile .lt-setlist-video-clip.is-selected .lt-setlist-lane-trim {
   border: 0;
   border-left: 2px solid var(--lt-setlist-accent);
   border-radius: 0 0.25rem 0.25rem 0;
-  background: rgb(19 19 19 / 0.85);
+  background: rgb(17 23 38 / 0.85);
   color: var(--lt-setlist-accent);
   font: inherit;
   font-size: 0.68rem;
@@ -4045,7 +4045,7 @@ html.lt-mobile .lt-setlist-meter-marker {
   min-width: 2.25rem;
   justify-content: center;
   padding: 0 0.4rem;
-  background: rgb(19 19 19 / 0.92);
+  background: rgb(17 23 38 / 0.92);
 }
 
 .lt-setlist-zoom-controls .lt-setlist-map-action:disabled {
@@ -4084,7 +4084,7 @@ html.lt-mobile .lt-setlist-meter-marker {
   padding: 0 0.4rem 0 0.2rem;
   border: 0;
   border-radius: 0.35rem;
-  background: rgb(19 19 19 / 0.88);
+  background: rgb(17 23 38 / 0.88);
   color: var(--lt-setlist-text);
   font: inherit;
   font-size: 0.75rem;
@@ -4352,7 +4352,7 @@ button.lt-setlist-track-chip-name {
 
 .lt-setlist-wave-dock .lt-setlist-pane-toggle,
 .lt-setlist-wave-dock .lt-setlist-edit-button {
-  background: rgb(19 19 19 / 0.9);
+  background: rgb(17 23 38 / 0.9);
 }
 
 .lt-setlist-wave-dock-toggle {
@@ -4363,7 +4363,7 @@ button.lt-setlist-track-chip-name {
   padding: 0;
   border: 1px solid var(--lt-setlist-border);
   border-radius: 0.3rem;
-  background: rgb(19 19 19 / 0.9);
+  background: rgb(17 23 38 / 0.9);
   color: var(--lt-setlist-text);
   cursor: pointer;
 }
@@ -4596,7 +4596,7 @@ button.lt-setlist-track-chip-name {
   border: 0;
   border-left: 2px solid currentColor;
   border-radius: 0 0.25rem 0.25rem 0;
-  background: rgb(19 19 19 / 0.88);
+  background: rgb(17 23 38 / 0.88);
   font: inherit;
   font-size: 0.72rem;
   font-weight: 700;
@@ -4699,7 +4699,7 @@ button.lt-setlist-track-chip-name {
   width: 10px;
   min-height: 1.2rem;
   padding: 0;
-  border: 1px solid rgb(9 11 10 / 0.9);
+  border: 1px solid rgb(9 12 20 / 0.9);
   border-radius: 2px;
   background: #e9f1ee;
   opacity: 0.92;
@@ -4864,7 +4864,7 @@ html.lt-mobile .lt-setlist-video-item .lt-setlist-song-button {
   /* Sin relleno: las zonas seguras las aparta el propio panel por dentro
      (.lt-live-chart.is-expanded en LiveChartPanel.css), así su fondo llega a
      los bordes del iPhone. */
-  background: var(--lt-setlist-bg, #0e1112);
+  background: var(--lt-setlist-bg, #0f1421);
 }
 
 /* Cambio de nota sobre la banda de la onda. */
@@ -4878,7 +4878,7 @@ html.lt-mobile .lt-setlist-video-item .lt-setlist-song-button {
   padding: 0 0.3rem 0 0.15rem;
   border-left: 2px solid #c9a7ff;
   border-radius: 0 0.25rem 0.25rem 0;
-  background: rgb(19 19 19 / 0.88);
+  background: rgb(17 23 38 / 0.88);
   color: #c9a7ff;
   font-size: 0.75rem;
   font-weight: 800;
@@ -4972,7 +4972,7 @@ html.lt-mobile .lt-setlist-video-item .lt-setlist-song-button {
   inset: auto auto 0.3rem 0.35rem;
   padding: 0.1rem 0.3rem;
   border-radius: 2px;
-  background: rgb(9 11 10 / 0.85);
+  background: rgb(9 12 20 / 0.85);
   font-variant-numeric: tabular-nums;
 }
 
@@ -5017,7 +5017,7 @@ html.lt-mobile .lt-setlist-video-item .lt-setlist-song-button {
   right: 0.25rem;
   z-index: 1;
   border-radius: 3px;
-  background: rgb(9 11 10 / 0.8);
+  background: rgb(9 12 20 / 0.8);
 }
 
 .lt-setlist-view .lt-setlist-song-tile .lt-setlist-song-grip {
@@ -5026,12 +5026,12 @@ html.lt-mobile .lt-setlist-video-item .lt-setlist-song-button {
   left: 0.25rem;
   z-index: 1;
   border-radius: 3px;
-  background: rgb(9 11 10 / 0.8);
+  background: rgb(9 12 20 / 0.8);
 }
 
 .lt-setlist-view .lt-setlist-song-tile .lt-setlist-song-play {
   border-radius: 3px;
-  background: rgb(9 11 10 / 0.8);
+  background: rgb(9 12 20 / 0.8);
   color: #48da88;
 }
 
@@ -5154,7 +5154,7 @@ html.lt-mobile .lt-setlist-video-item .lt-setlist-song-button {
   place-items: center;
   padding: 0 0.5rem;
   border-radius: inherit;
-  background: rgb(14 17 18 / 0.92);
+  background: rgb(15 20 33 / 0.92);
   color: var(--lt-setlist-accent);
   font-size: 0.85rem;
   font-weight: 800;
@@ -5352,5 +5352,5 @@ html.lt-mobile .lt-setlist-view:not(.is-short) .lt-setlist-song-tile .lt-setlist
 .lt-setlist-view.is-short .lt-setlist-zone {
   border: 0;
   border-radius: 0;
-  box-shadow: 0 0 0 1px var(--lt-setlist-border-solid, #222826);
+  box-shadow: 0 0 0 1px var(--lt-setlist-border-solid, #222d4b);
 }
