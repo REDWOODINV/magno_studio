@@ -14,10 +14,10 @@
   font-size: 12px;
   cursor: pointer;
   color: #fff;
-  background: #5b5f66;
+  background: #5f5f5f;
 }
 .lt-redundancy-badge .material-symbols-outlined { font-size: 16px; }
-.lt-redundancy-badge.is-idle { background: #5b5f66; }
+.lt-redundancy-badge.is-idle { background: #5f5f5f; }
 .lt-redundancy-badge.is-pending { background: #b7791f; }
 .lt-redundancy-badge.is-ok { background: #2f855a; }
 .lt-redundancy-badge.is-error { background: #c53030; }
@@ -62,7 +62,7 @@
   padding: 6px 14px;
   font-weight: 700;
   background: #fff;
-  color: #1a202c;
+  color: #1a1a1a;
   border: 0;
   cursor: pointer;
 }
@@ -73,7 +73,7 @@
   min-width: 320px;
   max-width: 520px;
   padding: 20px;
-  background: var(--lt-surface, #1f2328);
+  background: var(--lt-surface, #1c1c1c);
   color: var(--lt-text, #e6e6e6);
 }
 .lt-redundancy-dialog h2 { margin: 0 0 12px; font-size: 18px; }
@@ -104,7 +104,7 @@
   align-items: center;
   gap: 8px;
   padding: 10px 16px;
-  background: #2d3748;
+  background: #2c2c2c;
   color: #fff;
 }
 
@@ -134,10 +134,10 @@
 .lt-redundancy-settings button,
 .lt-redundancy-dialog button,
 .lt-redundancy-confirm button {
-  border-radius: 2px;
+  border-radius: 8px;
   border: 1px solid rgb(255 255 255 / 0.1);
   background: rgb(255 255 255 / 0.05);
-  color: #eef2fa;
+  color: #f2f2f2;
   padding: 0.45rem 0.75rem;
   font: 700 0.75rem/1 "Space Grotesk", sans-serif;
   cursor: pointer;
@@ -145,8 +145,8 @@
 .lt-redundancy-settings button:hover:not(:disabled),
 .lt-redundancy-dialog button:hover:not(:disabled),
 .lt-redundancy-confirm button:hover:not(:disabled) {
-  border-color: rgb(0 209 255 / 0.28);
-  color: #00d1ff;
+  border-color: rgb(255 255 255 / 0.168);
+  color: #ffffff;
 }
 .lt-redundancy-settings button:disabled,
 .lt-redundancy-dialog button:disabled {
@@ -157,13 +157,13 @@
 .lt-redundancy-dialog button.is-primary,
 .lt-redundancy-confirm button.is-primary {
   border-color: transparent;
-  background: linear-gradient(180deg, #00d1ff, #00a8d6);
-  color: #00263a;
+  background: linear-gradient(180deg, #ffffff, #e4e4e7);
+  color: #181818;
 }
 .lt-redundancy-settings button.is-primary:hover:not(:disabled),
 .lt-redundancy-dialog button.is-primary:hover:not(:disabled),
 .lt-redundancy-confirm button.is-primary:hover:not(:disabled) {
-  color: #00263a;
+  color: #181818;
   filter: brightness(1.08);
 }
 .lt-redundancy-settings input[type="number"],

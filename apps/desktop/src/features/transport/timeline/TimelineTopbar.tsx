@@ -211,13 +211,13 @@ export function TimelineTopbar({
       <div className="lt-topbar-menu-row">
         {!isMobileApp ? <NavigationToggle /> : null}
         <div className="lt-brand">
-          <svg className="lt-brand-mark" viewBox="0 0 32 32" aria-hidden="true" focusable="false">
-            <path d="M3 28V5h7l6 10 6-10h7v23h-7V16l-6 9-6-9v12z" fill="currentColor" />
-            <path d="M10 5l6 10-6 1z" fill="#fff" fillOpacity="0.28" />
+          <svg className="lt-brand-mark" viewBox="0 0 100 100" aria-hidden="true" focusable="false">
+            <path fill="currentColor" fillRule="evenodd" d="M50 3 L63 9 L76 6 L84 19 L95 26 L91 41 L97 55 L88 66 L88 82 L72 83 L62 94 L50 97 L38 94 L28 83 L12 82 L12 66 L3 55 L9 41 L5 26 L16 19 L24 6 L37 9Z M50 15 L64 19 L74 17 L79 28 L86 34 L83 45 L87 55 L80 63 L79 74 L68 74 L60 84 L50 86 L40 84 L32 74 L21 74 L20 63 L13 55 L17 45 L14 34 L21 28 L26 17 L36 19Z" />
+            <path fill="currentColor" fillRule="evenodd" d="M50 24 L62 27 L69 36 L70 50 L66 62 L58 74 L50 78 L42 74 L34 62 L30 50 L31 36 L38 27Z M55 41 L65 40 L60 47Z M45 41 L35 40 L40 47Z M44 54 L56 54 L50 62Z M50 62 L54 68 L50 72 L46 68Z" />
           </svg>
           <span className="lt-brand-title" aria-label="Magno Studio">
-            <span>magno</span>
-            <span>studio</span>
+            <span>Magno</span>
+            <span>Studio</span>
           </span>
         </div>
 

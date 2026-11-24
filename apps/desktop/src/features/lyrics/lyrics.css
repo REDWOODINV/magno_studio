@@ -6,7 +6,7 @@
 .lt-lyrics-settings,
 .lt-lyrics-modal-body,
 .lt-lyrics-popover {
-  color: #e6ebf5;
+  color: #ebebeb;
   font: 500 0.88rem/1.45 "Space Grotesk", sans-serif;
 }
 
@@ -25,10 +25,10 @@ button.lt-lyrics-btn {
   gap: 0.35rem;
   min-height: 34px;
   box-sizing: border-box;
-  border-radius: 2px;
+  border-radius: 8px;
   border: 1px solid rgb(255 255 255 / 0.1);
   background: rgb(255 255 255 / 0.05);
-  color: #eef2fa;
+  color: #f2f2f2;
   padding: 0.5rem 0.85rem;
   font: 700 0.75rem/1 "Space Grotesk", sans-serif;
   letter-spacing: 0.04em;
@@ -36,11 +36,11 @@ button.lt-lyrics-btn {
   cursor: pointer;
 }
 button.lt-lyrics-btn:hover:not(:disabled) {
-  border-color: rgb(0 209 255 / 0.28);
-  color: #00d1ff;
+  border-color: rgb(255 255 255 / 0.168);
+  color: #ffffff;
 }
 button.lt-lyrics-btn:focus-visible {
-  outline: 2px solid #00d1ff;
+  outline: 2px solid #ffffff;
   outline-offset: 1px;
 }
 button.lt-lyrics-btn:disabled {
@@ -48,12 +48,12 @@ button.lt-lyrics-btn:disabled {
   cursor: default;
 }
 button.lt-lyrics-btn.is-primary {
-  background: #00d1ff;
-  border-color: #00d1ff;
-  color: #080c16;
+  background: #ffffff;
+  border-color: #ffffff;
+  color: #0a0a0a;
 }
 button.lt-lyrics-btn.is-primary:hover:not(:disabled) {
-  color: #080c16;
+  color: #0a0a0a;
   filter: brightness(1.08);
 }
 
@@ -64,7 +64,7 @@ button.lt-lyrics-tutorial-skip {
   border: 0;
   background: none;
   padding: 0.25rem 0;
-  color: #00d1ff;
+  color: #ffffff;
   font: 600 0.82rem/1.2 "Space Grotesk", sans-serif;
   text-decoration: underline;
   text-underline-offset: 3px;
@@ -85,17 +85,17 @@ input.lt-lyrics-input,
 select.lt-lyrics-select {
   width: 100%;
   box-sizing: border-box;
-  border-radius: 2px;
-  border: 1px solid rgb(0 209 255 / 0.18);
-  background: rgb(27 36 61 / 0.98);
-  color: #eef2fa;
+  border-radius: 8px;
+  border: 1px solid rgb(255 255 255 / 0.108);
+  background: rgb(30 30 30 / 0.98);
+  color: #f2f2f2;
   padding: 0.6rem 0.75rem;
   font: 600 0.88rem/1.2 "Space Grotesk", sans-serif;
 }
 input.lt-lyrics-input:focus,
 select.lt-lyrics-select:focus {
   outline: none;
-  border-color: #00d1ff;
+  border-color: #ffffff;
 }
 input.lt-lyrics-input::placeholder {
   color: rgb(229 226 225 / 0.4);
@@ -112,7 +112,7 @@ select.lt-lyrics-select.lt-lyrics-unmatched {
 
 .lt-lyrics-settings .lt-settings-field > span:first-child,
 .lt-lyrics-modal-body .lt-settings-field > span:first-child {
-  color: #eef2fa;
+  color: #f2f2f2;
   font: 700 0.85rem/1.2 "Space Grotesk", sans-serif;
 }
 .lt-lyrics-settings small,
@@ -132,15 +132,15 @@ select.lt-lyrics-select.lt-lyrics-unmatched {
   flex: 1 1 0;
   min-width: 110px;
   height: 38px;
-  background: #080c16;
+  background: #0a0a0a;
   text-transform: uppercase;
   letter-spacing: 0.12em;
   font-size: 11px;
 }
 .lt-lyrics-programs button.lt-lyrics-btn.is-selected {
-  background: rgb(0 209 255 / 0.14);
-  border-color: #00d1ff;
-  color: #00d1ff;
+  background: rgb(255 255 255 / 0.084);
+  border-color: #ffffff;
+  color: #ffffff;
 }
 
 .lt-lyrics-row {
@@ -172,7 +172,7 @@ select.lt-lyrics-select.lt-lyrics-unmatched {
   align-items: baseline;
   gap: 0.5rem 1rem;
   padding: 0.6rem 0.95rem;
-  background: rgb(16 21 35 / 0.92);
+  background: rgb(17 17 17 / 0.92);
   border: 1px solid rgb(255 255 255 / 0.06);
   font-size: 0.84rem;
 }
@@ -221,16 +221,16 @@ button.lt-lyrics-found-item {
   padding: 0.5rem 0.8rem;
   border: 1px solid rgb(255 255 255 / 0.06);
   border-radius: 0;
-  background: #080c16;
-  color: #eef2fa;
+  background: #0a0a0a;
+  color: #f2f2f2;
   font: inherit;
   text-align: left;
   cursor: pointer;
 }
 button.lt-lyrics-found-item:hover,
 button.lt-lyrics-found-item:focus-visible {
-  border-color: rgb(0 209 255 / 0.45);
-  background: rgb(0 209 255 / 0.08);
+  border-color: rgb(255 255 255 / 0.27);
+  background: rgb(255 255 255 / 0.048);
 }
 .lt-lyrics-found-item span {
   font-family: "JetBrains Mono", ui-monospace, monospace;
@@ -248,14 +248,14 @@ button.lt-lyrics-found-item:focus-visible {
 }
 .lt-lyrics-missing code {
   font-family: "JetBrains Mono", ui-monospace, monospace;
-  color: #eef2fa;
+  color: #f2f2f2;
 }
 
 /* ---------- Tutorial de configuración ---------- */
 
 .lt-lyrics-tutorial {
-  border: 1px solid rgb(0 209 255 / 0.45);
-  background: rgb(0 209 255 / 0.06);
+  border: 1px solid rgb(255 255 255 / 0.27);
+  background: rgb(255 255 255 / 0.036);
   padding: 0.85rem 1rem;
   display: flex;
   flex-direction: column;
@@ -267,7 +267,7 @@ button.lt-lyrics-found-item:focus-visible {
   gap: 8px;
 }
 .lt-lyrics-tutorial-header strong {
-  color: #eef2fa;
+  color: #f2f2f2;
   font: 700 0.92rem/1.2 "Space Grotesk", sans-serif;
 }
 .lt-lyrics-tutorial-count {
@@ -288,11 +288,11 @@ button.lt-lyrics-found-item:focus-visible {
 }
 .lt-lyrics-tutorial-dots li.is-done,
 .lt-lyrics-tutorial-dots li.is-current {
-  background: #00d1ff;
+  background: #ffffff;
 }
 .lt-lyrics-tutorial-title {
   margin: 4px 0 0;
-  color: #eef2fa;
+  color: #f2f2f2;
   font: 700 1rem/1.25 "Space Grotesk", sans-serif;
 }
 .lt-lyrics-tutorial-body {
@@ -328,7 +328,7 @@ button.lt-lyrics-pill {
   height: 26px;
   padding: 0 10px;
   border: 1px solid transparent;
-  border-radius: 2px;
+  border-radius: 8px;
   font: 700 12px/1 "Space Grotesk", sans-serif;
   cursor: pointer;
   color: #fff;
@@ -339,8 +339,8 @@ button.lt-lyrics-pill {
 button.lt-lyrics-pill.is-ok { background: #2f855a; }
 button.lt-lyrics-pill.is-warning { background: #b7791f; }
 button.lt-lyrics-pill.is-error { background: #c53030; }
-button.lt-lyrics-pill.is-paused { background: #5b5f66; }
-button.lt-lyrics-pill.is-connecting { background: #3a3f46; }
+button.lt-lyrics-pill.is-paused { background: #5f5f5f; }
+button.lt-lyrics-pill.is-connecting { background: #333333; }
 
 .lt-lyrics-popover {
   position: absolute;
@@ -351,9 +351,9 @@ button.lt-lyrics-pill.is-connecting { background: #3a3f46; }
   max-width: min(360px, calc(100vw - 32px));
   box-sizing: border-box;
   padding: 0.75rem 0.85rem;
-  border-radius: 2px;
-  border: 1px solid rgb(0 209 255 / 0.18);
-  background: linear-gradient(180deg, rgb(22 29 49 / 0.99), rgb(13 18 29 / 0.99));
+  border-radius: 8px;
+  border: 1px solid rgb(255 255 255 / 0.108);
+  background: linear-gradient(180deg, rgb(24 24 24 / 0.99), rgb(15 15 15 / 0.99));
   box-shadow: 0 12px 32px rgb(0 0 0 / 0.45);
   display: flex;
   flex-direction: column;
@@ -365,7 +365,7 @@ button.lt-lyrics-pill.is-connecting { background: #3a3f46; }
   margin: 0;
 }
 .lt-lyrics-popover-program strong {
-  color: #eef2fa;
+  color: #f2f2f2;
 }
 .lt-lyrics-popover-program span {
   color: rgb(229 226 225 / 0.7);
@@ -413,7 +413,7 @@ button.lt-lyrics-pill.is-connecting { background: #3a3f46; }
 }
 .lt-lyrics-modal-body h3 {
   margin: 0.5rem 0 0.2rem;
-  color: #eef2fa;
+  color: #f2f2f2;
   font: 700 0.95rem/1.2 "Space Grotesk", sans-serif;
 }
 
@@ -421,7 +421,7 @@ button.lt-lyrics-pill.is-connecting { background: #3a3f46; }
   width: 100%;
   border-collapse: collapse;
   font-size: 0.84rem;
-  background: rgb(16 21 35 / 0.92);
+  background: rgb(17 17 17 / 0.92);
   border: 1px solid rgb(255 255 255 / 0.06);
 }
 .lt-lyrics-table th {
@@ -470,14 +470,14 @@ td.lt-lyrics-unmatched { color: #f6ad55; }
   width: 100%;
   justify-content: flex-start;
   border: 0;
-  background: rgb(16 21 35 / 0.92);
+  background: rgb(17 17 17 / 0.92);
   font-weight: 600;
   letter-spacing: 0;
   text-align: left;
   white-space: normal;
 }
 .lt-lyrics-search button.lt-lyrics-btn:hover {
-  background: rgb(0 209 255 / 0.1);
+  background: rgb(255 255 255 / 0.06);
 }
 
 /* Columna «Diap.»: número + «Editar». */
@@ -542,22 +542,22 @@ button.lt-lyrics-slide {
   padding: 0.4rem;
   border: 2px solid transparent;
   border-radius: 0;
-  background: rgb(16 21 35 / 0.96);
-  color: #e6ebf5;
+  background: rgb(17 17 17 / 0.96);
+  color: #ebebeb;
   text-align: left;
   cursor: pointer;
   touch-action: manipulation;
 }
 button.lt-lyrics-slide:hover {
-  background: rgb(0 209 255 / 0.06);
+  background: rgb(255 255 255 / 0.036);
 }
 button.lt-lyrics-slide:focus-visible {
-  outline: 2px solid #00d1ff;
+  outline: 2px solid #ffffff;
   outline-offset: -2px;
 }
 button.lt-lyrics-slide.is-selected {
-  border-color: #00d1ff;
-  background: rgb(0 209 255 / 0.12);
+  border-color: #ffffff;
+  background: rgb(255 255 255 / 0.072);
 }
 .lt-lyrics-slide-head {
   display: flex;
@@ -571,7 +571,7 @@ button.lt-lyrics-slide.is-selected {
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
-  color: #eef2fa;
+  color: #f2f2f2;
   font: 700 0.75rem/1.2 "Space Grotesk", sans-serif;
 }
 .lt-lyrics-slide-order {
@@ -579,8 +579,8 @@ button.lt-lyrics-slide.is-selected {
   min-width: 1.2rem;
   padding: 0.1rem 0.3rem;
   box-sizing: border-box;
-  background: #00d1ff;
-  color: #080c16;
+  background: #ffffff;
+  color: #0a0a0a;
   text-align: center;
   font: 700 0.72rem/1 "Space Grotesk", sans-serif;
 }
@@ -623,7 +623,7 @@ button.lt-lyrics-slide.is-selected {
   cursor: pointer;
 }
 .lt-lyrics-timing input[type="radio"] {
-  accent-color: #00d1ff;
+  accent-color: #ffffff;
 }
 input.lt-lyrics-input.lt-lyrics-bars {
   width: 4.2rem;
@@ -638,8 +638,8 @@ button.lt-lyrics-btn.lt-lyrics-record .material-symbols-outlined {
   flex-direction: column;
   gap: 0.5rem;
   padding: 0.75rem;
-  border: 1px solid rgb(0 209 255 / 0.3);
-  background: rgb(0 209 255 / 0.06);
+  border: 1px solid rgb(255 255 255 / 0.18);
+  background: rgb(255 255 255 / 0.036);
 }
 .lt-lyrics-recorder p,
 .lt-lyrics-recorder ul {
@@ -654,13 +654,13 @@ button.lt-lyrics-btn.lt-lyrics-record .material-symbols-outlined {
   font-size: 1.15rem;
   letter-spacing: 0.08em;
   text-transform: uppercase;
-  background: rgb(0 209 255 / 0.14);
-  border-color: #00d1ff;
-  color: #00d1ff;
+  background: rgb(255 255 255 / 0.084);
+  border-color: #ffffff;
+  color: #ffffff;
   touch-action: manipulation;
 }
 .lt-lyrics-recorder-row > button.lt-lyrics-tap:active {
-  background: rgb(0 209 255 / 0.3);
+  background: rgb(255 255 255 / 0.18);
 }
 
 /* Pie de los paneles: estado del guardado y «Listo». */
@@ -676,7 +676,7 @@ button.lt-lyrics-btn.lt-lyrics-record .material-symbols-outlined {
   border-top: 1px solid rgb(255 255 255 / 0.08);
   /* Opaco: con un 2 % de transparencia el texto que pasaba por debajo al
      desplazarse se leía a través del pie (visto en el emulador). */
-  background: rgb(13 18 29);
+  background: rgb(15 15 15);
 }
 .lt-lyrics-save-state {
   font-size: 0.8rem;
@@ -738,7 +738,7 @@ button.lt-lyrics-btn.lt-lyrics-record .material-symbols-outlined {
   font-weight: 700;
 }
 .lt-lyrics-recorder-status.is-live {
-  color: #00d1ff;
+  color: #ffffff;
 }
 
 /* «Cambio» y «Parar» en una fila: los dos a la vista mientras se graba. El
@@ -762,7 +762,7 @@ button.lt-lyrics-btn.lt-lyrics-record .material-symbols-outlined {
 /* Adelanto propio de una marca, bajo su nombre en la tabla. */
 .lt-lyrics-marker-lead {
   display: block;
-  color: #00d1ff !important;
+  color: #ffffff !important;
 }
 
 /* Teléfono en vertical (plan portrait-text-modals): Proyección,

@@ -36,17 +36,17 @@
   width: 1.6rem;
   height: 1.6rem;
   border: 1px solid rgb(255 255 255 / 0.08);
-  border-radius: 2px;
+  border-radius: 8px;
   background:
     linear-gradient(180deg, rgb(255 255 255 / 0.04), rgb(0 0 0 / 0.12)),
-    #141b2b;
-  color: #9fb0c8;
+    #161616;
+  color: #aeaeae;
 }
 
 .lt-icon-button.lt-clear-solo.is-solo-active {
   border-color: rgb(255 196 87 / 0.85);
   background: rgb(255 196 87 / 0.85);
-  color: #080c16;
+  color: #0a0a0a;
 }
 
 .lt-icon-button.lt-clear-solo.is-solo-active:hover {

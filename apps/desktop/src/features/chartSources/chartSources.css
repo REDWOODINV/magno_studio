@@ -153,10 +153,10 @@
 /* Controls in the app's style (same as the chart editor). */
 .lt-chart-import-search input,
 .lt-plan-import-field select {
-  border-radius: 2px;
-  border: 1px solid rgb(0 209 255 / 0.18);
-  background: rgb(27 36 61 / 0.98);
-  color: #eef2fa;
+  border-radius: 8px;
+  border: 1px solid rgb(255 255 255 / 0.108);
+  background: rgb(30 30 30 / 0.98);
+  color: #f2f2f2;
   padding: 0.45rem 0.6rem;
   font: 500 0.85rem/1.2 "Space Grotesk", sans-serif;
 }
@@ -164,15 +164,15 @@
 .lt-chart-import-search input:focus,
 .lt-plan-import-field select:focus {
   outline: none;
-  border-color: rgb(0 209 255 / 0.5);
+  border-color: rgb(255 255 255 / 0.3);
 }
 
 .lt-chart-import-search button,
 .lt-chart-import-connect button {
-  border-radius: 2px;
-  border: 1px solid rgb(0 209 255 / 0.24);
-  background: rgb(0 209 255 / 0.1);
-  color: #00d1ff;
+  border-radius: 8px;
+  border: 1px solid rgb(255 255 255 / 0.144);
+  background: rgb(255 255 255 / 0.06);
+  color: #ffffff;
   padding: 0.5rem 0.9rem;
   font: 700 0.78rem/1 "Space Grotesk", sans-serif;
   cursor: pointer;
@@ -192,18 +192,18 @@
   border-bottom: 1px solid rgb(255 255 255 / 0.06);
   border-radius: 0;
   background: none;
-  color: #eef2fa;
+  color: #f2f2f2;
   font: 500 0.88rem/1.25 "Space Grotesk", sans-serif;
   cursor: pointer;
 }
 
 .lt-chart-import-list > li > button:hover,
 .lt-chart-import-arrangements button:not(:disabled):hover {
-  background: rgb(0 209 255 / 0.08);
+  background: rgb(255 255 255 / 0.048);
 }
 
 .lt-chart-import-list > li > button.is-active {
-  color: #00d1ff;
+  color: #ffffff;
 }
 
 .lt-chart-import-list > li > button span {
@@ -230,10 +230,10 @@
 .lt-chart-import-passes {
   margin-right: 0.5rem;
   min-height: 30px;
-  border-radius: 2px;
-  border: 1px solid rgb(0 209 255 / 0.18);
-  background: rgb(27 36 61 / 0.98);
-  color: #00d1ff;
+  border-radius: 8px;
+  border: 1px solid rgb(255 255 255 / 0.108);
+  background: rgb(30 30 30 / 0.98);
+  color: #ffffff;
   font: 700 0.75rem/1 "Space Grotesk", sans-serif;
 }
 
@@ -243,10 +243,10 @@
 }
 
 .lt-pco-save-input {
-  border-radius: 2px;
-  border: 1px solid rgb(0 209 255 / 0.18);
-  background: rgb(27 36 61 / 0.98);
-  color: #eef2fa;
+  border-radius: 8px;
+  border: 1px solid rgb(255 255 255 / 0.108);
+  background: rgb(30 30 30 / 0.98);
+  color: #f2f2f2;
   padding: 0.45rem 0.6rem;
   font: 500 0.85rem/1.2 "Space Grotesk", sans-serif;
   min-height: 40px;
@@ -273,7 +273,7 @@
 .lt-chart-import-badge.is-low {
   padding: 0.15rem 0.35rem;
   border: 1px solid currentColor;
-  border-radius: 2px;
+  border-radius: 8px;
 }
 
 .lt-pco-save-repeats {

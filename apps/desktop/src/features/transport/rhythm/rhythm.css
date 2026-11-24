@@ -2,13 +2,13 @@
    redondeo entre paneles (feedback_flush_panels). Objetivo táctil de 44 px
    con .is-touch (isMobileApp), 32 px con ratón. */
 .lt-rhythm-panel {
-  --lt-rhythm-bg: #0d121d;
-  --lt-rhythm-surface: #141b2d;
-  --lt-rhythm-raised: #1c263f;
+  --lt-rhythm-bg: #0f0f0f;
+  --lt-rhythm-surface: #161616;
+  --lt-rhythm-raised: #1f1f1f;
   --lt-rhythm-border: rgb(186 202 197 / 0.13);
   --lt-rhythm-text: #e9f1ee;
-  --lt-rhythm-muted: #7d8ca3;
-  --lt-rhythm-accent: #00d1ff;
+  --lt-rhythm-muted: #8a8a8a;
+  --lt-rhythm-accent: #ffffff;
   --lt-rhythm-pending: #f2c94c;
   --lt-rhythm-target: 32px;
   display: flex;
@@ -150,7 +150,7 @@
   background: var(--lt-rhythm-raised);
   color: inherit;
   border: 1px solid var(--lt-rhythm-border);
-  border-radius: 4px;
+  border-radius: 8px;
   padding: 0 8px;
   font: inherit;
 }
@@ -244,7 +244,7 @@
   z-index: 20;
   min-width: 220px;
   margin-top: 4px;
-  border-radius: 4px;
+  border-radius: 8px;
   box-shadow: 0 12px 28px rgb(0 0 0 / 0.5);
 }
 
@@ -359,7 +359,7 @@
   background: transparent;
   color: inherit;
   border: 1px solid var(--lt-rhythm-border);
-  border-radius: 4px;
+  border-radius: 8px;
   padding: 0 8px;
   font: inherit;
   overflow: hidden;
@@ -409,7 +409,7 @@
   background: var(--lt-rhythm-raised);
   color: inherit;
   border: 1px solid var(--lt-rhythm-border);
-  border-radius: 4px;
+  border-radius: 8px;
   font: inherit;
 }
 
@@ -449,11 +449,11 @@
 }
 
 .lt-rhythm-strip__cell[data-velocity="1"] {
-  background: rgb(0 209 255 / 0.35);
+  background: rgb(255 255 255 / 0.21);
 }
 
 .lt-rhythm-strip__cell[data-velocity="2"] {
-  background: rgb(0 209 255 / 0.65);
+  background: rgb(255 255 255 / 0.39);
 }
 
 .lt-rhythm-strip__cell[data-velocity="3"] {
@@ -503,7 +503,7 @@
   background: var(--lt-rhythm-raised);
   color: inherit;
   border: 1px solid var(--lt-rhythm-border);
-  border-radius: 4px;
+  border-radius: 8px;
   padding: 0 10px;
   font: inherit;
 }
@@ -530,7 +530,7 @@
   min-height: var(--lt-rhythm-target);
   background: var(--lt-rhythm-pad-color);
   /* Oscurecido mientras no suena (sin color-mix: WebKit de macOS 12). */
-  box-shadow: inset 0 0 0 999px rgb(13 18 29 / 0.6);
+  box-shadow: inset 0 0 0 999px rgb(15 15 15 / 0.6);
   color: inherit;
   border: none;
   font: inherit;
@@ -567,8 +567,8 @@
    Hereda el aspecto de los botones de la barra (como Pads); sonando, el
    icono se enciende aunque el panel esté cerrado. */
 .lt-rhythm-button.is-sounding .material-symbols-outlined {
-  color: #00d1ff;
-  text-shadow: 0 0 6px rgb(0 209 255 / 0.7);
+  color: #ffffff;
+  text-shadow: 0 0 6px rgb(255 255 255 / 0.42);
 }
 
 /* ── Diálogos (editor de patrones, kit) ──────────────────────────────── */
@@ -603,8 +603,8 @@
   overflow: hidden;
   padding: 0;
   gap: 0;
-  background: #0d121d;
-  border-radius: 4px;
+  background: #0f0f0f;
+  border-radius: 8px;
   box-shadow: 0 24px 60px rgb(0 0 0 / 0.55);
 }
 
@@ -617,7 +617,7 @@
 
 .lt-kit-editor__header {
   flex: 0 0 auto;
-  background: #141b2d;
+  background: #161616;
   border-bottom: 1px solid rgb(186 202 197 / 0.13);
 }
 
@@ -648,24 +648,24 @@
   font-weight: 700;
   letter-spacing: 0.08em;
   text-transform: uppercase;
-  color: #7d8ca3;
+  color: #8a8a8a;
 }
 
 .lt-kit-editor__sound {
   row-gap: 8px;
   padding: 10px;
-  background: #141b2d;
+  background: #161616;
   border: 1px solid rgb(186 202 197 / 0.1);
-  border-radius: 4px;
+  border-radius: 8px;
 }
 
 .lt-kit-editor input.lt-kit-editor__color {
   width: 40px;
   height: 28px;
   padding: 2px;
-  background: #1c263f;
+  background: #1f1f1f;
   border: 1px solid rgb(186 202 197 / 0.18);
-  border-radius: 4px;
+  border-radius: 8px;
   cursor: pointer;
 }
 
@@ -694,7 +694,7 @@
   padding: 0;
   background: transparent;
   border-color: transparent;
-  color: #7d8ca3;
+  color: #8a8a8a;
 }
 
 .lt-kit-editor .lt-kit-editor__remove:hover {
@@ -747,7 +747,7 @@
 .lt-rhythm-switch-field input[type="checkbox"] {
   width: 16px;
   height: 16px;
-  accent-color: #00d1ff;
+  accent-color: #ffffff;
   cursor: pointer;
 }
 
@@ -761,11 +761,11 @@
    (más aire entre tiempos y aún más entre compases), con el color de cada
    sonido y la intensidad en la opacidad. */
 .lt-loop-editor {
-  --lt-rhythm-bg: #0d121d;
-  --lt-rhythm-surface: #141b2d;
-  --lt-rhythm-raised: #1c263f;
+  --lt-rhythm-bg: #0f0f0f;
+  --lt-rhythm-surface: #161616;
+  --lt-rhythm-raised: #1f1f1f;
   --lt-rhythm-border: rgb(186 202 197 / 0.13);
-  --lt-rhythm-accent: #00d1ff;
+  --lt-rhythm-accent: #ffffff;
   --lt-rhythm-target: 32px;
   --lt-step-cell: 34px;
   --lt-step-gap: 4px;
@@ -781,7 +781,7 @@
   background: var(--lt-rhythm-bg);
   color: #e9f1ee;
   border: 1px solid var(--lt-rhythm-border);
-  border-radius: 4px;
+  border-radius: 8px;
   box-shadow: 0 24px 60px rgb(0 0 0 / 0.55);
 }
 
@@ -919,7 +919,7 @@
   padding: 2px;
   background: var(--lt-rhythm-raised);
   border: 1px solid var(--lt-rhythm-border);
-  border-radius: 6px;
+  border-radius: 10px;
 }
 
 .lt-loop-editor .lt-loop-editor__segmented button {
@@ -928,7 +928,7 @@
   padding: 0 8px;
   background: transparent;
   border: none;
-  border-radius: 4px;
+  border-radius: 8px;
   color: #b6c2be;
   font-weight: 700;
 }
@@ -947,7 +947,7 @@
   padding: 0;
   border-radius: 50%;
   background: var(--lt-rhythm-raised);
-  border: 1px solid rgb(0 209 255 / 0.5);
+  border: 1px solid rgb(255 255 255 / 0.3);
   color: var(--lt-rhythm-accent);
 }
 
@@ -1128,7 +1128,7 @@
   height: var(--lt-step-cell);
   min-height: 0;
   padding: 0;
-  border-radius: 3px;
+  border-radius: 8px;
   background: var(--lt-rhythm-raised);
   border: 1px solid rgb(186 202 197 / 0.08);
   cursor: pointer;
@@ -1136,7 +1136,7 @@
 }
 
 .lt-loop-editor .lt-step-cell.is-beat {
-  background: #243050;
+  background: #272727;
 }
 
 .lt-loop-editor .lt-step-cell:hover {
@@ -1170,7 +1170,7 @@
   flex-direction: column;
   gap: 8px;
   padding: 12px;
-  background: #141b2d;
+  background: #161616;
   color: #e9f1ee;
   border: 1px solid rgb(186 202 197 / 0.13);
   z-index: 80;
@@ -1261,9 +1261,9 @@
   width: 44px;
   height: calc(var(--lt-rhythm-target) - 4px);
   padding: 2px;
-  background: #1c263f;
+  background: #1f1f1f;
   border: 1px solid rgb(186 202 197 / 0.18);
-  border-radius: 4px;
+  border-radius: 8px;
 }
 
 .lt-pad-editor.is-sheet .lt-rhythm-fader {
@@ -1287,10 +1287,10 @@
   -webkit-appearance: none;
   min-height: calc(var(--lt-rhythm-target, 32px) - 4px);
   padding: 0 28px 0 10px;
-  background-color: #1c263f;
+  background-color: #1f1f1f;
   color: #e9f1ee;
   border: 1px solid rgb(186 202 197 / 0.18);
-  border-radius: 4px;
+  border-radius: 8px;
   font: inherit;
   font-size: 12px;
 }
@@ -1298,8 +1298,8 @@
 .lt-rhythm-panel select,
 .lt-loop-editor select,
 .lt-rhythm-card select {
-  background-image: linear-gradient(45deg, transparent 50%, #7d8ca3 50%),
-    linear-gradient(135deg, #7d8ca3 50%, transparent 50%);
+  background-image: linear-gradient(45deg, transparent 50%, #8a8a8a 50%),
+    linear-gradient(135deg, #8a8a8a 50%, transparent 50%);
   background-position: calc(100% - 14px) 50%, calc(100% - 9px) 50%;
   background-size: 5px 5px;
   background-repeat: no-repeat;
@@ -1316,14 +1316,14 @@
 .lt-loop-editor select:focus-visible,
 .lt-rhythm-card select:focus-visible,
 .lt-rhythm-card input:focus-visible {
-  outline: 1px solid #00d1ff;
+  outline: 1px solid #ffffff;
   outline-offset: 0;
 }
 
 .lt-rhythm-panel input[type="range"],
 .lt-loop-editor input[type="range"],
 .lt-rhythm-card input[type="range"] {
-  accent-color: #00d1ff;
+  accent-color: #ffffff;
 }
 
 .lt-rhythm-card button,
@@ -1332,10 +1332,10 @@
 .lt-sample-picker button {
   min-height: calc(var(--lt-rhythm-target, 32px) - 4px);
   padding: 0 12px;
-  background: #1c263f;
+  background: #1f1f1f;
   color: #e9f1ee;
   border: 1px solid rgb(186 202 197 / 0.18);
-  border-radius: 4px;
+  border-radius: 8px;
   font: inherit;
   font-size: 12px;
   cursor: pointer;
@@ -1344,13 +1344,13 @@
 .lt-rhythm-card button:hover,
 .lt-loop-editor__header button:hover,
 .lt-sample-picker button:hover {
-  border-color: rgb(0 209 255 / 0.6);
+  border-color: rgb(255 255 255 / 0.36);
 }
 
 .lt-rhythm-card button.is-primary,
 .lt-loop-editor__header button.is-primary {
-  background: #00d1ff;
-  border-color: #00d1ff;
+  background: #ffffff;
+  border-color: #ffffff;
   color: #04110e;
   font-weight: 600;
 }
@@ -1361,7 +1361,7 @@
   font-weight: 700;
   letter-spacing: 0.08em;
   text-transform: uppercase;
-  color: #7d8ca3;
+  color: #8a8a8a;
 }
 
 .lt-rhythm-free {
@@ -1372,7 +1372,7 @@
 
 .lt-rhythm-follow-hint {
   font-size: 11px;
-  color: #7d8ca3;
+  color: #8a8a8a;
 }
 
 .lt-rhythm-icon .material-symbols-outlined {
@@ -1384,7 +1384,7 @@
   min-width: 240px;
   padding: 10px;
   gap: 10px;
-  border-radius: 6px;
+  border-radius: 10px;
   box-shadow: 0 10px 30px rgb(0 0 0 / 0.45);
 }
 
@@ -1397,10 +1397,10 @@
   flex-direction: column;
   gap: 10px;
   padding: 14px;
-  background: #141b2d;
+  background: #161616;
   color: #e9f1ee;
   border: 1px solid rgb(186 202 197 / 0.16);
-  border-radius: 6px;
+  border-radius: 10px;
   box-shadow: 0 16px 40px rgb(0 0 0 / 0.5);
 }
 
@@ -1497,14 +1497,14 @@
 
 .lt-pack-catalog__text span,
 .lt-pack-catalog__note {
-  color: #7d8ca3;
+  color: #8a8a8a;
   font-size: 11px;
   margin: 0;
 }
 
 .lt-pack-catalog progress {
   width: 96px;
-  accent-color: #00d1ff;
+  accent-color: #ffffff;
 }
 
 .lt-missing-packs {
@@ -1526,7 +1526,7 @@
 }
 
 .lt-loop-editor .lt-loop-editor__icon.is-active {
-  color: #00d1ff;
+  color: #ffffff;
 }
 
 /* Fader de volumen con el estilo de consola (faders.css) y su valor en dB. */
@@ -1544,7 +1544,7 @@
 .lt-rhythm-fader__value {
   min-width: 38px;
   font-size: 11px;
-  color: #7d8ca3;
+  color: #8a8a8a;
   font-variant-numeric: tabular-nums;
   text-align: right;
 }

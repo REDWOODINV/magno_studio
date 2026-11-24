@@ -8,7 +8,7 @@
   border: 1px solid rgb(255 255 255 / 0.1);
   border-radius: 0.3rem;
   color: #82908c;
-  background: #161e31;
+  background: #181818;
   font: 750 9px/1 "Space Grotesk", sans-serif;
   text-transform: uppercase;
   white-space: nowrap;
@@ -23,9 +23,9 @@
 }
 
 .lt-song-gap-vamp.is-active {
-  border-color: rgb(0 209 255 / 0.4);
+  border-color: rgb(255 255 255 / 0.24);
   color: #62f2dc;
-  background: rgb(0 209 255 / 0.12);
+  background: rgb(255 255 255 / 0.072);
 }
 
 /* Holding between songs: the transport looks paused, so say why. */

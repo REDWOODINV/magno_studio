@@ -32,12 +32,12 @@
 }
 
 .lt-compact-mixer-toggle.is-eq.is-active {
-  background: rgb(0 209 255 / 0.85);
-  border-color: rgb(0 209 255 / 0.85);
-  color: #080c16;
+  background: rgb(255 255 255 / 0.51);
+  border-color: rgb(255 255 255 / 0.51);
+  color: #0a0a0a;
 }
 
 .lt-mobile-selection-action.lt-track-eq-button.is-active {
-  color: #00d1ff;
-  border-color: rgb(0 209 255 / 0.6);
+  color: #ffffff;
+  border-color: rgb(255 255 255 / 0.36);
 }

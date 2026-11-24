@@ -25,7 +25,7 @@
   height: 8px;
   /* Inset from the edge so it does not sit on the resize handle (6px). */
   margin: 0 6px;
-  border-radius: 1px;
+  border-radius: 4px;
   background: #ffe2ab;
   box-shadow: 0 0 0 1px rgb(0 0 0 / 0.55);
   cursor: ew-resize;

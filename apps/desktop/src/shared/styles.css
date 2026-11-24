@@ -57,10 +57,10 @@ html {
 body {
   overflow: hidden;
   background:
-    radial-gradient(circle at 8% 10%, rgb(0 209 255 / 0.08), transparent 22%),
+    radial-gradient(circle at 8% 10%, rgb(255 255 255 / 0.048), transparent 22%),
     radial-gradient(circle at 92% 0%, rgb(255 226 171 / 0.06), transparent 24%),
-    #0d1220;
-  color: #e6ebf5;
+    #0f0f0f;
+  color: #ebebeb;
   font-family: Inter, sans-serif;
   user-select: none;
   -webkit-user-select: none;
@@ -109,10 +109,10 @@ input[type="range"] {
   ) {
   box-sizing: border-box;
   max-width: 100%;
-  border: 1px solid rgb(0 209 255 / 0.18);
-  border-radius: 2px;
-  background: rgb(27 36 61 / 0.98);
-  color: #eef2fa;
+  border: 1px solid rgb(255 255 255 / 0.108);
+  border-radius: 8px;
+  background: rgb(30 30 30 / 0.98);
+  color: #f2f2f2;
   padding: 0.55rem 0.7rem;
   font: 600 0.9rem/1.25 "Space Grotesk", sans-serif;
   outline: none;
@@ -138,7 +138,7 @@ input[type="range"] {
     textarea,
     select
   ):hover:not(:disabled) {
-  border-color: rgb(0 209 255 / 0.32);
+  border-color: rgb(255 255 255 / 0.192);
 }
 
 :where(
@@ -153,8 +153,8 @@ input[type="range"] {
     textarea,
     select
   ):focus-visible {
-  border-color: rgb(0 209 255 / 0.62);
-  box-shadow: 0 0 0 2px rgb(0 209 255 / 0.14);
+  border-color: rgb(255 255 255 / 0.372);
+  box-shadow: 0 0 0 2px rgb(255 255 255 / 0.084);
 }
 
 :where(
@@ -180,8 +180,8 @@ input[type="range"] {
 /* Las opciones del desplegable heredan el fondo oscuro donde el sistema lo
    permite (Windows/Linux; en Android e iOS manda el selector nativo). */
 :where(select) option {
-  background: #1b243d;
-  color: #eef2fa;
+  background: #1e1e1e;
+  color: #f2f2f2;
 }
 
 /* En los formularios de ajustes, los campos miden lo mismo que sus select
@@ -205,15 +205,15 @@ input[type="range"] {
 /* Casillas, radios y faders sin estilo propio: el acento de la app en vez
    del azul del sistema. */
 :where(input[type="checkbox"], input[type="radio"], input[type="range"]) {
-  accent-color: #00d1ff;
+  accent-color: #ffffff;
 }
 
 .lt-app-shell {
   width: 100vw;
   height: 100vh;
   overflow: hidden;
-  background: #0d1220;
-  color: #e6ebf5;
+  background: #0f0f0f;
+  color: #ebebeb;
   font-family: Inter, sans-serif;
   -webkit-font-smoothing: antialiased;
 }
@@ -277,17 +277,17 @@ html.lt-mobile .lt-app-shell {
   min-height: 2rem;
   padding: 0;
   border: 1px solid rgba(186, 202, 197, 0.18);
-  border-radius: 2px;
+  border-radius: 8px;
   background:
     linear-gradient(180deg, rgba(255, 255, 255, 0.04), rgba(0, 0, 0, 0.12)),
-    #141b2b;
-  color: #e6ebf5;
+    #161616;
+  color: #ebebeb;
 }
 
 .lt-mobile .lt-mobile-track-tools .lt-icon-button.is-active {
-  border-color: rgb(0 209 255 / 0.5);
-  background: rgb(0 209 255 / 0.16);
-  color: #00d1ff;
+  border-color: rgb(255 255 255 / 0.3);
+  background: rgb(255 255 255 / 0.096);
+  color: #ffffff;
 }
 
 .lt-mobile .lt-mobile-track-tools .lt-setlist-mixer-action-label {
@@ -345,9 +345,9 @@ html.lt-mobile .lt-app-shell {
   z-index: 40;
   pointer-events: none;
   box-sizing: border-box;
-  border: 1.5px dashed rgb(0 209 255 / 0.9);
-  background: rgb(0 209 255 / 0.12);
-  border-radius: 3px;
+  border: 1.5px dashed rgb(255 255 255 / 0.54);
+  background: rgb(255 255 255 / 0.072);
+  border-radius: 8px;
 }
 
 /* WKWebView can rubber-band the document even when body says overflow:hidden.
@@ -397,12 +397,12 @@ html.lt-ios body {
   height: 100%;
   width: 100%;
   overflow: hidden;
-  background: #0d1220;
-  color: #e6ebf5;
+  background: #0f0f0f;
+  color: #ebebeb;
 }
 
 .lt-daw-shell.is-midi-learn-active {
-  box-shadow: inset 0 0 0 2px rgb(0 209 255 / 0.45);
+  box-shadow: inset 0 0 0 2px rgb(255 255 255 / 0.27);
 }
 
 .lt-topbar {
@@ -413,7 +413,7 @@ html.lt-ios body {
   align-items: stretch;
   gap: 0.55rem;
   padding: 0.55rem 1rem 0.7rem;
-  background: #0d1220;
+  background: #0f0f0f;
   box-shadow: inset 0 -1px 0 rgb(186 202 197 / 0.15);
 }
 
@@ -452,9 +452,9 @@ html.lt-ios body {
   align-items: center;
   gap: 0.15rem;
   padding: 0.3rem 0.55rem;
-  border-radius: 2px;
-  background: #182035;
-  color: #9fb0c8;
+  border-radius: 8px;
+  background: #1a1a1a;
+  color: #aeaeae;
   font: 600 12px/1 "Space Grotesk", sans-serif;
   letter-spacing: 0.06em;
   text-transform: uppercase;
@@ -462,8 +462,8 @@ html.lt-ios body {
 
 .lt-top-menu-trigger:hover,
 .lt-top-menu.is-open .lt-top-menu-trigger {
-  background: #212c49;
-  color: #e6ebf5;
+  background: #242424;
+  color: #ebebeb;
 }
 
 .lt-top-menu-trigger .material-symbols-outlined {
@@ -478,8 +478,8 @@ html.lt-ios body {
   min-width: 15rem;
   padding: 0.35rem;
   border: 1px solid rgb(186 202 197 / 0.14);
-  border-radius: 2px;
-  background: linear-gradient(180deg, #141b2b 0%, #0d1220 100%);
+  border-radius: 8px;
+  background: linear-gradient(180deg, #161616 0%, #0f0f0f 100%);
   box-shadow: 0 14px 34px rgb(0 0 0 / 0.45);
 }
 
@@ -490,7 +490,7 @@ html.lt-ios body {
   gap: 1rem;
   width: 100%;
   padding: 0.55rem 0.65rem;
-  border-radius: 2px;
+  border-radius: 8px;
   background: transparent;
   color: #d7ddd9;
   font: 500 13px/1.1 Inter, sans-serif;
@@ -498,8 +498,8 @@ html.lt-ios body {
 }
 
 .lt-top-menu-dropdown button:hover:not(:disabled) {
-  background: #212c49;
-  color: #00d1ff;
+  background: #242424;
+  color: #ffffff;
 }
 
 .lt-top-menu-dropdown button:disabled {
@@ -516,7 +516,7 @@ html.lt-ios body {
 
 /* Titulo de categoria dentro de un desplegable (ARCHIVO). */
 .lt-top-menu-section {
-  color: #6b7a93;
+  color: #787878;
   font: 600 9px/1 "Space Grotesk", sans-serif;
   text-transform: uppercase;
   letter-spacing: 0.12em;
@@ -568,17 +568,17 @@ html.lt-ios body {
 }
 
 .lt-brand-mark {
-  width: 1.7rem;
-  height: 1.7rem;
+  width: 2.1rem;
+  height: 2.1rem;
   flex: none;
-  color: #00d1ff;
+  color: #ffffff;
 }
 
 .lt-brand-title {
   display: flex;
   flex-direction: column;
-  font: 900 0.95rem/0.88 Inter, sans-serif;
-  letter-spacing: -0.03em;
+  font: 800 1rem/0.92 Inter, sans-serif;
+  letter-spacing: -0.02em;
   color: #fff;
 }
 
@@ -618,14 +618,14 @@ html.lt-ios body {
   gap: 0.35rem;
   height: 2rem;
   padding: 0 0.35rem;
-  background: #111827;
-  border-radius: 2px;
+  background: #131313;
+  border-radius: 8px;
   flex-shrink: 0;
 }
 
 .lt-bpm-control span,
 .lt-bpm-control small {
-  color: #9fb0c8;
+  color: #aeaeae;
   font: 600 10px/1 "Space Grotesk", sans-serif;
   text-transform: uppercase;
   letter-spacing: 0.13em;
@@ -634,8 +634,8 @@ html.lt-ios body {
 .lt-bpm-control input {
   width: 7.5rem;
   border: 0;
-  background: #080c16;
-  color: #e6ebf5;
+  background: #0a0a0a;
+  color: #ebebeb;
   height: 1.35rem;
   padding: 0 0.4rem;
 }
@@ -653,10 +653,10 @@ html.lt-ios body {
   height: 2rem;
   min-width: 4.25rem;
   padding: 0 0.55rem;
-  border: 1px solid rgb(0 209 255 / 0.24);
-  border-radius: 2px;
-  background: rgb(0 209 255 / 0.08);
-  color: #d6f6ff;
+  border: 1px solid rgb(255 255 255 / 0.144);
+  border-radius: 8px;
+  background: rgb(255 255 255 / 0.048);
+  color: #f4f4f5;
   cursor: pointer;
   font: 700 10px/1 "Space Grotesk", sans-serif;
   letter-spacing: 0.12em;
@@ -665,8 +665,8 @@ html.lt-ios body {
 }
 
 .lt-tap-tempo-button:hover:not(:disabled) {
-  border-color: rgb(0 209 255 / 0.42);
-  background: rgb(0 209 255 / 0.14);
+  border-color: rgb(255 255 255 / 0.252);
+  background: rgb(255 255 255 / 0.084);
   color: #ffffff;
 }
 
@@ -686,9 +686,9 @@ html.lt-ios body {
   display: flex;
   align-items: center;
   gap: 0.2rem;
-  background: #080c16;
+  background: #0a0a0a;
   padding: 0.25rem 0.4rem;
-  border-radius: 2px;
+  border-radius: 8px;
   box-shadow: inset 0 0 8px rgb(0 0 0 / 0.5);
   flex-shrink: 0;
   margin-right: 0.5rem;
@@ -698,9 +698,9 @@ html.lt-ios body {
   display: flex;
   align-items: center;
   gap: 0.2rem;
-  background: #080c16;
+  background: #0a0a0a;
   padding: 0.25rem 0.55rem;
-  border-radius: 2px;
+  border-radius: 8px;
   box-shadow: inset 0 0 8px rgb(0 0 0 / 0.5);
   flex-shrink: 0;
 }
@@ -726,9 +726,9 @@ html.lt-ios body {
   width: 16px;
   height: 16px;
   flex: 0 0 auto;
-  border-radius: 2px;
+  border-radius: 8px;
   background: rgb(229 226 225 / 0.28);
-  color: #eef2fa;
+  color: #f2f2f2;
   font: 800 10px/1 "Space Grotesk", sans-serif;
 }
 
@@ -739,15 +739,15 @@ html.lt-ios body {
   justify-content: center;
   width: 1.8rem;
   height: 1.8rem;
-  border-radius: 2px;
+  border-radius: 8px;
   background: transparent;
-  color: #9fb0c8;
+  color: #aeaeae;
 }
 
 .lt-transport-buttons button:hover,
 .lt-topbar-history button:hover {
-  background: #1b2438;
-  color: #00d1ff;
+  background: #1d1d1d;
+  color: #ffffff;
 }
 
 .lt-transport-buttons button:disabled,
@@ -766,7 +766,7 @@ html.lt-ios body {
 }
 
 .lt-transport-buttons button.is-play:disabled {
-  background: rgb(0 209 255 / 0.18);
+  background: rgb(255 255 255 / 0.108);
   color: rgb(0 55 49 / 0.55);
   box-shadow: none;
 }
@@ -777,15 +777,15 @@ html.lt-ios body {
 .lt-transport-buttons button.is-play {
   width: 2rem;
   height: 2rem;
-  border-radius: 2px;
+  border-radius: 8px;
   background: transparent;
-  color: #00d1ff;
+  color: #ffffff;
   box-shadow: none;
 }
 
 .lt-transport-buttons button.is-play:not(:disabled):hover {
-  background: rgb(0 209 255 / 0.18);
-  color: #00d1ff;
+  background: rgb(255 255 255 / 0.108);
+  color: #ffffff;
 }
 
 .lt-transport-buttons button.is-play .material-symbols-outlined {
@@ -807,16 +807,16 @@ html.lt-ios body {
 }
 
 .lt-transport-buttons button.is-active:not(:disabled) {
-  background: rgb(0 209 255 / 0.18);
-  color: #00d1ff;
+  background: rgb(255 255 255 / 0.108);
+  color: #ffffff;
 }
 
 /* Sonando. Cuatro clases para ganarle a la regla generica de `.is-active` de
    arriba, que si no la pisa por venir despues en el fichero. */
 .lt-transport-buttons button.is-play.is-active:not(:disabled) {
-  background: linear-gradient(to bottom, #00d1ff, #00a8d6);
-  color: #00263a;
-  box-shadow: 0 0 12px rgb(0 209 255 / 0.3);
+  background: linear-gradient(to bottom, #ffffff, #e4e4e7);
+  color: #181818;
+  box-shadow: 0 0 12px rgb(255 255 255 / 0.18);
 }
 
 /* Split control: a main toggle (Click / Guía / Pads) with a caret button that
@@ -839,7 +839,7 @@ html.lt-ios body {
   padding: 0 0.1rem;
   border-top-left-radius: 0;
   border-bottom-left-radius: 0;
-  border-left: 1px solid rgb(0 209 255 / 0.16);
+  border-left: 1px solid rgb(255 255 255 / 0.096);
 }
 
 .lt-transport-buttons .lt-topbar-split button.lt-split-caret .material-symbols-outlined {
@@ -849,14 +849,14 @@ html.lt-ios body {
 /* Caret reflects the popover's open state: tinted background + accent icon,
    matching the app's active-toggle look. */
 .lt-transport-buttons .lt-topbar-split button.lt-split-caret.is-open:not(:disabled) {
-  background: rgb(0 209 255 / 0.18);
-  color: #00d1ff;
+  background: rgb(255 255 255 / 0.108);
+  color: #ffffff;
 }
 
 .lt-transport-buttons
   .lt-topbar-split
   button.lt-split-caret.is-open:not(:disabled):hover {
-  background: rgb(0 209 255 / 0.26);
+  background: rgb(255 255 255 / 0.156);
 }
 
 .lt-transport-readout {
@@ -883,7 +883,7 @@ html.lt-ios body {
   margin-bottom: 0.9rem;
   padding: 0.8rem 0.9rem;
   border: 1px solid rgb(240 180 60 / 0.35);
-  border-radius: 2px;
+  border-radius: 8px;
   background: linear-gradient(180deg, rgb(46 36 18 / 0.96), rgb(26 21 12 / 0.98));
 }
 
@@ -921,7 +921,7 @@ html.lt-ios body {
   align-self: flex-start;
   padding: 0.4rem 0.8rem;
   border: 1px solid rgb(240 180 60 / 0.45);
-  border-radius: 2px;
+  border-radius: 8px;
   background: rgb(240 180 60 / 0.12);
   color: rgb(248 214 146);
   font: inherit;
@@ -954,9 +954,9 @@ html.lt-ios body {
   max-width: 34rem;
   width: min(34rem, 100%);
   padding: 0.8rem 0.9rem;
-  border: 1px solid rgb(0 209 255 / 0.16);
-  border-radius: 2px;
-  background: linear-gradient(180deg, rgb(20 27 43 / 0.96), rgb(15 20 34 / 0.98));
+  border: 1px solid rgb(255 255 255 / 0.096);
+  border-radius: 8px;
+  background: linear-gradient(180deg, rgb(22 22 22 / 0.96), rgb(16 16 16 / 0.98));
   box-shadow: inset 0 1px 0 rgb(255 255 255 / 0.04);
 }
 
@@ -969,14 +969,14 @@ html.lt-ios body {
 
 .lt-remote-card-eyebrow,
 .lt-remote-link-row span {
-  color: #00d1ff;
+  color: #ffffff;
   font: 700 10px/1 "Space Grotesk", sans-serif;
   letter-spacing: 0.14em;
   text-transform: uppercase;
 }
 
 .lt-remote-card-copy strong {
-  color: #eef2fa;
+  color: #f2f2f2;
   font: 800 0.98rem/1.1 Inter, sans-serif;
 }
 
@@ -1005,22 +1005,22 @@ html.lt-ios body {
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
-  color: #e6ebf5;
+  color: #ebebeb;
   font: 600 12px/1.3 "Space Grotesk", monospace;
 }
 
 .lt-remote-link-row .lt-remote-link {
   cursor: pointer;
   text-decoration: underline;
-  text-decoration-color: rgb(0 209 255 / 0.55);
+  text-decoration-color: rgb(255 255 255 / 0.33);
   text-underline-offset: 3px;
   transition: color 120ms ease, text-decoration-color 120ms ease;
 }
 
 .lt-remote-link-row .lt-remote-link:hover,
 .lt-remote-link-row .lt-remote-link:focus-visible {
-  color: #00d1ff;
-  text-decoration-color: #00d1ff;
+  color: #ffffff;
+  text-decoration-color: #ffffff;
   outline: none;
 }
 
@@ -1040,9 +1040,9 @@ html.lt-ios body {
   display: flex;
   align-items: center;
   justify-content: center;
-  border-radius: 2px;
+  border-radius: 8px;
   background:
-    radial-gradient(circle at top, rgb(0 209 255 / 0.16), transparent 60%),
+    radial-gradient(circle at top, rgb(255 255 255 / 0.096), transparent 60%),
     rgb(255 255 255 / 0.04);
   flex-shrink: 0;
 }
@@ -1055,7 +1055,7 @@ html.lt-ios body {
 
 .lt-remote-qr-placeholder {
   background: rgb(255 255 255 / 0.04);
-  border-radius: 2px;
+  border-radius: 8px;
 }
 
 .lt-readout-block {
@@ -1067,14 +1067,14 @@ html.lt-ios body {
 }
 
 .lt-readout-block span {
-  color: #9fb0c8;
+  color: #aeaeae;
   font: 600 10px/1 "Space Grotesk", sans-serif;
   letter-spacing: 0.14em;
   text-transform: uppercase;
 }
 
 .lt-readout-block strong {
-  color: #00d1ff;
+  color: #ffffff;
   font: 900 1.15rem/1 ui-monospace, "Cascadia Mono", "SFMono-Regular", Menlo, Monaco, Consolas, "Liberation Mono", monospace;
   letter-spacing: 0;
   text-transform: uppercase;
@@ -1084,7 +1084,7 @@ html.lt-ios body {
 }
 
 .lt-readout-block.is-timecode strong {
-  color: #e6ebf5;
+  color: #ebebeb;
   width: 11ch;
 }
 
@@ -1103,18 +1103,18 @@ html.lt-ios body {
 }
 
 .transport-pill {
-  border-radius: 2px;
+  border-radius: 8px;
   padding: 0.25rem 0.5rem;
   font: 600 10px/1 "Space Grotesk", sans-serif;
   text-transform: uppercase;
   letter-spacing: 0.12em;
-  color: #9fb0c8;
-  background: #141b2b;
+  color: #aeaeae;
+  background: #161616;
 }
 
 .transport-pill.is-playing {
-  color: #00d1ff;
-  background: rgb(0 209 255 / 0.15);
+  color: #ffffff;
+  background: rgb(255 255 255 / 0.09);
 }
 
 .transport-pill.is-paused,
@@ -1138,7 +1138,7 @@ html.lt-ios body {
   display: inline-flex;
   align-items: center;
   gap: 0.3rem;
-  border-radius: 2px;
+  border-radius: 8px;
   padding: 0.25rem 0.5rem;
   font: 600 10px/1 "Space Grotesk", sans-serif;
   text-transform: uppercase;
@@ -1160,8 +1160,8 @@ html.lt-ios body {
 }
 
 .lt-device-status-pill.is-restored {
-  color: #00d1ff;
-  background: rgb(0 209 255 / 0.15);
+  color: #ffffff;
+  background: rgb(255 255 255 / 0.09);
 }
 
 @keyframes lt-device-status-blink {
@@ -1185,16 +1185,16 @@ html.lt-ios body {
   display: inline-flex;
   align-items: center;
   gap: 0.35rem;
-  border-radius: 2px;
-  background: #141b2b;
-  color: #9fb0c8;
+  border-radius: 8px;
+  background: #161616;
+  color: #aeaeae;
   padding: 0.35rem 0.6rem;
   font-size: 12px;
 }
 
 .lt-session-actions button:hover {
-  background: #1b2438;
-  color: #e6ebf5;
+  background: #1d1d1d;
+  color: #ebebeb;
 }
 
 .lt-session-actions button .material-symbols-outlined {
@@ -1224,9 +1224,9 @@ html.lt-ios body {
   height: 2rem;
   padding: 0;
   border: 0;
-  border-radius: 3px;
+  border-radius: 8px;
   background: transparent;
-  color: #e6ebf5;
+  color: #ebebeb;
 }
 
 .lt-mobile .lt-navigation-toggle {
@@ -1242,7 +1242,7 @@ html.lt-ios body {
   height: 2.5rem;
   max-height: 2.5rem;
   object-fit: cover;
-  border-radius: 3px;
+  border-radius: 8px;
 }
 
 .lt-setlist-song-tile.is-short .lt-song-cover,
@@ -1261,7 +1261,7 @@ html.lt-ios body {
   flex-direction: column;
   gap: 0.25rem;
   padding: 0.25rem;
-  background: #080c16;
+  background: #0a0a0a;
 }
 
 .lt-side-nav button {
@@ -1270,7 +1270,7 @@ html.lt-ios body {
   align-items: center;
   justify-content: center;
   gap: 0.25rem;
-  border-radius: 2px;
+  border-radius: 8px;
   padding: 0.8rem 0.2rem;
   background: transparent;
   color: rgb(186 202 197 / 0.55);
@@ -1283,12 +1283,12 @@ html.lt-ios body {
 
 .lt-side-nav button:hover,
 .lt-side-nav button.is-active {
-  background: #1b2438;
-  color: #00d1ff;
+  background: #1d1d1d;
+  color: #ffffff;
 }
 
 .lt-side-nav button.is-active {
-  box-shadow: inset 2px 0 0 #00d1ff;
+  box-shadow: inset 2px 0 0 #ffffff;
 }
 
 .lt-side-nav button.is-midi-learn {
@@ -1337,13 +1337,13 @@ html.lt-ios body {
   flex-direction: column;
   gap: 0.75rem;
   overflow: hidden;
-  border: 1px solid rgb(0 209 255 / 0.22);
-  border-radius: 2px;
-  background: linear-gradient(180deg, rgb(21 28 47 / 0.98), rgb(11 16 28 / 0.98));
+  border: 1px solid rgb(255 255 255 / 0.132);
+  border-radius: 8px;
+  background: linear-gradient(180deg, rgb(23 23 23 / 0.98), rgb(13 13 13 / 0.98));
   box-shadow:
     0 18px 48px rgb(0 0 0 / 0.48),
     inset 0 1px 0 rgb(255 255 255 / 0.04);
-  color: #e6ebf5;
+  color: #ebebeb;
   padding: 1rem;
   pointer-events: auto;
 }
@@ -1352,13 +1352,13 @@ html.lt-ios body {
   position: absolute;
   inset: 0 auto 0 0;
   width: 3px;
-  background: #00d1ff;
-  box-shadow: 0 0 16px rgb(0 209 255 / 0.45);
+  background: #ffffff;
+  box-shadow: 0 0 16px rgb(255 255 255 / 0.27);
 }
 
 .lt-dialog-eyebrow {
   margin: 0;
-  color: rgb(0 209 255 / 0.82);
+  color: rgb(255 255 255 / 0.492);
   font: 700 10px/1 "Space Grotesk", sans-serif;
   letter-spacing: 0.16em;
   text-transform: uppercase;
@@ -1366,7 +1366,7 @@ html.lt-ios body {
 
 .lt-dialog-message {
   margin: 0;
-  color: #eef2fa;
+  color: #f2f2f2;
   font: 700 0.92rem/1.35 Inter, sans-serif;
   white-space: pre-wrap;
 }
@@ -1376,17 +1376,17 @@ html.lt-ios body {
   width: 100%;
   height: 2.15rem;
   border: 1px solid rgb(186 202 197 / 0.22);
-  border-radius: 2px;
-  background: #080c16;
-  color: #e6ebf5;
+  border-radius: 8px;
+  background: #0a0a0a;
+  color: #ebebeb;
   font: 600 0.86rem/1 Inter, sans-serif;
   outline: none;
   padding: 0 0.6rem;
 }
 
 .lt-dialog-input:focus {
-  border-color: rgb(0 209 255 / 0.62);
-  box-shadow: 0 0 0 2px rgb(0 209 255 / 0.14);
+  border-color: rgb(255 255 255 / 0.372);
+  box-shadow: 0 0 0 2px rgb(255 255 255 / 0.084);
 }
 
 .lt-dialog-actions {
@@ -1403,9 +1403,9 @@ html.lt-ios body {
   min-width: 4.75rem;
   height: 2rem;
   border: 1px solid rgb(255 255 255 / 0.08);
-  border-radius: 2px;
+  border-radius: 8px;
   background: rgb(255 255 255 / 0.04);
-  color: #e6ebf5;
+  color: #ebebeb;
   cursor: pointer;
   font: 700 10px/1 "Space Grotesk", sans-serif;
   letter-spacing: 0.12em;
@@ -1414,16 +1414,16 @@ html.lt-ios body {
 
 .lt-dialog-button:hover,
 .lt-dialog-button:focus-visible {
-  border-color: rgb(0 209 255 / 0.34);
-  color: #00d1ff;
+  border-color: rgb(255 255 255 / 0.204);
+  color: #ffffff;
   outline: none;
 }
 
 .lt-dialog-button--primary {
-  border-color: rgb(0 209 255 / 0.64);
-  background: linear-gradient(to bottom, #00d1ff, #00a8d6);
-  color: #00263a;
-  box-shadow: 0 0 12px rgb(0 209 255 / 0.2);
+  border-color: rgb(255 255 255 / 0.384);
+  background: linear-gradient(to bottom, #ffffff, #e4e4e7);
+  color: #181818;
+  box-shadow: 0 0 12px rgb(255 255 255 / 0.12);
 }
 
 .lt-dialog-button--primary:hover,
@@ -1476,11 +1476,11 @@ html.lt-ios body {
   display: flex;
   flex-direction: column;
   gap: 1rem;
-  border-radius: 2px;
-  border: 1px solid rgb(0 209 255 / 0.18);
+  border-radius: 8px;
+  border: 1px solid rgb(255 255 255 / 0.108);
   background:
-    radial-gradient(circle at top left, rgb(0 209 255 / 0.12), transparent 45%),
-  linear-gradient(180deg, rgb(22 29 49 / 0.98), rgb(13 18 29 / 0.98));
+    radial-gradient(circle at top left, rgb(255 255 255 / 0.072), transparent 45%),
+  linear-gradient(180deg, rgb(24 24 24 / 0.98), rgb(15 15 15 / 0.98));
   box-shadow: 0 28px 80px rgb(0 0 0 / 0.45);
   padding: 1.2rem;
   max-height: calc(100vh - 3rem);
@@ -1509,7 +1509,7 @@ html.lt-ios body {
 
 .lt-settings-modal-header h2 {
   margin: 0.2rem 0 0.3rem;
-  color: #eef2fa;
+  color: #f2f2f2;
   font: 800 1.5rem/1 "Space Grotesk", sans-serif;
   letter-spacing: -0.05em;
 }
@@ -1521,7 +1521,7 @@ html.lt-ios body {
 }
 
 .lt-settings-modal-eyebrow {
-  color: rgb(0 209 255 / 0.82);
+  color: rgb(255 255 255 / 0.492);
   font: 700 10px/1 "Space Grotesk", sans-serif;
   letter-spacing: 0.16em;
   text-transform: uppercase;
@@ -1531,10 +1531,10 @@ html.lt-ios body {
   display: inline-flex;
   align-items: center;
   gap: 0.35rem;
-  border-radius: 2px;
+  border-radius: 8px;
   border: 1px solid rgb(255 255 255 / 0.08);
   background: rgb(255 255 255 / 0.04);
-  color: #e6ebf5;
+  color: #ebebeb;
   padding: 0.6rem 0.85rem;
   font: 700 10px/1 "Space Grotesk", sans-serif;
   letter-spacing: 0.12em;
@@ -1542,8 +1542,8 @@ html.lt-ios body {
 }
 
 .lt-settings-modal-close:hover {
-  border-color: rgb(0 209 255 / 0.28);
-  color: #00d1ff;
+  border-color: rgb(255 255 255 / 0.168);
+  color: #ffffff;
 }
 
 .lt-settings-modal-close .material-symbols-outlined {
@@ -1561,7 +1561,7 @@ html.lt-ios body {
 
 .lt-update-modal-notes-title {
   margin: 0;
-  color: rgb(0 209 255 / 0.82);
+  color: rgb(255 255 255 / 0.492);
   font: 700 10px/1 "Space Grotesk", sans-serif;
   letter-spacing: 0.16em;
   text-transform: uppercase;
@@ -1577,7 +1577,7 @@ html.lt-ios body {
 .lt-update-modal-notes-body h5,
 .lt-update-modal-notes-body h6 {
   margin: 0.8rem 0 0.4rem;
-  color: #eef2fa;
+  color: #f2f2f2;
   font: 700 0.95rem/1.2 "Space Grotesk", sans-serif;
 }
 
@@ -1596,7 +1596,7 @@ html.lt-ios body {
 
 .lt-update-modal-notes-body code {
   background: rgb(255 255 255 / 0.06);
-  border-radius: 2px;
+  border-radius: 8px;
   padding: 0.05rem 0.3rem;
   font-size: 0.85em;
 }
@@ -1614,13 +1614,13 @@ html.lt-ios body {
 }
 
 .lt-update-modal-primary {
-  border-color: rgb(0 209 255 / 0.5);
-  background: rgb(0 209 255 / 0.12);
-  color: #00d1ff;
+  border-color: rgb(255 255 255 / 0.3);
+  background: rgb(255 255 255 / 0.072);
+  color: #ffffff;
 }
 
 .lt-update-modal-primary:hover {
-  background: rgb(0 209 255 / 0.22);
+  background: rgb(255 255 255 / 0.132);
 }
 
 .lt-update-modal-skip {
@@ -1635,7 +1635,7 @@ html.lt-ios body {
 }
 
 .lt-update-check-status--new {
-  color: #00d1ff;
+  color: #ffffff;
 }
 
 .lt-update-check-status--error {
@@ -1682,7 +1682,7 @@ html.lt-ios body {
   min-height: 0;
   overflow-y: auto;
   padding: 0.4rem;
-  border-radius: 2px;
+  border-radius: 8px;
   border: 1px solid rgb(255 255 255 / 0.06);
   background: rgb(255 255 255 / 0.03);
 }
@@ -1695,7 +1695,7 @@ html.lt-ios body {
   width: 100%;
   min-height: 2.5rem;
   padding: 0.68rem 0.75rem;
-  border-radius: 2px;
+  border-radius: 8px;
   border: 1px solid transparent;
   background: transparent;
   color: rgb(229 226 225 / 0.72);
@@ -1706,15 +1706,15 @@ html.lt-ios body {
 }
 
 .lt-settings-tab-button:hover {
-  border-color: rgb(0 209 255 / 0.18);
-  background: rgb(0 209 255 / 0.06);
-  color: #eef2fa;
+  border-color: rgb(255 255 255 / 0.108);
+  background: rgb(255 255 255 / 0.036);
+  color: #f2f2f2;
 }
 
 .lt-settings-tab-button.is-active {
-  border-color: rgb(0 209 255 / 0.28);
-  background: rgb(0 209 255 / 0.12);
-  color: #00d1ff;
+  border-color: rgb(255 255 255 / 0.168);
+  background: rgb(255 255 255 / 0.072);
+  color: #ffffff;
 }
 
 .lt-settings-tablist > .lt-settings-tab-button,
@@ -1740,7 +1740,7 @@ html.lt-ios body {
 
 /* Folded with the selected tab inside: the row says where you are. */
 .lt-settings-tab-group-toggle.holds-active[aria-expanded="false"] {
-  color: #00d1ff;
+  color: #ffffff;
 }
 
 .lt-settings-tab-group-items {
@@ -1795,17 +1795,17 @@ html.lt-ios body {
 }
 
 .lt-inline-actions button {
-  border-radius: 2px;
+  border-radius: 8px;
   border: 1px solid rgb(255 255 255 / 0.1);
   background: rgb(255 255 255 / 0.05);
-  color: #eef2fa;
+  color: #f2f2f2;
   padding: 0.7rem 1rem;
   font: 700 0.82rem/1 "Space Grotesk", sans-serif;
 }
 
 .lt-inline-actions button:hover {
-  border-color: rgb(0 209 255 / 0.28);
-  color: #00d1ff;
+  border-color: rgb(255 255 255 / 0.168);
+  color: #ffffff;
 }
 
 /* Base look of `.lt-secondary-button` wherever it lives. Before this it only
@@ -1813,18 +1813,18 @@ html.lt-ios body {
    buttons, "Check for updates", diagnostics...) it fell back to the browser's
    grey default. Plain class specificity so container rules still win. */
 .lt-secondary-button {
-  border-radius: 2px;
+  border-radius: 8px;
   border: 1px solid rgb(255 255 255 / 0.1);
   background: rgb(255 255 255 / 0.05);
-  color: #eef2fa;
+  color: #f2f2f2;
   padding: 0.45rem 0.75rem;
   font: 700 0.75rem/1 "Space Grotesk", sans-serif;
   cursor: pointer;
 }
 
 .lt-secondary-button:hover:not(:disabled) {
-  border-color: rgb(0 209 255 / 0.28);
-  color: #00d1ff;
+  border-color: rgb(255 255 255 / 0.168);
+  color: #ffffff;
 }
 
 .lt-secondary-button:disabled {
@@ -1847,7 +1847,7 @@ html.lt-ios body {
   max-height: 40vh;
   overflow: auto;
   border: 1px solid rgb(255 255 255 / 0.1);
-  border-radius: 2px;
+  border-radius: 8px;
   background: rgb(0 0 0 / 0.35);
   color: rgb(229 226 225 / 0.85);
   font: 400 0.76rem/1.5 "JetBrains Mono", ui-monospace, monospace;
@@ -1865,8 +1865,8 @@ html.lt-ios body {
 }
 
 .lt-inline-actions button.is-primary {
-  border-color: rgb(0 209 255 / 0.24);
-  background: rgb(0 209 255 / 0.14);
+  border-color: rgb(255 255 255 / 0.144);
+  background: rgb(255 255 255 / 0.084);
 }
 
 .lt-missing-files-list {
@@ -1884,7 +1884,7 @@ html.lt-ios body {
   gap: 0.75rem;
   padding: 0.65rem 0.75rem;
   border: 1px solid rgb(255 255 255 / 0.08);
-  border-radius: 2px;
+  border-radius: 8px;
   background: rgb(255 255 255 / 0.04);
 }
 
@@ -1898,10 +1898,10 @@ html.lt-ios body {
 }
 
 .lt-missing-file-row button {
-  border-radius: 2px;
-  border: 1px solid rgb(0 209 255 / 0.24);
-  background: rgb(0 209 255 / 0.14);
-  color: #eef2fa;
+  border-radius: 8px;
+  border: 1px solid rgb(255 255 255 / 0.144);
+  background: rgb(255 255 255 / 0.084);
+  color: #f2f2f2;
   padding: 0.58rem 0.85rem;
   font: 700 0.76rem/1 "Space Grotesk", sans-serif;
 }
@@ -1917,11 +1917,11 @@ html.lt-ios body {
   flex-direction: column;
   gap: 0.85rem;
   padding: 1rem;
-  border-radius: 2px;
-  border: 1px solid rgb(0 209 255 / 0.14);
+  border-radius: 8px;
+  border: 1px solid rgb(255 255 255 / 0.084);
   background:
-    radial-gradient(circle at top right, rgb(0 209 255 / 0.08), transparent 42%),
-    rgb(14 18 30 / 0.92);
+    radial-gradient(circle at top right, rgb(255 255 255 / 0.048), transparent 42%),
+    rgb(15 15 15 / 0.92);
 }
 
 .lt-midi-learn-panel-header {
@@ -1953,10 +1953,10 @@ html.lt-ios body {
   align-items: center;
   justify-content: center;
   gap: 0.35rem;
-  border-radius: 2px;
-  border: 1px solid rgb(0 209 255 / 0.2);
-  background: rgb(0 209 255 / 0.06);
-  color: #d6f6ff;
+  border-radius: 8px;
+  border: 1px solid rgb(255 255 255 / 0.12);
+  background: rgb(255 255 255 / 0.036);
+  color: #f4f4f5;
   padding: 0.55rem 0.8rem;
   font: 700 10px/1 "Space Grotesk", sans-serif;
   letter-spacing: 0.12em;
@@ -1967,8 +1967,8 @@ html.lt-ios body {
 .lt-midi-learn-activate:hover,
 .lt-midi-learn-relearn:hover,
 .lt-midi-learn-map-jump:hover {
-  border-color: rgb(0 209 255 / 0.42);
-  background: rgb(0 209 255 / 0.12);
+  border-color: rgb(255 255 255 / 0.252);
+  background: rgb(255 255 255 / 0.072);
   color: #ffffff;
 }
 
@@ -2001,7 +2001,7 @@ html.lt-ios body {
   flex-direction: column;
   gap: 0.35rem;
   padding: 0.85rem 0.9rem;
-  border-radius: 2px;
+  border-radius: 8px;
   border: 1px solid rgb(255 255 255 / 0.06);
   background: rgb(255 255 255 / 0.03);
 }
@@ -2018,7 +2018,7 @@ html.lt-ios body {
 
 .lt-midi-learn-feedback strong,
 .lt-midi-learn-live strong {
-  color: #eef2fa;
+  color: #f2f2f2;
   font: 700 0.82rem/1 "Space Grotesk", sans-serif;
   letter-spacing: 0.12em;
   text-transform: uppercase;
@@ -2026,9 +2026,9 @@ html.lt-ios body {
 
 .lt-midi-learn-table-wrap {
   overflow: auto;
-  border-radius: 2px;
+  border-radius: 8px;
   border: 1px solid rgb(255 255 255 / 0.06);
-  background: rgb(9 12 19 / 0.75);
+  background: rgb(10 10 10 / 0.75);
 }
 
 .lt-midi-learn-table {
@@ -2057,12 +2057,12 @@ html.lt-ios body {
 }
 
 .lt-midi-learn-table tbody tr.is-midi-target {
-  background: rgb(0 209 255 / 0.06);
+  background: rgb(255 255 255 / 0.036);
 }
 
 .lt-midi-learn-table td strong {
   display: block;
-  color: #eef2fa;
+  color: #f2f2f2;
   font: 700 0.88rem/1.2 "Space Grotesk", sans-serif;
 }
 
@@ -2101,16 +2101,16 @@ html.lt-ios body {
   align-items: center;
   min-height: 1.8rem;
   padding: 0.35rem 0.6rem;
-  border-radius: 2px;
+  border-radius: 8px;
   font: 700 10px/1 "Space Grotesk", sans-serif;
   letter-spacing: 0.08em;
   text-transform: uppercase;
 }
 
 .lt-midi-binding-pill {
-  border: 1px solid rgb(0 209 255 / 0.22);
-  background: rgb(0 209 255 / 0.08);
-  color: #d6f6ff;
+  border: 1px solid rgb(255 255 255 / 0.132);
+  background: rgb(255 255 255 / 0.048);
+  color: #f4f4f5;
 }
 
 .lt-midi-binding-empty {
@@ -2123,15 +2123,15 @@ html.lt-ios body {
   display: flex;
   flex-direction: column;
   gap: 0.55rem;
-  border-radius: 2px;
+  border-radius: 8px;
   border: 1px solid rgb(255 255 255 / 0.06);
-  background: rgb(16 21 35 / 0.92);
+  background: rgb(17 17 17 / 0.92);
   padding: 0.95rem;
 }
 
 .lt-settings-field-label,
 .lt-settings-toggle-copy strong {
-  color: #eef2fa;
+  color: #f2f2f2;
   font: 700 0.92rem/1.2 "Space Grotesk", sans-serif;
 }
 
@@ -2164,7 +2164,7 @@ html.lt-ios body {
 .lt-template-library-name {
   min-width: 0;
   overflow: hidden;
-  color: #eef2fa;
+  color: #f2f2f2;
   text-overflow: ellipsis;
   white-space: nowrap;
 }
@@ -2182,10 +2182,10 @@ html.lt-ios body {
 
 .lt-settings-field select {
   width: 100%;
-  border-radius: 2px;
-  border: 1px solid rgb(0 209 255 / 0.18);
-  background: rgb(27 36 61 / 0.98);
-  color: #eef2fa;
+  border-radius: 8px;
+  border: 1px solid rgb(255 255 255 / 0.108);
+  background: rgb(30 30 30 / 0.98);
+  color: #f2f2f2;
   padding: 0.75rem 0.85rem;
   font: 600 0.92rem/1.2 "Space Grotesk", sans-serif;
 }
@@ -2238,12 +2238,12 @@ html.lt-ios body {
   gap: 0.7rem;
   padding: 0.8rem;
   border: 1px solid rgb(255 255 255 / 0.1);
-  border-radius: 4px;
+  border-radius: 8px;
   cursor: pointer;
 }
 
 .lt-export-option:hover {
-  border-color: rgb(0 209 255 / 0.28);
+  border-color: rgb(255 255 255 / 0.168);
 }
 
 .lt-export-option > input {
@@ -2301,18 +2301,18 @@ html.lt-ios body {
 /* "All / None" style buttons above a track picker: the modal action buttons'
    look, one size down. `.lt-secondary-button` alone has no global style. */
 .lt-render-track-tools button {
-  border-radius: 2px;
+  border-radius: 8px;
   border: 1px solid rgb(255 255 255 / 0.1);
   background: rgb(255 255 255 / 0.05);
-  color: #eef2fa;
+  color: #f2f2f2;
   padding: 0.45rem 0.75rem;
   font: 700 0.75rem/1 "Space Grotesk", sans-serif;
   cursor: pointer;
 }
 
 .lt-render-track-tools button:hover {
-  border-color: rgb(0 209 255 / 0.28);
-  color: #00d1ff;
+  border-color: rgb(255 255 255 / 0.168);
+  color: #ffffff;
 }
 
 .lt-render-track-tools button:disabled {
@@ -2325,7 +2325,7 @@ html.lt-ios body {
   flex-direction: column;
   gap: 0.3rem;
   padding: 0.6rem 0.2rem;
-  color: #e6ebf5;
+  color: #ebebeb;
 }
 
 .lt-render-pan-heading {
@@ -2363,8 +2363,8 @@ html.lt-ios body {
 
 .lt-render-track-list {
   border: 1px solid rgb(255 255 255 / 0.08);
-  border-radius: 4px;
-  background: rgb(16 21 35 / 0.92);
+  border-radius: 8px;
+  background: rgb(17 17 17 / 0.92);
   padding: 0.25rem;
   /* Tope fijo con scroll propio: una sesion de 30 pistas no debe empujar las
      opciones de salida fuera de la vista. Sin overscroll-behavior a proposito:
@@ -2388,7 +2388,7 @@ html.lt-ios body {
   gap: 0.45rem;
   min-height: 1.75rem;
   padding: 0 0.45rem;
-  border-radius: 3px;
+  border-radius: 8px;
   font-size: 0.85rem;
   cursor: pointer;
 }
@@ -2401,7 +2401,7 @@ html.lt-ios body {
 }
 
 .lt-render-track:hover {
-  background: rgb(0 209 255 / 0.06);
+  background: rgb(255 255 255 / 0.036);
 }
 
 .lt-render-track.is-folder {
@@ -2426,7 +2426,7 @@ html.lt-ios body {
 .lt-render-track-swatch {
   width: 0.3rem;
   height: 0.95rem;
-  border-radius: 2px;
+  border-radius: 8px;
   flex: none;
 }
 
@@ -2459,17 +2459,17 @@ html.lt-ios body {
 .lt-render-file-name {
   width: 100%;
   box-sizing: border-box;
-  border-radius: 2px;
-  border: 1px solid rgb(0 209 255 / 0.18);
-  background: rgb(27 36 61 / 0.98);
-  color: #eef2fa;
+  border-radius: 8px;
+  border: 1px solid rgb(255 255 255 / 0.108);
+  background: rgb(30 30 30 / 0.98);
+  color: #f2f2f2;
   padding: 0.75rem 0.85rem;
   font: 600 0.92rem/1.2 "Space Grotesk", sans-serif;
 }
 
 .lt-render-status {
   margin: 0;
-  color: #eef2fa;
+  color: #f2f2f2;
   font: 700 0.95rem/1.3 "Space Grotesk", sans-serif;
   word-break: break-word;
 }
@@ -2497,7 +2497,7 @@ html.lt-ios body {
 
 .lt-render-progress-fill {
   height: 100%;
-  background: #00d1ff;
+  background: #ffffff;
   transition: width 120ms linear;
 }
 
@@ -2559,16 +2559,16 @@ html.lt-ios body {
   min-height: 2rem;
   padding: 0 0.2rem;
   border: 0;
-  border-radius: 3px;
+  border-radius: 8px;
   background: transparent;
-  color: #eef2fa;
+  color: #f2f2f2;
   font: 700 0.85rem/1.2 "Space Grotesk", sans-serif;
   text-align: left;
   cursor: pointer;
 }
 
 .lt-level-songs-group-toggle:hover {
-  background: rgb(0 209 255 / 0.06);
+  background: rgb(255 255 255 / 0.036);
 }
 
 .lt-level-songs-group-toggle .material-symbols-outlined {
@@ -2619,8 +2619,8 @@ html.lt-ios body {
 
 .lt-level-songs-table-wrap {
   border: 1px solid rgb(255 255 255 / 0.08);
-  border-radius: 4px;
-  background: rgb(16 21 35 / 0.92);
+  border-radius: 8px;
+  background: rgb(17 17 17 / 0.92);
   max-height: 22rem;
   overflow: auto;
 }
@@ -2634,7 +2634,7 @@ html.lt-ios body {
 .lt-level-songs-table th {
   position: sticky;
   top: 0;
-  background: rgb(22 29 49);
+  background: rgb(24 24 24);
   color: rgb(214 226 224 / 0.6);
   font-size: 0.72rem;
   font-weight: 700;
@@ -2662,7 +2662,7 @@ html.lt-ios body {
 
 .lt-level-songs-name {
   display: block;
-  color: #eef2fa;
+  color: #f2f2f2;
 }
 
 .lt-level-songs-note {
@@ -2692,10 +2692,10 @@ html.lt-ios body {
 /* `.lt-secondary-button` has no global style: these get the look of the
    modals' small tool buttons. */
 .lt-song-analysis-button {
-  border-radius: 2px;
+  border-radius: 8px;
   border: 1px solid rgb(255 255 255 / 0.1);
   background: rgb(255 255 255 / 0.05);
-  color: #eef2fa;
+  color: #f2f2f2;
   padding: 0.45rem 0.75rem;
   font: 700 0.75rem/1 "Space Grotesk", sans-serif;
   cursor: pointer;
@@ -2703,8 +2703,8 @@ html.lt-ios body {
 }
 
 .lt-song-analysis-button:hover:not(:disabled) {
-  border-color: rgb(0 209 255 / 0.28);
-  color: #00d1ff;
+  border-color: rgb(255 255 255 / 0.168);
+  color: #ffffff;
 }
 
 .lt-song-analysis-button:disabled {
@@ -2765,9 +2765,9 @@ html.lt-ios body {
   display: grid;
   gap: 0.5rem;
   padding: 0.7rem;
-  border: 1px solid rgb(0 209 255 / 0.18);
-  border-radius: 4px;
-  background: rgb(0 209 255 / 0.04);
+  border: 1px solid rgb(255 255 255 / 0.108);
+  border-radius: 8px;
+  background: rgb(255 255 255 / 0.024);
 }
 
 .lt-song-analysis-lead {
@@ -2806,8 +2806,8 @@ html.lt-ios body {
 .lt-song-analysis-guide-row {
   padding: 0.5rem 0.55rem;
   border: 1px solid rgb(255 255 255 / 0.08);
-  border-radius: 4px;
-  background: rgb(16 21 35 / 0.6);
+  border-radius: 8px;
+  background: rgb(17 17 17 / 0.6);
 }
 
 .lt-song-analysis-guide-row.is-unassigned {
@@ -2886,7 +2886,7 @@ html.lt-ios body {
 }
 
 .lt-song-analysis-summary strong {
-  color: #00d1ff;
+  color: #ffffff;
 }
 
 .lt-song-analysis-table input[type="text"] {
@@ -2979,15 +2979,15 @@ html.lt-ios body {
 .lt-batch-analysis-status {
   flex: none;
   padding: 0.05rem 0.4rem;
-  border-radius: 2px;
+  border-radius: 8px;
   background: rgb(255 255 255 / 0.08);
   color: rgb(186 202 197 / 0.85);
   font-size: 0.7rem;
 }
 
 .lt-batch-analysis-row.is-applied .lt-batch-analysis-status {
-  background: rgb(0 209 255 / 0.14);
-  color: #00d1ff;
+  background: rgb(255 255 255 / 0.084);
+  color: #ffffff;
 }
 
 .lt-batch-analysis-row.is-failed .lt-batch-analysis-status {
@@ -3038,7 +3038,7 @@ html.lt-ios body {
 }
 
 .lt-level-songs-change {
-  color: #00d1ff;
+  color: #ffffff;
   font-weight: 700;
 }
 
@@ -3055,10 +3055,10 @@ html.lt-ios body {
   /* Without border-box the padding adds to the 100% width and the input
      overflows the modal body. */
   box-sizing: border-box;
-  border-radius: 2px;
-  border: 1px solid rgb(0 209 255 / 0.18);
-  background: rgb(27 36 61 / 0.98);
-  color: #eef2fa;
+  border-radius: 8px;
+  border: 1px solid rgb(255 255 255 / 0.108);
+  background: rgb(30 30 30 / 0.98);
+  color: #f2f2f2;
   padding: 0.75rem 0.85rem;
   font: 600 0.92rem/1.2 "Space Grotesk", sans-serif;
 }
@@ -3087,7 +3087,7 @@ html.lt-ios body {
 
 .lt-automation-action-row {
   border: 1px solid rgb(255 122 182 / 0.18);
-  border-radius: 4px;
+  border-radius: 8px;
   padding: 0.7rem;
   background: rgb(255 122 182 / 0.04);
   display: flex;
@@ -3117,9 +3117,9 @@ html.lt-ios body {
   width: 1.7rem;
   height: 1.7rem;
   border: 1px solid rgb(255 255 255 / 0.12);
-  border-radius: 3px;
-  background: rgb(27 36 61 / 0.9);
-  color: #eef2fa;
+  border-radius: 8px;
+  background: rgb(30 30 30 / 0.9);
+  color: #f2f2f2;
   cursor: pointer;
   font-size: 0.85rem;
 }
@@ -3146,10 +3146,10 @@ html.lt-ios body {
   margin-top: auto;
   width: 100%;
   box-sizing: border-box;
-  border-radius: 2px;
-  border: 1px solid rgb(0 209 255 / 0.18);
-  background: rgb(27 36 61 / 0.98);
-  color: #eef2fa;
+  border-radius: 8px;
+  border: 1px solid rgb(255 255 255 / 0.108);
+  background: rgb(30 30 30 / 0.98);
+  color: #f2f2f2;
   padding: 0.6rem 0.7rem;
   font: 600 0.88rem/1.2 "Space Grotesk", sans-serif;
 }
@@ -3188,10 +3188,10 @@ html.lt-ios body {
 .lt-automation-runs-field input[type="number"] {
   width: 100%;
   box-sizing: border-box;
-  border-radius: 2px;
-  border: 1px solid rgb(0 209 255 / 0.18);
-  background: rgb(27 36 61 / 0.98);
-  color: #eef2fa;
+  border-radius: 8px;
+  border: 1px solid rgb(255 255 255 / 0.108);
+  background: rgb(30 30 30 / 0.98);
+  color: #f2f2f2;
   padding: 0.55rem 0.7rem;
   font: 600 0.88rem/1.2 "Space Grotesk", sans-serif;
 }
@@ -3241,10 +3241,10 @@ html.lt-ios body {
 .lt-lead-field-custom input[type="number"] {
   width: 100%;
   box-sizing: border-box;
-  border-radius: 2px;
-  border: 1px solid rgb(0 209 255 / 0.18);
-  background: rgb(27 36 61 / 0.98);
-  color: #eef2fa;
+  border-radius: 8px;
+  border: 1px solid rgb(255 255 255 / 0.108);
+  background: rgb(30 30 30 / 0.98);
+  color: #f2f2f2;
   padding: 0.55rem 0.7rem;
   font: 600 0.88rem/1.2 "Space Grotesk", sans-serif;
 }
@@ -3320,8 +3320,8 @@ html.lt-ios body {
   display: flex;
   align-items: stretch;
   border: 1px solid rgb(255 255 255 / 0.1);
-  border-radius: 4px;
-  background: rgb(27 36 61 / 0.9);
+  border-radius: 8px;
+  background: rgb(30 30 30 / 0.9);
 }
 
 .lt-scene-list-item.is-selected {
@@ -3342,7 +3342,7 @@ html.lt-ios body {
   padding: 0.55rem 0.6rem;
   border: 0;
   background: transparent;
-  color: #eef2fa;
+  color: #f2f2f2;
   cursor: pointer;
   text-align: left;
 }
@@ -3353,7 +3353,7 @@ html.lt-ios body {
   flex: 0 0 auto;
   min-width: 1.6rem;
   height: 1.6rem;
-  border-radius: 2px;
+  border-radius: 8px;
   background: rgb(255 122 182 / 0.16);
   color: #ff9bcc;
   font: 700 0.8rem/1 "Space Grotesk", sans-serif;
@@ -3393,7 +3393,7 @@ html.lt-ios body {
   height: 2rem;
   padding: 0;
   border: 1px solid transparent;
-  border-radius: 2px;
+  border-radius: 8px;
   background: transparent;
   color: rgb(186 202 197 / 0.8);
   cursor: pointer;
@@ -3409,8 +3409,8 @@ html.lt-ios body {
 }
 
 .lt-scene-icon-button:hover:not(:disabled) {
-  border-color: rgb(0 209 255 / 0.28);
-  color: #00d1ff;
+  border-color: rgb(255 255 255 / 0.168);
+  color: #ffffff;
 }
 
 .lt-scene-icon-button:disabled {
@@ -3471,10 +3471,10 @@ html.lt-ios body {
   width: 100%;
   box-sizing: border-box;
   min-height: 2.2rem;
-  border-radius: 2px;
-  border: 1px solid rgb(0 209 255 / 0.18);
-  background: rgb(27 36 61 / 0.98);
-  color: #eef2fa;
+  border-radius: 8px;
+  border: 1px solid rgb(255 255 255 / 0.108);
+  background: rgb(30 30 30 / 0.98);
+  color: #f2f2f2;
   padding: 0.45rem 0.6rem;
   font: 600 0.85rem/1.2 "Space Grotesk", sans-serif;
 }
@@ -3521,8 +3521,8 @@ html.lt-ios body {
   padding: 0.6rem;
   border: 1px solid rgb(255 255 255 / 0.07);
   border-left: 2px solid rgb(255 122 182 / 0.45);
-  border-radius: 4px;
-  background: rgb(16 21 35 / 0.6);
+  border-radius: 8px;
+  background: rgb(17 17 17 / 0.6);
 }
 
 .lt-scene-rule-line {
@@ -3612,8 +3612,8 @@ html.lt-ios body {
 .lt-scene-preview {
   margin: 0;
   padding: 0.55rem 0.7rem;
-  border-radius: 4px;
-  background: rgb(0 209 255 / 0.06);
+  border-radius: 8px;
+  background: rgb(255 255 255 / 0.036);
   color: rgb(186 202 197 / 0.9);
   font: 500 0.82rem/1.35 "Space Grotesk", sans-serif;
 }
@@ -3717,7 +3717,7 @@ html.lt-ios body {
 .lt-settings-checkbox input {
   width: 1rem;
   height: 1rem;
-  accent-color: #00b8e6;
+  accent-color: #e4e4e7;
 }
 
 .lt-output-channel-header {
@@ -3736,10 +3736,10 @@ html.lt-ios body {
 }
 
 .lt-output-channel-bulk button {
-  border-radius: 2px;
+  border-radius: 8px;
   border: 1px solid rgb(255 255 255 / 0.1);
   background: rgb(255 255 255 / 0.05);
-  color: #eef2fa;
+  color: #f2f2f2;
   padding: 0.32rem 0.7rem;
   font: 700 0.7rem/1 "Space Grotesk", sans-serif;
   letter-spacing: 0.04em;
@@ -3748,8 +3748,8 @@ html.lt-ios body {
 }
 
 .lt-output-channel-bulk button:hover:not(:disabled) {
-  border-color: rgb(0 209 255 / 0.28);
-  color: #00d1ff;
+  border-color: rgb(255 255 255 / 0.168);
+  color: #ffffff;
 }
 
 .lt-output-channel-bulk button:disabled {
@@ -3779,16 +3779,16 @@ html.lt-ios body {
   justify-content: center;
   min-width: 2.8rem;
   min-height: 2.8rem;
-  border: 1px solid rgb(0 209 255 / 0.18);
-  border-radius: 2px;
-  background: rgb(27 36 61 / 0.98);
-  color: #eef2fa;
+  border: 1px solid rgb(255 255 255 / 0.108);
+  border-radius: 8px;
+  background: rgb(30 30 30 / 0.98);
+  color: #f2f2f2;
   cursor: pointer;
 }
 
 .lt-settings-icon-button:hover {
-  border-color: rgb(0 209 255 / 0.42);
-  background: rgb(33 44 74 / 0.98);
+  border-color: rgb(255 255 255 / 0.252);
+  background: rgb(36 36 36 / 0.98);
 }
 
 .lt-settings-icon-button:disabled {
@@ -3819,8 +3819,8 @@ html.lt-ios body {
 
 .lt-range-input::-webkit-slider-runnable-track {
   height: 0.45rem;
-  border-radius: 2px;
-  background: linear-gradient(90deg, rgb(0 209 255 / 0.5), rgb(45 212 191 / 0.9));
+  border-radius: 8px;
+  background: linear-gradient(90deg, rgb(255 255 255 / 0.3), rgb(45 212 191 / 0.9));
 }
 
 .lt-range-input::-webkit-slider-thumb {
@@ -3830,25 +3830,25 @@ html.lt-ios body {
   height: 1rem;
   margin-top: -0.275rem;
   border: 0;
-  border-radius: 2px;
-  background: #eef2fa;
-  box-shadow: 0 0 0 2px rgb(16 21 35 / 0.95);
+  border-radius: 8px;
+  background: #f2f2f2;
+  box-shadow: 0 0 0 2px rgb(17 17 17 / 0.95);
 }
 
 .lt-range-input::-moz-range-track {
   height: 0.45rem;
   border: 0;
-  border-radius: 2px;
-  background: linear-gradient(90deg, rgb(0 209 255 / 0.5), rgb(45 212 191 / 0.9));
+  border-radius: 8px;
+  background: linear-gradient(90deg, rgb(255 255 255 / 0.3), rgb(45 212 191 / 0.9));
 }
 
 .lt-range-input::-moz-range-thumb {
   width: 1rem;
   height: 1rem;
   border: 0;
-  border-radius: 2px;
-  background: #eef2fa;
-  box-shadow: 0 0 0 2px rgb(16 21 35 / 0.95);
+  border-radius: 8px;
+  background: #f2f2f2;
+  box-shadow: 0 0 0 2px rgb(17 17 17 / 0.95);
 }
 
 .lt-settings-field small,
@@ -3868,7 +3868,7 @@ html.lt-ios body {
   margin: 0.15rem 0 0;
   width: 1.1rem;
   height: 1.1rem;
-  accent-color: #00d1ff;
+  accent-color: #ffffff;
 }
 
 .lt-settings-toggle-copy {
@@ -3959,8 +3959,8 @@ html.lt-ios body {
   display: flex;
   flex-direction: column;
   min-height: 0;
-  border-right: 1px solid rgb(0 209 255 / 0.08);
-  background: linear-gradient(180deg, #0f1524 0%, #0b101c 100%);
+  border-right: 1px solid rgb(255 255 255 / 0.048);
+  background: linear-gradient(180deg, #111111 0%, #0d0d0d 100%);
   user-select: none;
   -webkit-user-select: none;
 }
@@ -3971,7 +3971,7 @@ html.lt-ios body {
   align-items: stretch;
   gap: 0.7rem;
   padding: 0.9rem 0.85rem;
-  border-bottom: 1px solid rgb(0 209 255 / 0.08);
+  border-bottom: 1px solid rgb(255 255 255 / 0.048);
 }
 
 .lt-library-panel-actions {
@@ -3984,13 +3984,13 @@ html.lt-ios body {
 
 .lt-library-panel-header h2 {
   margin: 0.3rem 0 0;
-  color: #eef2fa;
+  color: #f2f2f2;
   font: 800 1.15rem/1 "Space Grotesk", sans-serif;
   letter-spacing: -0.04em;
 }
 
 .lt-library-panel-eyebrow {
-  color: rgb(0 209 255 / 0.78);
+  color: rgb(255 255 255 / 0.468);
   font: 700 10px/1 "Space Grotesk", sans-serif;
   letter-spacing: 0.16em;
   text-transform: uppercase;
@@ -4005,11 +4005,11 @@ html.lt-ios body {
   width: 100%;
   box-sizing: border-box;
   gap: 0.35rem;
-  border-radius: 2px;
+  border-radius: 8px;
   padding: 0.52rem 0.42rem;
-  border: 1px solid rgb(0 209 255 / 0.16);
-  background: rgb(28 38 63 / 0.95);
-  color: #e6ebf5;
+  border: 1px solid rgb(255 255 255 / 0.096);
+  background: rgb(31 31 31 / 0.95);
+  color: #ebebeb;
   font: 700 9px/1.08 "Space Grotesk", sans-serif;
   letter-spacing: 0.1em;
   text-transform: uppercase;
@@ -4019,8 +4019,8 @@ html.lt-ios body {
 
 .lt-library-import-button:hover:not(:disabled),
 .lt-library-folder-button:hover:not(:disabled) {
-  border-color: rgb(0 209 255 / 0.32);
-  color: #00d1ff;
+  border-color: rgb(255 255 255 / 0.192);
+  color: #ffffff;
 }
 
 .lt-library-import-button:disabled,
@@ -4058,9 +4058,9 @@ html.lt-ios body {
 .lt-library-progress {
   margin: 0 1rem;
   padding: 0.7rem 0.8rem;
-  border-radius: 2px;
-  border: 1px solid rgb(0 209 255 / 0.12);
-  background: rgb(22 29 48 / 0.92);
+  border-radius: 8px;
+  border: 1px solid rgb(255 255 255 / 0.072);
+  background: rgb(24 24 24 / 0.92);
 }
 
 .lt-library-progress-copy {
@@ -4077,7 +4077,7 @@ html.lt-ios body {
 
 .lt-library-progress-copy strong,
 .lt-library-progress-copy span {
-  color: #e6ebf5;
+  color: #ebebeb;
   font: 700 10px/1.2 "Space Grotesk", sans-serif;
   letter-spacing: 0.12em;
   text-transform: uppercase;
@@ -4093,9 +4093,9 @@ html.lt-ios body {
 .lt-library-progress-spinner {
   width: 0.95rem;
   height: 0.95rem;
-  border-radius: 2px;
-  border: 2px solid rgb(0 209 255 / 0.18);
-  border-top-color: #00d1ff;
+  border-radius: 8px;
+  border: 2px solid rgb(255 255 255 / 0.108);
+  border-top-color: #ffffff;
   flex-shrink: 0;
   animation: lt-library-progress-spin 0.8s linear infinite;
 }
@@ -4125,7 +4125,7 @@ html.lt-ios body {
 }
 
 .lt-library-panel-body:focus-visible {
-  outline: 1px solid rgb(0 209 255 / 0.32);
+  outline: 1px solid rgb(255 255 255 / 0.192);
   outline-offset: -1px;
 }
 
@@ -4144,9 +4144,9 @@ html.lt-ios body {
 
 .lt-library-root-group,
 .lt-library-folder-group {
-  border-radius: 2px;
+  border-radius: 8px;
   border: 1px solid rgb(255 255 255 / 0.06);
-  background: rgb(17 23 38 / 0.78);
+  background: rgb(19 19 19 / 0.78);
   overflow: hidden;
 }
 
@@ -4170,7 +4170,7 @@ html.lt-ios body {
   gap: 0.65rem;
   padding: 0.55rem 0.6rem;
   border-bottom: 1px solid rgb(255 255 255 / 0.05);
-  background: linear-gradient(180deg, rgb(23 31 52 / 0.98), rgb(18 24 40 / 0.96));
+  background: linear-gradient(180deg, rgb(25 25 25 / 0.98), rgb(20 20 20 / 0.96));
   cursor: pointer;
 }
 
@@ -4183,16 +4183,16 @@ html.lt-ios body {
   height: 1.7rem;
   margin-left: auto;
   padding: 0;
-  border: 1px solid rgb(0 209 255 / 0.2);
-  border-radius: 2px;
-  background: rgb(28 38 63 / 0.95);
-  color: #00d1ff;
+  border: 1px solid rgb(255 255 255 / 0.12);
+  border-radius: 8px;
+  background: rgb(31 31 31 / 0.95);
+  color: #ffffff;
   cursor: pointer;
 }
 
 .lt-library-organize-button:hover {
-  border-color: rgb(0 209 255 / 0.5);
-  background: rgb(0 209 255 / 0.12);
+  border-color: rgb(255 255 255 / 0.3);
+  background: rgb(255 255 255 / 0.072);
 }
 
 .lt-library-organize-button .material-symbols-outlined {
@@ -4201,11 +4201,11 @@ html.lt-ios body {
 
 .lt-library-folder-summary.is-drag-target {
   background:
-    linear-gradient(135deg, rgb(0 209 255 / 0.28), rgb(45 212 191 / 0.14)),
-    rgb(28 38 63 / 0.98);
+    linear-gradient(135deg, rgb(255 255 255 / 0.168), rgb(45 212 191 / 0.14)),
+    rgb(31 31 31 / 0.98);
   box-shadow:
-    inset 0 0 0 2px rgb(0 209 255 / 0.6),
-    0 0 14px 1px rgb(0 209 255 / 0.3);
+    inset 0 0 0 2px rgb(255 255 255 / 0.36),
+    0 0 14px 1px rgb(255 255 255 / 0.18);
 }
 
 /* Cursor-following ghost shown while dragging library assets. Lives at the
@@ -4221,7 +4221,7 @@ html.lt-ios body {
   gap: 0.6rem;
   padding: 0.5rem 0.7rem;
   border-radius: 12px;
-  background: rgb(14 18 28 / 0.96);
+  background: rgb(15 15 15 / 0.96);
   border: 1px solid rgb(138 161 255 / 0.4);
   box-shadow: 0 16px 40px rgb(0 0 0 / 0.45);
   color: #f5f7ff;
@@ -4229,10 +4229,10 @@ html.lt-ios body {
 }
 
 .lt-library-drag-ghost[data-folder-target="true"] {
-  border-color: rgb(0 209 255 / 0.75);
+  border-color: rgb(255 255 255 / 0.45);
   box-shadow:
     0 16px 40px rgb(0 0 0 / 0.45),
-    0 0 0 1px rgb(0 209 255 / 0.45);
+    0 0 0 1px rgb(255 255 255 / 0.27);
 }
 
 .lt-library-drag-ghost-badge {
@@ -4242,23 +4242,23 @@ html.lt-ios body {
   width: 28px;
   height: 28px;
   flex-shrink: 0;
-  border-radius: 8px;
+  border-radius: 12px;
   background: rgb(138 161 255 / 0.18);
 }
 
 .lt-library-drag-ghost[data-folder-target="true"] .lt-library-drag-ghost-badge {
-  background: rgb(0 209 255 / 0.22);
+  background: rgb(255 255 255 / 0.132);
 }
 
 .lt-library-drag-ghost-badge .material-symbols-outlined {
   font-size: 18px;
-  color: #cdd7ff;
+  color: #d9d9d9;
 }
 
 .lt-library-drag-ghost[data-folder-target="true"]
   .lt-library-drag-ghost-badge
   .material-symbols-outlined {
-  color: #00d1ff;
+  color: #ffffff;
 }
 
 .lt-library-drag-ghost-count {
@@ -4269,7 +4269,7 @@ html.lt-ios body {
   height: 16px;
   padding: 0 4px;
   border-radius: 999px;
-  background: #00d1ff;
+  background: #ffffff;
   color: #06201c;
   font-size: 10px;
   font-weight: 700;
@@ -4299,13 +4299,13 @@ html.lt-ios body {
 }
 
 .lt-library-drag-ghost[data-folder-target="true"] .lt-library-drag-ghost-copy span {
-  color: #00d1ff;
+  color: #ffffff;
   opacity: 0.95;
 }
 
 .lt-library-folder-summary .material-symbols-outlined {
   font-size: 18px;
-  color: #00d1ff;
+  color: #ffffff;
 }
 
 .lt-library-folder-copy {
@@ -4322,7 +4322,7 @@ html.lt-ios body {
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
-  color: #eef2fa;
+  color: #f2f2f2;
   font: 700 0.86rem/1.15 "Space Grotesk", sans-serif;
 }
 
@@ -4352,11 +4352,11 @@ html.lt-ios body {
 }
 
 .lt-library-asset-row.is-selected .lt-library-asset {
-  border-color: rgb(0 209 255 / 0.42);
+  border-color: rgb(255 255 255 / 0.252);
   background:
-    linear-gradient(135deg, rgb(0 209 255 / 0.18), rgb(45 212 191 / 0.08)),
-    rgb(38 50 84 / 0.96);
-  box-shadow: inset 0 0 0 1px rgb(0 209 255 / 0.12);
+    linear-gradient(135deg, rgb(255 255 255 / 0.108), rgb(45 212 191 / 0.08)),
+    rgb(41 41 41 / 0.96);
+  box-shadow: inset 0 0 0 1px rgb(255 255 255 / 0.072);
 }
 
 /* Flex, not a fixed grid: the name is the only part that needs room to grow,
@@ -4370,10 +4370,10 @@ html.lt-ios body {
   display: flex;
   align-items: center;
   gap: 0.35rem;
-  border-radius: 2px;
+  border-radius: 8px;
   border: 1px solid transparent;
-  background: rgb(28 38 63 / 0.78);
-  color: #e6ebf5;
+  background: rgb(31 31 31 / 0.78);
+  color: #ebebeb;
   padding: 0.42rem 0.42rem;
   text-align: left;
   cursor: grab;
@@ -4381,8 +4381,8 @@ html.lt-ios body {
 }
 
 .lt-library-asset:hover {
-  border-color: rgb(0 209 255 / 0.16);
-  background: rgb(38 50 84 / 0.92);
+  border-color: rgb(255 255 255 / 0.096);
+  background: rgb(41 41 41 / 0.92);
 }
 
 .lt-library-asset.is-missing {
@@ -4414,7 +4414,7 @@ html.lt-ios body {
 
 .lt-library-asset-icon {
   flex: 0 0 auto;
-  color: #00d1ff;
+  color: #ffffff;
   font-size: 14px;
 }
 
@@ -4428,7 +4428,7 @@ html.lt-ios body {
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
-  color: #eef2fa;
+  color: #f2f2f2;
   font: 700 0.8rem/1.15 "Space Grotesk", sans-serif;
 }
 
@@ -4476,9 +4476,9 @@ html.lt-ios body {
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  border-radius: 2px;
+  border-radius: 8px;
   border: 1px solid rgb(255 255 255 / 0.08);
-  background: rgb(11 16 28 / 0.82);
+  background: rgb(13 13 13 / 0.82);
   color: rgb(229 226 225 / 0.72);
   flex-shrink: 0;
 }
@@ -4504,7 +4504,7 @@ html.lt-ios body {
   min-height: 0;
   flex: 1;
   overflow: hidden;
-  background: #080c16;
+  background: #0a0a0a;
 }
 
 .lt-empty-state {
@@ -4515,9 +4515,9 @@ html.lt-ios body {
   justify-content: center;
   padding: 2rem;
   background:
-    radial-gradient(circle at top, rgb(0 209 255 / 0.12), transparent 30%),
+    radial-gradient(circle at top, rgb(255 255 255 / 0.072), transparent 30%),
     radial-gradient(circle at 80% 20%, rgb(255 226 171 / 0.10), transparent 24%),
-    linear-gradient(180deg, #0d1220 0%, #090d18 100%);
+    linear-gradient(180deg, #0f0f0f 0%, #0b0b0b 100%);
 }
 
 .lt-empty-state-card {
@@ -4527,15 +4527,15 @@ html.lt-ios body {
   align-items: center;
   gap: 1rem;
   padding: 2.5rem 2rem;
-  border: 1px solid rgb(0 209 255 / 0.14);
-  border-radius: 2px;
-  background: linear-gradient(180deg, rgb(20 27 43 / 0.96), rgb(11 16 28 / 0.96));
+  border: 1px solid rgb(255 255 255 / 0.084);
+  border-radius: 20px;
+  background: linear-gradient(180deg, rgb(22 22 22 / 0.96), rgb(13 13 13 / 0.96));
   box-shadow: 0 24px 60px rgb(0 0 0 / 0.34), inset 0 1px 0 rgb(255 255 255 / 0.04);
   text-align: center;
 }
 
 .lt-empty-state-eyebrow {
-  color: #00d1ff;
+  color: #ffffff;
   font: 700 10px/1 "Space Grotesk", sans-serif;
   letter-spacing: 0.18em;
   text-transform: uppercase;
@@ -4543,7 +4543,7 @@ html.lt-ios body {
 
 .lt-empty-state-card h1 {
   margin: 0;
-  color: #eef2fa;
+  color: #f2f2f2;
   font: 900 clamp(2rem, 4vw, 3.1rem)/0.95 Inter, sans-serif;
   letter-spacing: -0.05em;
 }
@@ -4564,10 +4564,10 @@ html.lt-ios body {
 
 .lt-empty-state-actions button {
   min-width: 8.75rem;
-  border: 1px solid rgb(0 209 255 / 0.16);
-  border-radius: 2px;
-  background: rgb(28 38 63 / 0.95);
-  color: #e6ebf5;
+  border: 1px solid rgb(255 255 255 / 0.096);
+  border-radius: 8px;
+  background: rgb(31 31 31 / 0.95);
+  color: #ebebeb;
   padding: 0.8rem 1.15rem;
   font: 700 11px/1 "Space Grotesk", sans-serif;
   letter-spacing: 0.14em;
@@ -4575,15 +4575,15 @@ html.lt-ios body {
 }
 
 .lt-empty-state-actions button:hover {
-  border-color: rgb(0 209 255 / 0.36);
-  background: #1b2438;
+  border-color: rgb(255 255 255 / 0.216);
+  background: #1d1d1d;
 }
 
 .lt-empty-state-actions button.is-primary {
   border-color: transparent;
-  background: linear-gradient(135deg, #00d1ff, #00a8d6);
+  background: linear-gradient(135deg, #ffffff, #e4e4e7);
   color: #042f2a;
-  box-shadow: 0 14px 40px rgb(0 209 255 / 0.22);
+  box-shadow: 0 14px 40px rgb(255 255 255 / 0.132);
 }
 
 /* Landing: templates and recent sessions side by side. The wrapper carries the
@@ -4595,7 +4595,7 @@ html.lt-ios body {
   width: 100%;
   margin-top: 1.5rem;
   padding-top: 0.25rem;
-  border-top: 1px solid rgb(0 209 255 / 0.12);
+  border-top: 1px solid rgb(255 255 255 / 0.072);
 }
 
 @media (max-width: 64rem) {
@@ -4608,7 +4608,7 @@ html.lt-ios body {
   min-width: 0;
   margin-top: 1.5rem;
   padding-top: 1.25rem;
-  border-top: 1px solid rgb(0 209 255 / 0.12);
+  border-top: 1px solid rgb(255 255 255 / 0.072);
   text-align: left;
 }
 
@@ -4640,10 +4640,10 @@ html.lt-ios body {
 }
 
 .lt-empty-state-templates-header button {
-  border: 1px solid rgb(0 209 255 / 0.16);
-  border-radius: 2px;
-  background: rgb(28 38 63 / 0.95);
-  color: #e6ebf5;
+  border: 1px solid rgb(255 255 255 / 0.096);
+  border-radius: 8px;
+  background: rgb(31 31 31 / 0.95);
+  color: #ebebeb;
   padding: 0.45rem 0.75rem;
   font: 700 10px/1 "Space Grotesk", sans-serif;
   letter-spacing: 0.12em;
@@ -4651,25 +4651,25 @@ html.lt-ios body {
 }
 
 .lt-empty-state-templates-header button:hover {
-  border-color: rgb(0 209 255 / 0.36);
-  background: #1b2438;
+  border-color: rgb(255 255 255 / 0.216);
+  background: #1d1d1d;
 }
 
 .lt-empty-state-template-filter {
   width: 100%;
   box-sizing: border-box;
   margin-bottom: 0.6rem;
-  border: 1px solid rgb(0 209 255 / 0.16);
-  border-radius: 2px;
-  background: rgb(16 22 36 / 0.9);
-  color: #e6ebf5;
+  border: 1px solid rgb(255 255 255 / 0.096);
+  border-radius: 8px;
+  background: rgb(18 18 18 / 0.9);
+  color: #ebebeb;
   padding: 0.5rem 0.7rem;
   font: 600 12px/1.2 "Space Grotesk", sans-serif;
 }
 
 .lt-empty-state-template-filter:focus {
   outline: none;
-  border-color: rgb(0 209 255 / 0.4);
+  border-color: rgb(255 255 255 / 0.24);
 }
 
 /* Row height is fixed here (not left to padding) so the 6-row cap below is an
@@ -4715,17 +4715,17 @@ html.lt-ios body {
      so every row is the same height whatever the list length. */
   height: 100%;
   text-align: left;
-  border: 1px solid rgb(0 209 255 / 0.12);
-  border-radius: 2px;
-  background: rgb(22 29 48 / 0.9);
-  color: #e6ebf5;
+  border: 1px solid rgb(255 255 255 / 0.072);
+  border-radius: 8px;
+  background: rgb(24 24 24 / 0.9);
+  color: #ebebeb;
   padding: 0 0.85rem;
   font: 600 12px/1.2 "Space Grotesk", sans-serif;
 }
 
 .lt-empty-state-template-list button:hover {
-  border-color: rgb(0 209 255 / 0.36);
-  background: #222e4c;
+  border-color: rgb(255 255 255 / 0.216);
+  background: #262626;
 }
 
 .lt-empty-state-templates-empty {
@@ -4747,10 +4747,10 @@ html.lt-ios body {
   width: 100%;
   margin-bottom: 0.4rem;
   padding: 0.55rem 0.75rem;
-  border: 1px solid rgb(0 209 255 / 0.3);
-  border-radius: 2px;
-  background: rgb(0 209 255 / 0.08);
-  color: #00d1ff;
+  border: 1px solid rgb(255 255 255 / 0.18);
+  border-radius: 8px;
+  background: rgb(255 255 255 / 0.048);
+  color: #ffffff;
   font: 500 12px/1.4 "Space Grotesk", sans-serif;
   letter-spacing: 0.04em;
   text-transform: uppercase;
@@ -4758,8 +4758,8 @@ html.lt-ios body {
 }
 
 .lt-empty-state-demo-song:hover {
-  border-color: rgb(0 209 255 / 0.5);
-  background: rgb(0 209 255 / 0.14);
+  border-color: rgb(255 255 255 / 0.3);
+  background: rgb(255 255 255 / 0.084);
 }
 
 /* The copy takes a moment on a phone: say so instead of looking dead. */
@@ -4786,15 +4786,15 @@ html.lt-ios body {
   /* Without this a long session name floors the row's width at its own text
      width and the whole list grows a horizontal scrollbar. */
   min-width: 0;
-  border: 1px solid rgb(0 209 255 / 0.12);
-  border-radius: 2px;
-  background: rgb(22 29 48 / 0.9);
+  border: 1px solid rgb(255 255 255 / 0.072);
+  border-radius: 8px;
+  background: rgb(24 24 24 / 0.9);
   overflow: hidden;
 }
 
 .lt-empty-state-recent-row:hover {
-  border-color: rgb(0 209 255 / 0.36);
-  background: #222e4c;
+  border-color: rgb(255 255 255 / 0.216);
+  background: #262626;
 }
 
 /* Beat the `.lt-empty-state-template-list button` card styling above: inside a
@@ -4864,17 +4864,17 @@ html.lt-ios body {
 .lt-mobile-landing-create input {
   width: 100%;
   box-sizing: border-box;
-  border: 1px solid rgb(0 209 255 / 0.16);
-  border-radius: 2px;
-  background: rgb(16 22 36 / 0.9);
-  color: #e6ebf5;
+  border: 1px solid rgb(255 255 255 / 0.096);
+  border-radius: 8px;
+  background: rgb(18 18 18 / 0.9);
+  color: #ebebeb;
   padding: 0.65rem 0.7rem;
   font: 600 14px/1.2 "Space Grotesk", sans-serif;
 }
 
 .lt-mobile-landing-create input:focus {
   outline: none;
-  border-color: rgb(0 209 255 / 0.4);
+  border-color: rgb(255 255 255 / 0.24);
 }
 
 /* Inline failures on the landing card: the name already taken when creating,
@@ -4901,7 +4901,7 @@ html.lt-ios body {
   justify-content: space-between;
   background:
     linear-gradient(180deg, rgba(255, 255, 255, 0.035), transparent 45%),
-    #1d2640;
+    #1f1f1f;
   box-shadow:
     inset 0 1px 0 rgba(255, 255, 255, 0.04),
     inset 0 -1px 0 rgba(0, 0, 0, 0.55);
@@ -4935,7 +4935,7 @@ html.lt-ios body {
   font: 600 10px/1.2 "Space Grotesk", sans-serif;
   text-transform: uppercase;
   letter-spacing: 0.14em;
-  color: #9fb0c8;
+  color: #aeaeae;
 }
 
 .lt-timeline-stats {
@@ -4976,7 +4976,7 @@ html.lt-ios body {
   min-height: 0;
   min-width: 0;
   overflow: hidden;
-  background: #080c16;
+  background: #0a0a0a;
   display: grid;
   grid-template-rows: minmax(0, 1fr) 18px;
 }
@@ -5019,8 +5019,8 @@ html.lt-ios body {
   flex-direction: column;
   position: relative;
   z-index: 30;
-  background: #202a46;
-  border-right: 1px solid rgb(17 23 38 / 0.55);
+  background: #232323;
+  border-right: 1px solid rgb(19 19 19 / 0.55);
   box-shadow: 10px 0 18px rgb(0 0 0 / 0.12);
 }
 
@@ -5064,8 +5064,8 @@ html.lt-ios body {
   right: 6px;
   bottom: 1px;
   height: 2px;
-  border-radius: 1px;
-  background: #00d1ff;
+  border-radius: 4px;
+  background: #ffffff;
   opacity: 0;
   transition: opacity 120ms ease;
 }
@@ -5092,7 +5092,7 @@ html.lt-ios body {
   width: 100%;
   height: 100%;
   min-height: 0;
-  background: #080c16;
+  background: #0a0a0a;
   position: relative;
   box-sizing: border-box;
   overflow: visible;
@@ -5100,8 +5100,8 @@ html.lt-ios body {
 
 .lt-track-list.is-library-drag-over {
   background:
-    linear-gradient(180deg, rgb(0 209 255 / 0.04), transparent 18%),
-    #080c16;
+    linear-gradient(180deg, rgb(255 255 255 / 0.024), transparent 18%),
+    #0a0a0a;
 }
 
 .lt-track-list::-webkit-scrollbar {
@@ -5109,13 +5109,13 @@ html.lt-ios body {
 }
 
 .lt-track-list::-webkit-scrollbar-track {
-  background: rgb(28 38 63 / 0.92);
+  background: rgb(31 31 31 / 0.92);
 }
 
 .lt-track-list::-webkit-scrollbar-thumb {
-  border-radius: 2px;
-  background: rgb(0 209 255 / 0.35);
-  border: 2px solid rgb(28 38 63 / 0.92);
+  border-radius: 8px;
+  background: rgb(255 255 255 / 0.21);
+  border: 2px solid rgb(31 31 31 / 0.92);
 }
 
 .lt-track-layers {
@@ -5155,10 +5155,10 @@ html.lt-ios body {
   position: absolute;
   top: 0.65rem;
   bottom: 0.65rem;
-  border-radius: 2px;
-  border: 1px solid rgb(0 209 255 / 0.34);
+  border-radius: 8px;
+  border: 1px solid rgb(255 255 255 / 0.204);
   background:
-    linear-gradient(135deg, rgb(0 209 255 / 0.24), rgb(45 212 191 / 0.16));
+    linear-gradient(135deg, rgb(255 255 255 / 0.144), rgb(45 212 191 / 0.16));
   box-shadow: inset 0 1px 0 rgb(255 255 255 / 0.08);
   pointer-events: none;
   display: flex;
@@ -5188,7 +5188,7 @@ html.lt-ios body {
   min-width: 0;
   height: 22px;
   display: block;
-  background: #141b2b;
+  background: #161616;
   border-top: 1px solid rgb(60 74 70 / 0.22);
 }
 
@@ -5200,8 +5200,8 @@ html.lt-ios body {
 
 .lt-horizontal-scrollbar-spacer {
   height: 22px;
-  background: #202a46;
-  border-right: 1px solid rgb(17 23 38 / 0.55);
+  background: #232323;
+  border-right: 1px solid rgb(19 19 19 / 0.55);
   border-top: 1px solid rgb(60 74 70 / 0.22);
 }
 
@@ -5211,7 +5211,7 @@ html.lt-ios body {
   height: 100%;
   min-width: 0;
   overflow: hidden;
-  background: rgb(28 38 63 / 0.92);
+  background: rgb(31 31 31 / 0.92);
   cursor: pointer;
   touch-action: none;
 }
@@ -5222,18 +5222,18 @@ html.lt-ios body {
   bottom: 3px;
   left: 0;
   width: 40px;
-  border-radius: 4px;
-  background: rgb(0 209 255 / 0.35);
+  border-radius: 8px;
+  background: rgb(255 255 255 / 0.21);
   cursor: grab;
   will-change: transform, width;
 }
 
 .lt-horizontal-scrollbar-thumb:hover {
-  background: rgb(0 209 255 / 0.5);
+  background: rgb(255 255 255 / 0.3);
 }
 
 .lt-horizontal-scrollbar-thumb:active {
-  background: rgb(0 209 255 / 0.6);
+  background: rgb(255 255 255 / 0.36);
   cursor: grabbing;
 }
 
@@ -5249,10 +5249,10 @@ html.lt-ios body {
   /* Keep in sync with RULER_HEIGHT / .lt-ruler-track: this is the TRACKS cell
      that must sit exactly as tall as the ruler beside it. */
   height: 134px;
-  background: #1b2438;
-  border-bottom: 1px solid rgb(17 23 38 / 0.55);
-  box-shadow: 1px 0 0 rgb(17 23 38 / 0.55), 10px 0 18px rgb(0 0 0 / 0.12);
-  color: #9fb0c8;
+  background: #1d1d1d;
+  border-bottom: 1px solid rgb(19 19 19 / 0.55);
+  box-shadow: 1px 0 0 rgb(19 19 19 / 0.55), 10px 0 18px rgb(0 0 0 / 0.12);
+  color: #aeaeae;
   font: 600 10px/1 "Space Grotesk", sans-serif;
   text-transform: uppercase;
   letter-spacing: 0.14em;
@@ -5264,8 +5264,8 @@ html.lt-ios body {
   z-index: 10;
   height: 134px;
   box-sizing: border-box;
-  background: #1b2438;
-  border-bottom: 1px solid rgb(17 23 38 / 0.55);
+  background: #1d1d1d;
+  border-bottom: 1px solid rgb(19 19 19 / 0.55);
   overflow: visible;
   touch-action: none;
 }
@@ -5318,19 +5318,19 @@ html.lt-ios body {
   position: absolute;
   top: 0;
   bottom: 0;
-  border-left: 1px solid rgb(0 209 255 / 0.72);
-  border-right: 1px solid rgb(0 209 255 / 0.72);
-  background: linear-gradient(180deg, rgb(0 209 255 / 0.24), rgb(0 209 255 / 0.08));
-  box-shadow: inset 0 0 0 1px rgb(0 209 255 / 0.12);
+  border-left: 1px solid rgb(255 255 255 / 0.432);
+  border-right: 1px solid rgb(255 255 255 / 0.432);
+  background: linear-gradient(180deg, rgb(255 255 255 / 0.144), rgb(255 255 255 / 0.048));
+  box-shadow: inset 0 0 0 1px rgb(255 255 255 / 0.072);
   pointer-events: none;
 }
 
 /* Modo area (movil): el tramo coge marcas, no es un rango para crear una
    cancion. Se pinta como el recuadro de pistas y clips (.lt-area-select-box). */
 .lt-ruler-range-selection.is-area {
-  border: 1.5px dashed rgb(0 209 255 / 0.9);
-  border-radius: 3px;
-  background: rgb(0 209 255 / 0.12);
+  border: 1.5px dashed rgb(255 255 255 / 0.54);
+  border-radius: 8px;
+  background: rgb(255 255 255 / 0.072);
   box-shadow: none;
 }
 
@@ -5367,7 +5367,7 @@ html.lt-ios body {
 .lt-ruler-mark small {
   display: block;
   white-space: nowrap;
-  color: #9fb0c8;
+  color: #aeaeae;
   font-family: "Space Grotesk", sans-serif;
   line-height: 1;
 }
@@ -5383,11 +5383,11 @@ html.lt-ios body {
 }
 
 .lt-ruler-mark.is-bar strong {
-  color: #e6ebf5;
+  color: #ebebeb;
 }
 
 .lt-ruler-mark.is-bar small {
-  color: #00d1ff;
+  color: #ffffff;
 }
 
 
@@ -5401,7 +5401,7 @@ html.lt-ios body {
 }
 
 .lt-track-header[style*="--lt-track-color"] {
-  background: linear-gradient(180deg, #1b2438 0%, #202a46 100%);
+  background: linear-gradient(180deg, #1d1d1d 0%, #232323 100%);
 }
 
 /* Per-track colour tint. Painted as a low-opacity overlay of the solid track
@@ -5425,8 +5425,8 @@ html.lt-ios body {
      colour. Default teal keeps the prior look for uncoloured tracks.
      The selection rectangle itself is drawn by ::before, not by an inset
      shadow: see the comment there. */
-  border-right-color: var(--lt-track-color, #00d1ff);
-  border-bottom-color: var(--lt-track-color, #00d1ff);
+  border-right-color: var(--lt-track-color, #ffffff);
+  border-bottom-color: var(--lt-track-color, #ffffff);
   box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.05);
 }
 
@@ -5437,7 +5437,7 @@ html.lt-ios body {
 }
 
 .lt-track-header.is-dragging {
-  background: linear-gradient(180deg, #141b2b 0%, #0d1220 100%);
+  background: linear-gradient(180deg, #161616 0%, #0f0f0f 100%);
   border-right-color: rgb(21 31 29 / 0.52);
   border-bottom-color: rgb(21 31 29 / 0.52);
   box-shadow: inset 0 1px 0 rgb(255 255 255 / 0.02), 0 0 0 1px rgb(0 0 0 / 0.35), 14px 0 24px rgb(0 0 0 / 0.2);
@@ -5445,9 +5445,9 @@ html.lt-ios body {
 
 .lt-track-header.is-library-preview {
   background:
-    linear-gradient(180deg, rgb(29 40 38 / 0.98) 0%, rgb(24 32 54 / 0.98) 100%);
-  border-right-color: rgb(0 209 255 / 0.18);
-  border-bottom-color: rgb(0 209 255 / 0.18);
+    linear-gradient(180deg, rgb(29 40 38 / 0.98) 0%, rgb(26 26 26 / 0.98) 100%);
+  border-right-color: rgb(255 255 255 / 0.108);
+  border-bottom-color: rgb(255 255 255 / 0.108);
 }
 
 .lt-track-header.is-automation {
@@ -5487,8 +5487,8 @@ html.lt-ios body {
   z-index: 3;
   pointer-events: none;
   background: transparent;
-  border-left: 4px solid var(--lt-track-color, #00d1ff);
-  box-shadow: inset 0 0 0 1px var(--lt-track-color, #00d1ff);
+  border-left: 4px solid var(--lt-track-color, #ffffff);
+  box-shadow: inset 0 0 0 1px var(--lt-track-color, #ffffff);
 }
 
 .lt-track-header.is-solo::before {
@@ -5610,7 +5610,7 @@ html.lt-ios body {
   width: 18px;
   height: 14px;
   font-size: 8px;
-  border-radius: 2px;
+  border-radius: 8px;
 }
 
 /* Mix controls: 2-col grid — sliders stack on the left (bounded width
@@ -5730,7 +5730,7 @@ html.lt-ios body {
 .lt-compact-mixer-toggle:focus-visible,
 .lt-compact-mixer-audio-to:focus-visible,
 .lt-folder-toggle:focus-visible {
-  outline: 1px solid rgb(0 209 255 / 0.7);
+  outline: 1px solid rgb(255 255 255 / 0.42);
   outline-offset: 1px;
 }
 
@@ -5868,7 +5868,7 @@ html.lt-ios body {
   width: 18px;
   height: 14px;
   font-size: 8px;
-  border-radius: 2px;
+  border-radius: 8px;
 }
 
 /* Audio-To: compact button, label hidden, fixed width so it doesn't
@@ -5948,7 +5948,7 @@ html.lt-ios body {
 }
 
 .lt-track-title-row strong {
-  color: #e6ebf5;
+  color: #ebebeb;
   font: 600 12px/1.2 "Space Grotesk", sans-serif;
   overflow: hidden;
   text-overflow: ellipsis;
@@ -5975,7 +5975,7 @@ html.lt-ios body {
   height: 12px;
   padding: 0 0.25rem;
   border: 1px solid rgb(186 202 197 / 0.28);
-  border-radius: 2px;
+  border-radius: 8px;
   background: rgb(186 202 197 / 0.1);
   color: rgb(229 226 225 / 0.78);
   font: 700 8px/1 "Space Grotesk", sans-serif;
@@ -5985,7 +5985,7 @@ html.lt-ios body {
 
 .lt-track-meta,
 .lt-track-drop-hint {
-  color: #9fb0c8;
+  color: #aeaeae;
   font: 600 10px/1.2 "Space Grotesk", sans-serif;
   text-transform: uppercase;
   letter-spacing: 0.12em;
@@ -5999,11 +5999,11 @@ html.lt-ios body {
   align-items: stretch;
   box-sizing: border-box;
   overflow: hidden;
-  background: linear-gradient(180deg, #1b2438 0%, #202a46 100%);
-  border-right: 1px solid rgb(17 23 38 / 0.55);
-  border-bottom: 1px solid rgb(17 23 38 / 0.55);
+  background: linear-gradient(180deg, #1d1d1d 0%, #232323 100%);
+  border-right: 1px solid rgb(19 19 19 / 0.55);
+  border-bottom: 1px solid rgb(19 19 19 / 0.55);
   box-shadow: inset 0 1px 0 rgb(255 255 255 / 0.03);
-  color: #e6ebf5;
+  color: #ebebeb;
   z-index: 2;
   padding-left: 8px;
   user-select: none;
@@ -6054,8 +6054,8 @@ html.lt-ios body {
   flex: 1 1 auto;
   min-height: 0;
   overflow: hidden;
-  border-radius: 2px;
-  background: #080c16;
+  border-radius: 8px;
+  background: #0a0a0a;
   box-shadow: inset 0 1px 0 rgb(255 255 255 / 0.04);
 }
 
@@ -6108,7 +6108,7 @@ html.lt-ios body {
   right: 0;
   height: calc(15% + 1px);
   min-height: 0;
-  border-radius: 2px;
+  border-radius: 8px;
   background: #ff6150;
   opacity: 0;
   pointer-events: none;
@@ -6148,16 +6148,16 @@ html.lt-ios body {
 .lt-track-toggle-group button {
   width: 24px;
   height: 24px;
-  border-radius: 2px;
-  background: #080c16;
-  color: #9fb0c8;
+  border-radius: 8px;
+  background: #0a0a0a;
+  color: #aeaeae;
   font: 700 10px/1 "Space Grotesk", sans-serif;
 }
 
 .lt-track-toggle-group button:hover,
 .lt-track-toggle-group button.is-active {
-  color: #00d1ff;
-  background: rgb(0 209 255 / 0.16);
+  color: #ffffff;
+  background: rgb(255 255 255 / 0.096);
 }
 
 /* Por CLASE y no por `nth-child`. Iban por posicion, y en cuanto mute y solo
@@ -6165,7 +6165,7 @@ html.lt-ios body {
    paso a ser el primer hijo y se pintaba con el rojo del mute. */
 /* Mute goes red when active, matching the compact mixer. */
 .lt-track-toggle-group button.lt-track-toggle-mute.is-active {
-  color: #080c16;
+  color: #0a0a0a;
   background: rgb(255 95 95 / 0.85);
 }
 
@@ -6214,7 +6214,7 @@ html.lt-ios body {
 .lt-track-volume > span,
 .lt-track-pan > span,
 .lt-track-audio-to > span {
-  color: #9fb0c8;
+  color: #aeaeae;
   font: 600 10px/1 "Space Grotesk", sans-serif;
   letter-spacing: 0.12em;
   text-transform: uppercase;
@@ -6259,10 +6259,10 @@ html.lt-ios body {
   min-width: 0;
   width: 100%;
   height: 22px;
-  border: 1px solid rgb(0 209 255 / 0.18);
-  border-radius: 2px;
-  background: #080c16;
-  color: #d6f6ff;
+  border: 1px solid rgb(255 255 255 / 0.108);
+  border-radius: 8px;
+  background: #0a0a0a;
+  color: #f4f4f5;
   font: 600 10px/1 "Space Grotesk", sans-serif;
 }
 
@@ -6280,10 +6280,10 @@ html.lt-ios body {
   width: 100%;
   height: 22px;
   padding: 0 0.45rem;
-  border: 1px solid rgb(0 209 255 / 0.18);
-  border-radius: 2px;
-  background: #080c16;
-  color: #d6f6ff;
+  border: 1px solid rgb(255 255 255 / 0.108);
+  border-radius: 8px;
+  background: #0a0a0a;
+  color: #f4f4f5;
   font: 600 10px/1 "Space Grotesk", sans-serif;
   cursor: pointer;
   text-align: left;
@@ -6291,7 +6291,7 @@ html.lt-ios body {
 
 .lt-audio-route-trigger:hover:not(:disabled),
 .lt-audio-route-trigger[aria-expanded="true"] {
-  border-color: rgb(0 209 255 / 0.4);
+  border-color: rgb(255 255 255 / 0.24);
 }
 
 .lt-audio-route-trigger-label {
@@ -6303,7 +6303,7 @@ html.lt-ios body {
 
 .lt-audio-route-trigger-caret {
   flex: 0 0 auto;
-  color: #00d1ff;
+  color: #ffffff;
   font-size: 10px;
 }
 
@@ -6318,33 +6318,33 @@ html.lt-ios body {
   list-style: none;
   max-height: calc((22px + 0.32rem * 2) * 5 + 0.3rem);
   overflow-y: auto;
-  border: 1px solid rgb(0 209 255 / 0.32);
-  border-radius: 2px;
-  background: #080c16;
+  border: 1px solid rgb(255 255 255 / 0.192);
+  border-radius: 8px;
+  background: #0a0a0a;
   box-shadow: 0 12px 32px rgb(0 0 0 / 0.55);
   outline: none;
 }
 
 .lt-audio-route-option {
   padding: 0.32rem 0.65rem;
-  color: #d6f6ff;
+  color: #f4f4f5;
   font: 600 10px/1.2 "Space Grotesk", sans-serif;
   cursor: pointer;
   white-space: nowrap;
 }
 
 .lt-audio-route-option.is-active {
-  background: rgb(0 209 255 / 0.16);
+  background: rgb(255 255 255 / 0.096);
 }
 
 .lt-audio-route-option.is-selected {
-  color: #00d1ff;
+  color: #ffffff;
 }
 
 .lt-audio-route-option.is-selected::before {
   content: "•";
   margin-right: 0.35rem;
-  color: #00d1ff;
+  color: #ffffff;
 }
 
 .lt-track-lane {
@@ -6359,10 +6359,10 @@ html.lt-ios body {
 
 .lt-track-lane.is-library-preview {
   background:
-    linear-gradient(180deg, rgb(0 209 255 / 0.06), rgb(45 212 191 / 0.02)),
+    linear-gradient(180deg, rgb(255 255 255 / 0.036), rgb(45 212 191 / 0.02)),
     linear-gradient(180deg, rgb(255 255 255 / 0.02), rgb(255 255 255 / 0.01));
-  border-top: 1px dashed rgb(0 209 255 / 0.18);
-  border-bottom: 1px dashed rgb(0 209 255 / 0.18);
+  border-top: 1px dashed rgb(255 255 255 / 0.108);
+  border-bottom: 1px dashed rgb(255 255 255 / 0.108);
 }
 
 /* The synthetic automation lane: a faint pink wash so it reads as a distinct,
@@ -6380,9 +6380,9 @@ html.lt-ios body {
   display: flex;
   align-items: center;
   padding: 0 0.5rem;
-  border-radius: 2px;
-  background: rgb(28 38 63 / 0.7);
-  color: #9fb0c8;
+  border-radius: 8px;
+  background: rgb(31 31 31 / 0.7);
+  color: #aeaeae;
   font: 600 10px/1 "Space Grotesk", sans-serif;
   text-transform: uppercase;
   letter-spacing: 0.12em;
@@ -6394,10 +6394,10 @@ html.lt-ios body {
   bottom: 0;
   left: 0;
   width: 1px;
-  color: #00d1ff;
-  background: #00d1ff;
+  color: #ffffff;
+  background: #ffffff;
   z-index: 20;
-  box-shadow: 0 0 8px rgb(0 209 255 / 0.55);
+  box-shadow: 0 0 8px rgb(255 255 255 / 0.33);
   will-change: transform;
 }
 
@@ -6432,7 +6432,7 @@ html.lt-ios body {
   width: 1px;
   transform: translateX(-50%);
   background: currentColor;
-  box-shadow: 0 0 8px rgb(0 209 255 / 0.55);
+  box-shadow: 0 0 8px rgb(255 255 255 / 0.33);
 }
 
 .lt-playhead.is-dragging {
@@ -6453,7 +6453,7 @@ html.lt-ios body {
   position: absolute;
   top: 0;
   bottom: 0;
-  background: rgb(0 209 255 / 0.10);
+  background: rgb(255 255 255 / 0.06);
   z-index: 3;
 }
 
@@ -6463,8 +6463,8 @@ html.lt-ios body {
   bottom: 0;
   left: 0;
   width: 1px;
-  background: #00d1ff;
-  box-shadow: 0 0 8px rgb(0 209 255 / 0.55);
+  background: #ffffff;
+  box-shadow: 0 0 8px rgb(255 255 255 / 0.33);
   pointer-events: none;
   z-index: 6;
   will-change: transform;
@@ -6626,8 +6626,8 @@ html.lt-ios body {
 
 /* Picked with Ctrl/Cmd+click (MIDI clip or cue), ready for Ctrl+D. */
 .lt-automation-hotspot.is-selected {
-  border-radius: 4px;
-  box-shadow: 0 0 0 2px rgb(0 209 255 / 0.95);
+  border-radius: 8px;
+  box-shadow: 0 0 0 2px rgb(255 255 255 / 0.57);
 }
 
 /* Con el dedo, 24 px no se aciertan: objetivo de 44 px centrado igual en el
@@ -6645,7 +6645,7 @@ html.lt-ios body {
   height: 1.35rem;
   min-width: 1.5rem;
   border: 0;
-  border-radius: 2px;
+  border-radius: 8px;
   background: rgb(255 226 171 / 0.08);
   box-shadow: inset 0 0 0 1px rgb(255 226 171 / 0.12);
   color: transparent;
@@ -6786,7 +6786,7 @@ body.lt-daw-song-reordering .lt-region-hotspot .lt-region-hotspot-name {
 }
 
 .lt-tempo-hotspot:focus-visible {
-  outline: 1px solid rgb(0 209 255 / 0.88);
+  outline: 1px solid rgb(255 255 255 / 0.528);
   outline-offset: 1px;
 }
 
@@ -6816,14 +6816,14 @@ body.lt-daw-song-reordering .lt-region-hotspot .lt-region-hotspot-name {
   align-items: center;
   gap: 0.5rem;
   padding: 0.45rem 0.75rem;
-  background: #141b2b;
+  background: #161616;
   font-size: 12px;
 }
 
 .lt-inline-menu button {
-  border-radius: 2px;
-  background: #1b2438;
-  color: #e6ebf5;
+  border-radius: 8px;
+  background: #1d1d1d;
+  color: #ebebeb;
   padding: 0.25rem 0.5rem;
 }
 
@@ -6832,13 +6832,13 @@ body.lt-daw-song-reordering .lt-region-hotspot .lt-region-hotspot-name {
   align-items: center;
   justify-content: space-between;
   gap: 1rem;
-  background: #1b2438;
+  background: #1d1d1d;
   padding: 0.45rem 1rem;
 }
 
 .lt-bottom-status strong {
   display: block;
-  color: #9fb0c8;
+  color: #aeaeae;
   font: 600 10px/1 "Space Grotesk", sans-serif;
   text-transform: uppercase;
   letter-spacing: 0.12em;
@@ -6865,9 +6865,9 @@ body.lt-daw-song-reordering .lt-region-hotspot .lt-region-hotspot-name {
 
 .lt-bottom-controls button {
   border: 0;
-  border-radius: 2px;
-  background: linear-gradient(180deg, rgba(255, 255, 255, 0.04), rgba(0, 0, 0, 0.12)), #141b2b;
-  color: #e6ebf5;
+  border-radius: 8px;
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0.04), rgba(0, 0, 0, 0.12)), #161616;
+  color: #ebebeb;
   padding: 0.34rem 0.52rem;
   font: 600 10px/1 "Space Grotesk", sans-serif;
   letter-spacing: 0.12em;
@@ -6878,10 +6878,10 @@ body.lt-daw-song-reordering .lt-region-hotspot .lt-region-hotspot-name {
   background:
     linear-gradient(180deg, rgba(255, 255, 255, 0.06), rgba(0, 0, 0, 0.06)),
     rgba(47, 46, 46, 0.92);
-  color: #00d1ff;
+  color: #ffffff;
   box-shadow:
-    0 0 0 1px rgba(0, 209, 255, 0.18),
-    0 0 18px rgba(0, 209, 255, 0.16);
+    0 0 0 1px rgba(255, 255, 255, 0.18),
+    0 0 18px rgba(255, 255, 255, 0.16);
 }
 
 /* El hover luce IGUAL que encendido, asi que solo donde hay puntero que pasa
@@ -6893,17 +6893,17 @@ body.lt-daw-song-reordering .lt-region-hotspot .lt-region-hotspot-name {
     background:
       linear-gradient(180deg, rgba(255, 255, 255, 0.06), rgba(0, 0, 0, 0.06)),
       rgba(47, 46, 46, 0.92);
-    color: #00d1ff;
+    color: #ffffff;
     box-shadow:
-      0 0 0 1px rgba(0, 209, 255, 0.18),
-      0 0 18px rgba(0, 209, 255, 0.16);
+      0 0 0 1px rgba(255, 255, 255, 0.18),
+      0 0 18px rgba(255, 255, 255, 0.16);
   }
 }
 
 .lt-bottom-controls .lt-vamp-button {
   min-width: 4.6rem;
-  border-radius: 2px;
-  background: linear-gradient(135deg, #33241a, #141b2b);
+  border-radius: 8px;
+  background: linear-gradient(135deg, #33241a, #161616);
   color: #ffd9b0;
   box-shadow: inset 0 0 0 1px rgba(255, 176, 76, 0.18);
 }
@@ -6942,7 +6942,7 @@ body.lt-daw-song-reordering .lt-region-hotspot .lt-region-hotspot-name {
   display: flex;
   align-items: center;
   padding: 0.2rem;
-  border-radius: 2px;
+  border-radius: 8px;
   border: 1px solid rgba(255, 255, 255, 0.075);
   background:
     linear-gradient(180deg, rgba(255, 255, 255, 0.035), transparent 38%),
@@ -6965,7 +6965,7 @@ body.lt-daw-song-reordering .lt-region-hotspot .lt-region-hotspot-name {
 
 .lt-control-group-title {
   display: block;
-  color: #9fb0c8;
+  color: #aeaeae;
   font: 700 10px/1 "Space Grotesk", sans-serif;
   text-transform: uppercase;
   letter-spacing: 0.16em;
@@ -6973,7 +6973,7 @@ body.lt-daw-song-reordering .lt-region-hotspot .lt-region-hotspot-name {
 
 .lt-control-group-copy p {
   margin: 0.18rem 0 0;
-  color: #e6ebf5;
+  color: #ebebeb;
   font: 700 11px/1 "Space Grotesk", sans-serif;
   letter-spacing: 0.04em;
   text-transform: none;
@@ -7028,16 +7028,16 @@ body.lt-daw-song-reordering .lt-region-hotspot .lt-region-hotspot-name {
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  border-radius: 2px;
+  border-radius: 8px;
   background: rgba(255, 255, 255, 0.04);
-  color: #9fb0c8;
+  color: #aeaeae;
   cursor: pointer;
 }
 
 .lt-control-popover-trigger:hover,
 .lt-control-popover.is-open .lt-control-popover-trigger {
-  background: rgba(0, 209, 255, 0.13);
-  color: #00d1ff;
+  background: rgba(255, 255, 255, 0.13);
+  color: #ffffff;
 }
 
 .lt-control-popover-panel {
@@ -7053,7 +7053,7 @@ body.lt-daw-song-reordering .lt-region-hotspot .lt-region-hotspot-name {
   max-width: min(50rem, calc(100vw - 7rem));
   padding: 0.7rem;
   border: 1px solid rgba(186, 202, 197, 0.16);
-  border-radius: 2px;
+  border-radius: 8px;
   background:
     linear-gradient(180deg, rgba(255, 255, 255, 0.045), transparent 26%),
     linear-gradient(180deg, rgba(24, 24, 24, 0.98), rgba(9, 9, 9, 0.98));
@@ -7168,7 +7168,7 @@ body.lt-daw-song-reordering .lt-region-hotspot .lt-region-hotspot-name {
 }
 
 .lt-warp-panel-label {
-  color: #9fb0c8;
+  color: #aeaeae;
   font: 600 10px/1 "Space Grotesk", sans-serif;
   letter-spacing: 0.12em;
   text-transform: uppercase;
@@ -7195,9 +7195,9 @@ body.lt-daw-song-reordering .lt-region-hotspot .lt-region-hotspot-name {
   flex: 0 0 auto;
   height: 32px;
   border: 0;
-  border-radius: 2px;
-  background: #080c16;
-  color: #e6ebf5;
+  border-radius: 8px;
+  background: #0a0a0a;
+  color: #ebebeb;
   padding: 0 0.75rem;
   font: 700 11px/1 "Space Grotesk", sans-serif;
   letter-spacing: 0.12em;
@@ -7219,8 +7219,8 @@ body.lt-daw-song-reordering .lt-region-hotspot .lt-region-hotspot-name {
 
 .lt-warp-toggle:hover,
 .lt-region-tempo-reset:hover {
-  color: #00d1ff;
-  background: rgb(0 209 255 / 0.12);
+  color: #ffffff;
+  background: rgb(255 255 255 / 0.072);
 }
 
 .lt-pending-pitch-bar {
@@ -7234,7 +7234,7 @@ body.lt-daw-song-reordering .lt-region-hotspot .lt-region-hotspot-name {
 .lt-pending-pitch-value {
   flex: 1 1 auto;
   min-width: 0;
-  color: #00d1ff;
+  color: #ffffff;
   font: 700 11px/1.2 "Space Grotesk", sans-serif;
   letter-spacing: 0.08em;
   text-transform: uppercase;
@@ -7245,9 +7245,9 @@ body.lt-daw-song-reordering .lt-region-hotspot .lt-region-hotspot-name {
   flex: 0 0 auto;
   height: 32px;
   border: 1px solid rgba(255, 255, 255, 0.1);
-  border-radius: 2px;
-  background: #080c16;
-  color: #e6ebf5;
+  border-radius: 8px;
+  background: #0a0a0a;
+  color: #ebebeb;
   padding: 0 0.75rem;
   font: 700 11px/1 "Space Grotesk", sans-serif;
   letter-spacing: 0.12em;
@@ -7256,20 +7256,20 @@ body.lt-daw-song-reordering .lt-region-hotspot .lt-region-hotspot-name {
 }
 
 .lt-pending-pitch-apply {
-  color: #080c16;
-  background: #00d1ff;
-  border-color: #00d1ff;
+  color: #0a0a0a;
+  background: #ffffff;
+  border-color: #ffffff;
 }
 
 .lt-pending-pitch-cancel:hover {
-  color: #00d1ff;
-  background: rgb(0 209 255 / 0.12);
+  color: #ffffff;
+  background: rgb(255 255 255 / 0.072);
 }
 
 .lt-warp-toggle.is-active {
-  color: #00d1ff;
-  background: rgb(0 209 255 / 0.16);
-  box-shadow: inset 0 0 0 1px rgb(0 209 255 / 0.35);
+  color: #ffffff;
+  background: rgb(255 255 255 / 0.096);
+  box-shadow: inset 0 0 0 1px rgb(255 255 255 / 0.21);
 }
 
 .lt-warp-toggle:disabled,
@@ -7289,7 +7289,7 @@ body.lt-daw-song-reordering .lt-region-hotspot .lt-region-hotspot-name {
 }
 
 .lt-region-tempo-unit {
-  color: #9fb0c8;
+  color: #aeaeae;
   font: 600 10px/1 "Space Grotesk", sans-serif;
   letter-spacing: 0.12em;
   margin-left: 0.15rem;
@@ -7373,12 +7373,12 @@ body.lt-daw-song-reordering .lt-region-hotspot .lt-region-hotspot-name {
 }
 
 .lt-control-popover-header span {
-  color: #9fb0c8;
+  color: #aeaeae;
   font-size: 10px;
 }
 
 .lt-control-popover-header strong {
-  color: #00d1ff;
+  color: #ffffff;
   font-size: 11px;
 }
 
@@ -7418,7 +7418,7 @@ body.lt-daw-song-reordering .lt-region-hotspot .lt-region-hotspot-name {
   width: 2rem;
   height: 2rem;
   padding: 0;
-  border-radius: 2px;
+  border-radius: 8px;
   display: inline-flex;
   align-items: center;
   justify-content: center;
@@ -7460,12 +7460,12 @@ body.lt-daw-song-reordering .lt-region-hotspot .lt-region-hotspot-name {
   gap: 0.28rem;
   flex: 0 0 auto;
   white-space: nowrap;
-  border-radius: 2px;
+  border-radius: 8px;
   border: 1px solid rgba(255, 255, 255, 0.075);
   background:
     linear-gradient(180deg, rgba(255, 255, 255, 0.035), transparent 38%),
     linear-gradient(180deg, rgba(31, 31, 31, 0.98), rgba(14, 14, 14, 0.98));
-  color: #9fb0c8;
+  color: #aeaeae;
   padding: 0 0.72rem;
 }
 
@@ -7493,7 +7493,7 @@ body.lt-daw-song-reordering .lt-region-hotspot .lt-region-hotspot-name {
 }
 
 .lt-bottom-controls > span {
-  color: #9fb0c8;
+  color: #aeaeae;
   font: 600 10px/1.2 "Space Grotesk", sans-serif;
   letter-spacing: 0.12em;
   text-transform: uppercase;
@@ -7504,8 +7504,8 @@ body.lt-daw-song-reordering .lt-region-hotspot .lt-region-hotspot-name {
   align-items: center;
   gap: 0.4rem;
   padding: 0.2rem 0.45rem;
-  border-radius: 2px;
-  background: #141b2b;
+  border-radius: 8px;
+  background: #161616;
 }
 
 .lt-segmented-control {
@@ -7521,9 +7521,9 @@ body.lt-daw-song-reordering .lt-region-hotspot .lt-region-hotspot-name {
   height: 32px;
   min-height: 32px;
   border: 0;
-  border-radius: 2px;
-  background: #080c16;
-  color: #e6ebf5;
+  border-radius: 8px;
+  background: #0a0a0a;
+  color: #ebebeb;
   padding: 0 0.4rem;
   font: 700 11px/1 "Space Grotesk", sans-serif;
   letter-spacing: 0.12em;
@@ -7554,13 +7554,13 @@ body.lt-daw-song-reordering .lt-region-hotspot .lt-region-hotspot-name {
 .lt-segmented-control button:hover,
 .lt-stepper-control-row button:hover,
 .lt-midi-learn-reset:hover {
-  color: #00d1ff;
-  background: rgb(0 209 255 / 0.12);
+  color: #ffffff;
+  background: rgb(255 255 255 / 0.072);
 }
 
 .lt-segmented-control button.is-active {
-  color: #00d1ff;
-  background: rgb(0 209 255 / 0.16);
+  color: #ffffff;
+  background: rgb(255 255 255 / 0.096);
 }
 
 .lt-stepper-control {
@@ -7579,9 +7579,9 @@ body.lt-daw-song-reordering .lt-region-hotspot .lt-region-hotspot-name {
   box-sizing: border-box;
   text-align: center;
   border: 0;
-  border-radius: 2px;
-  background: #080c16;
-  color: #e6ebf5;
+  border-radius: 8px;
+  background: #0a0a0a;
+  color: #ebebeb;
   padding: 0 0.5rem;
   font: 600 11px/1 "Space Grotesk", sans-serif;
 }
@@ -7595,7 +7595,7 @@ body.lt-daw-song-reordering .lt-region-hotspot .lt-region-hotspot-name {
 
 .lt-zoom-control span,
 .lt-zoom-control small {
-  color: #9fb0c8;
+  color: #aeaeae;
   font: 600 10px/1 "Space Grotesk", sans-serif;
   text-transform: uppercase;
   letter-spacing: 0.12em;
@@ -7608,9 +7608,9 @@ body.lt-daw-song-reordering .lt-region-hotspot .lt-region-hotspot-name {
 .lt-zoom-control input,
 .lt-zoom-control select {
   border: 0;
-  border-radius: 2px;
-  background: #080c16;
-  color: #e6ebf5;
+  border-radius: 8px;
+  background: #0a0a0a;
+  color: #ebebeb;
   font-size: 12px;
   padding: 0.2rem 0.4rem;
 }
@@ -7628,9 +7628,9 @@ body.lt-daw-song-reordering .lt-region-hotspot .lt-region-hotspot-name {
   z-index: 30;
   max-width: min(28rem, calc(100vw - 6rem));
   padding: 0.45rem 0.65rem;
-  border: 1px solid rgb(0 209 255 / 0.12);
-  border-radius: 2px;
-  background: rgb(9 12 20 / 0.7);
+  border: 1px solid rgb(255 255 255 / 0.072);
+  border-radius: 8px;
+  background: rgb(10 10 10 / 0.7);
   backdrop-filter: blur(14px);
   box-shadow: 0 12px 32px rgb(0 0 0 / 0.24);
   color: rgb(186 202 197 / 0.82);
@@ -7649,9 +7649,9 @@ body.lt-daw-song-reordering .lt-region-hotspot .lt-region-hotspot-name {
   gap: 0.3rem;
   width: min(20rem, calc(100vw - 6rem));
   padding: 0.5rem 0.7rem;
-  border: 1px solid rgb(0 209 255 / 0.22);
-  border-radius: 4px;
-  background: rgb(9 12 20 / 0.78);
+  border: 1px solid rgb(255 255 255 / 0.132);
+  border-radius: 8px;
+  background: rgb(10 10 10 / 0.78);
   backdrop-filter: blur(14px);
   box-shadow: 0 12px 32px rgb(0 0 0 / 0.28);
   color: rgb(210 224 220 / 0.92);
@@ -7712,7 +7712,7 @@ body.lt-daw-song-reordering .lt-region-hotspot .lt-region-hotspot-name {
   align-self: flex-end;
   padding: 0.2rem 0.6rem;
   border: 1px solid rgb(255 255 255 / 0.18);
-  border-radius: 2px;
+  border-radius: 8px;
   background: rgb(255 255 255 / 0.06);
   color: inherit;
   font: 600 0.72rem/1.2 "Space Grotesk", sans-serif;
@@ -7773,8 +7773,8 @@ body.lt-daw-song-reordering .lt-region-hotspot .lt-region-hotspot-name {
   flex-direction: column;
   gap: 0.2rem;
   padding: 0.45rem;
-  border-radius: 2px;
-  background: rgb(17 23 38 / 0.8);
+  border-radius: 8px;
+  background: rgb(19 19 19 / 0.8);
   border: 1px solid rgb(133 148 144 / 0.18);
   backdrop-filter: blur(12px);
   /* A very long menu (e.g. the colour picker's presets) must never grow past
@@ -7784,7 +7784,7 @@ body.lt-daw-song-reordering .lt-region-hotspot .lt-region-hotspot-name {
 }
 
 .lt-context-menu strong {
-  color: #9fb0c8;
+  color: #aeaeae;
   font: 600 10px/1 "Space Grotesk", sans-serif;
   text-transform: uppercase;
   letter-spacing: 0.14em;
@@ -7795,16 +7795,16 @@ body.lt-daw-song-reordering .lt-region-hotspot .lt-region-hotspot-name {
   display: flex;
   align-items: center;
   gap: 0.45rem;
-  border-radius: 2px;
+  border-radius: 8px;
   background: transparent;
-  color: #e6ebf5;
+  color: #ebebeb;
   text-align: left;
   font-size: 12px;
   padding: 0.35rem;
 }
 
 .lt-context-menu button:hover {
-  background: #1b2438;
+  background: #1d1d1d;
 }
 
 /* Cabecera con "atras" cuando el menu es un submenu. */
@@ -7824,7 +7824,7 @@ body.lt-daw-song-reordering .lt-region-hotspot .lt-region-hotspot-name {
 .lt-context-menu button.lt-context-menu-back {
   flex: 0 0 auto;
   padding: 0.15rem;
-  color: #9fb0c8;
+  color: #aeaeae;
 }
 
 .lt-context-menu-back .material-symbols-outlined {
@@ -7845,7 +7845,7 @@ body.lt-daw-song-reordering .lt-region-hotspot .lt-region-hotspot-name {
 }
 
 .lt-context-menu-section {
-  color: #6b7a93;
+  color: #787878;
   font: 600 9px/1 "Space Grotesk", sans-serif;
   text-transform: uppercase;
   letter-spacing: 0.12em;
@@ -7856,7 +7856,7 @@ body.lt-daw-song-reordering .lt-region-hotspot .lt-region-hotspot-name {
   width: 12px;
   height: 12px;
   flex: 0 0 12px;
-  border-radius: 2px;
+  border-radius: 8px;
   box-shadow: inset 0 0 0 1px rgb(255 255 255 / 0.28);
 }
 
@@ -7884,15 +7884,15 @@ body.lt-daw-song-reordering .lt-region-hotspot .lt-region-hotspot-name {
   flex-direction: column;
   gap: 0.45rem;
   padding: 0.55rem;
-  border-radius: 2px;
-  border: 1px solid rgb(0 209 255 / 0.28);
-  background: rgb(17 23 38 / 0.96);
+  border-radius: 8px;
+  border: 1px solid rgb(255 255 255 / 0.168);
+  background: rgb(19 19 19 / 0.96);
   box-shadow: 0 14px 36px rgb(0 0 0 / 0.52);
   overflow-y: auto;
 }
 
 .lt-color-popover strong {
-  color: #9fb0c8;
+  color: #aeaeae;
   font: 600 10px/1.2 "Space Grotesk", sans-serif;
   text-transform: uppercase;
   letter-spacing: 0.12em;
@@ -7902,7 +7902,7 @@ body.lt-daw-song-reordering .lt-region-hotspot .lt-region-hotspot-name {
   width: 100%;
   height: 2rem;
   border: 1px solid rgb(255 255 255 / 0.12);
-  border-radius: 2px;
+  border-radius: 8px;
   box-shadow: inset 0 0 0 1px rgb(0 0 0 / 0.22);
 }
 
@@ -7917,7 +7917,7 @@ body.lt-daw-song-reordering .lt-region-hotspot .lt-region-hotspot-name {
   aspect-ratio: 1;
   padding: 0;
   border: 1px solid rgb(255 255 255 / 0.16);
-  border-radius: 2px;
+  border-radius: 8px;
   cursor: pointer;
 }
 
@@ -7944,7 +7944,7 @@ body.lt-daw-song-reordering .lt-region-hotspot .lt-region-hotspot-name {
 
 .lt-color-popover-hex span,
 .lt-color-popover-picker span {
-  color: #9fb0c8;
+  color: #aeaeae;
   font: 700 9px/1 "Space Grotesk", sans-serif;
   letter-spacing: 0.08em;
   text-transform: uppercase;
@@ -7955,9 +7955,9 @@ body.lt-daw-song-reordering .lt-region-hotspot .lt-region-hotspot-name {
   height: 1.45rem;
   box-sizing: border-box;
   border: 1px solid rgb(255 255 255 / 0.12);
-  border-radius: 2px;
-  background: #080c16;
-  color: #e6ebf5;
+  border-radius: 8px;
+  background: #0a0a0a;
+  color: #ebebeb;
   padding: 0 0.35rem;
   font: 700 10px/1 "Space Grotesk", sans-serif;
 }
@@ -7969,8 +7969,8 @@ body.lt-daw-song-reordering .lt-region-hotspot .lt-region-hotspot-name {
   box-sizing: border-box;
   padding: 0.14rem;
   border: 1px solid rgb(255 255 255 / 0.12);
-  border-radius: 2px;
-  background: #080c16;
+  border-radius: 8px;
+  background: #0a0a0a;
   cursor: pointer;
 }
 
@@ -7980,7 +7980,7 @@ body.lt-daw-song-reordering .lt-region-hotspot .lt-region-hotspot-name {
 
 .lt-color-popover-picker input[type="color"]::-webkit-color-swatch {
   border: 0;
-  border-radius: 1px;
+  border-radius: 4px;
 }
 
 .lt-color-popover-actions {
@@ -7991,9 +7991,9 @@ body.lt-daw-song-reordering .lt-region-hotspot .lt-region-hotspot-name {
 
 .lt-color-popover button:not(.lt-color-popover-swatch) {
   border: 1px solid rgb(255 255 255 / 0.12);
-  border-radius: 2px;
-  background: #1b2438;
-  color: #e6ebf5;
+  border-radius: 8px;
+  background: #1d1d1d;
+  color: #ebebeb;
   padding: 0.35rem 0.5rem;
   font: 700 10px/1 "Space Grotesk", sans-serif;
   cursor: pointer;
@@ -8001,12 +8001,12 @@ body.lt-daw-song-reordering .lt-region-hotspot .lt-region-hotspot-name {
 
 .lt-color-popover button:not(.lt-color-popover-swatch):hover,
 .lt-color-popover-swatch:hover {
-  border-color: rgb(0 209 255 / 0.34);
-  color: #00d1ff;
+  border-color: rgb(255 255 255 / 0.204);
+  color: #ffffff;
 }
 
 .lt-track-header-row.is-drop-target .lt-track-header {
-  background: #141b2b;
+  background: #161616;
 }
 
 /* Drop-into-folder. A left-edge inset line is not usable here: a coloured
@@ -8017,8 +8017,8 @@ body.lt-daw-song-reordering .lt-region-hotspot .lt-region-hotspot-name {
    colour can obscure. */
 .lt-track-header-row.is-drop-inside-folder .lt-track-header {
   box-shadow:
-    inset 0 0 0 2px #00d1ff,
-    inset 0 0 12px rgb(0 209 255 / 0.25);
+    inset 0 0 0 2px #ffffff,
+    inset 0 0 12px rgb(255 255 255 / 0.15);
 }
 
 /* Teal wash over the whole header. Repurposes the header's own ::after — the
@@ -8034,7 +8034,7 @@ body.lt-daw-song-reordering .lt-region-hotspot .lt-region-hotspot-name {
   /* Above the ::before accent bar (1), below .lt-track-header-body (2) so the
      folder name and buttons stay at full contrast. */
   z-index: 1;
-  background: rgb(0 209 255 / 0.16);
+  background: rgb(255 255 255 / 0.096);
   opacity: 1;
 }
 
@@ -8045,14 +8045,14 @@ body.lt-daw-song-reordering .lt-region-hotspot .lt-region-hotspot-name {
   display: flex;
   align-items: center;
   justify-content: center;
-  background: rgb(17 23 38 / 0.58);
+  background: rgb(19 19 19 / 0.58);
   backdrop-filter: blur(6px);
 }
 
 .busy-overlay-card {
   width: min(24rem, 90vw);
-  background: #141b2b;
-  border-radius: 2px;
+  background: #161616;
+  border-radius: 8px;
   padding: 1rem;
 }
 
@@ -8072,14 +8072,14 @@ body.lt-daw-song-reordering .lt-region-hotspot .lt-region-hotspot-name {
   width: 0.95rem;
   height: 0.95rem;
   border-radius: 999px;
-  border: 2px solid rgb(0 209 255 / 0.18);
-  border-top-color: #00d1ff;
+  border: 2px solid rgb(255 255 255 / 0.108);
+  border-top-color: #ffffff;
   flex-shrink: 0;
   animation: lt-library-progress-spin 0.8s linear infinite;
 }
 
 .busy-overlay-percent {
-  color: rgb(0 209 255 / 0.82);
+  color: rgb(255 255 255 / 0.492);
   font: 700 10px/1 "Space Grotesk", sans-serif;
   letter-spacing: 0.12em;
   text-transform: uppercase;
@@ -8087,7 +8087,7 @@ body.lt-daw-song-reordering .lt-region-hotspot .lt-region-hotspot-name {
 
 .busy-overlay-card p {
   margin: 0;
-  color: #9fb0c8;
+  color: #aeaeae;
 }
 
 .busy-overlay-card small {
@@ -8101,7 +8101,7 @@ body.lt-daw-song-reordering .lt-region-hotspot .lt-region-hotspot-name {
   height: 0.35rem;
   margin-top: 0.75rem;
   overflow: hidden;
-  background: #131a2b;
+  background: #151515;
 }
 
 .busy-overlay-progress span {
@@ -8146,7 +8146,7 @@ body.lt-daw-song-reordering .lt-region-hotspot .lt-region-hotspot-name {
   align-items: center;
   justify-content: center;
   padding: 1.5rem;
-  background: rgb(17 23 38 / 0.6);
+  background: rgb(19 19 19 / 0.6);
   backdrop-filter: blur(12px);
 }
 
@@ -8156,8 +8156,8 @@ body.lt-daw-song-reordering .lt-region-hotspot .lt-region-hotspot-name {
   display: flex;
   flex-direction: column;
   overflow: hidden;
-  border-radius: 2px;
-  background: #0d1220;
+  border-radius: 8px;
+  background: #0f0f0f;
   border: 1px solid rgb(133 148 144 / 0.2);
   box-shadow: 0 0 32px rgb(229 226 225 / 0.08);
 }
@@ -8173,7 +8173,7 @@ body.lt-daw-song-reordering .lt-region-hotspot .lt-region-hotspot-name {
   align-items: center;
   justify-content: space-between;
   padding: 1rem 1.1rem;
-  background: #1b2438;
+  background: #1d1d1d;
 }
 
 .lt-import-header-title {
@@ -8181,7 +8181,7 @@ body.lt-daw-song-reordering .lt-region-hotspot .lt-region-hotspot-name {
   align-items: center;
   gap: 0.55rem;
   font: 600 1.1rem/1 Inter, sans-serif;
-  color: #e6ebf5;
+  color: #ebebeb;
 }
 
 /* Explicit modifier class because :has() is Safari 15.4+, newer than our
@@ -8194,21 +8194,21 @@ body.lt-daw-song-reordering .lt-region-hotspot .lt-region-hotspot-name {
 }
 
 .lt-import-header-title .material-symbols-outlined {
-  color: #00d1ff;
+  color: #ffffff;
 }
 
 .lt-import-close {
   border: 0;
-  border-radius: 2px;
+  border-radius: 8px;
   background: transparent;
-  color: #9fb0c8;
+  color: #aeaeae;
   width: 2rem;
   height: 2rem;
 }
 
 .lt-import-close:hover {
-  background: #141b2b;
-  color: #e6ebf5;
+  background: #161616;
+  color: #ebebeb;
 }
 
 .lt-import-body {
@@ -8220,7 +8220,7 @@ body.lt-daw-song-reordering .lt-region-hotspot .lt-region-hotspot-name {
 .lt-import-sidebar {
   width: 14rem;
   flex-shrink: 0;
-  background: #111827;
+  background: #131313;
   padding: 0.8rem 0.5rem;
   overflow: auto;
 }
@@ -8228,7 +8228,7 @@ body.lt-daw-song-reordering .lt-region-hotspot .lt-region-hotspot-name {
 .lt-import-sidebar-label {
   display: block;
   padding: 0 0.5rem;
-  color: #9fb0c8;
+  color: #aeaeae;
   font: 600 11px/1 "Space Grotesk", sans-serif;
   text-transform: uppercase;
   letter-spacing: 0.14em;
@@ -8244,22 +8244,22 @@ body.lt-daw-song-reordering .lt-region-hotspot .lt-region-hotspot-name {
 .lt-import-sidebar-list button {
   border: 0;
   text-align: left;
-  border-radius: 2px;
+  border-radius: 8px;
   background: transparent;
-  color: #9fb0c8;
+  color: #aeaeae;
   padding: 0.55rem 0.65rem;
   font-size: 0.9rem;
 }
 
 .lt-import-sidebar-list button:hover {
-  background: #141b2b;
-  color: #e6ebf5;
+  background: #161616;
+  color: #ebebeb;
 }
 
 .lt-import-sidebar-list button.is-active {
-  background: rgb(0 209 255 / 0.08);
-  color: #00d1ff;
-  box-shadow: inset 2px 0 0 #00d1ff;
+  background: rgb(255 255 255 / 0.048);
+  color: #ffffff;
+  box-shadow: inset 2px 0 0 #ffffff;
 }
 
 .lt-import-main {
@@ -8267,7 +8267,7 @@ body.lt-daw-song-reordering .lt-region-hotspot .lt-region-hotspot-name {
   flex: 1;
   display: flex;
   flex-direction: column;
-  background: #080c16;
+  background: #0a0a0a;
 }
 
 .lt-import-breadcrumbs {
@@ -8276,17 +8276,17 @@ body.lt-daw-song-reordering .lt-region-hotspot .lt-region-hotspot-name {
   justify-content: space-between;
   gap: 0.75rem;
   padding: 0.7rem 0.85rem;
-  background: #141b2b;
-  color: #9fb0c8;
+  background: #161616;
+  color: #aeaeae;
   font-size: 0.9rem;
 }
 
 .lt-import-search {
   border: 0;
   width: 12rem;
-  border-radius: 2px;
-  background: #080c16;
-  color: #9fb0c8;
+  border-radius: 8px;
+  background: #0a0a0a;
+  color: #aeaeae;
   padding: 0.4rem 0.55rem;
 }
 
@@ -8299,8 +8299,8 @@ body.lt-daw-song-reordering .lt-region-hotspot .lt-region-hotspot-name {
 
 .lt-import-table-header {
   padding: 0.5rem 0.75rem;
-  background: #111827;
-  color: #9fb0c8;
+  background: #131313;
+  color: #aeaeae;
   font: 600 11px/1 "Space Grotesk", sans-serif;
   text-transform: uppercase;
   letter-spacing: 0.14em;
@@ -8321,20 +8321,20 @@ body.lt-daw-song-reordering .lt-region-hotspot .lt-region-hotspot-name {
   border: 0;
   width: 100%;
   text-align: left;
-  border-radius: 2px;
+  border-radius: 8px;
   margin-bottom: 0.2rem;
   padding: 0.5rem;
   background: transparent;
-  color: #9fb0c8;
+  color: #aeaeae;
 }
 
 .lt-import-file-row:hover {
-  background: #141b2b;
+  background: #161616;
 }
 
 .lt-import-file-row.is-selected {
-  background: #1b2438;
-  color: #e6ebf5;
+  background: #1d1d1d;
+  color: #ebebeb;
 }
 
 .lt-import-file-row.is-disabled {
@@ -8348,9 +8348,9 @@ body.lt-daw-song-reordering .lt-region-hotspot .lt-region-hotspot-name {
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  border-radius: 2px;
-  border: 1px solid #2e3a52;
-  color: #00d1ff;
+  border-radius: 8px;
+  border: 1px solid #2f2f2f;
+  color: #ffffff;
   font-size: 10px;
 }
 
@@ -8371,7 +8371,7 @@ body.lt-daw-song-reordering .lt-region-hotspot .lt-region-hotspot-name {
   align-items: center;
   justify-content: space-between;
   gap: 0.75rem;
-  background: #141b2b;
+  background: #161616;
   padding: 0.8rem 0.95rem;
 }
 
@@ -8381,7 +8381,7 @@ body.lt-daw-song-reordering .lt-region-hotspot .lt-region-hotspot-name {
   align-items: flex-start;
   gap: 0.85rem;
   padding: 1.4rem 1.25rem 1.15rem;
-  background: #0d1220;
+  background: #0f0f0f;
 }
 
 .lt-import-simple-icon {
@@ -8390,22 +8390,22 @@ body.lt-daw-song-reordering .lt-region-hotspot .lt-region-hotspot-name {
   justify-content: center;
   width: 3rem;
   height: 3rem;
-  border-radius: 2px;
-  background: rgb(0 209 255 / 0.12);
-  color: #00d1ff;
+  border-radius: 8px;
+  background: rgb(255 255 255 / 0.072);
+  color: #ffffff;
   font-size: 1.5rem;
 }
 
 .lt-import-simple-title {
   margin: 0;
-  color: #e6ebf5;
+  color: #ebebeb;
   font: 700 1.15rem/1.2 Inter, sans-serif;
 }
 
 .lt-import-simple-hint {
   margin: 0;
   max-width: 38ch;
-  color: #9fb0c8;
+  color: #aeaeae;
   font-size: 0.95rem;
   line-height: 1.5;
 }
@@ -8422,7 +8422,7 @@ body.lt-daw-song-reordering .lt-region-hotspot .lt-region-hotspot-name {
   display: flex;
   align-items: center;
   gap: 0.45rem;
-  color: #9fb0c8;
+  color: #aeaeae;
   font: 600 11px/1 "Space Grotesk", sans-serif;
   letter-spacing: 0.1em;
   text-transform: uppercase;
@@ -8431,8 +8431,8 @@ body.lt-daw-song-reordering .lt-region-hotspot .lt-region-hotspot-name {
 .lt-import-preview-pill {
   width: 2.4rem;
   height: 1.2rem;
-  border-radius: 2px;
-  background: rgb(0 209 255 / 0.25);
+  border-radius: 8px;
+  background: rgb(255 255 255 / 0.15);
   position: relative;
 }
 
@@ -8440,8 +8440,8 @@ body.lt-daw-song-reordering .lt-region-hotspot .lt-region-hotspot-name {
   content: "";
   width: 0.95rem;
   height: 0.95rem;
-  border-radius: 2px;
-  background: #00d1ff;
+  border-radius: 8px;
+  background: #ffffff;
   position: absolute;
   top: 2px;
   right: 2px;
@@ -8456,26 +8456,26 @@ body.lt-daw-song-reordering .lt-region-hotspot .lt-region-hotspot-name {
 .lt-import-cancel,
 .lt-import-submit {
   border: 0;
-  border-radius: 2px;
+  border-radius: 8px;
   padding: 0.5rem 0.8rem;
 }
 
 .lt-import-cancel {
   background: transparent;
-  color: #9fb0c8;
+  color: #aeaeae;
 }
 
 .lt-import-cancel:hover {
-  background: #1b2438;
-  color: #e6ebf5;
+  background: #1d1d1d;
+  color: #ebebeb;
 }
 
 .lt-import-submit {
   display: inline-flex;
   align-items: center;
   gap: 0.35rem;
-  background: linear-gradient(to bottom, #00d1ff, #00a8d6);
-  color: #00263a;
+  background: linear-gradient(to bottom, #ffffff, #e4e4e7);
+  color: #181818;
   font-weight: 700;
 }
 
@@ -8490,16 +8490,16 @@ body.lt-daw-song-reordering .lt-region-hotspot .lt-region-hotspot-name {
 }
 
 ::-webkit-scrollbar-track {
-  background: #080c16;
+  background: #0a0a0a;
 }
 
 ::-webkit-scrollbar-thumb {
-  background: #243049;
-  border-radius: 2px;
+  background: #272727;
+  border-radius: 8px;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background: #2e3a52;
+  background: #2f2f2f;
 }
 
 /* ─────────────────────────────────────────────────────────────────────────
@@ -8565,7 +8565,7 @@ body.lt-daw-song-reordering .lt-region-hotspot .lt-region-hotspot-name {
   display: flex;
   flex-direction: column;
   min-height: 0;
-  background: rgb(9 12 19);
+  background: rgb(10 10 10);
 }
 
 /* Sin margen exterior (2026-11-03); entre canciones sí queda el hueco del
@@ -8655,7 +8655,7 @@ body.lt-daw-song-reordering .lt-region-hotspot .lt-region-hotspot-name {
 .lt-compact-column-resizer:hover::before,
 .lt-compact-column-resizer.is-resizing::before,
 .lt-compact-column-resizer:focus-visible::before {
-  background: rgb(0 209 255 / 0.45);
+  background: rgb(255 255 255 / 0.27);
 }
 
 .lt-compact-column-resizer:focus-visible {
@@ -8667,7 +8667,7 @@ body.lt-daw-song-reordering .lt-region-hotspot .lt-region-hotspot-name {
 .lt-compact-column-resizer-icon {
   position: relative;
   padding-block: 0.15rem;
-  background: rgb(9 12 19);
+  background: rgb(10 10 10);
   font-size: 0.85rem;
   line-height: 1;
 }
@@ -8753,9 +8753,9 @@ body.lt-song-reordering .lt-compact-column-resize-slot {
 }
 
 .lt-compact-song-header.is-selected {
-  border-color: rgb(0 209 255 / 0.9);
-  box-shadow: inset 0 0 0 2px rgb(0 209 255 / 0.55);
-  background: rgb(26 34 57 / 0.95);
+  border-color: rgb(255 255 255 / 0.54);
+  box-shadow: inset 0 0 0 2px rgb(255 255 255 / 0.33);
+  background: rgb(28 28 28 / 0.95);
 }
 
 /* Armed song jump. Unlike the narrow pulsing ribbon used for the song that is
@@ -8773,7 +8773,7 @@ body.lt-song-reordering .lt-compact-column-resize-slot {
   flex-direction: column;
   gap: 0.4rem;
   padding: 0.55rem 0.7rem;
-  background: rgb(21 28 47 / 0.85);
+  background: rgb(23 23 23 / 0.85);
   border: 0;
   border-bottom: 1px solid rgba(186, 202, 197, 0.12);
   border-radius: 0;
@@ -8806,7 +8806,7 @@ body.lt-song-reordering .lt-compact-column-resize-slot {
      badges shrink (and then hide) before the name gives up its last 2rem. */
   flex: 1 1 2rem;
   min-width: 0;
-  color: #e6ebf5;
+  color: #ebebeb;
   font: 600 11px/1.2 "Space Grotesk", sans-serif;
   letter-spacing: 0.08em;
   text-transform: uppercase;
@@ -8821,7 +8821,7 @@ body.lt-song-reordering .lt-compact-column-resize-slot {
   color: #f4c95d;
   background: rgb(244 201 93 / 0.1);
   border: 1px solid rgb(244 201 93 / 0.42);
-  border-radius: 2px;
+  border-radius: 8px;
   font: 700 8px/1.2 "Space Grotesk", sans-serif;
   letter-spacing: 0.05em;
   text-transform: uppercase;
@@ -8841,10 +8841,10 @@ body.lt-song-reordering .lt-compact-column-resize-slot {
   min-width: 0;
   overflow: hidden;
   padding: 0.15rem 0.4rem;
-  color: #00d1ff;
-  background: rgba(0, 209, 255, 0.12);
-  border: 1px solid rgba(0, 209, 255, 0.35);
-  border-radius: 2px;
+  color: #ffffff;
+  background: rgba(255, 255, 255, 0.12);
+  border: 1px solid rgba(255, 255, 255, 0.35);
+  border-radius: 8px;
   font: 600 9px/1.2 "Space Grotesk", sans-serif;
   letter-spacing: 0.06em;
   white-space: nowrap;
@@ -8873,7 +8873,7 @@ body.lt-song-reordering .lt-compact-column-resize-slot {
   color: #ffe2ab;
   background: rgba(255, 226, 171, 0.14);
   border: 1px solid rgba(255, 226, 171, 0.38);
-  border-radius: 2px;
+  border-radius: 8px;
   font: 700 9px/1.2 "Space Grotesk", sans-serif;
   letter-spacing: 0.04em;
   white-space: nowrap;
@@ -8895,9 +8895,9 @@ body.lt-song-reordering .lt-compact-column-resize-slot {
   display: flex;
   align-items: center;
   gap: 0.3rem;
-  background: rgb(16 21 35);
+  background: rgb(17 17 17);
   border-bottom: 1px solid rgba(186, 202, 197, 0.12);
-  color: #9fb0c8;
+  color: #aeaeae;
 }
 
 .lt-compact-clip-menu-back .material-symbols-outlined {
@@ -8913,15 +8913,15 @@ body.lt-song-reordering .lt-compact-column-resize-slot {
   justify-content: center;
   padding: 0;
   border: 1px solid rgba(186, 202, 197, 0.25);
-  border-radius: 2px;
+  border-radius: 8px;
   background: transparent;
-  color: #00d1ff;
+  color: #ffffff;
   cursor: pointer;
 }
 
 .lt-compact-song-play:hover {
-  background: rgb(0 209 255 / 0.18);
-  border-color: rgb(0 209 255 / 0.65);
+  background: rgb(255 255 255 / 0.108);
+  border-color: rgb(255 255 255 / 0.39);
 }
 
 .lt-compact-song-play .material-symbols-outlined {
@@ -8952,7 +8952,7 @@ body.lt-song-reordering .lt-compact-column-resize-slot {
   flex-direction: column;
   gap: 0.25rem;
   padding: 0.4rem;
-  background: rgb(15 20 33 / 0.5);
+  background: rgb(16 16 16 / 0.5);
   border: 0;
   border-radius: 0;
 }
@@ -8970,9 +8970,9 @@ body.lt-song-reordering .lt-compact-column-resize-slot {
   flex-direction: column;
   gap: 0.1rem;
   padding: 0.45rem 0.55rem;
-  background: rgb(21 28 47 / 0.85);
+  background: rgb(23 23 23 / 0.85);
   border: 1px solid rgba(186, 202, 197, 0.1);
-  border-radius: 2px;
+  border-radius: 8px;
   position: relative;
   /* Without this a long filename keeps the card (and the clip stack, and the
      column) from ever shrinking below the text's intrinsic width — the
@@ -9004,7 +9004,7 @@ body.lt-song-reordering .lt-compact-column-resize-slot {
   /* Solid var() border (was a ~35% color-mix); the per-track tint comes from
      the ::after overlay below, so no color-mix() is needed — works on Safari
      14.1 (our macOS 11 minimum) and modern browsers alike. */
-  border-color: var(--lt-track-color, rgba(0, 209, 255, 0.35));
+  border-color: var(--lt-track-color, rgba(255, 255, 255, 0.35));
   background: rgba(20, 26, 25, 0.85);
 }
 
@@ -9039,7 +9039,7 @@ body.lt-song-reordering .lt-compact-column-resize-slot {
 }
 
 .lt-compact-clip-name {
-  color: #e6ebf5;
+  color: #ebebeb;
   /* 12px: same reasoning as the track line below — the whole card is scaled
      by the UI zoom, so the base size has to leave headroom for 0.7. */
   font: 500 12px/1.2 "Space Grotesk", sans-serif;
@@ -9076,8 +9076,8 @@ body.lt-song-reordering .lt-compact-column-resize-slot {
 /* Subtle teal glow on the stack while a drag is hovering. Pairs with the
    per-file dashed placeholders rendered inside. */
 .lt-compact-song-clip-stack.is-drop-target {
-  border-color: rgb(0 209 255 / 0.55);
-  background: rgb(0 209 255 / 0.05);
+  border-color: rgb(255 255 255 / 0.33);
+  background: rgb(255 255 255 / 0.03);
 }
 
 /* Empty placeholder rendered once per incoming file during dragover.
@@ -9086,13 +9086,13 @@ body.lt-song-reordering .lt-compact-column-resize-slot {
 .lt-compact-clip-entry.is-drop-placeholder {
   background: transparent;
   border-style: dashed;
-  border-color: rgb(0 209 255 / 0.6);
-  color: rgba(0, 209, 255, 0.8);
+  border-color: rgb(255 255 255 / 0.36);
+  color: rgba(255, 255, 255, 0.8);
   pointer-events: none;
 }
 
 .lt-compact-clip-entry.is-drop-placeholder .lt-compact-clip-name {
-  color: rgba(0, 209, 255, 0.85);
+  color: rgba(255, 255, 255, 0.85);
   font-style: italic;
 }
 
@@ -9100,9 +9100,9 @@ body.lt-song-reordering .lt-compact-column-resize-slot {
    over the strip. Same shape as a real song column but dashed and
    non-interactive — communicates "the imported song lands here". */
 .lt-compact-song-column.is-package-ghost {
-  border: 1px dashed rgb(0 209 255 / 0.6);
-  background: rgb(0 209 255 / 0.04);
-  border-radius: 2px;
+  border: 1px dashed rgb(255 255 255 / 0.36);
+  background: rgb(255 255 255 / 0.024);
+  border-radius: 8px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -9116,7 +9116,7 @@ body.lt-song-reordering .lt-compact-column-resize-slot {
   flex-direction: column;
   align-items: center;
   gap: 0.4rem;
-  color: rgba(0, 209, 255, 0.9);
+  color: rgba(255, 255, 255, 0.9);
   font: 600 11px/1.2 "Space Grotesk", sans-serif;
   letter-spacing: 0.08em;
   text-transform: uppercase;
@@ -9142,9 +9142,9 @@ body.lt-song-reordering .lt-compact-column-resize-slot {
 .lt-compact-view-import-song {
   flex: 1 1 auto;
   border: 1px dashed rgba(186, 202, 197, 0.25);
-  border-radius: 2px;
+  border-radius: 8px;
   background: transparent;
-  color: #9fb0c8;
+  color: #aeaeae;
   font: 600 10px/1 "Space Grotesk", sans-serif;
   letter-spacing: 0.12em;
   text-transform: uppercase;
@@ -9158,8 +9158,8 @@ body.lt-song-reordering .lt-compact-column-resize-slot {
 
 .lt-compact-view-add-song:hover,
 .lt-compact-view-import-song:hover {
-  border-color: rgb(0 209 255 / 0.7);
-  color: #00d1ff;
+  border-color: rgb(255 255 255 / 0.42);
+  color: #ffffff;
 }
 
 .lt-compact-view-import-song .material-symbols-outlined {
@@ -9205,9 +9205,9 @@ body.lt-song-reordering .lt-compact-column-resize-slot {
   display: flex;
   flex-direction: column;
   padding: 0.25rem;
-  border: 1px solid rgb(0 209 255 / 0.22);
-  border-radius: 2px;
-  background: rgb(13 18 29 / 0.97);
+  border: 1px solid rgb(255 255 255 / 0.132);
+  border-radius: 8px;
+  background: rgb(15 15 15 / 0.97);
   box-shadow: 0 8px 24px rgb(0 0 0 / 0.45);
 }
 
@@ -9218,7 +9218,7 @@ body.lt-song-reordering .lt-compact-column-resize-slot {
   font-size: 0.8rem;
   text-align: left;
   padding: 0.4rem 0.6rem;
-  border-radius: 2px;
+  border-radius: 8px;
   cursor: pointer;
   white-space: nowrap;
   overflow: hidden;
@@ -9227,16 +9227,16 @@ body.lt-song-reordering .lt-compact-column-resize-slot {
 
 .lt-new-song-template-menu > button:hover,
 .lt-new-song-template-menu > button:focus-visible {
-  background: rgb(0 209 255 / 0.1);
-  color: #00d1ff;
+  background: rgb(255 255 255 / 0.06);
+  color: #ffffff;
 }
 
 /* Highlight the entire song strip while the user is dragging a .ltpkg
    over it, so the "drop anywhere to append" affordance is discoverable. */
 .lt-compact-songs.is-package-drop {
-  outline: 2px dashed rgb(0 209 255 / 0.55);
+  outline: 2px dashed rgb(255 255 255 / 0.33);
   outline-offset: -6px;
-  background: rgb(0 209 255 / 0.04);
+  background: rgb(255 255 255 / 0.024);
 }
 
 /* ─── Bottom mixer ────────────────────────────────────────────────────── */
@@ -9248,7 +9248,7 @@ body.lt-song-reordering .lt-compact-column-resize-slot {
   flex: 0 0 16rem;
   border-top: 1px solid rgba(186, 202, 197, 0.12);
   padding: 0;
-  background: rgb(11 15 25);
+  background: rgb(12 12 12);
   overflow: hidden;
 }
 
@@ -9283,10 +9283,10 @@ body.lt-song-reordering .lt-compact-column-resize-slot {
   flex-direction: column;
   gap: 0.35rem;
   padding: 0.45rem 0.45rem 0.5rem;
-  background: rgb(15 20 33 / 0.85);
+  background: rgb(16 16 16 / 0.85);
   border: 1px solid rgba(186, 202, 197, 0.1);
   border-left: 4px solid var(--track-accent);
-  border-radius: 2px;
+  border-radius: 8px;
   height: 100%;
   box-sizing: border-box;
   cursor: context-menu;
@@ -9306,7 +9306,7 @@ body.lt-song-reordering .lt-compact-column-resize-slot {
    the eye can tell them apart from leaf audio strips even before any user
    colour is applied. */
 .lt-compact-mixer-strip.is-folder {
-  background: rgb(11 15 25 / 0.92);
+  background: rgb(12 12 12 / 0.92);
   border-left-width: 5px;
 }
 
@@ -9335,20 +9335,20 @@ body.lt-song-reordering .lt-compact-column-resize-slot {
    instead of overriding `border` so the existing accent on the left
    stays intact. */
 .lt-compact-mixer-strip.is-selected {
-  background: rgb(18 24 40 / 0.95);
-  box-shadow: inset 0 0 0 1px rgb(0 209 255 / 0.7);
+  background: rgb(20 20 20 / 0.95);
+  box-shadow: inset 0 0 0 1px rgb(255 255 255 / 0.42);
 }
 
 /* Drop into a folder: there is no gap to open beside it (the tracks land at
    the end of its contents), so the whole strip lights up. Reordering itself
    is previewed by ../features/transport/reorder/reorderPreview. */
 .lt-compact-mixer-strip.is-drop-inside-folder {
-  background: rgb(0 209 255 / 0.12);
-  box-shadow: inset 0 0 0 2px rgb(0 209 255 / 0.65);
+  background: rgb(255 255 255 / 0.072);
+  box-shadow: inset 0 0 0 2px rgb(255 255 255 / 0.39);
 }
 
 .lt-compact-mixer-strip-name {
-  color: #e6ebf5;
+  color: #ebebeb;
   /* Crece con «Tamaño del mezclador» (--lt-mixer-name-scale, faders.css). */
   font: 600 calc(10px * var(--lt-mixer-name-scale, 1))/1.3 "Space Grotesk", sans-serif;
   letter-spacing: 0.04em;
@@ -9390,20 +9390,20 @@ body.lt-song-reordering .lt-compact-column-resize-slot {
   padding: 0;
   font-size: 14px;
   line-height: 1;
-  color: #00d1ff;
-  background: rgb(0 209 255 / 0.12);
-  border: 1px solid rgb(0 209 255 / 0.35);
-  border-radius: 2px;
+  color: #ffffff;
+  background: rgb(255 255 255 / 0.072);
+  border: 1px solid rgb(255 255 255 / 0.21);
+  border-radius: 8px;
   cursor: pointer;
 }
 
 .lt-compact-mixer-fold:hover {
-  background: rgb(0 209 255 / 0.24);
+  background: rgb(255 255 255 / 0.144);
   color: #8ff7e8;
 }
 
 .lt-compact-mixer-fold:focus-visible {
-  outline: 1px solid #00d1ff;
+  outline: 1px solid #ffffff;
   outline-offset: 1px;
 }
 
@@ -9416,7 +9416,7 @@ body.lt-song-reordering .lt-compact-column-resize-slot {
   width: 100%;
   padding: 0;
   text-align: left;
-  color: #00d1ff;
+  color: #ffffff;
   font: 600 9px/1.2 "Space Grotesk", sans-serif;
   letter-spacing: 0.04em;
   white-space: nowrap;
@@ -9464,9 +9464,9 @@ body.lt-song-reordering .lt-compact-column-resize-slot {
   height: 1.3rem;
   padding: 0;
   border: 1px solid rgba(186, 202, 197, 0.18);
-  border-radius: 2px;
+  border-radius: 8px;
   background: transparent;
-  color: #9fb0c8;
+  color: #aeaeae;
   font: 700 10px/1 "Space Grotesk", sans-serif;
   letter-spacing: 0.05em;
   cursor: pointer;
@@ -9475,19 +9475,19 @@ body.lt-song-reordering .lt-compact-column-resize-slot {
 .lt-compact-mixer-toggle.is-on.is-mute {
   background: rgb(255 95 95 / 0.85);
   border-color: rgb(255 95 95 / 0.85);
-  color: #080c16;
+  color: #0a0a0a;
 }
 
 .lt-compact-mixer-toggle.is-on.is-solo {
   background: rgb(255 196 87 / 0.85);
   border-color: rgb(255 196 87 / 0.85);
-  color: #080c16;
+  color: #0a0a0a;
 }
 
 .lt-compact-mixer-toggle.is-on.is-transpose {
-  background: rgb(0 209 255 / 0.85);
-  border-color: rgb(0 209 255 / 0.85);
-  color: #080c16;
+  background: rgb(255 255 255 / 0.51);
+  border-color: rgb(255 255 255 / 0.51);
+  color: #0a0a0a;
 }
 
 .lt-compact-mixer-fader-wrap {
@@ -9556,10 +9556,10 @@ body.lt-song-reordering .lt-compact-column-resize-slot {
   left: 50%;
   transform: translate(-50%, 50%);
   padding: 0.12rem 0.35rem;
-  background: rgb(16 21 35);
+  background: rgb(17 17 17);
   border: 1px solid rgba(186, 202, 197, 0.35);
-  border-radius: 2px;
-  color: #e6ebf5;
+  border-radius: 8px;
+  color: #ebebeb;
   font: 600 10px/1 "Space Grotesk", sans-serif;
   letter-spacing: 0.02em;
   white-space: nowrap;
@@ -9613,10 +9613,10 @@ body.lt-song-reordering .lt-compact-column-resize-slot {
   bottom: calc(100% + 0.35rem);
   transform: translateX(-50%);
   padding: 0.2rem 0.45rem;
-  background: rgb(16 21 35);
+  background: rgb(17 17 17);
   border: 1px solid rgba(186, 202, 197, 0.25);
-  border-radius: 2px;
-  color: #e6ebf5;
+  border-radius: 8px;
+  color: #ebebeb;
   font: 600 10px/1 "Space Grotesk", sans-serif;
   letter-spacing: 0.04em;
   white-space: nowrap;
@@ -9636,10 +9636,10 @@ body.lt-song-reordering .lt-compact-column-resize-slot {
      a long label like "Inherited (Folder)" gets ellipsis instead of
      overlapping the arrow. */
   padding: 0 1.1rem 0 0.3rem;
-  background: rgb(16 21 35);
-  color: #9fb0c8;
+  background: rgb(17 17 17);
+  color: #aeaeae;
   border: 1px solid rgba(186, 202, 197, 0.12);
-  border-radius: 2px;
+  border-radius: 8px;
   font: 500 10px/1 "Space Grotesk", sans-serif;
   text-overflow: ellipsis;
   overflow: hidden;
@@ -9655,9 +9655,9 @@ body.lt-song-reordering .lt-compact-column-resize-slot {
   min-width: 12rem;
   max-width: 18rem;
   padding: 0.4rem 0;
-  background: rgb(16 21 35);
+  background: rgb(17 17 17);
   border: 1px solid rgba(186, 202, 197, 0.18);
-  border-radius: 3px;
+  border-radius: 8px;
   box-shadow: 0 6px 22px rgb(0 0 0 / 0.45);
 }
 
@@ -9669,7 +9669,7 @@ body.lt-song-reordering .lt-compact-column-resize-slot {
 
 .lt-compact-clip-menu-label {
   padding: 0.4rem 0.55rem 0.3rem;
-  color: #9fb0c8;
+  color: #aeaeae;
   font: 600 9px/1 "Space Grotesk", sans-serif;
   letter-spacing: 0.12em;
   text-transform: uppercase;
@@ -9696,8 +9696,8 @@ body.lt-song-reordering .lt-compact-column-resize-slot {
   padding: 0.4rem 0.55rem;
   background: transparent;
   border: 0;
-  border-radius: 2px;
-  color: #e6ebf5;
+  border-radius: 8px;
+  color: #ebebeb;
   font: 500 11px/1.4 "Space Grotesk", sans-serif;
   cursor: pointer;
   white-space: nowrap;
@@ -9706,8 +9706,8 @@ body.lt-song-reordering .lt-compact-column-resize-slot {
 }
 
 .lt-compact-clip-menu-item:hover {
-  background: rgb(0 209 255 / 0.18);
-  color: #00d1ff;
+  background: rgb(255 255 255 / 0.108);
+  color: #ffffff;
 }
 
 .lt-compact-clip-menu-item.is-destructive {
@@ -9738,7 +9738,7 @@ body.lt-song-reordering .lt-compact-column-resize-slot {
 }
 
 .lt-compact-clip-entry:hover {
-  border-color: rgba(0, 209, 255, 0.35);
+  border-color: rgba(255, 255, 255, 0.35);
 }
 
 /* ---------------------------------------------------------------
@@ -9762,7 +9762,7 @@ body.lt-song-reordering .lt-compact-column-resize-slot {
   padding: 0.2rem 0.5rem;
   background: rgba(255, 255, 255, 0.03);
   border: 1px solid rgba(186, 202, 197, 0.14);
-  border-radius: 3px;
+  border-radius: 8px;
   cursor: pointer;
   color: #d7ddda;
   font: inherit;
@@ -9793,7 +9793,7 @@ body.lt-song-reordering .lt-compact-column-resize-slot {
   position: relative;
   width: 2.6rem;
   height: 0.4rem;
-  border-radius: 2px;
+  border-radius: 8px;
   background: rgba(255, 255, 255, 0.1);
   overflow: hidden;
 }
@@ -9803,8 +9803,8 @@ body.lt-song-reordering .lt-compact-column-resize-slot {
   top: 0;
   left: 0;
   bottom: 0;
-  border-radius: 2px;
-  background: #00d1ff;
+  border-radius: 8px;
+  background: #ffffff;
 }
 
 .lt-resource-gauge-value {
@@ -9837,7 +9837,7 @@ body.lt-song-reordering .lt-compact-column-resize-slot {
   max-width: min(26rem, calc(100vw - 4rem));
   padding: 0.75rem;
   border: 1px solid rgba(186, 202, 197, 0.16);
-  border-radius: 3px;
+  border-radius: 8px;
   background:
     linear-gradient(180deg, rgba(255, 255, 255, 0.045), transparent 26%),
     linear-gradient(180deg, rgba(24, 24, 24, 0.98), rgba(9, 9, 9, 0.98));
@@ -9864,7 +9864,7 @@ body.lt-song-reordering .lt-compact-column-resize-slot {
   justify-content: space-between;
   gap: 1rem;
   padding: 0.2rem 0.4rem;
-  border-radius: 2px;
+  border-radius: 8px;
   background: rgba(255, 255, 255, 0.02);
   font-size: 0.74rem;
 }
@@ -9911,8 +9911,8 @@ body.lt-song-reordering .lt-compact-column-resize-slot {
 .lt-shortcuts-search {
   flex: 1;
   box-sizing: border-box;
-  border-radius: 4px;
-  border: 1px solid rgb(0 209 255 / 0.18);
+  border-radius: 8px;
+  border: 1px solid rgb(255 255 255 / 0.108);
   background: rgb(0 0 0 / 0.25);
   color: inherit;
   padding: 0.35rem 0.55rem;
@@ -9925,9 +9925,9 @@ body.lt-song-reordering .lt-compact-column-resize-slot {
 .lt-shortcuts-cancel,
 .lt-shortcuts-clear,
 .lt-shortcuts-reset {
-  border-radius: 4px;
-  border: 1px solid rgb(0 209 255 / 0.22);
-  background: rgb(0 209 255 / 0.06);
+  border-radius: 8px;
+  border: 1px solid rgb(255 255 255 / 0.132);
+  background: rgb(255 255 255 / 0.036);
   color: inherit;
   padding: 0.25rem 0.5rem;
   font-size: 0.72rem;
@@ -9935,8 +9935,8 @@ body.lt-song-reordering .lt-compact-column-resize-slot {
 }
 
 .lt-shortcuts-confirm {
-  border-color: rgb(0 209 255 / 0.5);
-  background: rgb(0 209 255 / 0.16);
+  border-color: rgb(255 255 255 / 0.3);
+  background: rgb(255 255 255 / 0.096);
 }
 
 .lt-shortcuts-reset-all:hover,
@@ -9945,7 +9945,7 @@ body.lt-song-reordering .lt-compact-column-resize-slot {
 .lt-shortcuts-cancel:hover,
 .lt-shortcuts-clear:hover,
 .lt-shortcuts-reset:hover {
-  background: rgb(0 209 255 / 0.18);
+  background: rgb(255 255 255 / 0.108);
 }
 
 .lt-shortcuts-hint {
@@ -10000,8 +10000,8 @@ body.lt-song-reordering .lt-compact-column-resize-slot {
 .lt-shortcuts-kbd {
   font-family: inherit;
   font-size: 0.72rem;
-  border-radius: 4px;
-  border: 1px solid rgb(0 209 255 / 0.3);
+  border-radius: 8px;
+  border: 1px solid rgb(255 255 255 / 0.18);
   background: rgb(0 0 0 / 0.3);
   padding: 0.12rem 0.4rem;
   min-width: 1.5rem;
@@ -10351,7 +10351,7 @@ body.lt-song-reordering .lt-compact-column-resize-slot {
    suelto: con borde y tamano de dedo se ven como botones. */
 .lt-mobile .lt-control-popover-panel .lt-stepper-control-row button {
   min-width: 3rem;
-  border: 1px solid rgb(0 209 255 / 0.22);
+  border: 1px solid rgb(255 255 255 / 0.132);
   font-size: 16px;
 }
 
@@ -10361,9 +10361,9 @@ body.lt-song-reordering .lt-compact-column-resize-slot {
 .lt-control-popover-portal .lt-vamp-button {
   height: 2.5rem;
   border: 0;
-  border-radius: 2px;
-  background: #080c16;
-  color: #e6ebf5;
+  border-radius: 8px;
+  background: #0a0a0a;
+  color: #ebebeb;
   padding: 0 0.8rem;
   font: 700 11px/1 "Space Grotesk", sans-serif;
   letter-spacing: 0.12em;
@@ -10371,8 +10371,8 @@ body.lt-song-reordering .lt-compact-column-resize-slot {
 }
 
 .lt-control-popover-portal .lt-vamp-button.is-active {
-  color: #00d1ff;
-  background: rgb(0 209 255 / 0.16);
+  color: #ffffff;
+  background: rgb(255 255 255 / 0.096);
 }
 
 /* Finger-sized controls inside the sheets. */
@@ -10456,16 +10456,16 @@ body.lt-song-reordering .lt-compact-column-resize-slot {
   align-items: center;
   justify-content: center;
   border: 0;
-  border-radius: 2px;
+  border-radius: 8px;
   background:
     linear-gradient(180deg, rgba(255, 255, 255, 0.04), rgba(0, 0, 0, 0.12)),
-    #141b2b;
-  color: #e6ebf5;
+    #161616;
+  color: #ebebeb;
 }
 
 .lt-android .lt-ruler-header-actions .lt-icon-button.is-active {
-  background: rgb(0 209 255 / 0.18);
-  color: #00d1ff;
+  background: rgb(255 255 255 / 0.108);
+  color: #ffffff;
 }
 
 .lt-android .lt-ruler-header-actions .lt-icon-button .material-symbols-outlined {
@@ -10492,9 +10492,9 @@ body.lt-song-reordering .lt-compact-column-resize-slot {
   width: 100%;
   min-height: 2rem;
   border: 0;
-  border-top: 1px solid rgb(0 209 255 / 0.14);
-  background: linear-gradient(180deg, rgba(255, 255, 255, 0.03), transparent), #13192a;
-  color: #9fb0c8;
+  border-top: 1px solid rgb(255 255 255 / 0.084);
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0.03), transparent), #151515;
+  color: #aeaeae;
   font: 700 10px/1 "Space Grotesk", sans-serif;
   text-transform: uppercase;
   letter-spacing: 0.1em;
@@ -10554,12 +10554,12 @@ body.lt-song-reordering .lt-compact-column-resize-slot {
   align-items: center;
   gap: 0.5rem;
   padding: 0.5rem 0.6rem;
-  border-top: 1px solid rgb(0 209 255 / 0.22);
-  background: linear-gradient(180deg, rgba(255, 255, 255, 0.03), transparent), #141a2c;
+  border-top: 1px solid rgb(255 255 255 / 0.132);
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0.03), transparent), #161616;
 }
 
 .lt-android .lt-library-mobile-actionbar-count {
-  color: #9fb0c8;
+  color: #aeaeae;
   font: 600 10px/1.2 "Space Grotesk", sans-serif;
   text-transform: uppercase;
   letter-spacing: 0.1em;
@@ -10574,8 +10574,8 @@ body.lt-song-reordering .lt-compact-column-resize-slot {
   gap: 0.4rem;
   min-height: 2.5rem;
   border: 0;
-  border-radius: 3px;
-  background: #00d1ff;
+  border-radius: 8px;
+  background: #ffffff;
   color: #0f1917;
   font: 700 11px/1 "Space Grotesk", sans-serif;
   text-transform: uppercase;
@@ -10615,10 +10615,10 @@ body.lt-song-reordering .lt-compact-column-resize-slot {
   gap: 0.35rem;
   min-height: 2.5rem;
   padding: 0 0.6rem;
-  border: 1px solid rgb(0 209 255 / 0.35);
-  border-radius: 3px;
+  border: 1px solid rgb(255 255 255 / 0.21);
+  border-radius: 8px;
   background: transparent;
-  color: #00d1ff;
+  color: #ffffff;
   font: 700 11px/1 "Space Grotesk", sans-serif;
   text-transform: uppercase;
   letter-spacing: 0.08em;
@@ -10641,7 +10641,7 @@ body.lt-song-reordering .lt-compact-column-resize-slot {
   max-height: 60vh;
   padding: 0.6rem 0.5rem
     max(0.6rem, calc(var(--lt-safe-area-bottom) + 0.4rem));
-  background: #141a2c;
+  background: #161616;
 }
 
 /* Cabecera de la hoja: titulo a la izquierda, aspa a la derecha. Sin ella
@@ -10665,9 +10665,9 @@ body.lt-song-reordering .lt-compact-column-resize-slot {
   padding: 0;
   border: 0;
   border-bottom: 0;
-  border-radius: 2px;
+  border-radius: 8px;
   background: rgb(255 255 255 / 0.06);
-  color: #9fb0c8;
+  color: #aeaeae;
 }
 
 .lt-mobile .lt-context-menu.is-mobile-sheet strong {
@@ -10705,9 +10705,9 @@ body.lt-song-reordering .lt-compact-column-resize-slot {
   min-height: 2.5rem;
   min-width: 2.5rem;
   border: 1px solid rgb(186 202 197 / 0.25);
-  border-radius: 3px;
+  border-radius: 8px;
   background: transparent;
-  color: #9fb0c8;
+  color: #aeaeae;
 }
 
 /* ── Landing / empty state: scroll instead of clipping in landscape ──── */
@@ -10798,8 +10798,8 @@ body.lt-song-reordering .lt-compact-column-resize-slot {
    (worst on T, whose only feedback is that color). Hover feedback is
    meaningless on touch: neutralize it and let only .is-active paint. */
 .lt-android .lt-track-toggle-group button:hover:not(.is-active) {
-  color: #9fb0c8;
-  background: #080c16;
+  color: #aeaeae;
+  background: #0a0a0a;
 }
 
 /* ── Pantalla de archivos que faltan ─────────────────────────────────── */
@@ -10819,7 +10819,7 @@ body.lt-song-reordering .lt-compact-column-resize-slot {
 }
 
 .lt-missing-media-empty {
-  color: #9fb0c8;
+  color: #aeaeae;
 }
 
 .lt-missing-media-list {
@@ -10837,7 +10837,7 @@ body.lt-song-reordering .lt-compact-column-resize-slot {
   gap: 0.3rem;
   padding: 0.6rem 0.75rem;
   border: 1px solid rgb(226 88 88 / 0.35);
-  border-radius: 4px;
+  border-radius: 8px;
   background: rgb(226 88 88 / 0.08);
 }
 
@@ -10845,7 +10845,7 @@ body.lt-song-reordering .lt-compact-column-resize-slot {
   display: flex;
   align-items: center;
   gap: 0.4rem;
-  color: #eef2fa;
+  color: #f2f2f2;
   font: 700 0.95rem/1.2 "Space Grotesk", sans-serif;
 }
 
@@ -10855,7 +10855,7 @@ body.lt-song-reordering .lt-compact-column-resize-slot {
 }
 
 .lt-missing-media-tracks {
-  color: #9fb0c8;
+  color: #aeaeae;
   font-size: 0.8rem;
 }
 
@@ -10895,9 +10895,9 @@ body.lt-song-reordering .lt-compact-column-resize-slot {
   max-width: min(28rem, calc(100vw - 2rem));
   padding: 0.6rem 1rem;
   transform: translateX(-50%);
-  border: 1px solid rgb(0 209 255 / 0.3);
-  border-radius: 4px;
-  background: #101523;
+  border: 1px solid rgb(255 255 255 / 0.18);
+  border-radius: 8px;
+  background: #111111;
   box-shadow: 0 12px 32px rgb(0 0 0 / 0.55);
   color: #e6f4f1;
   font: 600 0.85rem/1.3 "Space Grotesk", sans-serif;
@@ -10932,9 +10932,9 @@ body.lt-song-reordering .lt-compact-column-resize-slot {
   overflow-y: auto;
   padding: 0.4rem;
   gap: 0.15rem;
-  border: 1px solid rgb(0 209 255 / 0.2);
-  border-radius: 4px;
-  background: #101523;
+  border: 1px solid rgb(255 255 255 / 0.12);
+  border-radius: 8px;
+  background: #111111;
   box-shadow: 0 12px 32px rgb(0 0 0 / 0.5);
 }
 
@@ -10944,7 +10944,7 @@ body.lt-song-reordering .lt-compact-column-resize-slot {
   gap: 0.6rem;
   padding: 0.75rem 0.8rem;
   border: 0;
-  border-radius: 3px;
+  border-radius: 8px;
   background: transparent;
   color: #d2d4d1;
   font: 600 12px/1 "Space Grotesk", sans-serif;
@@ -10954,7 +10954,7 @@ body.lt-song-reordering .lt-compact-column-resize-slot {
 
 .lt-mobile-file-menu button .material-symbols-outlined {
   font-size: 18px;
-  color: #00d1ff;
+  color: #ffffff;
 }
 
 .lt-mobile-file-menu button:disabled {
@@ -10962,7 +10962,7 @@ body.lt-song-reordering .lt-compact-column-resize-slot {
 }
 
 .lt-mobile-file-menu button:disabled .material-symbols-outlined {
-  color: #9fb0c8;
+  color: #aeaeae;
 }
 
 /* Seven entries since «Escenas de mezcla…»: one column ran past a landscape
@@ -10991,11 +10991,11 @@ body.lt-song-reordering .lt-compact-column-resize-slot {
   overflow-y: auto;
   overscroll-behavior: contain;
   padding: 0.75rem;
-  border: 1px solid rgb(0 209 255 / 0.32);
-  border-radius: 6px;
-  background: #080c16;
+  border: 1px solid rgb(255 255 255 / 0.192);
+  border-radius: 10px;
+  background: #0a0a0a;
   box-shadow: 0 16px 40px rgb(0 0 0 / 0.6);
-  color: #d6f6ff;
+  color: #f4f4f5;
   font-family: "Space Grotesk", sans-serif;
 }
 
@@ -11009,19 +11009,19 @@ body.lt-song-reordering .lt-compact-column-resize-slot {
   top: -0.75rem;
   margin: -0.75rem -0.75rem 0.6rem;
   padding: 0.75rem 0.75rem 0.4rem;
-  background: #080c16;
+  background: #0a0a0a;
   z-index: 1;
 }
 
 .lt-pads-popover-header h3 {
   margin: 0;
   font: 700 12px/1.2 "Space Grotesk", sans-serif;
-  color: #00d1ff;
+  color: #ffffff;
 }
 
 .lt-pads-popover-header .material-symbols-outlined {
   font-size: 18px;
-  color: #00d1ff;
+  color: #ffffff;
 }
 
 .lt-pads-empty-text,
@@ -11049,8 +11049,8 @@ body.lt-song-reordering .lt-compact-column-resize-slot {
   gap: 0.5rem;
   flex-wrap: wrap;
   padding: 0.4rem 0.5rem;
-  border: 1px solid rgb(0 209 255 / 0.18);
-  border-radius: 4px;
+  border: 1px solid rgb(255 255 255 / 0.108);
+  border-radius: 8px;
 }
 
 .lt-pads-download-info {
@@ -11061,7 +11061,7 @@ body.lt-song-reordering .lt-compact-column-resize-slot {
 .lt-pads-download-name,
 .lt-pads-installed-name {
   font: 600 11px/1.2 "Space Grotesk", sans-serif;
-  color: #d6f6ff;
+  color: #f4f4f5;
 }
 
 .lt-pads-download-size {
@@ -11072,17 +11072,17 @@ body.lt-song-reordering .lt-compact-column-resize-slot {
 .lt-pads-download-btn,
 .lt-pads-delete {
   padding: 0.3rem 0.6rem;
-  border: 1px solid rgb(0 209 255 / 0.5);
-  border-radius: 3px;
-  background: rgb(0 209 255 / 0.1);
-  color: #00d1ff;
+  border: 1px solid rgb(255 255 255 / 0.3);
+  border-radius: 8px;
+  background: rgb(255 255 255 / 0.06);
+  color: #ffffff;
   font: 600 10px/1 "Space Grotesk", sans-serif;
   cursor: pointer;
 }
 
 .lt-pads-download-btn:hover,
 .lt-pads-delete:hover {
-  background: rgb(0 209 255 / 0.22);
+  background: rgb(255 255 255 / 0.132);
 }
 
 .lt-pads-delete {
@@ -11100,14 +11100,14 @@ body.lt-song-reordering .lt-compact-column-resize-slot {
 
 .lt-pads-progress-track {
   height: 6px;
-  border-radius: 3px;
-  background: rgb(0 209 255 / 0.12);
+  border-radius: 8px;
+  background: rgb(255 255 255 / 0.072);
   overflow: hidden;
 }
 
 .lt-pads-progress-fill {
   height: 100%;
-  background: #00d1ff;
+  background: #ffffff;
   transition: width 0.15s linear;
 }
 
@@ -11153,17 +11153,17 @@ body.lt-song-reordering .lt-compact-column-resize-slot {
 }
 
 .lt-pads-volume-value {
-  color: #00d1ff;
+  color: #ffffff;
   text-transform: none;
   letter-spacing: 0;
 }
 
 .lt-pads-select {
   padding: 0.3rem 0.4rem;
-  border: 1px solid rgb(0 209 255 / 0.32);
-  border-radius: 3px;
-  background: #080c16;
-  color: #d6f6ff;
+  border: 1px solid rgb(255 255 255 / 0.192);
+  border-radius: 8px;
+  background: #0a0a0a;
+  color: #f4f4f5;
   font: 600 11px/1.2 "Space Grotesk", sans-serif;
 }
 
@@ -11175,27 +11175,27 @@ body.lt-song-reordering .lt-compact-column-resize-slot {
 
 .lt-pads-key {
   padding: 0.35rem 0;
-  border: 1px solid rgb(0 209 255 / 0.24);
-  border-radius: 3px;
+  border: 1px solid rgb(255 255 255 / 0.144);
+  border-radius: 8px;
   background: transparent;
-  color: #d6f6ff;
+  color: #f4f4f5;
   font: 600 10px/1 "Space Grotesk", sans-serif;
   cursor: pointer;
 }
 
 .lt-pads-key:hover {
-  background: rgb(0 209 255 / 0.12);
+  background: rgb(255 255 255 / 0.072);
 }
 
 .lt-pads-key.is-active {
-  background: #00d1ff;
-  border-color: #00d1ff;
+  background: #ffffff;
+  border-color: #ffffff;
   color: #04211d;
 }
 
 .lt-pads-fader {
   width: 100%;
-  accent-color: #00d1ff;
+  accent-color: #ffffff;
 }
 
 .lt-pads-fade-field {
@@ -11211,7 +11211,7 @@ body.lt-song-reordering .lt-compact-column-resize-slot {
 
 .lt-pads-fade-value {
   margin-left: auto;
-  color: #00d1ff;
+  color: #ffffff;
   text-transform: none;
   letter-spacing: 0;
 }
@@ -11228,7 +11228,7 @@ body.lt-song-reordering .lt-compact-column-resize-slot {
 }
 
 .lt-pads-follow-hint {
-  color: #00d1ff;
+  color: #ffffff;
   text-transform: none;
   letter-spacing: 0;
   font-weight: 600;
@@ -11265,16 +11265,16 @@ body.lt-song-reordering .lt-compact-column-resize-slot {
   margin-top: 0.4rem;
   width: 100%;
   padding: 0.4rem 0.6rem;
-  border: 1px solid rgb(0 209 255 / 0.32);
-  border-radius: 4px;
-  background: rgb(0 209 255 / 0.08);
-  color: #d6f6ff;
+  border: 1px solid rgb(255 255 255 / 0.192);
+  border-radius: 8px;
+  background: rgb(255 255 255 / 0.048);
+  color: #f4f4f5;
   font: 600 10px/1.2 "Space Grotesk", sans-serif;
   cursor: pointer;
 }
 
 .lt-pads-manage-btn:hover {
-  background: rgb(0 209 255 / 0.16);
+  background: rgb(255 255 255 / 0.096);
 }
 
 .lt-pads-user-badge,
@@ -11289,8 +11289,8 @@ body.lt-song-reordering .lt-compact-column-resize-slot {
 }
 
 .lt-pads-user-badge {
-  background: rgb(0 209 255 / 0.16);
-  color: #00d1ff;
+  background: rgb(255 255 255 / 0.096);
+  color: #ffffff;
 }
 
 .lt-pads-partial-badge {
@@ -11334,24 +11334,24 @@ body.lt-song-reordering .lt-compact-column-resize-slot {
 .lt-pad-manager-name-input {
   flex: 1;
   padding: 0.4rem 0.55rem;
-  border: 1px solid rgb(0 209 255 / 0.24);
-  border-radius: 4px;
+  border: 1px solid rgb(255 255 255 / 0.144);
+  border-radius: 8px;
   background: rgb(4 33 29 / 0.6);
-  color: #d6f6ff;
+  color: #f4f4f5;
   font: 500 12px/1.2 "Space Grotesk", sans-serif;
 }
 
 .lt-pad-manager-create-btn,
 .lt-pad-manager-delete-btn {
   padding: 0.4rem 0.7rem;
-  border-radius: 4px;
+  border-radius: 8px;
   font: 600 11px/1.2 "Space Grotesk", sans-serif;
   cursor: pointer;
 }
 
 .lt-pad-manager-create-btn {
-  border: 1px solid #00d1ff;
-  background: #00d1ff;
+  border: 1px solid #ffffff;
+  background: #ffffff;
   color: #04211d;
 }
 
@@ -11376,7 +11376,7 @@ body.lt-song-reordering .lt-compact-column-resize-slot {
 .lt-pad-manager-tabs {
   display: flex;
   gap: 0.35rem;
-  border-bottom: 1px solid rgb(0 209 255 / 0.14);
+  border-bottom: 1px solid rgb(255 255 255 / 0.084);
 }
 
 .lt-pad-manager-tab {
@@ -11395,26 +11395,26 @@ body.lt-song-reordering .lt-compact-column-resize-slot {
 }
 
 .lt-pad-manager-tab:hover {
-  color: #d6f6ff;
+  color: #f4f4f5;
 }
 
 .lt-pad-manager-tab.is-active {
-  color: #00d1ff;
-  border-bottom-color: #00d1ff;
+  color: #ffffff;
+  border-bottom-color: #ffffff;
 }
 
 .lt-pad-manager-tab-count {
   padding: 0.05rem 0.35rem;
   border-radius: 999px;
-  background: rgb(0 209 255 / 0.14);
+  background: rgb(255 255 255 / 0.084);
   color: #9fc7c0;
   font-size: 9px;
   letter-spacing: 0;
 }
 
 .lt-pad-manager-tab.is-active .lt-pad-manager-tab-count {
-  background: rgb(0 209 255 / 0.24);
-  color: #00d1ff;
+  background: rgb(255 255 255 / 0.144);
+  color: #ffffff;
 }
 
 .lt-pad-manager-section {
@@ -11455,8 +11455,8 @@ body.lt-song-reordering .lt-compact-column-resize-slot {
   gap: 0.5rem;
   flex-wrap: wrap;
   padding: 0.45rem 0.55rem;
-  border: 1px solid rgb(0 209 255 / 0.16);
-  border-radius: 4px;
+  border: 1px solid rgb(255 255 255 / 0.096);
+  border-radius: 8px;
 }
 
 .lt-pad-manager-pack-info {
@@ -11467,7 +11467,7 @@ body.lt-song-reordering .lt-compact-column-resize-slot {
 
 .lt-pad-manager-pack-name {
   font: 600 12px/1.2 "Space Grotesk", sans-serif;
-  color: #d6f6ff;
+  color: #f4f4f5;
 }
 
 .lt-pad-manager-pack-meta {
@@ -11486,16 +11486,16 @@ body.lt-song-reordering .lt-compact-column-resize-slot {
 
 .lt-pad-manager-download-btn {
   padding: 0.35rem 0.7rem;
-  border: 1px solid #00d1ff;
-  border-radius: 4px;
-  background: rgb(0 209 255 / 0.1);
-  color: #00d1ff;
+  border: 1px solid #ffffff;
+  border-radius: 8px;
+  background: rgb(255 255 255 / 0.06);
+  color: #ffffff;
   font: 600 11px/1.2 "Space Grotesk", sans-serif;
   cursor: pointer;
 }
 
 .lt-pad-manager-download-btn:hover {
-  background: rgb(0 209 255 / 0.2);
+  background: rgb(255 255 255 / 0.12);
 }
 
 .lt-pad-manager-download-btn:disabled {
@@ -11537,22 +11537,22 @@ body.lt-song-reordering .lt-compact-column-resize-slot {
   justify-content: space-between;
   gap: 0.4rem;
   padding: 0.45rem 0.55rem;
-  border: 1px solid rgb(0 209 255 / 0.18);
-  border-radius: 4px;
+  border: 1px solid rgb(255 255 255 / 0.108);
+  border-radius: 8px;
   background: transparent;
-  color: #d6f6ff;
+  color: #f4f4f5;
   font: 600 11px/1.2 "Space Grotesk", sans-serif;
   cursor: pointer;
   text-align: left;
 }
 
 .lt-pad-manager-list-item:hover {
-  background: rgb(0 209 255 / 0.1);
+  background: rgb(255 255 255 / 0.06);
 }
 
 .lt-pad-manager-list-item.is-active {
-  border-color: #00d1ff;
-  background: rgb(0 209 255 / 0.16);
+  border-color: #ffffff;
+  background: rgb(255 255 255 / 0.096);
 }
 
 .lt-pad-manager-list-count {
@@ -11587,18 +11587,18 @@ body.lt-song-reordering .lt-compact-column-resize-slot {
   justify-content: space-between;
   gap: 0.4rem;
   padding: 0.35rem 0.5rem;
-  border: 1px solid rgb(0 209 255 / 0.16);
-  border-radius: 4px;
+  border: 1px solid rgb(255 255 255 / 0.096);
+  border-radius: 8px;
 }
 
 .lt-pad-manager-key.is-present {
-  border-color: rgb(0 209 255 / 0.4);
-  background: rgb(0 209 255 / 0.08);
+  border-color: rgb(255 255 255 / 0.24);
+  background: rgb(255 255 255 / 0.048);
 }
 
 .lt-pad-manager-key-label {
   font: 700 12px/1 "Space Grotesk", sans-serif;
-  color: #d6f6ff;
+  color: #f4f4f5;
   min-width: 1.6rem;
 }
 
@@ -11610,16 +11610,16 @@ body.lt-song-reordering .lt-compact-column-resize-slot {
 
 .lt-pad-manager-key-assign {
   padding: 0.25rem 0.5rem;
-  border: 1px solid rgb(0 209 255 / 0.32);
-  border-radius: 3px;
+  border: 1px solid rgb(255 255 255 / 0.192);
+  border-radius: 8px;
   background: transparent;
-  color: #d6f6ff;
+  color: #f4f4f5;
   font: 600 10px/1.2 "Space Grotesk", sans-serif;
   cursor: pointer;
 }
 
 .lt-pad-manager-key-assign:hover {
-  background: rgb(0 209 255 / 0.14);
+  background: rgb(255 255 255 / 0.084);
 }
 
 .lt-pad-manager-key-assign:disabled {
@@ -11633,7 +11633,7 @@ body.lt-song-reordering .lt-compact-column-resize-slot {
   justify-content: center;
   padding: 0.2rem;
   border: none;
-  border-radius: 3px;
+  border-radius: 8px;
   background: transparent;
   color: #ff8f8f;
   cursor: pointer;
@@ -11687,7 +11687,7 @@ body.lt-song-reordering .lt-compact-column-resize-slot {
   justify-content: center;
   width: 26px;
   height: 26px;
-  border-radius: 6px;
+  border-radius: 10px;
   border: 1px solid rgba(186, 202, 197, 0.28);
   background: rgba(20, 20, 20, 0.85);
   color: rgba(186, 202, 197, 0.6);
@@ -11722,7 +11722,7 @@ body.lt-song-reordering .lt-compact-column-resize-slot {
   font-size: 10px;
   line-height: 1.3;
   padding: 2px 6px;
-  border-radius: 4px;
+  border-radius: 8px;
   border: 1px solid rgba(157, 123, 255, 0.35);
   background: rgba(157, 123, 255, 0.1);
   color: rgba(196, 176, 255, 0.9);
@@ -11781,20 +11781,20 @@ body.lt-song-reordering .lt-compact-column-resize-slot {
 .lt-midi-name-field input[type="text"] {
   width: 100%;
   box-sizing: border-box;
-  border-radius: 2px;
+  border-radius: 8px;
   border: 1px solid rgb(157 123 255 / 0.22);
-  background: rgb(27 36 61 / 0.98);
-  color: #eef2fa;
+  background: rgb(30 30 30 / 0.98);
+  color: #f2f2f2;
   padding: 0.6rem 0.7rem;
 }
 
 /* The message-type select heads each row; give it the same treatment the
    fields grid gives its own controls so the row reads as one unit. */
 .lt-automation-action-head select {
-  border-radius: 2px;
+  border-radius: 8px;
   border: 1px solid rgb(157 123 255 / 0.22);
-  background: rgb(27 36 61 / 0.98);
-  color: #eef2fa;
+  background: rgb(30 30 30 / 0.98);
+  color: #f2f2f2;
   padding: 0.45rem 0.6rem;
 }
 
@@ -11840,10 +11840,10 @@ body.lt-song-reordering .lt-compact-column-resize-slot {
 .lt-midi-add-control select {
   flex: 1;
   min-width: 0;
-  border-radius: 2px;
+  border-radius: 8px;
   border: 1px solid rgb(157 123 255 / 0.22);
-  background: rgb(27 36 61 / 0.98);
-  color: #eef2fa;
+  background: rgb(30 30 30 / 0.98);
+  color: #f2f2f2;
   padding: 0.5rem 0.6rem;
 }
 
@@ -11851,18 +11851,18 @@ body.lt-song-reordering .lt-compact-column-resize-slot {
    back to the browser's grey button. Same look as the modal's primary action. */
 .lt-midi-add-control button {
   flex: 0 0 auto;
-  border-radius: 2px;
-  border: 1px solid rgb(0 209 255 / 0.24);
-  background: rgb(0 209 255 / 0.14);
-  color: #eef2fa;
+  border-radius: 8px;
+  border: 1px solid rgb(255 255 255 / 0.144);
+  background: rgb(255 255 255 / 0.084);
+  color: #f2f2f2;
   padding: 0.5rem 0.9rem;
   font: 700 0.82rem/1 "Space Grotesk", sans-serif;
   cursor: pointer;
 }
 
 .lt-midi-add-control button:hover {
-  border-color: rgb(0 209 255 / 0.5);
-  color: #00d1ff;
+  border-color: rgb(255 255 255 / 0.3);
+  color: #ffffff;
 }
 
 /* The row header is a button so the whole strip toggles the row; it must not
@@ -11924,18 +11924,18 @@ body.lt-song-reordering .lt-compact-column-resize-slot {
   max-height: calc(100dvh / var(--lt-ui-zoom, 1) - 3rem - var(--lt-safe-area-top) - var(--lt-safe-area-bottom));
   overflow-y: auto;
   overscroll-behavior: contain;
-  border: 1px solid rgb(0 209 255 / 0.22);
-  border-radius: 2px;
+  border: 1px solid rgb(255 255 255 / 0.132);
+  border-radius: 8px;
   background:
-    radial-gradient(circle at top left, rgb(0 209 255 / 0.12), transparent 45%),
-    linear-gradient(180deg, rgb(22 29 49 / 0.99), rgb(13 18 29 / 0.99));
+    radial-gradient(circle at top left, rgb(255 255 255 / 0.072), transparent 45%),
+    linear-gradient(180deg, rgb(24 24 24 / 0.99), rgb(15 15 15 / 0.99));
   box-shadow: 0 28px 80px rgb(0 0 0 / 0.55);
   padding: 1.35rem;
 }
 
 .lt-telemetry-consent h2 {
   margin: 0.35rem 0 0.75rem;
-  color: #eef2fa;
+  color: #f2f2f2;
   font: 800 1.55rem/1.1 "Space Grotesk", sans-serif;
 }
 
@@ -11962,8 +11962,8 @@ body.lt-song-reordering .lt-compact-column-resize-slot {
   max-width: 100%;
   overflow-wrap: anywhere;
   min-height: 2.5rem;
-  border: 1px solid rgb(0 209 255 / 0.22);
-  border-radius: 2px;
+  border: 1px solid rgb(255 255 255 / 0.132);
+  border-radius: 8px;
   padding: 0.65rem 0.85rem;
   font: 700 0.72rem/1 "Space Grotesk", sans-serif;
   text-transform: uppercase;
@@ -11971,14 +11971,14 @@ body.lt-song-reordering .lt-compact-column-resize-slot {
 }
 
 .lt-telemetry-actions .lt-primary-button {
-  background: linear-gradient(180deg, #00d1ff, #00a8d6);
-  color: #00263a;
+  background: linear-gradient(180deg, #ffffff, #e4e4e7);
+  color: #181818;
 }
 
 .lt-telemetry-actions .lt-secondary-button,
 .lt-telemetry-policy-link {
   background: rgb(255 255 255 / 0.04);
-  color: #e6ebf5;
+  color: #ebebeb;
 }
 
 .lt-telemetry-policy-link {
@@ -12096,7 +12096,7 @@ body.lt-song-reordering .lt-compact-column-resize-slot {
 }
 
 .lt-resource-chip[data-severity="ok"] .lt-resource-chip-value {
-  color: #00d1ff;
+  color: #ffffff;
 }
 
 .lt-resource-chip[data-severity="warn"] .lt-resource-chip-value {
@@ -12594,9 +12594,9 @@ body.lt-song-reordering .lt-compact-column-resize-slot {
    recortado sin máscaras SVG. */
 .lt-tour-spotlight {
   position: fixed;
-  border-radius: 4px;
+  border-radius: 8px;
   box-shadow:
-    0 0 0 1px rgb(0 209 255 / 0.55),
+    0 0 0 1px rgb(255 255 255 / 0.33),
     0 0 0 9999px rgb(6 8 13 / 0.76);
   pointer-events: none;
 }
@@ -12623,8 +12623,8 @@ body.lt-song-reordering .lt-compact-column-resize-slot {
   right: -4px;
   bottom: -4px;
   left: -4px;
-  border: 2px solid #00d1ff;
-  border-radius: 6px;
+  border: 2px solid #ffffff;
+  border-radius: 10px;
   animation: lt-tour-pulse 1.4s ease-in-out infinite;
 }
 
@@ -12659,11 +12659,11 @@ body.lt-song-reordering .lt-compact-column-resize-slot {
   flex-direction: column;
   gap: 0.55rem;
   padding: 1.1rem;
-  border: 1px solid rgb(0 209 255 / 0.22);
-  border-radius: 2px;
+  border: 1px solid rgb(255 255 255 / 0.132);
+  border-radius: 8px;
   background:
-    radial-gradient(circle at top left, rgb(0 209 255 / 0.12), transparent 45%),
-    linear-gradient(180deg, rgb(22 29 49 / 0.98), rgb(13 18 29 / 0.98));
+    radial-gradient(circle at top left, rgb(255 255 255 / 0.072), transparent 45%),
+    linear-gradient(180deg, rgb(24 24 24 / 0.98), rgb(15 15 15 / 0.98));
   box-shadow: 0 28px 80px rgb(0 0 0 / 0.5);
   pointer-events: auto;
   /* `placeTourCard` sólo la coloca donde cabe entera, así que esto es la red
@@ -12682,7 +12682,7 @@ body.lt-song-reordering .lt-compact-column-resize-slot {
 }
 
 .lt-tour-eyebrow {
-  color: rgb(0 209 255 / 0.82);
+  color: rgb(255 255 255 / 0.492);
   font: 700 10px/1 "Space Grotesk", sans-serif;
   letter-spacing: 0.16em;
   text-transform: uppercase;
@@ -12690,7 +12690,7 @@ body.lt-song-reordering .lt-compact-column-resize-slot {
 
 .lt-tour-card h2 {
   margin: 0;
-  color: #eef2fa;
+  color: #f2f2f2;
   font: 800 1.25rem/1.15 "Space Grotesk", sans-serif;
   letter-spacing: -0.04em;
 }
@@ -12709,9 +12709,9 @@ body.lt-song-reordering .lt-compact-column-resize-slot {
   align-self: flex-start;
   padding: 0.25rem 0.5rem;
   border: 1px solid rgb(255 255 255 / 0.1);
-  border-radius: 2px;
+  border-radius: 8px;
   background: rgb(255 255 255 / 0.04);
-  color: rgb(0 209 255 / 0.9);
+  color: rgb(255 255 255 / 0.54);
   font: 700 0.72rem/1 "Space Grotesk", sans-serif;
   letter-spacing: 0.06em;
 }
@@ -12723,10 +12723,10 @@ body.lt-song-reordering .lt-compact-column-resize-slot {
   gap: 0.4rem;
   margin: 0;
   padding: 0.4rem 0.55rem;
-  border: 1px solid rgb(0 209 255 / 0.3);
-  border-radius: 2px;
-  background: rgb(0 209 255 / 0.1);
-  color: #00d1ff;
+  border: 1px solid rgb(255 255 255 / 0.18);
+  border-radius: 8px;
+  background: rgb(255 255 255 / 0.06);
+  color: #ffffff;
   font: 600 0.82rem/1.35 "Space Grotesk", sans-serif;
 }
 
@@ -12748,11 +12748,11 @@ body.lt-song-reordering .lt-compact-column-resize-slot {
 }
 
 .lt-tour-dots span.is-done {
-  background: rgb(0 209 255 / 0.4);
+  background: rgb(255 255 255 / 0.24);
 }
 
 .lt-tour-dots span.is-current {
-  background: #00d1ff;
+  background: #ffffff;
 }
 
 .lt-tour-actions {
@@ -12772,24 +12772,24 @@ body.lt-song-reordering .lt-compact-column-resize-slot {
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  border-radius: 2px;
+  border-radius: 8px;
   border: 1px solid rgb(255 255 255 / 0.1);
   background: rgb(255 255 255 / 0.05);
-  color: #eef2fa;
+  color: #f2f2f2;
   padding: 0.55rem 0.9rem;
   font: 700 0.8rem/1 "Space Grotesk", sans-serif;
   text-align: center;
 }
 
 .lt-tour-actions button:hover {
-  border-color: rgb(0 209 255 / 0.28);
-  color: #00d1ff;
+  border-color: rgb(255 255 255 / 0.168);
+  color: #ffffff;
 }
 
 .lt-tour-actions button.is-primary {
-  border-color: rgb(0 209 255 / 0.5);
-  background: rgb(0 209 255 / 0.14);
-  color: #00d1ff;
+  border-color: rgb(255 255 255 / 0.3);
+  background: rgb(255 255 255 / 0.084);
+  color: #ffffff;
 }
 
 /* "Saltar tutorial" no compite con la acción principal: pierde el marco y el
@@ -12907,9 +12907,9 @@ body.lt-song-reordering .lt-compact-column-resize-slot {
   flex-direction: column;
   gap: 0.2rem;
   padding: 0.45rem;
-  border: 1px solid rgb(0 209 255 / 0.2);
-  border-radius: 2px;
-  background: linear-gradient(180deg, rgb(22 29 49 / 0.98), rgb(13 18 29 / 0.98));
+  border: 1px solid rgb(255 255 255 / 0.12);
+  border-radius: 8px;
+  background: linear-gradient(180deg, rgb(24 24 24 / 0.98), rgb(15 15 15 / 0.98));
   box-shadow: 0 22px 60px rgb(0 0 0 / 0.5);
   overflow-x: hidden;
   overflow-y: auto;
@@ -12918,7 +12918,7 @@ body.lt-song-reordering .lt-compact-column-resize-slot {
 
 .lt-tour-menu-title {
   padding: 0.2rem 0.35rem 0.35rem;
-  color: rgb(0 209 255 / 0.82);
+  color: rgb(255 255 255 / 0.492);
   font: 700 10px/1 "Space Grotesk", sans-serif;
   letter-spacing: 0.16em;
   text-transform: uppercase;
@@ -12933,16 +12933,16 @@ body.lt-song-reordering .lt-compact-column-resize-slot {
   gap: 0.15rem;
   padding: 0.5rem 0.55rem;
   border: 1px solid transparent;
-  border-radius: 2px;
+  border-radius: 8px;
   background: transparent;
-  color: #eef2fa;
+  color: #f2f2f2;
   text-align: left;
   text-transform: none;
   letter-spacing: normal;
 }
 
 .lt-tour-menu button:hover {
-  border-color: rgb(0 209 255 / 0.28);
+  border-color: rgb(255 255 255 / 0.168);
   background: rgb(255 255 255 / 0.04);
 }
 
@@ -12954,7 +12954,7 @@ body.lt-song-reordering .lt-compact-column-resize-slot {
 }
 
 .lt-tour-menu-done {
-  color: #00d1ff;
+  color: #ffffff;
   font-size: 15px;
 }
 
@@ -13027,7 +13027,7 @@ body.lt-song-reordering .lt-compact-column-resize-slot {
   margin: 0;
   padding: 0.6rem 0.75rem;
   border: 1px solid rgb(255 138 128 / 0.35);
-  border-radius: 2px;
+  border-radius: 8px;
   background: rgb(255 138 128 / 0.08);
   font-size: 0.82rem;
   color: rgb(255 190 184);
@@ -13049,12 +13049,12 @@ body.lt-song-reordering .lt-compact-column-resize-slot {
   justify-content: space-between;
   gap: 0.75rem;
   padding: 0.6rem 0;
-  border-bottom: 1px solid rgb(0 209 255 / 0.14);
+  border-bottom: 1px solid rgb(255 255 255 / 0.084);
   font-size: 0.9rem;
 }
 
 .lt-cloud-account.is-active .lt-cloud-account-name {
-  color: rgb(0 209 255);
+  color: rgb(255 255 255);
 }
 
 .lt-cloud-account-state {
@@ -13071,7 +13071,7 @@ body.lt-song-reordering .lt-compact-column-resize-slot {
 
 .lt-provider-glyph {
   font-size: 18px;
-  color: rgb(0 209 255 / 0.8);
+  color: rgb(255 255 255 / 0.48);
 }
 
 .lt-storage-choice-mark {
@@ -13094,15 +13094,15 @@ body.lt-song-reordering .lt-compact-column-resize-slot {
 
 .lt-cloud-quota-bar {
   height: 6px;
-  border-radius: 2px;
-  background: rgb(0 209 255 / 0.12);
+  border-radius: 8px;
+  background: rgb(255 255 255 / 0.072);
   overflow: hidden;
 }
 
 .lt-cloud-quota-bar > span {
   display: block;
   height: 100%;
-  background: rgb(0 209 255 / 0.65);
+  background: rgb(255 255 255 / 0.39);
 }
 
 .lt-cloud-quota p {
@@ -13118,7 +13118,7 @@ body.lt-song-reordering .lt-compact-column-resize-slot {
 .lt-cloud-transfer {
   margin: 0;
   font-size: 0.85rem;
-  color: rgb(0 209 255 / 0.9);
+  color: rgb(255 255 255 / 0.54);
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -13173,7 +13173,7 @@ body.lt-song-reordering .lt-compact-column-resize-slot {
   padding: 0;
   border: 0;
   background: none;
-  color: rgb(0 209 255 / 0.85);
+  color: rgb(255 255 255 / 0.51);
   font: inherit;
   font-size: 0.82rem;
   cursor: pointer;
@@ -13181,7 +13181,7 @@ body.lt-song-reordering .lt-compact-column-resize-slot {
 }
 
 .lt-link-button:hover {
-  color: rgb(0 209 255);
+  color: rgb(255 255 255);
 }
 
 .lt-link-button.lt-danger {
@@ -13204,9 +13204,9 @@ body.lt-song-reordering .lt-compact-column-resize-slot {
   height: 40px;
   padding: 0 16px;
   border: 1px solid rgb(116 119 117);
-  border-radius: 4px;
+  border-radius: 8px;
   background: rgb(255 255 255);
-  color: rgb(28 37 62);
+  color: rgb(30 30 30);
   font: inherit;
   font-size: 0.9rem;
   font-weight: 500;
@@ -13229,8 +13229,8 @@ body.lt-song-reordering .lt-compact-column-resize-slot {
   align-items: center;
   gap: 0.4rem;
   padding: 0.35rem 0.7rem;
-  border: 1px solid rgb(0 209 255 / 0.28);
-  border-radius: 2px;
+  border: 1px solid rgb(255 255 255 / 0.168);
+  border-radius: 8px;
   background: none;
   color: rgb(214 226 224 / 0.85);
   font: inherit;
@@ -13239,7 +13239,7 @@ body.lt-song-reordering .lt-compact-column-resize-slot {
 }
 
 .lt-ghost-button:hover {
-  border-color: rgb(0 209 255 / 0.55);
+  border-color: rgb(255 255 255 / 0.33);
   color: rgb(230 240 238);
 }
 
@@ -13279,8 +13279,8 @@ body.lt-song-reordering .lt-compact-column-resize-slot {
   align-items: flex-start;
   gap: 0.35rem;
   padding: 1rem;
-  border: 1px solid rgb(0 209 255 / 0.18);
-  border-radius: 2px;
+  border: 1px solid rgb(255 255 255 / 0.108);
+  border-radius: 8px;
   background: rgb(255 255 255 / 0.03);
   color: inherit;
   font: inherit;
@@ -13289,8 +13289,8 @@ body.lt-song-reordering .lt-compact-column-resize-slot {
 }
 
 .lt-storage-choice-option:hover:not(:disabled) {
-  border-color: rgb(0 209 255 / 0.5);
-  background: rgb(0 209 255 / 0.07);
+  border-color: rgb(255 255 255 / 0.3);
+  background: rgb(255 255 255 / 0.042);
 }
 
 .lt-storage-choice-option:disabled {
@@ -13300,7 +13300,7 @@ body.lt-song-reordering .lt-compact-column-resize-slot {
 
 .lt-storage-choice-option .material-symbols-outlined {
   font-size: 1.6rem;
-  color: rgb(0 209 255 / 0.8);
+  color: rgb(255 255 255 / 0.48);
 }
 
 .lt-storage-choice-label {
@@ -13335,8 +13335,8 @@ body.lt-song-reordering .lt-compact-column-resize-slot {
   flex: 0 0 5.5rem;
   overflow: hidden;
   padding: 0.1rem 0.4rem;
-  border: 1px solid rgb(0 209 255 / 0.28);
-  border-radius: 2px;
+  border: 1px solid rgb(255 255 255 / 0.168);
+  border-radius: 8px;
   font-size: 0.7rem;
   text-align: center;
   text-overflow: ellipsis;
@@ -13345,7 +13345,7 @@ body.lt-song-reordering .lt-compact-column-resize-slot {
 }
 
 .lt-cloud-picker-modal .lt-cloud-list li:hover {
-  background: rgb(0 209 255 / 0.08);
+  background: rgb(255 255 255 / 0.048);
 }
 
 /* Aviso de nube con el panel cerrado. Las exportaciones se lanzan desde el
@@ -13368,9 +13368,9 @@ body.lt-song-reordering .lt-compact-column-resize-slot {
   align-items: center;
   gap: 0.6rem;
   padding: 0.6rem 0.85rem;
-  border-radius: 2px;
-  border: 1px solid rgb(0 209 255 / 0.22);
-  background: rgb(13 18 29 / 0.97);
+  border-radius: 8px;
+  border: 1px solid rgb(255 255 255 / 0.132);
+  background: rgb(15 15 15 / 0.97);
   font-size: 0.82rem;
   box-shadow: 0 8px 24px rgb(0 0 0 / 0.45);
 }
@@ -13397,7 +13397,7 @@ body.lt-song-reordering .lt-compact-column-resize-slot {
 .lt-cloud-toast-percent {
   flex: none;
   font-variant-numeric: tabular-nums;
-  color: rgb(0 209 255 / 0.9);
+  color: rgb(255 255 255 / 0.54);
 }
 
 /* Velocidad y tiempo restante bajo el porcentaje. */
@@ -13429,9 +13429,9 @@ body.lt-song-reordering .lt-compact-column-resize-slot {
   align-items: center;
   gap: 0.6rem;
   padding: 0.5rem 0.6rem 0.5rem 0.85rem;
-  border-radius: 2px;
-  border: 1px solid rgb(0 209 255 / 0.22);
-  background: rgb(13 18 29 / 0.97);
+  border-radius: 8px;
+  border: 1px solid rgb(255 255 255 / 0.132);
+  background: rgb(15 15 15 / 0.97);
   color: #d6e2e0;
   font-size: 0.82rem;
   box-shadow: 0 8px 24px rgb(0 0 0 / 0.45);
@@ -13440,7 +13440,7 @@ body.lt-song-reordering .lt-compact-column-resize-slot {
 .lt-template-drop-toast > .material-symbols-outlined {
   font-size: 1.1rem;
   flex: none;
-  color: #00d1ff;
+  color: #ffffff;
 }
 
 .lt-template-drop-toast-text {
@@ -13469,8 +13469,8 @@ body.lt-song-reordering .lt-compact-column-resize-slot {
   width: 100%;
   box-sizing: border-box;
   padding: 0.45rem 0.6rem;
-  border: 1px solid rgb(0 209 255 / 0.18);
-  border-radius: 2px;
+  border: 1px solid rgb(255 255 255 / 0.108);
+  border-radius: 8px;
   background: rgb(255 255 255 / 0.04);
   color: inherit;
   font: inherit;
@@ -13479,7 +13479,7 @@ body.lt-song-reordering .lt-compact-column-resize-slot {
 
 .lt-cloud-filter-search:focus {
   outline: none;
-  border-color: rgb(0 209 255 / 0.5);
+  border-color: rgb(255 255 255 / 0.3);
 }
 
 .lt-cloud-filter-row {
@@ -13491,9 +13491,9 @@ body.lt-song-reordering .lt-compact-column-resize-slot {
 
 .lt-cloud-filter-row select {
   padding: 0.3rem 0.4rem;
-  border: 1px solid rgb(0 209 255 / 0.18);
-  border-radius: 2px;
-  background: rgb(22 29 49);
+  border: 1px solid rgb(255 255 255 / 0.108);
+  border-radius: 8px;
+  background: rgb(24 24 24);
   color: inherit;
   font: inherit;
   font-size: 0.8rem;
@@ -13511,8 +13511,8 @@ body.lt-song-reordering .lt-compact-column-resize-slot {
 .lt-cloud-filter-bpm input {
   width: 5rem;
   padding: 0.3rem 0.4rem;
-  border: 1px solid rgb(0 209 255 / 0.18);
-  border-radius: 2px;
+  border: 1px solid rgb(255 255 255 / 0.108);
+  border-radius: 8px;
   background: rgb(255 255 255 / 0.04);
   color: inherit;
   font: inherit;
@@ -13594,9 +13594,9 @@ body.lt-song-reordering .lt-compact-column-resize-slot {
   display: inline-block;
   margin-right: 0.5rem;
   padding: 0.1rem 0.4rem;
-  border-radius: 2px;
-  background: rgb(0 209 255 / 0.18);
-  color: rgb(0 209 255);
+  border-radius: 8px;
+  background: rgb(255 255 255 / 0.108);
+  color: rgb(255 255 255);
   font-weight: 700;
   letter-spacing: 0.06em;
 }
@@ -13783,7 +13783,7 @@ body.lt-song-reordering .lt-compact-column-resize-slot {
   padding: 0.4rem 0.5rem;
   border-radius: 0 8px 8px 0;
   background: rgba(24, 31, 34, 0.98);
-  border: 1px solid #3b474b;
+  border: 1px solid #383838;
   box-shadow: 0 10px 26px rgba(0, 0, 0, 0.5);
 }
 
@@ -13879,8 +13879,8 @@ body.lt-song-reordering .lt-compact-column-resize-slot {
   flex-direction: column;
   gap: 0.5rem;
   padding: 0.6rem 0.7rem;
-  border-radius: 2px;
-  background: rgb(17 23 38 / 0.94);
+  border-radius: 8px;
+  background: rgb(19 19 19 / 0.94);
   border: 1px solid rgb(133 148 144 / 0.18);
   box-shadow: 0 10px 28px rgba(0, 0, 0, 0.5);
   min-width: 16rem;
@@ -13917,10 +13917,10 @@ body.lt-song-reordering .lt-compact-column-resize-slot {
   width: 8rem;
   min-height: 2.4rem;
   padding: 0 0.5rem;
-  border-radius: 2px;
+  border-radius: 8px;
   border: 1px solid rgb(133 148 144 / 0.18);
-  background: #0d1220;
-  color: #e6ebf5;
+  background: #0f0f0f;
+  color: #ebebeb;
   font-variant-numeric: tabular-nums;
   text-transform: none;
   letter-spacing: 0;
@@ -13936,18 +13936,18 @@ body.lt-song-reordering .lt-compact-column-resize-slot {
   min-height: 2.4rem;
   padding: 0 0.8rem;
   border: 0;
-  border-radius: 2px;
+  border-radius: 8px;
   background:
     linear-gradient(180deg, rgba(255, 255, 255, 0.04), rgba(0, 0, 0, 0.12)),
-    #141b2b;
-  color: #e6ebf5;
+    #161616;
+  color: #ebebeb;
   font: 600 10px/1 "Space Grotesk", sans-serif;
   letter-spacing: 0.12em;
   text-transform: uppercase;
 }
 
 .lt-marker-position-buttons button.is-primary {
-  background: linear-gradient(180deg, #00d1ff, #35c6b2);
+  background: linear-gradient(180deg, #ffffff, #35c6b2);
   color: #08201d;
 }
 
@@ -13980,7 +13980,7 @@ body.lt-song-reordering .lt-compact-column-resize-slot {
   bottom: calc(var(--lt-mobile-float-bottom) + 2.9rem);
   transform: translateX(-50%);
   z-index: 34;
-  border-radius: 2px;
+  border-radius: 8px;
   max-width: calc(100% - 1.2rem);
 }
 
@@ -14007,8 +14007,8 @@ body.lt-song-reordering .lt-compact-column-resize-slot {
   align-items: center;
   gap: 0.3rem;
   padding: 0.35rem 0.45rem;
-  border-radius: 2px;
-  background: rgb(17 23 38 / 0.92);
+  border-radius: 8px;
+  background: rgb(19 19 19 / 0.92);
   border: 1px solid rgb(133 148 144 / 0.18);
   box-shadow: 0 6px 20px rgba(0, 0, 0, 0.45);
   max-width: calc(100% - 1.2rem);
@@ -14034,8 +14034,8 @@ body.lt-song-reordering .lt-compact-column-resize-slot {
   width: 4rem;
   min-height: 1.6rem;
   border: 1px solid rgb(133 148 144 / 0.18);
-  border-radius: 2px;
-  background: rgb(17 23 38 / 0.86);
+  border-radius: 8px;
+  background: rgb(19 19 19 / 0.86);
   color: #8fa09b;
 }
 
@@ -14048,21 +14048,21 @@ body.lt-song-reordering .lt-compact-column-resize-slot {
 }
 
 .lt-mobile .lt-mobile-selection-actions .lt-icon-button.is-active {
-  color: #00d1ff;
+  color: #ffffff;
   box-shadow:
-    0 0 0 1px rgba(0, 209, 255, 0.18),
-    0 0 18px rgba(0, 209, 255, 0.16);
+    0 0 0 1px rgba(255, 255, 255, 0.18),
+    0 0 18px rgba(255, 255, 255, 0.16);
 }
 
 .lt-mobile .lt-mobile-selection-actions .lt-icon-button {
   min-width: 2.4rem;
   min-height: 2.4rem;
   border: 0;
-  border-radius: 2px;
+  border-radius: 8px;
   background:
     linear-gradient(180deg, rgba(255, 255, 255, 0.04), rgba(0, 0, 0, 0.12)),
-    #141b2b;
-  color: #e6ebf5;
+    #161616;
+  color: #ebebeb;
 }
 
 /* El area de carriles vacia propone el primer paso en vez de ser un muro
@@ -14084,7 +14084,7 @@ body.lt-song-reordering .lt-compact-column-resize-slot {
 
 .lt-mobile .lt-mobile-empty-lanes > .material-symbols-outlined {
   font-size: 2.4rem;
-  color: #4d5c60;
+  color: #484848;
 }
 
 .lt-mobile .lt-mobile-empty-lanes-title {
@@ -14114,13 +14114,13 @@ body.lt-song-reordering .lt-compact-column-resize-slot {
   min-height: 2.6rem;
   padding: 0 1.1rem;
   border: 0;
-  border-radius: 2px;
-  background: linear-gradient(180deg, #00d1ff, #35c6b2);
+  border-radius: 8px;
+  background: linear-gradient(180deg, #ffffff, #35c6b2);
   color: #08201d;
   font: 700 11px/1 "Space Grotesk", sans-serif;
   letter-spacing: 0.12em;
   text-transform: uppercase;
-  box-shadow: 0 0 18px rgba(0, 209, 255, 0.22);
+  box-shadow: 0 0 18px rgba(255, 255, 255, 0.22);
 }
 
 .lt-mobile .lt-mobile-empty-lanes-cta .material-symbols-outlined {
@@ -14150,11 +14150,11 @@ body.lt-song-reordering .lt-compact-column-resize-slot {
   min-height: 2.4rem;
   padding: 0 0.6rem;
   border: 0;
-  border-radius: 2px;
+  border-radius: 8px;
   background:
     linear-gradient(180deg, rgba(255, 255, 255, 0.04), rgba(0, 0, 0, 0.12)),
-    #141b2b;
-  color: #e6ebf5;
+    #161616;
+  color: #ebebeb;
   font: 600 10px/1 "Space Grotesk", sans-serif;
   letter-spacing: 0.12em;
   text-transform: uppercase;
@@ -14169,10 +14169,10 @@ body.lt-song-reordering .lt-compact-column-resize-slot {
   background:
     linear-gradient(180deg, rgba(255, 255, 255, 0.06), rgba(0, 0, 0, 0.06)),
     rgba(47, 46, 46, 0.92);
-  color: #00d1ff;
+  color: #ffffff;
   box-shadow:
-    0 0 0 1px rgba(0, 209, 255, 0.18),
-    0 0 18px rgba(0, 209, 255, 0.16);
+    0 0 0 1px rgba(255, 255, 255, 0.18),
+    0 0 18px rgba(255, 255, 255, 0.16);
 }
 
 /* ---- Video (docs/plans/completed/video-output). The canvas paints the clips; these
@@ -14221,7 +14221,7 @@ body.lt-song-reordering .lt-compact-column-resize-slot {
   justify-content: center;
   width: 26px;
   height: 26px;
-  border-radius: 6px;
+  border-radius: 10px;
   border: 1px solid rgba(186, 202, 197, 0.28);
   background: rgba(20, 20, 20, 0.85);
   color: rgba(186, 202, 197, 0.6);
@@ -14284,7 +14284,7 @@ body.lt-song-reordering .lt-compact-column-resize-slot {
   top: -1px;
   width: 9px;
   height: 9px;
-  border-radius: 2px;
+  border-radius: 8px;
   background: #3fb8af;
   box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.6);
   cursor: col-resize;
@@ -14369,8 +14369,8 @@ body.lt-song-reordering .lt-compact-column-resize-slot {
   min-width: 15rem;
   max-width: min(22rem, calc(100vw - 2rem));
   padding: 0.75rem;
-  border-radius: 8px;
-  background: var(--lt-surface-raised, #1f2328);
+  border-radius: 12px;
+  background: var(--lt-surface-raised, #1c1c1c);
   box-shadow: 0 6px 24px rgba(0, 0, 0, 0.45);
   display: flex;
   flex-direction: column;
@@ -14428,7 +14428,7 @@ body.lt-song-reordering .lt-compact-column-resize-slot {
   height: 22px;
   padding: 0;
   border: 0;
-  border-radius: 5px;
+  border-radius: 10px;
   background: transparent;
   color: #7fe0d8;
   cursor: pointer;
@@ -14522,10 +14522,10 @@ body.lt-song-reordering .lt-compact-column-resize-slot {
 .lt-video-wizard-footer button,
 .lt-video-setup-notice button,
 .lt-video-calibration-panel button {
-  border-radius: 2px;
+  border-radius: 8px;
   border: 1px solid rgb(255 255 255 / 0.1);
   background: rgb(255 255 255 / 0.05);
-  color: #eef2fa;
+  color: #f2f2f2;
   padding: 0.7rem 1rem;
   font: 700 0.82rem/1 "Space Grotesk", sans-serif;
   cursor: pointer;
@@ -14536,23 +14536,23 @@ body.lt-song-reordering .lt-compact-column-resize-slot {
 .lt-video-wizard-footer button:hover:not(:disabled),
 .lt-video-setup-notice button:hover,
 .lt-video-calibration-panel button:hover:not(:disabled) {
-  border-color: rgb(0 209 255 / 0.28);
-  color: #00d1ff;
+  border-color: rgb(255 255 255 / 0.168);
+  color: #ffffff;
 }
 
 .lt-video-wizard-footer button.is-primary,
 .lt-video-setup-notice button.is-primary {
-  border-color: rgb(0 209 255 / 0.24);
-  background: rgb(0 209 255 / 0.14);
+  border-color: rgb(255 255 255 / 0.144);
+  background: rgb(255 255 255 / 0.084);
 }
 
 /* A chosen option reads like a checked card. As specific as the base rule
    above (its :not()s), or the base rule wins and nothing shows chosen. */
 .lt-video-settings button[aria-pressed="true"]:not(.lt-video-wizard-card),
 .lt-video-wizard-body button[aria-pressed="true"]:not(.lt-video-wizard-card):not(.lt-video-wizard-fit) {
-  border-color: rgb(0 209 255 / 0.6);
-  background: rgb(0 209 255 / 0.1);
-  color: #00d1ff;
+  border-color: rgb(255 255 255 / 0.36);
+  background: rgb(255 255 255 / 0.06);
+  color: #ffffff;
 }
 
 .lt-video-settings button:disabled,
@@ -14581,7 +14581,7 @@ body.lt-song-reordering .lt-compact-column-resize-slot {
 }
 
 .lt-video-settings .lt-settings-field > span:first-child {
-  color: #eef2fa;
+  color: #f2f2f2;
   font: 700 0.92rem/1.2 "Space Grotesk", sans-serif;
 }
 
@@ -14592,10 +14592,10 @@ body.lt-song-reordering .lt-compact-column-resize-slot {
 
 .lt-video-settings input[type="number"] {
   width: 5.5rem;
-  border-radius: 2px;
-  border: 1px solid rgb(0 209 255 / 0.18);
-  background: rgb(27 36 61 / 0.98);
-  color: #eef2fa;
+  border-radius: 8px;
+  border: 1px solid rgb(255 255 255 / 0.108);
+  background: rgb(30 30 30 / 0.98);
+  color: #f2f2f2;
   padding: 0.65rem 0.7rem;
   font: 600 0.92rem/1.2 "Space Grotesk", sans-serif;
   font-variant-numeric: tabular-nums;
@@ -14604,13 +14604,13 @@ body.lt-song-reordering .lt-compact-column-resize-slot {
 .lt-video-settings input[type="range"] {
   flex: 1;
   min-width: 10rem;
-  accent-color: #00d1ff;
+  accent-color: #ffffff;
 }
 
 .lt-video-settings-status {
-  border-radius: 2px;
+  border-radius: 8px;
   border: 1px solid rgb(255 255 255 / 0.06);
-  background: rgb(16 21 35 / 0.92);
+  background: rgb(17 17 17 / 0.92);
   padding: 0.75rem 0.95rem;
   color: rgb(229 226 225 / 0.8);
   font: 600 0.84rem/1.4 "Space Grotesk", sans-serif;
@@ -14628,9 +14628,9 @@ body.lt-song-reordering .lt-compact-column-resize-slot {
   grid-template-columns: max-content 1fr;
   gap: 0.35rem 1rem;
   margin: 0;
-  border-radius: 2px;
+  border-radius: 8px;
   border: 1px solid rgb(255 255 255 / 0.06);
-  background: rgb(16 21 35 / 0.92);
+  background: rgb(17 17 17 / 0.92);
   padding: 0.75rem 0.95rem;
   color: rgb(229 226 225 / 0.66);
   font: 500 0.84rem/1.4 "Space Grotesk", sans-serif;
@@ -14638,7 +14638,7 @@ body.lt-song-reordering .lt-compact-column-resize-slot {
 
 .lt-video-settings-stats dd {
   margin: 0;
-  color: #eef2fa;
+  color: #f2f2f2;
   font-variant-numeric: tabular-nums;
 }
 
@@ -14651,9 +14651,9 @@ body.lt-song-reordering .lt-compact-column-resize-slot {
 
 .lt-video-calibration {
   align-self: stretch;
-  border-radius: 2px;
-  border: 1px solid rgb(0 209 255 / 0.18);
-  background: rgb(0 209 255 / 0.04);
+  border-radius: 8px;
+  border: 1px solid rgb(255 255 255 / 0.108);
+  background: rgb(255 255 255 / 0.024);
   padding: 0.75rem 0.95rem;
   color: rgb(229 226 225 / 0.8);
   font: 500 0.84rem/1.55 "Space Grotesk", sans-serif;
@@ -14702,10 +14702,10 @@ body.lt-song-reordering .lt-compact-column-resize-slot {
   gap: 0.35rem;
   min-width: 8.5rem;
   padding: 0.85rem 1rem;
-  border-radius: 2px;
+  border-radius: 8px;
   border: 1px solid rgb(255 255 255 / 0.08);
-  background: rgb(16 21 35 / 0.92);
-  color: #eef2fa;
+  background: rgb(17 17 17 / 0.92);
+  color: #f2f2f2;
   font: 600 0.84rem/1.3 "Space Grotesk", sans-serif;
   cursor: pointer;
 }
@@ -14718,14 +14718,14 @@ body.lt-song-reordering .lt-compact-column-resize-slot {
 
 .lt-video-wizard-card:hover,
 .lt-video-wizard-fit:hover {
-  border-color: rgb(0 209 255 / 0.28);
+  border-color: rgb(255 255 255 / 0.168);
 }
 
 .lt-video-wizard-card[aria-checked="true"],
 .lt-video-wizard-fit[aria-checked="true"] {
-  border-color: rgb(0 209 255 / 0.6);
-  background: rgb(0 209 255 / 0.1);
-  color: #00d1ff;
+  border-color: rgb(255 255 255 / 0.36);
+  background: rgb(255 255 255 / 0.06);
+  color: #ffffff;
 }
 
 .lt-video-wizard-card-number {
@@ -14739,12 +14739,12 @@ body.lt-song-reordering .lt-compact-column-resize-slot {
   overflow: hidden;
   background: #000;
   border: 1px solid rgb(255 255 255 / 0.12);
-  border-radius: 2px;
+  border-radius: 8px;
 }
 
 .lt-video-wizard-picture {
   flex: none;
-  background: linear-gradient(135deg, rgb(0 209 255 / 0.85), rgb(0 209 255 / 0.25));
+  background: linear-gradient(135deg, rgb(255 255 255 / 0.51), rgb(255 255 255 / 0.15));
 }
 
 .lt-video-wizard-note {
@@ -14752,9 +14752,9 @@ body.lt-song-reordering .lt-compact-column-resize-slot {
   flex-direction: column;
   align-items: flex-start;
   gap: 0.6rem;
-  border-radius: 2px;
+  border-radius: 8px;
   border: 1px solid rgb(255 255 255 / 0.06);
-  background: rgb(16 21 35 / 0.92);
+  background: rgb(17 17 17 / 0.92);
   padding: 0.85rem 0.95rem;
 }
 
@@ -14774,11 +14774,11 @@ body.lt-song-reordering .lt-compact-column-resize-slot {
 }
 
 .lt-video-audio-prompt label {
-  color: #eef2fa;
+  color: #f2f2f2;
 }
 
 .lt-video-audio-prompt input[type="checkbox"] {
-  accent-color: #00d1ff;
+  accent-color: #ffffff;
 }
 
 /* Setup notice and audio-extraction progress ------------------------------ */
@@ -14793,16 +14793,16 @@ body.lt-song-reordering .lt-compact-column-resize-slot {
   gap: 0.75rem;
   max-width: calc(100vw - 2rem);
   padding: 0.65rem 0.75rem 0.65rem 1rem;
-  border-radius: 2px;
-  border: 1px solid rgb(0 209 255 / 0.24);
-  background: rgb(16 21 35 / 0.97);
+  border-radius: 8px;
+  border: 1px solid rgb(255 255 255 / 0.144);
+  background: rgb(17 17 17 / 0.97);
   box-shadow: 0 12px 32px rgb(0 0 0 / 0.45);
-  color: #eef2fa;
+  color: #f2f2f2;
   font: 600 0.86rem/1.3 "Space Grotesk", sans-serif;
 }
 
 .lt-video-setup-notice .material-symbols-outlined {
-  color: #00d1ff;
+  color: #ffffff;
 }
 
 .lt-video-setup-notice button {
@@ -14856,7 +14856,7 @@ body.lt-song-reordering .lt-compact-column-resize-slot {
   margin: 0;
   padding: 0.75rem 0.9rem;
   border: 1px dashed rgb(255 255 255 / 0.14);
-  border-radius: 2px;
+  border-radius: 8px;
   color: rgb(229 226 225 / 0.82);
   font: 500 0.9rem/1.45 "Space Grotesk", sans-serif;
 }
@@ -14871,9 +14871,9 @@ body.lt-song-reordering .lt-compact-column-resize-slot {
   list-style: none;
   margin: 0;
   padding: 0;
-  border-radius: 2px;
+  border-radius: 8px;
   border: 1px solid rgb(255 255 255 / 0.06);
-  background: rgb(9 12 19 / 0.75);
+  background: rgb(10 10 10 / 0.75);
 }
 
 .lt-midi-learn-list li {
@@ -14889,7 +14889,7 @@ body.lt-song-reordering .lt-compact-column-resize-slot {
 }
 
 .lt-midi-learn-list li.is-midi-target {
-  background: rgb(0 209 255 / 0.06);
+  background: rgb(255 255 255 / 0.036);
 }
 
 .lt-midi-learn-list-text {
@@ -14902,7 +14902,7 @@ body.lt-song-reordering .lt-compact-column-resize-slot {
 }
 
 .lt-midi-learn-list-text strong {
-  color: #eef2fa;
+  color: #f2f2f2;
   font: 700 0.88rem/1.25 "Space Grotesk", sans-serif;
   overflow-wrap: anywhere;
 }
@@ -14916,8 +14916,8 @@ body.lt-song-reordering .lt-compact-column-resize-slot {
 }
 
 .lt-midi-learn-list .lt-midi-binding-pill {
-  background: rgb(0 209 255 / 0.12);
-  color: #d6f6ff;
+  background: rgb(255 255 255 / 0.072);
+  color: #f4f4f5;
 }
 
 .lt-midi-learn-list .lt-midi-binding-empty {
@@ -15030,8 +15030,8 @@ body.lt-song-reordering .lt-compact-column-resize-slot {
 
 /* La fila de control es baja y comparte espacio con las acciones del mixer. */
 html.lt-mobile .lt-compact-view > .lt-compact-mixer-toolbar {
-  border-top: 1px solid rgb(0 209 255 / 0.14);
-  background: linear-gradient(180deg, rgba(255, 255, 255, 0.03), transparent), #13192a;
+  border-top: 1px solid rgb(255 255 255 / 0.084);
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0.03), transparent), #151515;
 }
 
 html.lt-mobile .lt-compact-view > .lt-compact-mixer-toolbar > .lt-compact-mixer-toggle {
@@ -15196,7 +15196,7 @@ html.lt-mobile .lt-setlist-mixer.is-short > .lt-setlist-mixer-header > .lt-setli
   padding: 1px;
   overflow: hidden;
   border: 1px solid var(--lt-midi-map-color);
-  border-radius: 3px;
+  border-radius: 8px;
   background: color-mix(in srgb, var(--lt-midi-map-color) 30%, transparent);
   pointer-events: none;
 }
@@ -15230,7 +15230,7 @@ html.lt-mobile .lt-setlist-mixer.is-short > .lt-setlist-mixer-header > .lt-setli
   max-width: 100%;
   overflow: hidden;
   padding: 0 3px;
-  border-radius: 2px;
+  border-radius: 8px;
   background: rgba(0, 0, 0, 0.72);
   color: #fff;
   font: 600 9px/13px system-ui, sans-serif;
@@ -15291,7 +15291,7 @@ html.lt-mobile .lt-setlist-mixer.is-short > .lt-setlist-mixer-header > .lt-setli
   gap: 6px;
   padding: 8px 10px;
   border: 1px solid var(--lt-border, rgba(255, 255, 255, 0.12));
-  border-radius: 6px;
+  border-radius: 10px;
 }
 
 .lt-midi-bindings > li.is-other-session {
@@ -15356,7 +15356,7 @@ html.lt-mobile .lt-setlist-mixer.is-short > .lt-setlist-mixer-header > .lt-setli
 
 .lt-midi-profiles-detected {
   padding: 6px 10px;
-  border-radius: 6px;
+  border-radius: 10px;
   background: color-mix(in srgb, var(--lt-midi-map-mapped) 22%, transparent);
 }
 
@@ -15385,10 +15385,10 @@ html.lt-mobile .lt-setlist-mixer.is-short > .lt-setlist-mixer-header > .lt-setli
 .lt-midi-profiles select,
 .lt-midi-bindings-fields select,
 .lt-midi-bindings-fields input[type="number"] {
-  border: 1px solid rgb(0 209 255 / 0.18);
-  border-radius: 2px;
-  background: rgb(27 36 61 / 0.98);
-  color: #eef2fa;
+  border: 1px solid rgb(255 255 255 / 0.108);
+  border-radius: 8px;
+  background: rgb(30 30 30 / 0.98);
+  color: #f2f2f2;
   padding: 0.4rem 0.55rem;
   font: 600 0.82rem/1.2 "Space Grotesk", sans-serif;
 }
@@ -15460,9 +15460,9 @@ html.lt-mobile .lt-setlist-mixer.is-short > .lt-setlist-mixer-header > .lt-setli
   align-items: center;
   gap: 0.6rem;
   padding: 0.5rem 0.6rem 0.5rem 0.85rem;
-  border-radius: 2px;
+  border-radius: 8px;
   border: 1px solid rgb(255 180 84 / 0.4);
-  background: rgb(13 18 29 / 0.97);
+  background: rgb(15 15 15 / 0.97);
   color: #e6ddd0;
   font-size: 0.82rem;
   box-shadow: 0 8px 24px rgb(0 0 0 / 0.45);
