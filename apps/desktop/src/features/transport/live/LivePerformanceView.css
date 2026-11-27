@@ -88,8 +88,8 @@
 .lt-live-section-title h2 {
   color: #7f928c;
   font: 700 9px/1 "Space Grotesk", sans-serif;
-  text-transform: uppercase;
-  letter-spacing: 0.12em;
+  text-transform: none;
+  letter-spacing: 0.01em;
 }
 
 .lt-live-heading strong,
@@ -269,7 +269,7 @@
 .lt-live-section-count {
   color: #6f7e79;
   font: 650 9px/1 "Space Grotesk", sans-serif;
-  text-transform: uppercase;
+  text-transform: none;
 }
 
 .lt-live-cue-grid {
@@ -418,8 +418,8 @@
   border-radius: 0.2rem;
   color: #e6a06c;
   font: 700 8px/1 "Space Grotesk", sans-serif;
-  text-transform: uppercase;
-  letter-spacing: 0.05em;
+  text-transform: none;
+  letter-spacing: 0.01em;
 }
 
 .lt-live-cue-name-line em.is-now {
@@ -696,8 +696,8 @@
   border-radius: 0.2rem;
   color: #f4c95d;
   font: 750 8px/1 "Space Grotesk", sans-serif;
-  text-transform: uppercase;
-  letter-spacing: 0.05em;
+  text-transform: none;
+  letter-spacing: 0.01em;
 }
 
 .lt-live-section-actions {
@@ -719,7 +719,7 @@
   color: #d7b75d;
   background: rgb(70 54 13 / 0.25);
   font: 700 9px/1 "Space Grotesk", sans-serif;
-  text-transform: uppercase;
+  text-transform: none;
   white-space: nowrap;
 }
 

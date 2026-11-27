@@ -31,7 +31,7 @@ button.lt-lyrics-btn {
   color: #f2f2f2;
   padding: 0.5rem 0.85rem;
   font: 700 0.75rem/1 "Space Grotesk", sans-serif;
-  letter-spacing: 0.04em;
+  letter-spacing: 0.01em;
   white-space: nowrap;
   cursor: pointer;
 }
@@ -133,8 +133,8 @@ select.lt-lyrics-select.lt-lyrics-unmatched {
   min-width: 110px;
   height: 38px;
   background: #0a0a0a;
-  text-transform: uppercase;
-  letter-spacing: 0.12em;
+  text-transform: none;
+  letter-spacing: 0.01em;
   font-size: 11px;
 }
 .lt-lyrics-programs button.lt-lyrics-btn.is-selected {
@@ -429,8 +429,8 @@ button.lt-lyrics-pill.is-connecting { background: #333333; }
   padding: 0.55rem 0.7rem;
   color: rgb(229 226 225 / 0.6);
   font: 700 10px/1 "Space Grotesk", sans-serif;
-  letter-spacing: 0.12em;
-  text-transform: uppercase;
+  letter-spacing: 0.01em;
+  text-transform: none;
   border-bottom: 1px solid rgb(255 255 255 / 0.08);
 }
 .lt-lyrics-table td {
@@ -514,8 +514,8 @@ button.lt-lyrics-btn.lt-lyrics-edit {
   margin: 0.6rem 0 0;
   color: rgb(229 226 225 / 0.6);
   font: 700 10px/1 "Space Grotesk", sans-serif;
-  letter-spacing: 0.12em;
-  text-transform: uppercase;
+  letter-spacing: 0.01em;
+  text-transform: none;
 }
 .lt-lyrics-section-editor > button.lt-lyrics-btn {
   align-self: flex-start;
@@ -652,8 +652,8 @@ button.lt-lyrics-btn.lt-lyrics-record .material-symbols-outlined {
   align-self: stretch;
   min-height: 88px;
   font-size: 1.15rem;
-  letter-spacing: 0.08em;
-  text-transform: uppercase;
+  letter-spacing: 0.01em;
+  text-transform: none;
   background: rgb(255 255 255 / 0.084);
   border-color: #ffffff;
   color: #ffffff;

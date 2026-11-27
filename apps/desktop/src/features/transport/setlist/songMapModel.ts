@@ -13,6 +13,16 @@ import {
   liveMarkerGroupsForRegion,
 } from "../live/liveMarkerModel";
 
+/** Colours for sections with no kind and no colour of their own, by order. */
+const UNTYPED_SECTION_COLORS = [
+  "#9c73e6",
+  "#ee8a3c",
+  "#2fa98a",
+  "#df6fa8",
+  "#e0a83a",
+  "#e35d5b",
+] as const;
+
 /** One block of the song map: a section, or the stretch before the first
  * one ("Start"), or the whole song when it has no sections. */
 export type SongMapBlock = {
@@ -114,18 +124,24 @@ export function buildSongMapBlocks(
         cues: [],
       });
     }
-    for (const group of sections) {
+    sections.forEach((group, sectionIndex) => {
+      const untyped =
+        (group.primary.kind === undefined || group.primary.kind === "custom") && !group.primary.color;
       blocks.push({
         id: group.id,
         marker: group.primary,
         kind: "section",
         label: group.primary.name,
-        color: markerColor(group.primary),
+        // Untyped sections get a palette colour by order instead of the flat
+        // neutral grey, so the map reads at a glance (typed ones keep theirs).
+        color: untyped
+          ? UNTYPED_SECTION_COLORS[sectionIndex % UNTYPED_SECTION_COLORS.length]
+          : markerColor(group.primary),
         digit: group.primary.digit ?? null,
         startSeconds: group.startSeconds,
         cues: group.cues,
       });
-    }
+    });
   }
 
   let used = 0;

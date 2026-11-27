@@ -30,7 +30,7 @@
   color: #ebebeb;
   font: 600 11px/1 "Space Grotesk", sans-serif;
   letter-spacing: 0.06em;
-  text-transform: uppercase;
+  text-transform: none;
   cursor: pointer;
 }
 
@@ -229,7 +229,7 @@
   font: 700 12px/1.1 "Space Grotesk", sans-serif;
   letter-spacing: 0.08em;
   text-align: left;
-  text-transform: uppercase;
+  text-transform: none;
   cursor: pointer;
 }
 

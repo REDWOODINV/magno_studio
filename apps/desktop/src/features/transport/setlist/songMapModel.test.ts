@@ -42,6 +42,26 @@ describe("buildSongMapBlocks", () => {
     expect(sum(blocks.map((block) => block.widthFraction))).toBe(1);
   });
 
+  it("untyped sections get a palette colour by order; typed or coloured ones keep theirs", () => {
+    const { blocks } = buildSongMapBlocks(
+      region,
+      [
+        section("a", 10, { kind: "custom" }),
+        section("b", 20, { kind: "custom" }),
+        section("c", 30, { kind: "custom", color: "#112233" }),
+        section("d", 40, { kind: "verse" }),
+      ],
+      twoSecondBars,
+      labels,
+    );
+    const [a, b, c, d] = blocks.map((block) => block.color);
+    expect(a).toBeTruthy();
+    expect(b).toBeTruthy();
+    expect(a).not.toBe(b);
+    expect(c).toBe("#112233");
+    expect(d).toBe("#5aa9e6");
+  });
+
   it("ignores markers of other songs", () => {
     const { blocks } = buildSongMapBlocks(
       region,

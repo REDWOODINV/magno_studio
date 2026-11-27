@@ -61,8 +61,8 @@
 .lt-live-chart-heading small {
   color: #7f928c;
   font: 700 9px/1 "Space Grotesk", sans-serif;
-  text-transform: uppercase;
-  letter-spacing: 0.12em;
+  text-transform: none;
+  letter-spacing: 0.01em;
 }
 
 .lt-live-chart-heading strong {
@@ -107,8 +107,8 @@
   color: #9aa8a3;
   background: #181818;
   font: 750 9px/1 "Space Grotesk", sans-serif;
-  text-transform: uppercase;
-  letter-spacing: 0.08em;
+  text-transform: none;
+  letter-spacing: 0.01em;
 }
 
 .lt-live-chart-action .material-symbols-outlined {
@@ -154,8 +154,8 @@
   color: #ffb3ba;
   background: rgb(255 93 108 / 0.12);
   font: 750 10px/1 "Space Grotesk", sans-serif;
-  text-transform: uppercase;
-  letter-spacing: 0.08em;
+  text-transform: none;
+  letter-spacing: 0.01em;
   touch-action: manipulation;
 }
 
@@ -235,8 +235,8 @@
   margin: 0 0 0.3em;
   color: #7f928c;
   font: 750 0.72em/1.2 "Space Grotesk", sans-serif;
-  text-transform: uppercase;
-  letter-spacing: 0.1em;
+  text-transform: none;
+  letter-spacing: 0.01em;
 }
 
 .lt-chart-section.is-current .lt-chart-section-label {
@@ -247,7 +247,7 @@
   margin-left: 0.5em;
   color: #5d6b67;
   font-size: 0.85em;
-  letter-spacing: 0.06em;
+  letter-spacing: 0.01em;
 }
 
 .lt-chart-section.is-past {

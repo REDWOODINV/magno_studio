@@ -64,8 +64,8 @@
 .lt-structure-caption strong {
   color: #e8eeee;
   font-size: 0.8rem;
-  text-transform: uppercase;
-  letter-spacing: 0.04em;
+  text-transform: none;
+  letter-spacing: 0.01em;
 }
 
 .lt-structure-total {
@@ -466,8 +466,8 @@
 .lt-structure-mobile-eyebrow {
   color: #ffffff;
   font: 700 9px/1 "Space Grotesk", sans-serif;
-  letter-spacing: 0.16em;
-  text-transform: uppercase;
+  letter-spacing: 0.01em;
+  text-transform: none;
 }
 
 .lt-structure-mobile-title h2 {
@@ -552,8 +552,8 @@
   background: rgb(255 255 255 / 0.03);
   color: #ffffff;
   font: 700 11px/1 "Space Grotesk", sans-serif;
-  letter-spacing: 0.12em;
-  text-transform: uppercase;
+  letter-spacing: 0.01em;
+  text-transform: none;
 }
 
 .lt-structure-add-row:active {
@@ -828,8 +828,8 @@
   color: #ebebeb;
   cursor: pointer;
   font: 700 10px/1 "Space Grotesk", sans-serif;
-  letter-spacing: 0.12em;
-  text-transform: uppercase;
+  letter-spacing: 0.01em;
+  text-transform: none;
   white-space: nowrap;
 }
 
@@ -893,8 +893,8 @@
 
 .lt-structure-select span {
   font: 700 10px/1 "Space Grotesk", sans-serif;
-  letter-spacing: 0.12em;
-  text-transform: uppercase;
+  letter-spacing: 0.01em;
+  text-transform: none;
   color: rgb(232 238 238 / 0.6);
 }
 
@@ -920,8 +920,8 @@
   border: 1px solid rgb(255 255 255 / 0.08);
   border-radius: 8px;
   font: 700 11px/1 "Space Grotesk", sans-serif;
-  letter-spacing: 0.12em;
-  text-transform: uppercase;
+  letter-spacing: 0.01em;
+  text-transform: none;
 }
 
 .lt-mobile .lt-context-menu.lt-structure-app-sheet .lt-structure-sheet-actions button.is-primary,

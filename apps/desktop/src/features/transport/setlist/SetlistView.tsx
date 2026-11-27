@@ -47,6 +47,7 @@ import { SetlistShortRhythmDock, useSetlistRhythm } from "./SetlistRhythm";
 import { Zone } from "./SetlistZone";
 import { PlanImportButton } from "../../chartSources/PlanImportButton";
 import "./setlist.css";
+import "./setlistModern.css";
 
 export type { SetlistZone } from "./SetlistZone";
 

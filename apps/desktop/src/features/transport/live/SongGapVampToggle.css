@@ -10,7 +10,7 @@
   color: #82908c;
   background: #181818;
   font: 750 9px/1 "Space Grotesk", sans-serif;
-  text-transform: uppercase;
+  text-transform: none;
   white-space: nowrap;
 }
 

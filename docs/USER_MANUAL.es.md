@@ -1,12 +1,12 @@
-# Manual de Usuario de LibreTracks
+# Manual de Usuario de Magno Studio
 
-LibreTracks está pensado para directores musicales, playback engineers y músicos que necesitan un entorno multitrack fiable para el directo. La app mantiene la edición no destructiva y separa el motor de audio de la UI en React, para que organizar, guardar y lanzar una canción no dependa de modificar el audio original.
+Magno Studio está pensado para directores musicales, playback engineers y músicos que necesitan un entorno multitrack fiable para el directo. La app mantiene la edición no destructiva y separa el motor de audio de la UI en React, para que organizar, guardar y lanzar una canción no dependa de modificar el audio original.
 
 > ⚠️ Consejo de directo: prepara el show con antelación, guarda la sesión y ensaya los saltos con el mismo dispositivo de salida que usarás en escenario.
 
 ## 1. Introducción
 
-LibreTracks te permite importar audio, organizarlos en un timeline y disparar saltos musicales entre secciones durante la reproducción.
+Magno Studio te permite importar audio, organizarlos en un timeline y disparar saltos musicales entre secciones durante la reproducción.
 
 Por qué es seguro para directo:
 
@@ -22,7 +22,7 @@ Por qué es seguro para directo:
 2. En el panel de audio, elige el `Dispositivo de audio` correcto.
 3. Verifica la salida antes del ensayo y antes del show.
 
-Si dejas `Dispositivo de audio` en `Predeterminado del sistema`, LibreTracks seguirá la salida por defecto del sistema operativo. En directo, normalmente es más seguro usar una interfaz dedicada.
+Si dejas `Dispositivo de audio` en `Predeterminado del sistema`, Magno Studio seguirá la salida por defecto del sistema operativo. En directo, normalmente es más seguro usar una interfaz dedicada.
 
 ![Configuración de Audio](../screenshots/Configuracion-Audio.gif)
 
@@ -48,13 +48,13 @@ Activa `Metronomo` desde `La barra superior` cuando necesites una claqueta fiabl
 
 ### Conecta hardware MIDI
 
-En `Configuracion`, elige un `Dispositivo de entrada MIDI`, por ejemplo una pedalera, un controlador de pads o un teclado. Usa `Refrescar dispositivos MIDI` si conectaste el controlador despues de abrir LibreTracks.
+En `Configuracion`, elige un `Dispositivo de entrada MIDI`, por ejemplo una pedalera, un controlador de pads o un teclado. Usa `Refrescar dispositivos MIDI` si conectaste el controlador despues de abrir Magno Studio.
 
 Abre `Aprendizaje MIDI` para asignar notas o mensajes CC del hardware a controles en vivo. Son mapeos utiles `Reproducir`, `Detener`, `Vamp`, modos de salto de marca, disparadores de salto de cancion, modo de transicion de cancion y controles de numero de compases.
 
 ![Configuración MIDI](../screenshots/Midi-Config.gif)
 
-Si se desenchufa el dispositivo MIDI seleccionado, la barra superior muestra `Controlador MIDI desconectado`. No hace falta hacer nada: LibreTracks lo reconecta solo en cuanto lo vuelves a enchufar, y la pestaña MIDI actualiza sus listas por sí misma.
+Si se desenchufa el dispositivo MIDI seleccionado, la barra superior muestra `Controlador MIDI desconectado`. No hace falta hacer nada: Magno Studio lo reconecta solo en cuanto lo vuelves a enchufar, y la pestaña MIDI actualiza sus listas por sí misma.
 
 ### MIDI en iPhone, iPad y Android
 
@@ -63,15 +63,15 @@ Las pestañas `MIDI` y `Aprendizaje MIDI` funcionan igual en un teléfono o una 
 Qué puedes conectar:
 
 - **USB**: cualquier controlador, pedalera o interfaz MIDI class-compliant. En iPhone y iPad, con el adaptador de cámara (Lightning) o directamente al USB-C. En Android, con un cable o adaptador OTG. No hace falta ningún permiso.
-- **Bluetooth LE**: pedaleras y controladores inalámbricos (WIDI, CME, M-VAVE, AirTurn…). En la pestaña `MIDI`, toca `Buscar dispositivos Bluetooth`. En iPhone y iPad se abre el panel de MIDI Bluetooth del sistema; en Android, LibreTracks busca durante unos 10 segundos y muestra lo que encuentra. Después el dispositivo aparece en las listas de entrada y salida como uno USB. Android pide el permiso de Bluetooth la primera vez; si lo deniegas, el MIDI por USB sigue funcionando.
-- **Otras apps del mismo dispositivo**: activa `Publicar puerto MIDI virtual LibreTracks`. Los sintes, las apps de letras o de luces del mismo teléfono o tableta ven un dispositivo MIDI `LibreTracks`: reciben lo que tus pistas MIDI mandan a `LibreTracks Out`, y lo que ellas mandan a `LibreTracks In` puede disparar tus mapeos de Aprendizaje MIDI.
+- **Bluetooth LE**: pedaleras y controladores inalámbricos (WIDI, CME, M-VAVE, AirTurn…). En la pestaña `MIDI`, toca `Buscar dispositivos Bluetooth`. En iPhone y iPad se abre el panel de MIDI Bluetooth del sistema; en Android, Magno Studio busca durante unos 10 segundos y muestra lo que encuentra. Después el dispositivo aparece en las listas de entrada y salida como uno USB. Android pide el permiso de Bluetooth la primera vez; si lo deniegas, el MIDI por USB sigue funcionando.
+- **Otras apps del mismo dispositivo**: activa `Publicar puerto MIDI virtual Magno Studio`. Los sintes, las apps de letras o de luces del mismo teléfono o tableta ven un dispositivo MIDI `Magno Studio`: reciben lo que tus pistas MIDI mandan a `Magno Studio Out`, y lo que ellas mandan a `Magno Studio In` puede disparar tus mapeos de Aprendizaje MIDI.
 - **Wi-Fi, solo iPhone y iPad**: activa `Sesión MIDI de red` y, en el Mac, abre `Configuración de Audio MIDI` → `Ventana` → `Mostrar estudio MIDI` → `Red`, donde aparece tu dispositivo. iOS pide acceso a la red local la primera vez.
 
 En segundo plano:
 
-- **Android**: un pedal puede arrancar el show aunque la pantalla esté apagada o haya otra app abierta. Para ahorrar batería, desactiva `Mantener MIDI activo en segundo plano`: la entrada MIDI se cierra mientras LibreTracks está en segundo plano y parado, y se vuelve a abrir al volver.
-- **iPhone y iPad**: iOS suspende las apps que están en pausa en segundo plano, así que un pedal puede dar play mientras LibreTracks está en pantalla o ya reproduciendo, pero no desde la pantalla de bloqueo con la app parada.
-- Cuando LibreTracks pasa a segundo plano parado, manda `All Notes Off` a sus salidas MIDI para que nada se quede sonando en el dispositivo que las recibe.
+- **Android**: un pedal puede arrancar el show aunque la pantalla esté apagada o haya otra app abierta. Para ahorrar batería, desactiva `Mantener MIDI activo en segundo plano`: la entrada MIDI se cierra mientras Magno Studio está en segundo plano y parado, y se vuelve a abrir al volver.
+- **iPhone y iPad**: iOS suspende las apps que están en pausa en segundo plano, así que un pedal puede dar play mientras Magno Studio está en pantalla o ya reproduciendo, pero no desde la pantalla de bloqueo con la app parada.
+- Cuando Magno Studio pasa a segundo plano parado, manda `All Notes Off` a sus salidas MIDI para que nada se quede sonando en el dispositivo que las recibe.
 
 ## 3. Organización del Proyecto
 
@@ -79,7 +79,7 @@ En segundo plano:
 
 El botón de menú junto a la marca de la barra superior oculta o restaura la navegación de Biblioteca, Configuración y Red, tanto en ordenador como en móvil. La preferencia se conserva en el dispositivo.
 
-Al crear una canción desde una carpeta de la biblioteca, LibreTracks busca imágenes en esa carpeta y sus subcarpetas, dando prioridad a nombres como `cover`, `album`, `portada`, `front` y `folder`. También puedes usar `Elegir portada…` y `Quitar portada` en las opciones de la canción o en `Setlist → Editar → Canción`. Se admiten JPG, PNG y WebP de hasta 8 MB; se guarda una miniatura para no ocupar altura de la onda en móvil. La portada se conserva al guardar y viaja en las exportaciones de canción y sesión, incluso sin incluir audio.
+Al crear una canción desde una carpeta de la biblioteca, Magno Studio busca imágenes en esa carpeta y sus subcarpetas, dando prioridad a nombres como `cover`, `album`, `portada`, `front` y `folder`. También puedes usar `Elegir portada…` y `Quitar portada` en las opciones de la canción o en `Setlist → Editar → Canción`. Se admiten JPG, PNG y WebP de hasta 8 MB; se guarda una miniatura para no ocupar altura de la onda en móvil. La portada se conserva al guardar y viaja en las exportaciones de canción y sesión, incluso sin incluir audio.
 
 ### `Biblioteca`
 
@@ -150,7 +150,7 @@ la segunda canción:
 
 ## 4. Edición Básica (Timeline)
 
-LibreTracks mantiene el timeline directo y orientado a directo.
+Magno Studio mantiene el timeline directo y orientado a directo.
 
 ### Añadir y mover clips
 
@@ -205,7 +205,7 @@ Crea secciones desde el ruler:
 2. Elige `Crear Marca`.
 3. Renombra la marca si lo necesitas.
 
-LibreTracks puede mostrar marcas con prefijo numérico, por ejemplo `1. Intro`. En la build desktop actual, los atajos `0-9` se resuelven por orden de marca en el timeline: `0` apunta a la primera marca, `1` a la segunda, y así sucesivamente.
+Magno Studio puede mostrar marcas con prefijo numérico, por ejemplo `1. Intro`. En la build desktop actual, los atajos `0-9` se resuelven por orden de marca en el timeline: `0` apunta a la primera marca, `1` a la segunda, y así sucesivamente.
 
 ![Crear una Marca](../screenshots/Create-Marker.gif)
 
@@ -221,7 +221,7 @@ Puedes cambiar el tipo de compas en el timeline para ello:
 
 ### Tono y tempo
 
-Al cambiar el tono o el tempo de una canción, LibreTracks activa warp automáticamente para mantener el tono y la velocidad independientes. Una canción sin cambios no activa warp; al devolver el tono y el tempo a sus valores originales, warp se desactiva de nuevo. Puedes desactivar `Warp automático` en Ajustes para mostrar el control manual de warp y usar varispeed al cambiar el tono. Cambiar esta preferencia no modifica las canciones existentes.
+Al cambiar el tono o el tempo de una canción, Magno Studio activa warp automáticamente para mantener el tono y la velocidad independientes. Una canción sin cambios no activa warp; al devolver el tono y el tempo a sus valores originales, warp se desactiva de nuevo. Puedes desactivar `Warp automático` en Ajustes para mostrar el control manual de warp y usar varispeed al cambiar el tono. Cambiar esta preferencia no modifica las canciones existentes.
 
 ### Modos de `Salto`
 
@@ -260,7 +260,7 @@ Un arreglo cambia la forma de una canción sin montar saltos: dos coros más al 
 
 1. **Marca las secciones** de la canción (Intro, Verso, Coro…) en la fila de secciones del ruler, como siempre. Hacen falta al menos dos. Las marcas de aviso (Build, Entra batería…) no cortan secciones: viajan con la sección en la que están.
 2. Haz click derecho sobre la canción y elige `Arreglo` (en la vista compacta, en el menú de la canción).
-3. Pulsa `Guardar como original`. LibreTracks guarda la canción tal como está para poder montar cualquier arreglo y volver al original cuando quieras. Si alguna marca no cae en el primer tiempo de un compás, te avisa y te ofrece `Ajustar al compás`.
+3. Pulsa `Guardar como original`. Magno Studio guarda la canción tal como está para poder montar cualquier arreglo y volver al original cuando quieras. Si alguna marca no cae en el primer tiempo de un compás, te avisa y te ofrece `Ajustar al compás`.
 4. **Monta el arreglo**: arriba tienes las secciones de la canción. Haz click en una para añadirla al final, o arrástrala a la tira de abajo para meterla donde la sueltes. En la tira, arrastra los bloques para cambiarlos de orden, `Supr` quita el bloque seleccionado y `Ctrl+D` lo duplica.
 5. Pulsa `Aplicar`. El timeline muestra el resultado y las canciones siguientes se colocan detrás, en su compás.
 
@@ -270,11 +270,11 @@ Puedes guardar varios arreglos de la misma canción (`Nuevo`, `Renombrar`, `Elim
 
 Con un arreglo aplicado, la canción muestra `⇄ Domingo` (el nombre del arreglo) en el ruler, en la vista compacta, en la vista en directo y en el remote, y el ruler sombrea un poco las secciones que son repeticiones.
 
-**Editar una canción con arreglo.** El volumen, el mute, el pan o las salidas de las pistas se cambian como siempre. Para mover, recortar o añadir clips o marcas, LibreTracks te pregunta antes: `Esta canción tiene un arreglo. ¿Editar el original?`. `Editar original` vuelve al original (el arreglo se guarda), editas lo que quieras y, al volver a pulsar `Aplicar`, el arreglo se monta sobre la canción editada. Si quitaste una sección que usaba algún arreglo, te dice de qué arreglos la ha quitado.
+**Editar una canción con arreglo.** El volumen, el mute, el pan o las salidas de las pistas se cambian como siempre. Para mover, recortar o añadir clips o marcas, Magno Studio te pregunta antes: `Esta canción tiene un arreglo. ¿Editar el original?`. `Editar original` vuelve al original (el arreglo se guarda), editas lo que quieras y, al volver a pulsar `Aplicar`, el arreglo se monta sobre la canción editada. Si quitaste una sección que usaba algún arreglo, te dice de qué arreglos la ha quitado.
 
 **En el móvil y la tablet** el editor ocupa la pantalla: los bloques son una lista vertical. Arrastra por el asa de la derecha para cambiar el orden, desliza a la izquierda para quitar (con `Deshacer` unos segundos), mantén pulsado para `Duplicar` o `Quitar`, y usa el botón `+` para añadir secciones.
 
-Los arreglos viajan en los paquetes de canción (`.ltpkg`) y de sesión (`.ltset`). Si abres la sesión con una versión anterior de LibreTracks, verás el arreglo escrito en el timeline y sonará igual, pero si guardas desde esa versión se pierde el original del arreglo.
+Los arreglos viajan en los paquetes de canción (`.ltpkg`) y de sesión (`.ltset`). Si abres la sesión con una versión anterior de Magno Studio, verás el arreglo escrito en el timeline y sonará igual, pero si guardas desde esa versión se pierde el original del arreglo.
 
 ### Escenas en directo
 
@@ -309,7 +309,7 @@ Se abre desde el selector de vistas o con `Tab`, que recorre DAW, Setlist, Compa
 
 ### Si vienes de Playback o Prime
 
-| En Playback / Prime | En LibreTracks |
+| En Playback / Prime | En Magno Studio |
 | --- | --- |
 | Lista de canciones arriba | Fila de tarjetas de canción. Toca una para verla; con todo parado, además la prepara. |
 | Pulsar una canción para que suene | Doble toque o `▶` en la tarjeta. Si ya suena otra, el salto sigue la transición entre canciones (el botón entre dos tarjetas). |
@@ -379,7 +379,7 @@ Cada intervalo renderizado está limitado a tres horas. Para sesiones más larga
 
 ### Importar canciones y paquetes
 
-Usa `Importar cancion` desde la sección `Archivo` en la parte superior cuando quieras traer otra cancion o paquete de sesion de LibreTracks a la sesion actual. Es util para construir un show a partir de canciones preparadas sin rehacer pistas y marcas a mano.
+Usa `Importar cancion` desde la sección `Archivo` en la parte superior cuando quieras traer otra cancion o paquete de sesion de Magno Studio a la sesion actual. Es util para construir un show a partir de canciones preparadas sin rehacer pistas y marcas a mano.
 
 ### Atajos
 
@@ -388,11 +388,11 @@ Usa `Importar cancion` desde la sección `Archivo` en la parte superior cuando q
 - `0-9`: arma un salto hacia la marca correspondiente
 - `Shift + 0-9`: arma un salto hacia la canción seleccionada. El 0 se corresponde con la primera cación, 1 la segunda, 2 la tercera...
 
-Si armas la sección equivocada, pulsa `Esc` inmediatamente. Si no existe una marca para ese hueco, LibreTracks avisará de que no hay una marca disponible para ese dígito.
+Si armas la sección equivocada, pulsa `Esc` inmediatamente. Si no existe una marca para ese hueco, Magno Studio avisará de que no hay una marca disponible para ese dígito.
 
 ## Vídeo
 
-LibreTracks puede proyectar vídeos (letras, fondos, clips) sincronizados con el audio en una segunda pantalla: un proyector o una TV. El audio manda: el vídeo sigue al transporte, a los saltos, a los vamps y al warp, nunca al revés.
+Magno Studio puede proyectar vídeos (letras, fondos, clips) sincronizados con el audio en una segunda pantalla: un proyector o una TV. El audio manda: el vídeo sigue al transporte, a los saltos, a los vamps y al warp, nunca al revés.
 
 > En Windows y en macOS (12 o posterior) funciona tal cual: la app trae lo necesario. En Linux hace falta tener instalado `libmpv` (paquete `libmpv2` o `mpv-libs` según la distribución). En iPhone, iPad y Android también: ver [Vídeo en iPhone, iPad y Android](#vídeo-en-iphone-ipad-y-android).
 
@@ -401,7 +401,7 @@ LibreTracks puede proyectar vídeos (letras, fondos, clips) sincronizados con el
 1. Arrastra un vídeo (`.mp4`, `.mov`, `.mkv`, `.webm`…) desde el explorador al timeline o a la biblioteca. Si lo sueltas sobre una pista de audio, se crea una pista de vídeo al lado.
 2. El clip de vídeo se mueve, recorta, divide, duplica y borra como uno de audio, y tiene fundidos de entrada y salida y su propio encaje (clic derecho).
    En la Vista Setlist, abre `Editar → Vídeo` para ajustar los clips sobre la onda de la canción: arrastra el cuerpo para moverlo, los bordes para recortarlo y los tiradores superiores para cambiar los fundidos. El botón de duplicar está junto a cada clip; el menú conserva las demás acciones.
-3. Si el vídeo trae sonido, LibreTracks pregunta si quieres **extraerlo como pista de audio**: queda en una pista nueva justo debajo, alineada con el vídeo. Puedes marcar "Recordar mi elección", y hacerlo más tarde con clic derecho → `Extraer audio`.
+3. Si el vídeo trae sonido, Magno Studio pregunta si quieres **extraerlo como pista de audio**: queda en una pista nueva justo debajo, alineada con el vídeo. Puedes marcar "Recordar mi elección", y hacerlo más tarde con clic derecho → `Extraer audio`.
 
 ### Configurar la pantalla
 
@@ -433,7 +433,7 @@ El negro no para nada: el vídeo sigue sincronizado por debajo y, al quitarlo, v
 ### Formatos recomendados
 
 - **H.264 en `.mp4`** con un fotograma clave por segundo (GOP de 1 s). Los saltos y vamps son inmediatos.
-- Con fotogramas clave muy separados (más de 2 s), LibreTracks lo marca en la biblioteca: los saltos a mitad de un vídeo así pueden tardar un instante. Para reexportarlo con ffmpeg: `ffmpeg -i entrada.mp4 -c:v libx264 -g 30 -keyint_min 30 -c:a copy salida.mp4` (para 30 fps).
+- Con fotogramas clave muy separados (más de 2 s), Magno Studio lo marca en la biblioteca: los saltos a mitad de un vídeo así pueden tardar un instante. Para reexportarlo con ffmpeg: `ffmpeg -i entrada.mp4 -c:v libx264 -g 30 -keyint_min 30 -c:a copy salida.mp4` (para 30 fps).
 - HEVC, ProRes y VP9 funcionan; 4K necesita un equipo con decodificación por hardware.
 
 ### Paquetes con vídeo
@@ -444,11 +444,11 @@ Al exportar una canción (`.ltpkg`) o la sesión (`.ltset`) con vídeos, el diá
 - Desmarcada, o en modo Ligero: los vídeos no viajan; en otro equipo aparecen como archivos que faltan y se reubican.
 - Si subes la sesión a la nube y los vídeos pasan de 500 MB, la casilla empieza desmarcada.
 
-Al importar en Android o iOS un paquete con vídeos, LibreTracks pregunta antes si traerlos, diciendo cuánto ocupan y cuánto espacio libre queda (ver la sección siguiente).
+Al importar en Android o iOS un paquete con vídeos, Magno Studio pregunta antes si traerlos, diciendo cuánto ocupan y cuánto espacio libre queda (ver la sección siguiente).
 
 ### Vídeo en iPhone, iPad y Android
 
-El móvil o la tablet manda el audio **y** el vídeo: el proyector muestra solo el vídeo a pantalla completa y en el móvil sigues con LibreTracks, igual que con la ventana de vídeo del ordenador.
+El móvil o la tablet manda el audio **y** el vídeo: el proyector muestra solo el vídeo a pantalla completa y en el móvil sigues con Magno Studio, igual que con la ventana de vídeo del ordenador.
 
 **Cómo conectar el proyector**
 
@@ -460,20 +460,20 @@ El móvil o la tablet manda el audio **y** el vídeo: el proyector muestra solo 
 | Android | Un móvil con salida de vídeo por USB-C (DisplayPort) y un cable USB-C a HDMI |
 
 - **Android: no todos los móviles sacan imagen.** Suelen tenerla los Samsung de gama media-alta, los Pixel 8 o posteriores, la mayoría de tablets recientes y algunos Motorola y Xiaomi. Si al conectar el cable no aparece ninguna pantalla, tu móvil no tiene esa salida y ninguna app puede dársela.
-- **Samsung:** al enchufar puede abrirse DeX. Desactívalo (o elige "Duplicar") para que LibreTracks vea la pantalla.
+- **Samsung:** al enchufar puede abrirse DeX. Desactívalo (o elige "Duplicar") para que Magno Studio vea la pantalla.
 - **AirPlay es experimental:** el retardo depende del Wi-Fi y puede variar durante la actuación. Calibra en el sitio (`Ajustes → Vídeo → Calibrar…`) y, para un directo, mejor el cable.
 
 **Lo primero que se hace solo:** al poner el primer vídeo en el timeline se abre un asistente de dos pasos: conecta el proyector (si en 20 segundos no aparece nada, te dice qué revisar) y comprueba que ves la carta de ajuste. Por defecto el vídeo sale por **la primera pantalla externa** que aparezca; en `Ajustes → Vídeo` puedes fijar una concreta si tienes cable y AirPlay a la vez.
 
-**Sin vídeo, la pantalla de reposo.** Con la salida activada y un proyector conectado, LibreTracks lo ocupa aunque la sesión no tenga vídeo y muestra la pantalla de reposo (negro o la imagen que elijas en `Ajustes → Vídeo`): sin eso, el móvil duplicaría su propia pantalla y el público vería la app. Para usar el proyector para otra cosa, desactiva la salida de vídeo.
+**Sin vídeo, la pantalla de reposo.** Con la salida activada y un proyector conectado, Magno Studio lo ocupa aunque la sesión no tenga vídeo y muestra la pantalla de reposo (negro o la imagen que elijas en `Ajustes → Vídeo`): sin eso, el móvil duplicaría su propia pantalla y el público vería la app. Para usar el proyector para otra cosa, desactiva la salida de vídeo.
 
-**El bloqueo del móvil apaga el proyector.** Mientras la salida de vídeo está activa, LibreTracks evita que el móvil se bloquee solo. Si lo bloqueas tú con el botón (o cambias de app), el sistema deja de mandar imagen: el audio sigue sonando, el indicador de arriba muestra **Proyector apagado** y, al desbloquear, la imagen vuelve ya sincronizada.
+**El bloqueo del móvil apaga el proyector.** Mientras la salida de vídeo está activa, Magno Studio evita que el móvil se bloquee solo. Si lo bloqueas tú con el botón (o cambias de app), el sistema deja de mandar imagen: el audio sigue sonando, el indicador de arriba muestra **Proyector apagado** y, al desbloquear, la imagen vuelve ya sincronizada.
 
 **Indicador y negro:** en la barra superior hay dos iconos: el estado de la salida (tócalo para ver la pantalla, los reproductores y los avisos) y el **negro a un toque**, que solo se activa con la salida mostrando algo.
 
 **Tener los vídeos en el móvil**
 
-- **Paquetes `.ltset` / `.ltpkg` y la nube:** si traen vídeos, LibreTracks pregunta "Importar también los vídeos", con lo que ocupan y el espacio libre. Viene marcado si caben dejando 1 GB libre; si no caben, no se puede marcar. Sin ellos la sesión suena igual, los clips se conservan y no aparecen como archivos que faltan. Al bajar una sesión grande de la nube con datos móviles, primero pregunta: mejor con Wi-Fi.
+- **Paquetes `.ltset` / `.ltpkg` y la nube:** si traen vídeos, Magno Studio pregunta "Importar también los vídeos", con lo que ocupan y el espacio libre. Viene marcado si caben dejando 1 GB libre; si no caben, no se puede marcar. Sin ellos la sesión suena igual, los clips se conservan y no aparecen como archivos que faltan. Al bajar una sesión grande de la nube con datos móviles, primero pregunta: mejor con Wi-Fi.
 - **Desde el propio dispositivo:** `Añadir vídeo del dispositivo` en el menú de una pista de vídeo, en el `+` de pistas o en la biblioteca. El vídeo **se copia** a la carpeta de la sesión (para que viaje con ella), después de decirte cuánto ocupa.
 - Un vídeo que el móvil no sabe decodificar (por ejemplo ProRes en Android, o HEVC de 10 bits en un móvil sencillo) aparece como **No reproducible en este dispositivo**: no se borra y sigue sonando su audio si lo extrajiste en el ordenador.
 
@@ -483,7 +483,7 @@ El móvil o la tablet manda el audio **y** el vídeo: el proyector muestra solo 
 
 ## 6. Control Remote Movil
 
-LibreTracks desktop puede publicar una superficie web remota para controlar transporte y mixer.
+Magno Studio desktop puede publicar una superficie web remota para controlar transporte y mixer.
 
 ### Conectar movil o tablet
 
@@ -506,9 +506,9 @@ LibreTracks desktop puede publicar una superficie web remota para controlar tran
 
 > Sugerencia de flujo en directo: deja al operador desktop centrado en timeline/arreglo y asigna a una segunda persona los ajustes de mezcla/cues desde el remote.
 
-### Sesiones de red entre dispositivos LibreTracks
+### Sesiones de red entre dispositivos Magno Studio
 
-`Sesion de red` conecta otra instalacion de LibreTracks al anfitrion; es
+`Sesion de red` conecta otra instalacion de Magno Studio al anfitrion; es
 distinta del control web `Remote`. El invitado puede elegir DAW, Setlist,
 Compacta o Live sin cambiar la vista del anfitrion.
 
@@ -537,9 +537,9 @@ se reconfiguran desde el invitado.
 
 ### Linux: pantalla blanca al abrir
 
-En algunas configuraciones de Linux (drivers NVIDIA, distros inmutables como Bazzite, Fedora Silverblue o SteamOS, y ciertos compositores Wayland) la ventana puede abrirse en blanco sin pintar la interfaz. Es un problema conocido del motor web WebKitGTK que usa la app, no un fallo de LibreTracks.
+En algunas configuraciones de Linux (drivers NVIDIA, distros inmutables como Bazzite, Fedora Silverblue o SteamOS, y ciertos compositores Wayland) la ventana puede abrirse en blanco sin pintar la interfaz. Es un problema conocido del motor web WebKitGTK que usa la app, no un fallo de Magno Studio.
 
-LibreTracks ya aplica automaticamente la mitigacion recomendada al arrancar, asi que en la mayoria de los casos no tienes que hacer nada: simplemente actualiza a la ultima version.
+Magno Studio ya aplica automaticamente la mitigacion recomendada al arrancar, asi que en la mayoria de los casos no tienes que hacer nada: simplemente actualiza a la ultima version.
 
 - Si prefieres mantener la aceleracion grafica acelerada (porque tu equipo pinta bien sin la mitigacion), define la variable de entorno `LIBRETRACKS_KEEP_DMABUF=1` antes de abrir la app.
 - En distros inmutables, instala el **AppImage** o usa un contenedor `distrobox` en lugar de instalar el `.rpm` sobre el sistema base.

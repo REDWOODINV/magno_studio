@@ -1079,8 +1079,8 @@ html.lt-mobile .lt-setlist-mixer-resize ~ .lt-setlist-mixer {
 
 .lt-setlist-settings-section h4 {
   font-size: 0.75rem;
-  letter-spacing: 0.04em;
-  text-transform: uppercase;
+  letter-spacing: 0.01em;
+  text-transform: none;
   color: var(--lt-setlist-text-muted);
 }
 
@@ -1935,7 +1935,7 @@ html.lt-mobile .lt-setlist-lane-clip.is-selected .lt-setlist-lane-trim.is-end {
   font-size: 0.85rem;
   font-weight: 700;
   letter-spacing: 0.03em;
-  text-transform: uppercase;
+  text-transform: none;
   color: var(--lt-setlist-text-muted);
 }
 
@@ -2378,8 +2378,8 @@ html.lt-mobile .lt-setlist-lane-clip.is-selected .lt-setlist-lane-trim.is-end {
 .lt-setlist-arrangement-head h3 {
   margin: 0;
   font-size: 0.85rem;
-  text-transform: uppercase;
-  letter-spacing: 0.05em;
+  text-transform: none;
+  letter-spacing: 0.01em;
   color: var(--lt-setlist-text-muted);
 }
 
@@ -2449,8 +2449,8 @@ html.lt-mobile .lt-setlist-lane-clip.is-selected .lt-setlist-lane-trim.is-end {
   color: #ffffff;
   font-size: 0.72rem;
   font-weight: 700;
-  text-transform: uppercase;
-  letter-spacing: 0.04em;
+  text-transform: none;
+  letter-spacing: 0.01em;
 }
 
 .lt-setlist-arrangement-sequence {
