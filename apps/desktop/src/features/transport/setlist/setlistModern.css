@@ -205,7 +205,11 @@
   color: #04200d;
 }
 
-.lt-setlist-view .lt-compact-mixer-toggle.is-on.is-transpose,
+.lt-setlist-view .lt-compact-mixer-toggle.is-on.is-transpose {
+  background: rgb(255 255 255 / 0.22);
+  color: #ffffff;
+}
+
 .lt-setlist-view .lt-compact-mixer-toggle.is-eq.is-active {
   background: #ffffff;
   color: #0f0f0f;

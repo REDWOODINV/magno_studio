@@ -499,12 +499,12 @@ export function drawRulerRegion(
   // the ruler's grid show through the song name. Pre-blending against the
   // backdrop keeps the familiar warm tint while masking whatever is behind.
   context.fillStyle = blendOnRulerBackdrop(
-    "#ffe2ab",
+    "#ffffff",
     isSelected ? 0.34 : 0.2,
   );
   context.strokeStyle = isSelected
-    ? "rgba(255, 226, 171, 0.85)"
-    : "rgba(255, 226, 171, 0.45)";
+    ? "rgba(255, 255, 255, 0.85)"
+    : "rgba(255, 255, 255, 0.45)";
   context.lineWidth = 1;
   context.beginPath();
   context.roundRect(blockLeft, blockTop, blockWidth, blockHeight, 6);
@@ -525,7 +525,7 @@ export function drawRulerRegion(
   context.clip();
   // Fully opaque in both states — the resting name used to sit at 92% alpha on
   // top of a translucent block, which is where it lost its edge.
-  context.fillStyle = isSelected ? "#fff4d6" : "#ffefc9";
+  context.fillStyle = isSelected ? "#ffffff" : "#f4f4f5";
   context.font = '700 10px "Space Grotesk", sans-serif';
   context.textBaseline = "middle";
   const textCenterY = blockTop + blockHeight / 2 + 0.5;
@@ -570,7 +570,7 @@ export function drawRulerRegion(
     const badgeTop = Math.round(textCenterY - badgeHeight / 2);
 
     context.fillStyle = "rgb(16, 16, 22)";
-    context.strokeStyle = "rgba(255, 226, 171, 0.38)";
+    context.strokeStyle = "rgba(255, 255, 255, 0.38)";
     context.lineWidth = 1;
     context.beginPath();
     context.roundRect(badgeLeft, badgeTop, badgeWidth, badgeHeight, 999);
@@ -635,7 +635,7 @@ export function drawRulerMarker(
   const strokeStyle = options.isArmed
     ? `rgba(255, 255, 255, ${options.pulseAlpha})`
     : options.isSelected
-      ? "rgba(255, 226, 171, 0.9)"
+      ? "rgba(255, 255, 255, 0.9)"
       : options.isCurrent
         ? "rgba(229, 226, 225, 0.88)"
         : hexToRgba(kindColor, 0.72);
@@ -645,14 +645,14 @@ export function drawRulerMarker(
   const fillStyle = options.isArmed
     ? `rgba(255, 255, 255, ${0.22 + options.pulseAlpha * 0.22})`
     : options.isSelected
-      ? blendOnRulerBackdrop("#ffe2ab", 0.26)
+      ? blendOnRulerBackdrop("#ffffff", 0.26)
       : options.isCurrent
         ? blendOnRulerBackdrop("#e5e2e1", 0.24)
         : blendOnRulerBackdrop(kindColor, 0.24);
   const textStyle = options.isArmed
     ? "#ffffff"
     : options.isSelected
-      ? "#ffe2ab"
+      ? "#ffffff"
       : options.isCurrent
         ? "#e5e2e1"
         : kindColor;

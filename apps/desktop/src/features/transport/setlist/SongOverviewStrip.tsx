@@ -88,8 +88,8 @@ export function drawWindowFor(
   const start = Math.max(0, Math.min(layerWidth - width, view.offset - view.width));
   return { start, width };
 }
-const WAVE_COLOR = "rgb(186 214 207 / 0.75)";
-const SECTION_COLOR = "rgb(233 241 238 / 0.35)";
+const WAVE_COLOR = "rgb(244 244 245 / 0.72)";
+const SECTION_COLOR = "rgb(244 244 245 / 0.35)";
 
 /** Local x inside `element`, robust to the app's CSS zoom (the rect is in
  * zoomed pixels, offsetWidth in layout pixels). */

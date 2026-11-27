@@ -97,8 +97,8 @@ export function drawPendingExecutionLine(
     cameraX,
     pixelsPerSecond,
     executeAtSeconds,
-    "rgba(255, 226, 171, 0.88)",
-    "rgba(255, 226, 171, 0.92)",
+    "rgba(255, 255, 255, 0.88)",
+    "rgba(255, 255, 255, 0.92)",
   );
 }
 

@@ -737,7 +737,7 @@ html.lt-mobile .lt-setlist-add-song-button {
 .lt-setlist-overview-playhead.is-dragging {
   width: 3px;
   margin-left: -1.5px;
-  background: #ffe2ab;
+  background: #ffffff;
   box-shadow: 0 0 8px rgb(255 226 171 / 0.55);
 }
 

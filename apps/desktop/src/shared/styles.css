@@ -1120,7 +1120,7 @@ html.lt-ios body {
 .transport-pill.is-paused,
 .transport-pill.is-stopped,
 .transport-pill.is-empty {
-  color: #ffe2ab;
+  color: #ffffff;
   background: rgb(255 226 171 / 0.16);
 }
 
@@ -5492,14 +5492,14 @@ html.lt-ios body {
 }
 
 .lt-track-header.is-solo::before {
-  background: #ffe2ab;
+  background: #ffffff;
 }
 
 /* Selected + solo: keep the amber accent, but on the overlay's border so the
    bar doesn't flood the whole row with colour. */
 .lt-track-header.is-solo.is-selected::before {
   background: transparent;
-  border-left-color: #ffe2ab;
+  border-left-color: #ffffff;
 }
 
 .lt-track-header-main {
@@ -6171,7 +6171,7 @@ html.lt-ios body {
 
 .lt-track-toggle-group button.lt-track-toggle-solo.is-active {
   color: #402d00;
-  background: #ffe2ab;
+  background: #ffffff;
 }
 
 .lt-track-toggle-group button.lt-track-toggle-transpose {
@@ -6436,16 +6436,16 @@ html.lt-ios body {
 }
 
 .lt-playhead.is-dragging {
-  color: #ffe2ab;
-  background: #ffe2ab;
+  color: #ffffff;
+  background: #ffffff;
 }
 
 .lt-playhead.is-dragging::before {
-  border-top-color: #ffe2ab;
+  border-top-color: #ffffff;
 }
 
 .lt-playhead.is-dragging::after {
-  background: #ffe2ab;
+  background: #ffffff;
   box-shadow: 0 0 8px rgb(255 226 171 / 0.55);
 }
 
@@ -7443,9 +7443,9 @@ body.lt-daw-song-reordering .lt-region-hotspot .lt-region-hotspot-name {
 }
 
 .lt-compact-action.is-warning {
-  color: #ffe2ab;
-  background: rgba(255, 226, 171, 0.12);
-  box-shadow: inset 0 0 0 1px rgba(255, 226, 171, 0.18);
+  color: #ffffff;
+  background: rgba(255, 255, 255, 0.12);
+  box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.18);
 }
 
 .lt-global-cancel-button {
@@ -7474,18 +7474,18 @@ body.lt-daw-song-reordering .lt-region-hotspot .lt-region-hotspot-name {
 }
 
 .lt-global-cancel-button.is-warning {
-  color: #ffe2ab;
+  color: #ffffff;
   background:
-    linear-gradient(180deg, rgba(255, 226, 171, 0.09), transparent 42%),
+    linear-gradient(180deg, rgba(255, 255, 255, 0.09), transparent 42%),
     #201b14;
-  box-shadow: inset 0 0 0 1px rgba(255, 226, 171, 0.16);
+  box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.16);
 }
 
 .lt-global-cancel-button:hover:not(:disabled) {
-  color: #ffe2ab;
+  color: #ffffff;
   box-shadow:
-    inset 0 0 0 1px rgba(255, 226, 171, 0.24),
-    0 0 16px rgba(255, 226, 171, 0.12);
+    inset 0 0 0 1px rgba(255, 255, 255, 0.24),
+    0 0 16px rgba(255, 255, 255, 0.12);
 }
 
 .lt-icon-button .material-symbols-outlined {
@@ -8870,9 +8870,9 @@ body.lt-song-reordering .lt-compact-column-resize-slot {
 .lt-compact-song-key {
   flex: 0 0 auto;
   padding: 0.15rem 0.4rem;
-  color: #ffe2ab;
-  background: rgba(255, 226, 171, 0.14);
-  border: 1px solid rgba(255, 226, 171, 0.38);
+  color: #ffffff;
+  background: rgba(255, 255, 255, 0.14);
+  border: 1px solid rgba(255, 255, 255, 0.38);
   border-radius: 8px;
   font: 700 9px/1.2 "Space Grotesk", sans-serif;
   letter-spacing: 0.01em;
